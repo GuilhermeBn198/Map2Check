@@ -1,4 +1,6 @@
-# conventions
+# conventions and usage of the map2check tool
+
+## conventions for the testcomp functions inside the test files
 
 __VERIFIER_error(): For checking reachability we use the function __VERIFIER_error(). The verification tool can assume the following implementation:
 void __VERIFIER_error() { abort(); }
@@ -13,3 +15,26 @@ X __VERIFIER_nondet_X() { X val; return val; }
 __VERIFIER_atomic_begin(): For modeling an atomic execution of a sequence of statements in a multi-threaded run-time environment, those statements can be placed between two function calls __VERIFIER_atomic_begin() and __VERIFIER_atomic_end() (deprecated but still valid: those statements can be placed in a function whose name matches __VERIFIER_atomic_). The testers are instructed to assume that the execution between those calls is not interrupted. The two calls need to occur within the same control-flow block; nesting or interleaving of those function calls is not allowed.
 
 malloc(), free(): We assume that the functions malloc and alloca always return a valid pointer, i.e., the memory allocation never fails, and function free always deallocates the memory and makes the pointer invalid for further dereferences.
+
+## usage of map2check tool
+
+    --debug                debug mode
+    --input-file arg       specifies the files
+    --smt-solver arg (=z3) specifies the smt-solver, valid values are stp (STP),
+                            z3 (Z3 is default), btor (Boolector), and yices2 (Yices)
+    --timeout arg          timeout for map2check execution
+    --target-function      searches for __VERIFIER_error is reachable
+    --generate-testcase    creates c program with fail testcase (experimental)
+    --memtrack             check for memory errors
+    --print-counter        print counterexample
+    --memcleanup-property  analyze program for memcleanup errors
+    --check-overflow       analyze program for overflow failures
+    --check-asserts        analyze program and verify assert failures
+    --add-invariants       adding program invariants adopting Crab-LLVM
+    --generate-witness     generates witness file
+    --expected-result arg  specifies type of violation expected
+    --btree                uses btree structure to hold information 
+                            (experimental, use this if you are having memory problems)
+
+### example of use
+    ./map2check --target-function ../tests/array-examples/sanfoundry_02_ground.c
