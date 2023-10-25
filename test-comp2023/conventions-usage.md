@@ -37,4 +37,5 @@ malloc(), free(): We assume that the functions malloc and alloca always return a
                             (experimental, use this if you are having memory problems)
 
 ### example of use
-    ./map2check --target-function ../tests/array-examples/sanfoundry_02_ground.c
+
+./map2check --target-function ../tests/array-examples/sanfoundry_02_ground.c  
