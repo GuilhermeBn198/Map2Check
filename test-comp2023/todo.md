@@ -10,6 +10,17 @@
     - [x] adicionar um .gitignore da pasta do esbmc
     - [x] testar o esbmc com inputs do test-comp
 
-- [ ] semana 27/09/2023 ~~ 04/09/2023
-  - [ ] Criar diagrama de fluxo (flowchart ou BPMN) do funcionamento do Map2Check
-  - [ ] Criar um lista de arquivos de output que devem ser gerados para o test-comp
+- [x] semana 27/09/2023 ~~ 04/09/2023
+  - [x] Criar diagrama de fluxo (flowchart ou BPMN) do funcionamento do Map2Check
+  - [x] Criar um lista de arquivos de output que devem ser gerados para o test-comp
+
+- [ ] semana 27/10/2023 ~~ 04/10/2023
+  - [ ] finalizar a parte de  bugfinding
+  - [ ] com base nos arquivos de witness gerados pelos testes no map2check, gerar os testcases do testcoomp
+    - [ ] criar um script em python para ler o arquivo de witness e escrever os dados dele em diferentes arquivos de testcase
+    - [ ] criar pequenos casos de testes com erro para gerar valores
+  - [ ] estudar ferramenta TESTCOV, usada para testar o map2check dentro da competição
+  - [ ] Flow de execução do TESCOMP com base no Checklist-Map2check-testcomp.jpeg no repositório
+  - [ ] ESBMC
+    - [ ] explicar como roda no TESCOMP
+    - [ ] baixar os PRP do testcomp no site da competição junto dos arquivos C do benchmark(pasta properties)
