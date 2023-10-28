@@ -74,7 +74,7 @@ Every run will be started by a batch script, which produces for every tool and e
     - **specification:** COVER( init(main()), FQL(COVER EDGES(@CALL(reach_error))) )
 - **Cover Branches (Code Coverage)**
   - **ReachSafety-Arrays**
-    - array-programs/*.yml
+    - array-examples/*.yml
     - array-crafted/*.yml
     - array-multidimensional/*.yml
     - **specification:** COVER( init(main()), FQL(COVER EDGES(@DECISIONEDGE)) )
