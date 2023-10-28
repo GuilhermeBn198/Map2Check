@@ -54,51 +54,40 @@ Every run will be started by a batch script, which produces for every tool and e
 +cov points for a generated TEST-SUITE that yields coverage cov and TIME is less than the time limit
 0 points otherwise
 
-## Test & Coverage tasks
+## Error & Coverage tasks
 
-### c/ReachSafety-Arrays
-
-Contains tasks for which treatment of arrays is necessary in order to determine reachability. The test-generation tasks consist of the programs that match.
-
-with the specification:
-
-array-examples/*.yml
-
-```bash
-COVER( init(main()), FQL(COVER EDGES(@CALL(reach_error))) )
-```
-
-### c/ReachSafety-BitVectors
-
-Contains tasks for which treatment of bit-operations is necessary. The test-generation tasks consist of the programs that match with the specification:
-
-bitvector/*.yml
-
-```bash
-COVER( init(main()), FQL(COVER EDGES(@CALL(reach_error))) )
-```
-
-### c/ReachSafety-ControlFlow
-
-Contains programs for which the correctness depends mostly on the control-flow structure and integer variables. There is no particular focus on pointers, data structures, and concurrency.
-
-The test-generation tasks consist of the programs that match with the specification:
-
-ntdrivers-simplified/*.yml
-
-```bash
-COVER( init(main()), FQL(COVER EDGES(@CALL(reach_error))) )
-```
-
-### c/ReachSafety-ECA
-
-Contains programs that represent event-condition-action systems. The test-generation tasks consist of the programs that match with the specification:
-
-eca-rers2012/*.yml
-
-```bash
-COVER( init(main()), FQL(COVER EDGES(@CALL(reach_error))) )
-```
+- **Cover Errors (Finding Bugs)**
+  - **ReachSafety-Arrays**
+    - array-examples/*.yml
+    - array-crafted/*.yml
+    - array-multidimensional/*.yml
+    - **specification:** COVER( init(main()), FQL(COVER EDGES(@CALL(reach_error))) )
+  - **ReachSafety-BitVectors**
+    - bitvector/*.yml
+    - bitvector-regression/*.yml
+    - bitvector-loops/*.yml
+    - **specification:** COVER( init(main()), FQL(COVER EDGES(@CALL(reach_error))) )
+  - **ReachSafety-Loops**
+    - loops/*.yml
+    - loop-acceleration/*.yml
+    - loop-crafted/*.yml
+    - **specification:** COVER( init(main()), FQL(COVER EDGES(@CALL(reach_error))) )
+- **Cover Branches (Code Coverage)**
+  - **ReachSafety-Arrays**
+    - array-programs/*.yml
+    - array-crafted/*.yml
+    - array-multidimensional/*.yml
+    - **specification:** COVER( init(main()), FQL(COVER EDGES(@DECISIONEDGE)) )
+  - **ReachSafety-BitVectors**
+    - bitvector/*.yml
+    - bitvector-regression/*.yml
+    - bitvector-loops/*.yml
+    - **specification:** COVER( init(main()), FQL(COVER EDGES(@DECISIONEDGE)) )
+  - **ReachSafety-Loops**
+    - loops/*.yml
+    - loop-acceleration/*.yml
+    - loop-crafted/*.yml
+    - **specification:** COVER( init(main()), FQL(COVER EDGES(@DECISIONEDGE)) )
 
 ---
 ---
