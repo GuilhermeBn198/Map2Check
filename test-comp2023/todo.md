@@ -19,7 +19,7 @@
   - [ ] com base nos arquivos de witness gerados pelos testes no map2check, gerar os testcases do testcomp
     - [ ] criar um script em python para ler o arquivo de witness e escrever os dados dele em diferentes arquivos de testcase
     - [ ] criar pequenos casos de testes com erro para gerar valores
-  - [ ] estudar ferramenta TESTCOV, usada para testar o map2check dentro da competição
+  - [x] estudar ferramenta TESTCOV, usada para testar o map2check dentro da competição
   - [ ] Flow de execução do TESTCOMP com base no Checklist-Map2check-testcomp.jpeg no repositório
   - [ ] ESBMC
     - [ ] explicar como roda no TESTCOMP
