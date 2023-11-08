@@ -1,0 +1,16 @@
+<!--
+This file is part of the Test-Comp test format,
+an exchange format for test suites:
+https://gitlab.com/sosy-lab/software/test-format
+
+SPDX-FileCopyrightText: 2018-2019 Dirk Beyer <https://www.sosy-lab.org>
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE testcase PUBLIC "+//IDN sosy-lab.org//DTD test-format testcase 1.1//EN" "https://sosy-lab.org/test-format/testcase-1.1.dtd">
+<testcase>
+  <input variable="x" type="int">1023</input>
+  <input variable="y" type="unsigned char">254</input>
+</testcase>
