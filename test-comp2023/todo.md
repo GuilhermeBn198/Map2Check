@@ -15,7 +15,7 @@
   - [x] Criar um lista de arquivos de output que devem ser gerados para o test-comp
 
 - [ ] semana 27/10/2023 ~~ 04/10/2023
-  - [ ] finalizar a parte de  bugfinding
+  - [x] finalizar a parte de  bugfinding
   - [ ] com base nos arquivos de witness gerados pelos testes no map2check, gerar os testcases do testcomp
     - [ ] criar um script em python para ler o arquivo de witness e escrever os dados dele em diferentes arquivos de testcase
     - [x] criar pequenos casos de testes com erro para gerar valores
