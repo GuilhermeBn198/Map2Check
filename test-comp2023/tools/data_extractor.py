@@ -1,35 +1,60 @@
+import os
 import xml.etree.ElementTree as ET
 
-# Função para extrair informações das tags especificadas do XML
-def extrair_informacoes(arquivo_xml, tags, arquivo_saida):
+def extrair_informacoes(arquivo_xml, tags):
     tree = ET.parse(arquivo_xml)
     root = tree.getroot()
 
-    with open(arquivo_saida, 'w') as saida:
-        for tag in tags:
-            elementos = root.findall('.//{}'.format(tag))
-            for elemento in elementos:
-                texto = elemento.text
-                if texto:
-                    saida.write('{}: {}\n'.format(tag, texto))
+    # Define the namespace
+    ns = {'ns': 'http://graphml.graphdrawing.org/xmlns'}
 
-# Lista de tags que você deseja extrair informações
+    data = {}
+
+    for tag in tags:
+        # Include the namespace in the tag
+        elementos = root.findall('.//ns:data[@key="{}"]'.format(tag), ns)
+        for elemento in elementos:
+            texto = elemento.text
+            if texto:
+                data[tag] = texto
+
+    return data
+
+def create_metadata_file(data, filename):
+    metadata = ET.Element('test-metadata')
+
+    for key, value in data.items():
+        ET.SubElement(metadata, key).text = value
+
+    tree = ET.ElementTree(metadata)
+    tree.write(filename, encoding='utf-8', xml_declaration=True)
+
+def create_testcase_file(data, filename):
+    testcase = ET.Element('testcase')
+    testcase.set('coversError', 'true')
+
+    for value in data.get('assumption', '').split('=='):
+        ET.SubElement(testcase, 'input').text = value.strip()
+
+    tree = ET.ElementTree(testcase)
+    tree.write(filename, encoding='utf-8', xml_declaration=True)
+
 tags = [
     'sourcecodelang',
     'producer',
     'specification',
     'programfile',
     'programhash',
-    'entryfunction',
     'architecture',
-    'creationtime'
+    'assumption'
 ]
 
-# Arquivo XML de entrada
-arquivo_xml = 'seuarquivo.xml'
+arquivo_xml = 'witness.graphml'
 
-# Arquivo de saída
-arquivo_saida = 'informacoes_extraidas.txt'
+# Create the directory if it doesn't exist
+if not os.path.exists('testsuite'):
+    os.makedirs('testsuite')
 
-# Chame a função para extrair as informações das tags especificadas
-extrair_informacoes(arquivo_xml, tags, arquivo_saida)
+data = extrair_informacoes(arquivo_xml, tags)
+create_metadata_file(data, os.path.join('testsuite', 'metadata.xml'))
+create_testcase_file(data, os.path.join('testsuite', 'testcase.xml'))
