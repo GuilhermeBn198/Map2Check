@@ -22,6 +22,6 @@
   - [x] estudar ferramenta TESTCOV, usada para testar o map2check dentro da competição
     - [x] Baixar TESTCOV para realizar testes
   - [ ] Flow de execução do TESTCOMP com base no Checklist-Map2check-testcomp.jpeg no repositório
-  - [ ] ESBMC
-    - [ ] explicar como roda no TESTCOMP
+  - [x] ESBMC
+    - [x] explicar como roda no TESTCOMP
   - [x] baixar os PRP do testcomp no site da competição junto dos arquivos C do benchmark(pasta properties)
