@@ -67,14 +67,72 @@
 
 ### Observações
 
+- SÓ É GERADO TESTCASE PARA PROGRAMAS COM FALHAS! EX: bitvector/sum02-1.i possui property_file: ../properties/unreach-call.prp expected_verdict: false
+
 ### Test Cases for ESBMC
 
 - python3 esbmc-wrapper.py -p ../properties/coverage-error-call.prp ../sv-benchmarks/c/bitvector/byte_add-1.i
-  - RESULT: FALSE
+  - RESULT: FAILED
   - generated test-suite: YES
   - properties:
     - property_file: ../properties/no-overflow.prp
       expected_verdict: true
+    - property_file: ../properties/termination.prp
+      expected_verdict: true
+    - property_file: ../properties/unreach-call.prp
+      expected_verdict: false
+    - property_file: ../properties/coverage-error-call.prp
+    - property_file: ../properties/coverage-branches.prp
+    - property_file: ../properties/coverage-conditions.prp
+    - property_file: ../properties/coverage-statements.prp
+- python3 esbmc-wrapper.py -p ../properties/coverage-error-call.prp ../sv-benchmarks/c/bitvector-loops/diamond_2-1.c
+  - RESULT: FAILED
+  - generated test-suite: YES
+  - properties:
+    - property_file: ../properties/unreach-call.prp
+      expected_verdict: false
+    - property_file: ../properties/coverage-error-call.prp
+    - property_file: ../properties/coverage-branches.prp
+    - property_file: ../properties/coverage-conditions.prp
+    - property_file: ../properties/coverage-statements.prp
+- python3 esbmc-wrapper.py -p ../properties/coverage-error-call.prp ../sv-benchmarks/c/bitvector-loops/verisec_sendmail_tTflag_arr_one_loop.c
+  - RESULT: FAILED
+  - generated test-suite: YES
+  - properties:
+    - property_file: ../properties/termination.prp
+      expected_verdict: true
+    - property_file: ../properties/unreach-call.prp
+      expected_verdict: false
+    - property_file: ../properties/coverage-error-call.prp
+    - property_file: ../properties/coverage-branches.prp
+    - property_file: ../properties/coverage-conditions.prp
+    - property_file: ../properties/coverage-statements.prp
+- python3 esbmc-wrapper.py -p ../properties/coverage-error-call.prp ../sv-benchmarks/c/bitvector-regression/implicitfloatconversion.c
+  - RESULT: FAILED
+  - generated test-suite: YES
+  - properties:
+    - property_file: ../properties/termination.prp
+      expected_verdict: true
+    - property_file: ../properties/unreach-call.prp
+      expected_verdict: false
+- python3 esbmc-wrapper.py -p ../properties/coverage-error-call.prp ../sv-benchmarks/c/bitvector-regression/signextension2-2.C
+  - RESULT: FAILED
+  - generated test-suite: YES
+  - properties:
+    - property_file: ../properties/termination.prp
+      expected_verdict: true
+    - property_file: ../properties/unreach-call.prp
+      expected_verdict: false
+- python3 esbmc-wrapper.py -p ../properties/coverage-error-call.prp ../sv-benchmarks/c/loop-acceleration/simple_1-1_abstracted.c
+  - RESULT: FAILED
+  - generated test-suite: YES
+  - properties:
+    - property_file: ../properties/unreach-call.prp
+      expected_verdict: false
+- python3 esbmc-wrapper.py -p ../properties/coverage-error-call.prp ../sv-benchmarks/c/loops/array-2.c
+  - RESULT: FAILED
+  - generated test-suite: YES
+  - properties:
     - property_file: ../properties/termination.prp
       expected_verdict: true
     - property_file: ../properties/unreach-call.prp

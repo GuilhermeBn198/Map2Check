@@ -25,3 +25,10 @@
   - [x] ESBMC
     - [x] explicar como roda no TESTCOMP
   - [x] baixar os PRP do testcomp no site da competição junto dos arquivos C do benchmark(pasta properties)
+
+- [ ] semana 14/01/2024 ~~ 21/01/2024
+  - [ ] Inicio de redação do Relatório Parcial do projeto
+  - [ ] Redação do embasamento teórico de artigo relacionado
+  - [ ] finalizar script python para ler arquivo de witness
+  - [x] Reiniciar testes com esbmc para comparar testcases gerados com os do map2check
+  - [ ] Aplicar os mesmos testes feitos no esbmc no map2check para ver o q é impresso 

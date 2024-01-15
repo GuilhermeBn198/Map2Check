@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-metadata><sourcecodelang>C</sourcecodelang><producer>ESBMC 7.0.0 incr</producer><specification>CHECK( LTL(G ! call(__VERIFIER_error())) )</specification><programfile>../sv-benchmarks/c/bitvector/byte_add-1.i</programfile><programhash>efbeed298c6109c26c41e8a0c09e233f126f6975</programhash><entryfunction>main</entryfunction><architecture>32bit</architecture><creationtime>2024-01-14T23:07:16</creationtime></test-metadata>
