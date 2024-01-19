@@ -31,5 +31,5 @@
   - [ ] Redação do embasamento teórico de artigo relacionado
   - [x] Reiniciar testes com esbmc para comparar testcases gerados com os do map2check
   - [x] Aplicar os mesmos testes feitos no esbmc no map2check para ver o q é impresso no witness
-  - [ ] Verificar output do data_extractor se estiver de acordo com o output do esbmc
-  - [ ] finalizar script python para ler arquivo de witness
+  - [x] Verificar output do data_extractor se estiver de acordo com o output do esbmc
+  - [x] finalizar script python para ler arquivo de witness
