@@ -94,29 +94,30 @@
 
 - **python3 map2check-wrapper.py -p ../../../tests/regression_test/test_cases/sv-benchmarks/properties/unreach-call.prp ../sv-benchmarks/selected/array-2_map2check.c**
   - RESULT: FAILED
+  - status: false
   - gerou witness: sim
-  - false
+  - 
 - **python3 map2check-wrapper.py -p ../../../tests/regression_test/test_cases/sv-benchmarks/properties/unreach-call.prp ../sv-benchmarks/selected/byte_add-1_map2check.i**
   - RESULT: FAILED
+  - status: unknown
   - gerou witness: não
-  - unknown
 - **python3 map2check-wrapper.py -p ../../../tests/regression_test/test_cases/sv-benchmarks/properties/unreach-call.prp ../sv-benchmarks/selected/diamond_2-1_map2check.c**
   - RESULT: FAILED
+  - status: false
   - gerou witness: sim
-  - false
 - **python3 map2check-wrapper.py -p ../../../tests/regression_test/test_cases/sv-benchmarks/properties/unreach-call.prp ../sv-benchmarks/selected/implicitfloatconversion_map2check.c**
   - RESULT: FAILED
+  - status: false
   - gerou witness: sim
-  - false
 - **python3 map2check-wrapper.py -p ../../../tests/regression_test/test_cases/sv-benchmarks/properties/unreach-call.prp ../sv-benchmarks/selected/signextension2-2_map2check.c**
   - RESULT: FAILED
+  - status: false
   - gerou witness: sim
-  - false
 - **python3 map2check-wrapper.py -p ../../../tests/regression_test/test_cases/sv-benchmarks/properties/unreach-call.prp ../sv-benchmarks/selected/simple_1-1_abstracted_map2check.c**
   - RESULT: FAILED
+  - status: false
   - gerou witness: sim
-  - false
 - **python3 map2check-wrapper.py -p ../../../tests/regression_test/test_cases/sv-benchmarks/properties/unreach-call.prp ../sv-benchmarks/selected/verisec_sendmail_tTflag_arr_one_loop_map2check.c**
   - RESULT: FAILED
+  - status: false
   - gerou witness: sim
-  - false
