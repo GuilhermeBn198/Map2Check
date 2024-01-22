@@ -11,6 +11,7 @@
 - **python3 esbmc-wrapper.py -p ../properties/coverage-error-call.prp ../sv-benchmarks/c/bitvector/byte_add-1.i**
   - RESULT: FAILED
   - generated test-suite: YES
+  - apresenta testcase inputs: YES
   - properties:
     - property_file: ../properties/no-overflow.prp
       expected_verdict: true
@@ -25,6 +26,7 @@
 - **python3 esbmc-wrapper.py -p ../properties/coverage-error-call.prp ../sv-benchmarks/c/bitvector-loops/diamond_2-1.c**
   - RESULT: FAILED
   - generated test-suite: YES
+  - apresenta testcase inputs: YES
   - properties:
     - property_file: ../properties/unreach-call.prp
       expected_verdict: false
@@ -35,6 +37,7 @@
 - **python3 esbmc-wrapper.py -p ../properties/coverage-error-call.prp ../sv-benchmarks/c/bitvector-loops/verisec_sendmail_tTflag_arr_one_loop.c**
   - RESULT: FAILED
   - generated test-suite: YES
+  - apresenta testcase inputs: YES
   - properties:
     - property_file: ../properties/termination.prp
       expected_verdict: true
@@ -47,6 +50,7 @@
 - **python3 esbmc-wrapper.py -p ../properties/coverage-error-call.prp ../sv-benchmarks/c/bitvector-regression/implicitfloatconversion.c**
   - RESULT: FAILED
   - generated test-suite: YES
+  - apresenta testcase inputs: NO
   - properties:
     - property_file: ../properties/termination.prp
       expected_verdict: true
@@ -55,6 +59,7 @@
 - **python3 esbmc-wrapper.py -p ../properties/coverage-error-call.prp ../sv-benchmarks/c/bitvector-regression/signextension2-2.C**
   - RESULT: FAILED
   - generated test-suite: YES
+  - apresenta testcase inputs: NO
   - properties:
     - property_file: ../properties/termination.prp
       expected_verdict: true
@@ -63,12 +68,14 @@
 - **python3 esbmc-wrapper.py -p ../properties/coverage-error-call.prp ../sv-benchmarks/c/loop-acceleration/simple_1-1_abstracted.c**
   - RESULT: FAILED
   - generated test-suite: YES
+  - apresenta testcase inputs: NO
   - properties:
     - property_file: ../properties/unreach-call.prp
       expected_verdict: false
 - **python3 esbmc-wrapper.py -p ../properties/coverage-error-call.prp ../sv-benchmarks/c/loops/array-2.c**
   - RESULT: FAILED
   - generated test-suite: YES
+  - apresenta testcase inputs: YES
   - properties:
     - property_file: ../properties/termination.prp
       expected_verdict: true
@@ -92,32 +99,38 @@
 
 ### Test Cases for Map2Check
 
-- **python3 map2check-wrapper.py -p ../../../tests/regression_test/test_cases/sv-benchmarks/properties/unreach-call.prp ../sv-benchmarks/selected/array-2_map2check.c**
-  - RESULT: FAILED
-  - status: false
-  - gerou witness: sim
-  - 
 - **python3 map2check-wrapper.py -p ../../../tests/regression_test/test_cases/sv-benchmarks/properties/unreach-call.prp ../sv-benchmarks/selected/byte_add-1_map2check.i**
   - RESULT: FAILED
   - status: unknown
-  - gerou witness: não
+  - gerou witness: NÃO
+  - apresenta testcase inputs: NÃO
 - **python3 map2check-wrapper.py -p ../../../tests/regression_test/test_cases/sv-benchmarks/properties/unreach-call.prp ../sv-benchmarks/selected/diamond_2-1_map2check.c**
   - RESULT: FAILED
-  - status: false
-  - gerou witness: sim
-- **python3 map2check-wrapper.py -p ../../../tests/regression_test/test_cases/sv-benchmarks/properties/unreach-call.prp ../sv-benchmarks/selected/implicitfloatconversion_map2check.c**
-  - RESULT: FAILED
-  - status: false
-  - gerou witness: sim
-- **python3 map2check-wrapper.py -p ../../../tests/regression_test/test_cases/sv-benchmarks/properties/unreach-call.prp ../sv-benchmarks/selected/signextension2-2_map2check.c**
-  - RESULT: FAILED
-  - status: false
-  - gerou witness: sim
-- **python3 map2check-wrapper.py -p ../../../tests/regression_test/test_cases/sv-benchmarks/properties/unreach-call.prp ../sv-benchmarks/selected/simple_1-1_abstracted_map2check.c**
-  - RESULT: FAILED
-  - status: false
-  - gerou witness: sim
+  - status: FALSE
+  - gerou witness: SIM
+  - apresenta testcase inputs: SIM
 - **python3 map2check-wrapper.py -p ../../../tests/regression_test/test_cases/sv-benchmarks/properties/unreach-call.prp ../sv-benchmarks/selected/verisec_sendmail_tTflag_arr_one_loop_map2check.c**
   - RESULT: FAILED
-  - status: false
-  - gerou witness: sim
+  - status: FALSE
+  - gerou witness: SIM
+  - apresenta testcase inputs: SIM
+- **python3 map2check-wrapper.py -p ../../../tests/regression_test/test_cases/sv-benchmarks/properties/unreach-call.prp ../sv-benchmarks/selected/implicitfloatconversion_map2check.c**
+  - RESULT: FAILED
+  - status: FALSE
+  - gerou witness: SIM
+  - apresenta testcase inputs: NÃO
+- **python3 map2check-wrapper.py -p ../../../tests/regression_test/test_cases/sv-benchmarks/properties/unreach-call.prp ../sv-benchmarks/selected/signextension2-2_map2check.c**
+  - RESULT: FAILED
+  - status: FALSE
+  - gerou witness: SIM
+  - apresenta testcase inputs: NÃO
+- **python3 map2check-wrapper.py -p ../../../tests/regression_test/test_cases/sv-benchmarks/properties/unreach-call.prp ../sv-benchmarks/selected/simple_1-1_abstracted_map2check.c**
+  - RESULT: FAILED
+  - status: FALSE
+  - gerou witness: SIM
+  - apresenta testcase inputs: NÃO
+- **python3 map2check-wrapper.py -p ../../../tests/regression_test/test_cases/sv-benchmarks/properties/unreach-call.prp ../sv-benchmarks/selected/array-2_map2check.c**
+  - RESULT: FAILED
+  - status: FALSE
+  - gerou witness: SIM
+  - apresenta testcase inputs: SIM
