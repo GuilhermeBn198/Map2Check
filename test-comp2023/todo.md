@@ -33,3 +33,8 @@
   - [x] Aplicar os mesmos testes feitos no esbmc no map2check para ver o q é impresso no witness
   - [x] Verificar output do data_extractor se estiver de acordo com o output do esbmc
   - [x] finalizar script python para ler arquivo de witness
+
+- [ ] semana 21/01/2024 ~~ 05/02/2024
+  - [x] Finalização do script de extração de dados do map2check.
+  - [x] Acoplamento do script de extração de dados do map2check no wrapper da aplicação.
+  - [x] Inicio dos testes com o testcov.
