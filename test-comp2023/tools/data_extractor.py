@@ -1,4 +1,5 @@
 import os
+import re
 import xml.etree.ElementTree as ET
 from datetime import datetime
 import zipfile
@@ -18,7 +19,11 @@ def extrair_informacoes(arquivo_xml, tags):
         for elemento in elementos:
             texto = elemento.text
             if texto:
-                data[tag] = texto
+                if tag == 'assumption.scope':
+                    # Directly set entryfunction with the assumption.scope value
+                    data['entryfunction'] = texto
+                else:
+                    data[tag] = texto
 
     return data
 
@@ -36,16 +41,27 @@ def create_metadata_file(data, filename):
     tree = ET.ElementTree(metadata)
     tree.write(filename, encoding='utf-8', xml_declaration=True)
 
-import re
-
-def create_testcase_file(data, filename):
+def create_testcase_file(assumptions, filename):
     testcase = ET.Element('testcase')
     testcase.set('coversError', 'true')
 
-    for value in data:
-        value = value.strip()
+    # Check if there are any assumptions
+    if not assumptions:
+        # If there are no assumptions, create an empty testcase.xml file
+        tree = ET.ElementTree(testcase)
+        tree.write(filename, encoding='utf-8', xml_declaration=True)
+        return
+
+    # Use a set to track unique assumption values
+    unique_assumptions = set()
+
+    for assumption in assumptions:
+        value = assumption.strip()
         number = re.findall(r'== (\d+)', value)[0]
-        ET.SubElement(testcase, 'input').text = number
+        # Check if the assumption value has already been processed
+        if number not in unique_assumptions:
+            ET.SubElement(testcase, 'input').text = number
+            unique_assumptions.add(number)  # Add the assumption value to the set
 
     tree = ET.ElementTree(testcase)
     tree.write(filename, encoding='utf-8', xml_declaration=True)
@@ -63,10 +79,20 @@ tags = [
  'programfile',
  'programhash',
  'architecture',
- 'assumption'
+ 'assumption',
 ]
 
 arquivo_xml = 'witness.graphml'
+assumptions = []
+
+# Extract assumptions separately
+for edge in ET.parse(arquivo_xml).getroot().iter('{http://graphml.graphdrawing.org/xmlns}edge'):
+    assumption_element = edge.find('{http://graphml.graphdrawing.org/xmlns}data[@key="assumption"]')
+    if assumption_element is not None:  # Check if the element exists
+        assumption_data = assumption_element.text
+        if assumption_data:
+            assumptions.append(assumption_data)
+
 
 # Create the directory if it doesn't exist
 if not os.path.exists('testsuite'):
@@ -74,10 +100,9 @@ if not os.path.exists('testsuite'):
 
 data = extrair_informacoes(arquivo_xml, tags)
 
-assumptions = []
-for edge in ET.parse(arquivo_xml).getroot().iter('{http://graphml.graphdrawing.org/xmlns}edge'):
-    assumption_data = edge.find('{http://graphml.graphdrawing.org/xmlns}data[@key="assumption"]').text
-    assumptions.append(assumption_data)
+# Ensure entryfunction is set to "main" if not already present
+if 'entryfunction' not in data:
+    data['entryfunction'] = 'main'
 
 create_metadata_file(data, os.path.join('testsuite', 'metadata.xml'))
 create_testcase_file(assumptions, os.path.join('testsuite', 'testcase.xml'))

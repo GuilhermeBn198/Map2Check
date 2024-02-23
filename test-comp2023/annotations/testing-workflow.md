@@ -56,7 +56,7 @@
       expected_verdict: true
     - property_file: ../properties/unreach-call.prp
       expected_verdict: false
-- **python3 esbmc-wrapper.py -p ../properties/coverage-error-call.prp ../sv-benchmarks/c/bitvector-regression/signextension2-2.C**
+- **python3 esbmc-wrapper.py -p ../properties/coverage-error-call.prp ../sv-benchmarks/c/bitvector-regression/signextension2-2.c**
   - RESULT: FAILED
   - generated test-suite: YES
   - apresenta testcase inputs: NO
