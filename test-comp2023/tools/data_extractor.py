@@ -45,11 +45,19 @@ def create_testcase_file(assumptions, filename):
     testcase = ET.Element('testcase')
     testcase.set('coversError', 'true')
 
+    # Add DOCTYPE declaration
+    doctype = '<!DOCTYPE testcase PUBLIC "+//IDN sosy-lab.org//DTD test-format testcase 1.1//EN" "https://sosy-lab.org/test-format/testcase-1.1.dtd">\n'
+
+    # Add XML declaration
+    xml_declaration = '<?xml version="1.0" encoding="utf-8"?>\n'
+
     # Check if there are any assumptions
     if not assumptions:
         # If there are no assumptions, create an empty testcase.xml file
-        tree = ET.ElementTree(testcase)
-        tree.write(filename, encoding='utf-8', xml_declaration=True)
+        with open(filename, 'w') as file:
+            file.write(xml_declaration)
+            file.write(doctype)
+            file.write(ET.tostring(testcase, encoding='unicode'))
         return
 
     # Use a set to track unique assumption values
@@ -63,8 +71,11 @@ def create_testcase_file(assumptions, filename):
             ET.SubElement(testcase, 'input').text = number
             unique_assumptions.add(number)  # Add the assumption value to the set
 
-    tree = ET.ElementTree(testcase)
-    tree.write(filename, encoding='utf-8', xml_declaration=True)
+    # Write to the file
+    with open(filename, 'w') as file:
+        file.write(xml_declaration)
+        file.write(doctype)
+        file.write(ET.tostring(testcase, encoding='unicode'))
 
 
 def create_zip_file(metadata_filename, testcase_filename):
