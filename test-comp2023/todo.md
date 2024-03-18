@@ -43,3 +43,10 @@
   - [x] Wrapper do map2check finalizado
   - [x] Prova de conceito do map2check no testcov
   - [ ] Validação massificada do map2check no testcov
+    - [x] pegar todos os testes
+    - [x] organizar planilha com os dados
+    - [x] fazer testes com o esbmc
+    - [x] adaptar testes para o map2check
+    - [ ] fazer testes com o map2check
+    - [ ] validar testes com o testcov
+    - [ ] comparar dados na planilha
