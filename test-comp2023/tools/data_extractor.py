@@ -78,6 +78,7 @@ def create_testcase_file(assumptions, filename):
         file.write(ET.tostring(testcase, encoding='unicode'))
 
 
+
 def create_zip_file(metadata_filename, testcase_filename):
     with zipfile.ZipFile('test-suite.zip', 'w') as zipf:
         zipf.write(metadata_filename, arcname='metadata.xml')
