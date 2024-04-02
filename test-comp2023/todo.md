@@ -39,7 +39,7 @@
   - [x] Acoplamento do script de extração de dados do map2check no wrapper da aplicação.
   - [x] Inicio dos testes com o testcov.
 
-- [ ] semana 01/03/2024 -- 15/03/2024
+- [x] semana 01/03/2024 -- 15/03/2024
   - [x] Wrapper do map2check finalizado
   - [x] Prova de conceito do map2check no testcov
   - [ ] Validação massificada do map2check no testcov
@@ -47,6 +47,13 @@
     - [x] organizar planilha com os dados
     - [x] fazer testes com o esbmc
     - [x] adaptar testes para o map2check
-    - [ ] fazer testes com o map2check
-    - [ ] validar testes com o testcov
-    - [ ] comparar dados na planilha
+    - [x] fazer testes com o map2check
+    - [x] validar testes com o testcov
+    - [x] comparar dados na planilha
+
+- [ ] semana 02/04/2024 ~~ 16/04/2024
+  - [ ] Quantificar resultados dos testes do Map2check
+  - [ ] pipeline de execução
+    - [ ] verificar no site da competição se o map2check ja está fazendo tudo possível para estar dentro da competição
+    - [ ] adicionar a execução do testcov dentro da execução do map2check_wrapper.py para produzir a validação tambem de uma vez só.
+  - [ ] Refazer o Flow de execução do TEST-COMP mais uma vez, de forma bonitinha para poder ser apresentado em paper.
