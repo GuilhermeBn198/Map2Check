@@ -26,9 +26,9 @@
     - [x] explicar como roda no TESTCOMP
   - [x] baixar os PRP do testcomp no site da competição junto dos arquivos C do benchmark(pasta properties)
 
-- [ ] semana 14/01/2024 ~~ 21/01/2024
-  - [ ] Inicio de redação do Relatório Parcial do projeto
-  - [ ] Redação do embasamento teórico de artigo relacionado
+- [x] semana 14/01/2024 ~~ 21/01/2024
+  - [x] Inicio de redação do Relatório Parcial do projeto
+  - [x] Redação do embasamento teórico de artigo relacionado
   - [x] Reiniciar testes com esbmc para comparar testcases gerados com os do map2check
   - [x] Aplicar os mesmos testes feitos no esbmc no map2check para ver o q é impresso no witness
   - [x] Verificar output do data_extractor se estiver de acordo com o output do esbmc
@@ -52,8 +52,8 @@
     - [x] comparar dados na planilha
 
 - [ ] semana 02/04/2024 ~~ 16/04/2024
-  - [ ] Quantificar resultados dos testes do Map2check
+  - [x] Quantificar resultados dos testes do Map2check
   - [ ] pipeline de execução
-    - [ ] verificar no site da competição se o map2check ja está fazendo tudo possível para estar dentro da competição
+    - [x] verificar no site da competição se o map2check ja está fazendo tudo possível para estar dentro da competição
     - [ ] adicionar a execução do testcov dentro da execução do map2check_wrapper.py para produzir a validação tambem de uma vez só.
   - [ ] Refazer o Flow de execução do TEST-COMP mais uma vez, de forma bonitinha para poder ser apresentado em paper.
