@@ -1,6 +1,24 @@
 # Anotações de modificações no map2check-wrapper.py
 
 ## **DECIDI POR NÃO FAZER UM ARGUMENTO INTEIRO SEPARADO POR MOTIVOS DE: SE AS PROPRIEDADES SÃO UNICAS PERANTE AS DUAS COMPETIÇÕES, NÃO É NECESSÁRIO TER UMA FLAG PARA IDENTICAÇÃO DAS COMPETIÇÕES VISTO QUE ELAS SÃO UNICAS.**
+
+```bash
+TESTCOMP! (2024)
+
+Bug Finding: COVER( init(main()), FQL(COVER EDGES(@CALL(__VERIFIER_error))) )  
+Coverage: COVER( init(main()), FQL(COVER EDGES(@DECISIONEDGE)) )    
+
+SVCOMP! (2024)
+
+CHECK( init(main()), LTL(G ! call(func())) )    
+CHECK( init(main()), LTL(G valid-free) )
+CHECK( init(main()), LTL(G valid-deref) )
+CHECK( init(main()), LTL(G valid-memtrack) )  
+CHECK( init(main()), LTL(G valid-memcleanup) )
+CHECK( init(main()), LTL(G ! overflow) )  
+CHECK( init(main()), LTL(G ! data-race) )    
+CHECK( init(main()), LTL(F end) )    
+```
   
 - Foi adicionado duas propriedades que são settadas True, caso a propriedade seja verificada(is_cov_call e is_cov_branches) (linhas 44 e 45)
   
