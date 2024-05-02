@@ -28,7 +28,11 @@
 
 - [x] semana 14/01/2024 ~~ 21/01/2024
   - [x] Inicio de redação do Relatório Parcial do projeto
+<<<<<<< Updated upstream
   - [x] Redação do embasamento teórico de artigo relacionado
+=======
+  - [ ] Redação do embasamento teórico de artigo relacionado
+>>>>>>> Stashed changes
   - [x] Reiniciar testes com esbmc para comparar testcases gerados com os do map2check
   - [x] Aplicar os mesmos testes feitos no esbmc no map2check para ver o q é impresso no witness
   - [x] Verificar output do data_extractor se estiver de acordo com o output do esbmc
@@ -42,7 +46,7 @@
 - [x] semana 01/03/2024 -- 15/03/2024
   - [x] Wrapper do map2check finalizado
   - [x] Prova de conceito do map2check no testcov
-  - [ ] Validação massificada do map2check no testcov
+  - [x] Validação massificada do map2check no testcov
     - [x] pegar todos os testes
     - [x] organizar planilha com os dados
     - [x] fazer testes com o esbmc
@@ -56,4 +60,8 @@
   - [ ] pipeline de execução
     - [x] verificar no site da competição se o map2check ja está fazendo tudo possível para estar dentro da competição
     - [ ] adicionar a execução do testcov dentro da execução do map2check_wrapper.py para produzir a validação tambem de uma vez só.
+<<<<<<< Updated upstream
   - [ ] Refazer o Flow de execução do TEST-COMP mais uma vez, de forma bonitinha para poder ser apresentado em paper.
+=======
+  - [ ] Refazer o Flow de execução do TEST-COMP mais uma vez, de forma bonitinha para poder ser apresentado em paper
+>>>>>>> Stashed changes
