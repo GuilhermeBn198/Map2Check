@@ -114,8 +114,8 @@ if b'failed external call: __map2check_main__' in stderr:
     args = shlex.split(command_line_bkp)
     p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     (stdout, stderr) = p.communicate()
-    print(stdout)
-    print(stderr)
+    # print(stdout)
+    # print(stderr)
 
 
 # Parse output
