@@ -1,4 +1,6 @@
 /esbmc
-/map2check
+/map2check/*
+!map2check/map2check-wrapper-modificado.py
+!map2check/map2check-wrapper.py
 /sv-benchmarks
 /testcov
