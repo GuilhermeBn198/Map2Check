@@ -1,0 +1,181 @@
+        -:    0:Source:output/instrumented_diamond_2-1.c
+        -:    0:Graph:output/a-harness.gcno
+        -:    0:Data:output/a-harness.gcda
+        -:    0:Runs:1
+        -:    1:#ifdef GCOV
+        -:    2:extern void __gcov_dump(void);
+        -:    3:#endif
+        -:    4:extern void abort(void);
+        -:    5:extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+function reach_error called 1 returned 0% blocks executed 100%
+        1:    6:void reach_error() {
+        -:    7:#ifdef GCOV
+        1:    8: __gcov_dump();
+call    0 returned 0
+        -:    9: #endif
+    #####:   10: __assert_fail("0", "diamond_2-1.c", 3, "reach_error"); }
+        -:   11:extern unsigned int __VERIFIER_nondet_uint(void);
+        -:   12:
+function __VERIFIER_assert called 1 returned 0% blocks executed 56%
+        1:   13:void __VERIFIER_assert(int cond) {
+        1:   14:  if (!(cond)) {
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   15:goto Goal_1;
+        1:   16:Goal_1:;
+        -:   17:
+        1:   18:    ERROR: {reach_error();{
+call    0 returned 0
+        -:   19:#ifdef GCOV
+    #####:   20:__gcov_dump();
+call    0 never executed
+        -:   21:#endif
+    #####:   22:abort();
+call    0 never executed
+        -:   23:}}
+        -:   24:  }
+        -:   25:   else { 
+    #####:   26:goto Goal_2;
+    #####:   27:Goal_2:;
+    #####:   28:}return;
+        -:   29:}
+        -:   30:
+function main called 1 returned 0% blocks executed 64%
+        1:   31:int main(void) {
+        1:   32:  unsigned int x = 0;
+        1:   33:  unsigned int y = __VERIFIER_nondet_uint();
+call    0 returned 1
+        -:   34:
+        2:   35:  while (x < 99) {
+branch  0 taken 1
+branch  1 taken 1 (fallthrough)
+        1:   36:goto Goal_3;
+        1:   37:Goal_3:;
+        -:   38:
+        1:   39:    if (y % 2 == 0) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   40:goto Goal_5;
+    #####:   41:Goal_5:;
+    #####:   42: x++;
+        -:   43:    } else {
+        1:   44:goto Goal_6;
+        1:   45:Goal_6:;
+        1:   46: x += 2;
+        -:   47:}
+        -:   48:
+        1:   49:    if (y % 2 == 0) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   50:goto Goal_7;
+    #####:   51:Goal_7:;
+    #####:   52: x += 2;
+        -:   53:    } else {
+        1:   54:goto Goal_8;
+        1:   55:Goal_8:;
+        1:   56: x -= 2;
+        -:   57:}
+        -:   58:
+        1:   59:    if (y % 2 == 0) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   60:goto Goal_9;
+    #####:   61:Goal_9:;
+    #####:   62: x += 2;
+        -:   63:    } else {
+        1:   64:goto Goal_10;
+        1:   65:Goal_10:;
+        1:   66: x += 2;
+        -:   67:}
+        -:   68:
+        1:   69:    if (y % 2 == 0) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   70:goto Goal_11;
+    #####:   71:Goal_11:;
+    #####:   72: x += 2;
+        -:   73:    } else {
+        1:   74:goto Goal_12;
+        1:   75:Goal_12:;
+        1:   76: x -= 2;
+        -:   77:}
+        -:   78:
+        1:   79:    if (y % 2 == 0) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   80:goto Goal_13;
+    #####:   81:Goal_13:;
+    #####:   82: x += 2;
+        -:   83:    } else {
+        1:   84:goto Goal_14;
+        1:   85:Goal_14:;
+        1:   86: x += 2;
+        -:   87:}
+        -:   88:
+        1:   89:    if (y % 2 == 0) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   90:goto Goal_15;
+    #####:   91:Goal_15:;
+    #####:   92: x += 2;
+        -:   93:    } else {
+        1:   94:goto Goal_16;
+        1:   95:Goal_16:;
+        1:   96: x -= 4;
+        -:   97:}
+        -:   98:
+        1:   99:    if (y % 2 == 0) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  100:goto Goal_17;
+    #####:  101:Goal_17:;
+    #####:  102: x += 2;
+        -:  103:    } else {
+        1:  104:goto Goal_18;
+        1:  105:Goal_18:;
+        1:  106: x += 4;
+        -:  107:}
+        -:  108:
+        1:  109:    if (y % 2 == 0) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  110:goto Goal_19;
+    #####:  111:Goal_19:;
+    #####:  112: x += 2;
+        -:  113:    } else {
+        1:  114:goto Goal_20;
+        1:  115:Goal_20:;
+        1:  116: x += 2;
+        -:  117:}
+        -:  118:
+        1:  119:    if (y % 2 == 0) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  120:goto Goal_21;
+    #####:  121:Goal_21:;
+    #####:  122: x += 2;
+        -:  123:    } else {
+        1:  124:goto Goal_22;
+        1:  125:Goal_22:;
+        1:  126: x -= 4;
+        -:  127:}
+        -:  128:
+        1:  129:    if (y % 2 == 0) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  130:goto Goal_23;
+    #####:  131:Goal_23:;
+    #####:  132: x += 2;
+        -:  133:    } else {
+        1:  134:goto Goal_24;
+        1:  135:Goal_24:;
+        1:  136: x -= 4;
+        -:  137:}
+        -:  138:  }
+        -:  139:
+        -:  140:  
+        1:  141:goto Goal_4;
+        1:  142:Goal_4:;
+        1:  143:__VERIFIER_assert((x % 2) == (y % 2));
+call    0 returned 0
+        -:  144:}

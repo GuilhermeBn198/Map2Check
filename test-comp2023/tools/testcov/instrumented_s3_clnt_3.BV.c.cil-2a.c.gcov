@@ -1,0 +1,1419 @@
+        -:    0:Source:output/instrumented_s3_clnt_3.BV.c.cil-2a.c
+        -:    0:Graph:output/a-harness.gcno
+        -:    0:Data:output/a-harness.gcda
+        -:    0:Runs:1
+        -:    1:#ifdef GCOV
+        -:    2:extern void __gcov_dump(void);
+        -:    3:#endif
+        -:    4:extern void abort(void);
+        -:    5:extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+function reach_error called 0 returned 0% blocks executed 0%
+    #####:    6:void reach_error() {
+        -:    7:#ifdef GCOV
+    #####:    8: __gcov_dump();
+call    0 never executed
+        -:    9: #endif
+    #####:   10: __assert_fail("0", "s3_clnt_3.BV.c.cil-2a.c", 3, "reach_error"); }
+        -:   11:
+        -:   12:extern int __VERIFIER_nondet_int(void);
+        -:   13:extern unsigned int __VERIFIER_nondet_uint(void);
+        -:   14:
+        -:   15:
+        -:   16:
+function ssl3_connect called 1 returned 0% blocks executed 1%
+        1:   17:int ssl3_connect(void)
+        1:   18:{ int s__info_callback = __VERIFIER_nondet_int();
+call    0 returned 0
+    #####:   19:  unsigned int s__in_handshake = __VERIFIER_nondet_uint();
+call    0 never executed
+        -:   20:  int s__state ;
+        -:   21:  int s__new_session ;
+        -:   22:  int s__server ;
+    #####:   23:  unsigned int s__version = __VERIFIER_nondet_uint();
+call    0 never executed
+        -:   24:  int s__type ;
+        -:   25:  int s__init_num ;
+    #####:   26:  int s__bbio = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:   27:  int s__wbio = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:   28:  int s__hit = __VERIFIER_nondet_int();
+call    0 never executed
+        -:   29:  int s__rwstate ;
+    #####:   30:  int s__init_buf___0 = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:   31:  int s__debug = __VERIFIER_nondet_int();
+call    0 never executed
+        -:   32:  int s__shutdown ;
+    #####:   33:  int s__ctx__info_callback = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:   34:  unsigned int s__ctx__stats__sess_connect_renegotiate = __VERIFIER_nondet_uint();
+call    0 never executed
+    #####:   35:  unsigned int s__ctx__stats__sess_connect = __VERIFIER_nondet_uint();
+call    0 never executed
+    #####:   36:  unsigned int s__ctx__stats__sess_hit = __VERIFIER_nondet_uint();
+call    0 never executed
+    #####:   37:  unsigned int s__ctx__stats__sess_connect_good = __VERIFIER_nondet_uint();
+call    0 never executed
+        -:   38:  int s__s3__change_cipher_spec ;
+    #####:   39:  int s__s3__flags = __VERIFIER_nondet_int();
+call    0 never executed
+        -:   40:  int s__s3__delay_buf_pop_ret ;
+    #####:   41:  int s__s3__tmp__cert_req = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:   42:  int s__s3__tmp__new_compression = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:   43:  int s__s3__tmp__reuse_message = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:   44:  int s__s3__tmp__new_cipher = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:   45:  int s__s3__tmp__new_cipher__algorithms = __VERIFIER_nondet_int();
+call    0 never executed
+        -:   46:  int s__s3__tmp__next_state___0 ;
+    #####:   47:  int s__s3__tmp__new_compression__id = __VERIFIER_nondet_int();
+call    0 never executed
+        -:   48:  int s__session__cipher ;
+        -:   49:  int s__session__compress_meth ;
+        -:   50:  int buf ;
+        -:   51:  unsigned long tmp ;
+        -:   52:  unsigned long l ;
+    #####:   53:  int num1 = __VERIFIER_nondet_int();
+call    0 never executed
+        -:   54:  int cb ;
+        -:   55:  int ret ;
+        -:   56:  int new_state ;
+        -:   57:  int state ;
+        -:   58:  int skip ;
+        -:   59:  int tmp___0 ;
+    #####:   60:  unsigned int tmp___1 = __VERIFIER_nondet_uint();
+call    0 never executed
+    #####:   61:  unsigned int tmp___2 = __VERIFIER_nondet_uint();
+call    0 never executed
+    #####:   62:  int tmp___3 = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:   63:  int tmp___4 = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:   64:  int tmp___5 = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:   65:  int tmp___6 = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:   66:  int tmp___7 = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:   67:  int tmp___8 = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:   68:  int tmp___9 = __VERIFIER_nondet_int();
+call    0 never executed
+        -:   69:  int blastFlag ;
+        -:   70:  int ag_X ;
+        -:   71:  int ag_Y ;
+        -:   72:  int ag_Z ;
+        -:   73:  int __retres60 ;
+        -:   74:
+        -:   75:  {
+    #####:   76:  s__state = 12292;
+    #####:   77:  blastFlag = 0;
+    #####:   78:  tmp = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:   79:  cb = 0;
+    #####:   80:  ret = -1;
+    #####:   81:  skip = 0;
+    #####:   82:  tmp___0 = 0;
+    #####:   83:  if (s__info_callback != 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:   84:goto Goal_1;
+    #####:   85:Goal_1:;
+        -:   86:
+    #####:   87:    cb = s__info_callback;
+        -:   88:  } else {
+    #####:   89:goto Goal_2;
+    #####:   90:Goal_2:;
+        -:   91:
+    #####:   92:    if (s__ctx__info_callback != 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:   93:goto Goal_3;
+    #####:   94:Goal_3:;
+        -:   95:
+    #####:   96:      cb = s__ctx__info_callback;
+        -:   97:    } else {
+    #####:   98:goto Goal_4;
+    #####:   99:Goal_4:;
+        -:  100:
+        -:  101:
+        -:  102:    }
+        -:  103:  }
+    #####:  104:  s__in_handshake = s__in_handshake + 1;
+    #####:  105:  if (tmp___1 + 12288) {
+branch  0 never executed
+branch  1 never executed
+    #####:  106:goto Goal_5;
+    #####:  107:Goal_5:;
+        -:  108:
+    #####:  109:    if (tmp___2 + 16384) {
+branch  0 never executed
+branch  1 never executed
+    #####:  110:goto Goal_7;
+    #####:  111:Goal_7:;
+        -:  112:
+        -:  113:
+        -:  114:    } else {
+    #####:  115:goto Goal_8;
+    #####:  116:Goal_8:;
+        -:  117:
+        -:  118:
+        -:  119:    }
+        -:  120:  } else {
+    #####:  121:goto Goal_6;
+    #####:  122:Goal_6:;
+        -:  123:
+        -:  124:
+        -:  125:  }
+    #####:  126:  if (s__hit) {
+branch  0 never executed
+branch  1 never executed
+    #####:  127:goto Goal_9;
+    #####:  128:Goal_9:;
+        -:  129:
+    #####:  130:    ag_Y = 208;
+        -:  131:  } else {
+    #####:  132:goto Goal_10;
+    #####:  133:Goal_10:;
+        -:  134:
+    #####:  135:    ag_Z = 48;
+        -:  136:  }
+        -:  137:  {
+        -:  138:  while (1) {
+    #####:  139:goto Goal_11;
+    #####:  140:Goal_11:;
+        -:  141:
+    #####:  142:    while_0_continue: ;
+    #####:  143:    state = s__state;
+    #####:  144:    if (s__state == 12292) {
+branch  0 never executed
+branch  1 never executed
+    #####:  145:goto Goal_13;
+    #####:  146:Goal_13:;
+        -:  147:
+    #####:  148:      goto switch_1_12292;
+        -:  149:    } else {
+    #####:  150:goto Goal_14;
+    #####:  151:Goal_14:;
+        -:  152:
+    #####:  153:      if (s__state == 16384) {
+branch  0 never executed
+branch  1 never executed
+    #####:  154:goto Goal_15;
+    #####:  155:Goal_15:;
+        -:  156:
+    #####:  157:        goto switch_1_16384;
+        -:  158:      } else {
+    #####:  159:goto Goal_16;
+    #####:  160:Goal_16:;
+        -:  161:
+    #####:  162:        if (s__state == 4096) {
+branch  0 never executed
+branch  1 never executed
+    #####:  163:goto Goal_17;
+    #####:  164:Goal_17:;
+        -:  165:
+    #####:  166:          goto switch_1_4096;
+        -:  167:        } else {
+    #####:  168:goto Goal_18;
+    #####:  169:Goal_18:;
+        -:  170:
+    #####:  171:          if (s__state == 20480) {
+branch  0 never executed
+branch  1 never executed
+    #####:  172:goto Goal_19;
+    #####:  173:Goal_19:;
+        -:  174:
+    #####:  175:            goto switch_1_20480;
+        -:  176:          } else {
+    #####:  177:goto Goal_20;
+    #####:  178:Goal_20:;
+        -:  179:
+    #####:  180:            if (s__state == 4099) {
+branch  0 never executed
+branch  1 never executed
+    #####:  181:goto Goal_21;
+    #####:  182:Goal_21:;
+        -:  183:
+    #####:  184:              goto switch_1_4099;
+        -:  185:            } else {
+    #####:  186:goto Goal_22;
+    #####:  187:Goal_22:;
+        -:  188:
+    #####:  189:              if (s__state == 4368) {
+branch  0 never executed
+branch  1 never executed
+    #####:  190:goto Goal_23;
+    #####:  191:Goal_23:;
+        -:  192:
+    #####:  193:                goto switch_1_4368;
+        -:  194:              } else {
+    #####:  195:goto Goal_24;
+    #####:  196:Goal_24:;
+        -:  197:
+    #####:  198:                if (s__state == 4369) {
+branch  0 never executed
+branch  1 never executed
+    #####:  199:goto Goal_25;
+    #####:  200:Goal_25:;
+        -:  201:
+    #####:  202:                  goto switch_1_4369;
+        -:  203:                } else {
+    #####:  204:goto Goal_26;
+    #####:  205:Goal_26:;
+        -:  206:
+    #####:  207:                  if (s__state == 4384) {
+branch  0 never executed
+branch  1 never executed
+    #####:  208:goto Goal_27;
+    #####:  209:Goal_27:;
+        -:  210:
+    #####:  211:                    goto switch_1_4384;
+        -:  212:                  } else {
+    #####:  213:goto Goal_28;
+    #####:  214:Goal_28:;
+        -:  215:
+    #####:  216:                    if (s__state == 4385) {
+branch  0 never executed
+branch  1 never executed
+    #####:  217:goto Goal_29;
+    #####:  218:Goal_29:;
+        -:  219:
+    #####:  220:                      goto switch_1_4385;
+        -:  221:                    } else {
+    #####:  222:goto Goal_30;
+    #####:  223:Goal_30:;
+        -:  224:
+    #####:  225:                      if (s__state == 4400) {
+branch  0 never executed
+branch  1 never executed
+    #####:  226:goto Goal_31;
+    #####:  227:Goal_31:;
+        -:  228:
+    #####:  229:                        goto switch_1_4400;
+        -:  230:                      } else {
+    #####:  231:goto Goal_32;
+    #####:  232:Goal_32:;
+        -:  233:
+    #####:  234:                        if (s__state == 4401) {
+branch  0 never executed
+branch  1 never executed
+    #####:  235:goto Goal_33;
+    #####:  236:Goal_33:;
+        -:  237:
+    #####:  238:                          goto switch_1_4401;
+        -:  239:                        } else {
+    #####:  240:goto Goal_34;
+    #####:  241:Goal_34:;
+        -:  242:
+    #####:  243:                          if (s__state == 4416) {
+branch  0 never executed
+branch  1 never executed
+    #####:  244:goto Goal_35;
+    #####:  245:Goal_35:;
+        -:  246:
+    #####:  247:                            goto switch_1_4416;
+        -:  248:                          } else {
+    #####:  249:goto Goal_36;
+    #####:  250:Goal_36:;
+        -:  251:
+    #####:  252:                            if (s__state == 4417) {
+branch  0 never executed
+branch  1 never executed
+    #####:  253:goto Goal_37;
+    #####:  254:Goal_37:;
+        -:  255:
+    #####:  256:                              goto switch_1_4417;
+        -:  257:                            } else {
+    #####:  258:goto Goal_38;
+    #####:  259:Goal_38:;
+        -:  260:
+    #####:  261:                              if (s__state == 4432) {
+branch  0 never executed
+branch  1 never executed
+    #####:  262:goto Goal_39;
+    #####:  263:Goal_39:;
+        -:  264:
+    #####:  265:                                goto switch_1_4432;
+        -:  266:                              } else {
+    #####:  267:goto Goal_40;
+    #####:  268:Goal_40:;
+        -:  269:
+    #####:  270:                                if (s__state == 4433) {
+branch  0 never executed
+branch  1 never executed
+    #####:  271:goto Goal_41;
+    #####:  272:Goal_41:;
+        -:  273:
+    #####:  274:                                  goto switch_1_4433;
+        -:  275:                                } else {
+    #####:  276:goto Goal_42;
+    #####:  277:Goal_42:;
+        -:  278:
+    #####:  279:                                  if (s__state == 4448) {
+branch  0 never executed
+branch  1 never executed
+    #####:  280:goto Goal_43;
+    #####:  281:Goal_43:;
+        -:  282:
+    #####:  283:                                    goto switch_1_4448;
+        -:  284:                                  } else {
+    #####:  285:goto Goal_44;
+    #####:  286:Goal_44:;
+        -:  287:
+    #####:  288:                                    if (s__state == 4449) {
+branch  0 never executed
+branch  1 never executed
+    #####:  289:goto Goal_45;
+    #####:  290:Goal_45:;
+        -:  291:
+    #####:  292:                                      goto switch_1_4449;
+        -:  293:                                    } else {
+    #####:  294:goto Goal_46;
+    #####:  295:Goal_46:;
+        -:  296:
+    #####:  297:                                      if (s__state == 4464) {
+branch  0 never executed
+branch  1 never executed
+    #####:  298:goto Goal_47;
+    #####:  299:Goal_47:;
+        -:  300:
+    #####:  301:                                        goto switch_1_4464;
+        -:  302:                                      } else {
+    #####:  303:goto Goal_48;
+    #####:  304:Goal_48:;
+        -:  305:
+    #####:  306:                                        if (s__state == 4465) {
+branch  0 never executed
+branch  1 never executed
+    #####:  307:goto Goal_49;
+    #####:  308:Goal_49:;
+        -:  309:
+    #####:  310:                                          goto switch_1_4465;
+        -:  311:                                        } else {
+    #####:  312:goto Goal_50;
+    #####:  313:Goal_50:;
+        -:  314:
+    #####:  315:                                          if (s__state == 4466) {
+branch  0 never executed
+branch  1 never executed
+    #####:  316:goto Goal_51;
+    #####:  317:Goal_51:;
+        -:  318:
+    #####:  319:                                            goto switch_1_4466;
+        -:  320:                                          } else {
+    #####:  321:goto Goal_52;
+    #####:  322:Goal_52:;
+        -:  323:
+    #####:  324:                                            if (s__state == 4467) {
+branch  0 never executed
+branch  1 never executed
+    #####:  325:goto Goal_53;
+    #####:  326:Goal_53:;
+        -:  327:
+    #####:  328:                                              goto switch_1_4467;
+        -:  329:                                            } else {
+    #####:  330:goto Goal_54;
+    #####:  331:Goal_54:;
+        -:  332:
+    #####:  333:                                              if (s__state == 4480) {
+branch  0 never executed
+branch  1 never executed
+    #####:  334:goto Goal_55;
+    #####:  335:Goal_55:;
+        -:  336:
+    #####:  337:                                                goto switch_1_4480;
+        -:  338:                                              } else {
+    #####:  339:goto Goal_56;
+    #####:  340:Goal_56:;
+        -:  341:
+    #####:  342:                                                if (s__state == 4481) {
+branch  0 never executed
+branch  1 never executed
+    #####:  343:goto Goal_57;
+    #####:  344:Goal_57:;
+        -:  345:
+    #####:  346:                                                  goto switch_1_4481;
+        -:  347:                                                } else {
+    #####:  348:goto Goal_58;
+    #####:  349:Goal_58:;
+        -:  350:
+    #####:  351:                                                  if (s__state == 4496) {
+branch  0 never executed
+branch  1 never executed
+    #####:  352:goto Goal_59;
+    #####:  353:Goal_59:;
+        -:  354:
+    #####:  355:                                                    goto switch_1_4496;
+        -:  356:                                                  } else {
+    #####:  357:goto Goal_60;
+    #####:  358:Goal_60:;
+        -:  359:
+    #####:  360:                                                    if (s__state == 4497) {
+branch  0 never executed
+branch  1 never executed
+    #####:  361:goto Goal_61;
+    #####:  362:Goal_61:;
+        -:  363:
+    #####:  364:                                                      goto switch_1_4497;
+        -:  365:                                                    } else {
+    #####:  366:goto Goal_62;
+    #####:  367:Goal_62:;
+        -:  368:
+    #####:  369:                                                      if (s__state == 4512) {
+branch  0 never executed
+branch  1 never executed
+    #####:  370:goto Goal_63;
+    #####:  371:Goal_63:;
+        -:  372:
+    #####:  373:                                                        goto switch_1_4512;
+        -:  374:                                                      } else {
+    #####:  375:goto Goal_64;
+    #####:  376:Goal_64:;
+        -:  377:
+    #####:  378:                                                        if (s__state == 4513) {
+branch  0 never executed
+branch  1 never executed
+    #####:  379:goto Goal_65;
+    #####:  380:Goal_65:;
+        -:  381:
+    #####:  382:                                                          goto switch_1_4513;
+        -:  383:                                                        } else {
+    #####:  384:goto Goal_66;
+    #####:  385:Goal_66:;
+        -:  386:
+    #####:  387:                                                          if (s__state == 4528) {
+branch  0 never executed
+branch  1 never executed
+    #####:  388:goto Goal_67;
+    #####:  389:Goal_67:;
+        -:  390:
+    #####:  391:                                                            goto switch_1_4528;
+        -:  392:                                                          } else {
+    #####:  393:goto Goal_68;
+    #####:  394:Goal_68:;
+        -:  395:
+    #####:  396:                                                            if (s__state == 4529) {
+branch  0 never executed
+branch  1 never executed
+    #####:  397:goto Goal_69;
+    #####:  398:Goal_69:;
+        -:  399:
+    #####:  400:                                                              goto switch_1_4529;
+        -:  401:                                                            } else {
+    #####:  402:goto Goal_70;
+    #####:  403:Goal_70:;
+        -:  404:
+    #####:  405:                                                              if (s__state == 4560) {
+branch  0 never executed
+branch  1 never executed
+    #####:  406:goto Goal_71;
+    #####:  407:Goal_71:;
+        -:  408:
+    #####:  409:                                                                goto switch_1_4560;
+        -:  410:                                                              } else {
+    #####:  411:goto Goal_72;
+    #####:  412:Goal_72:;
+        -:  413:
+    #####:  414:                                                                if (s__state == 4561) {
+branch  0 never executed
+branch  1 never executed
+    #####:  415:goto Goal_73;
+    #####:  416:Goal_73:;
+        -:  417:
+    #####:  418:                                                                  goto switch_1_4561;
+        -:  419:                                                                } else {
+    #####:  420:goto Goal_74;
+    #####:  421:Goal_74:;
+        -:  422:
+    #####:  423:                                                                  if (s__state == 4352) {
+branch  0 never executed
+branch  1 never executed
+    #####:  424:goto Goal_75;
+    #####:  425:Goal_75:;
+        -:  426:
+    #####:  427:                                                                    goto switch_1_4352;
+        -:  428:                                                                  } else {
+    #####:  429:goto Goal_76;
+    #####:  430:Goal_76:;
+        -:  431:
+    #####:  432:                                                                    if (s__state == 3) {
+branch  0 never executed
+branch  1 never executed
+    #####:  433:goto Goal_77;
+    #####:  434:Goal_77:;
+        -:  435:
+    #####:  436:                                                                      goto switch_1_3;
+        -:  437:                                                                    } else {
+    #####:  438:goto Goal_78;
+    #####:  439:Goal_78:;
+        -:  440:
+        -:  441:                                                                      {
+    #####:  442:                                                                      goto switch_1_default;
+        -:  443:                                                                      if (0) {
+        -:  444:goto Goal_79;
+        -:  445:Goal_79:;
+        -:  446:
+    #####:  447:                                                                        switch_1_12292:
+    #####:  448:                                                                        s__new_session = 1;
+    #####:  449:                                                                        s__state = 4096;
+    #####:  450:                                                                        s__ctx__stats__sess_connect_renegotiate = s__ctx__stats__sess_connect_renegotiate + 1;
+    #####:  451:                                                                        switch_1_16384: ;
+    #####:  452:                                                                        switch_1_4096: ;
+    #####:  453:                                                                        switch_1_20480: ;
+    #####:  454:                                                                        switch_1_4099:
+    #####:  455:                                                                        s__server = 0;
+    #####:  456:                                                                        if (cb != 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  457:goto Goal_81;
+    #####:  458:Goal_81:;
+        -:  459:
+        -:  460:
+        -:  461:                                                                        } else {
+    #####:  462:goto Goal_82;
+    #####:  463:Goal_82:;
+        -:  464:
+        -:  465:
+        -:  466:                                                                        }
+    #####:  467:                                                                        if (s__version + 65280 != 768) {
+branch  0 never executed
+branch  1 never executed
+    #####:  468:goto Goal_83;
+    #####:  469:Goal_83:;
+        -:  470:
+    #####:  471:                                                                          ret = -1;
+    #####:  472:                                                                          goto end;
+        -:  473:                                                                        } else {
+    #####:  474:goto Goal_84;
+    #####:  475:Goal_84:;
+        -:  476:
+        -:  477:
+        -:  478:                                                                        }
+    #####:  479:                                                                        s__type = 4096;
+    #####:  480:                                                                        if ((unsigned long )s__init_buf___0 == (unsigned long )((void *)0)) {
+branch  0 never executed
+branch  1 never executed
+    #####:  481:goto Goal_85;
+    #####:  482:Goal_85:;
+        -:  483:
+    #####:  484:                                                                          buf = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:  485:                                                                          if ((unsigned long )buf == (unsigned long )((void *)0)) {
+branch  0 never executed
+branch  1 never executed
+    #####:  486:goto Goal_87;
+    #####:  487:Goal_87:;
+        -:  488:
+    #####:  489:                                                                            ret = -1;
+    #####:  490:                                                                            goto end;
+        -:  491:                                                                          } else {
+    #####:  492:goto Goal_88;
+    #####:  493:Goal_88:;
+        -:  494:
+        -:  495:
+        -:  496:                                                                          }
+    #####:  497:                                                                          if (! tmp___3) {
+branch  0 never executed
+branch  1 never executed
+    #####:  498:goto Goal_89;
+    #####:  499:Goal_89:;
+        -:  500:
+    #####:  501:                                                                            ret = -1;
+    #####:  502:                                                                            goto end;
+        -:  503:                                                                          } else {
+    #####:  504:goto Goal_90;
+    #####:  505:Goal_90:;
+        -:  506:
+        -:  507:
+        -:  508:                                                                          }
+    #####:  509:                                                                          s__init_buf___0 = buf;
+        -:  510:                                                                        } else {
+    #####:  511:goto Goal_86;
+    #####:  512:Goal_86:;
+        -:  513:
+        -:  514:
+        -:  515:                                                                        }
+    #####:  516:                                                                        if (! tmp___4) {
+branch  0 never executed
+branch  1 never executed
+    #####:  517:goto Goal_91;
+    #####:  518:Goal_91:;
+        -:  519:
+    #####:  520:                                                                          ret = -1;
+    #####:  521:                                                                          goto end;
+        -:  522:                                                                        } else {
+    #####:  523:goto Goal_92;
+    #####:  524:Goal_92:;
+        -:  525:
+        -:  526:
+        -:  527:                                                                        }
+    #####:  528:                                                                        if (! tmp___5) {
+branch  0 never executed
+branch  1 never executed
+    #####:  529:goto Goal_93;
+    #####:  530:Goal_93:;
+        -:  531:
+    #####:  532:                                                                          ret = -1;
+    #####:  533:                                                                          goto end;
+        -:  534:                                                                        } else {
+    #####:  535:goto Goal_94;
+    #####:  536:Goal_94:;
+        -:  537:
+        -:  538:
+        -:  539:                                                                        }
+    #####:  540:                                                                        s__state = 4368;
+    #####:  541:                                                                        s__ctx__stats__sess_connect = s__ctx__stats__sess_connect + 1;
+    #####:  542:                                                                        s__init_num = 0;
+    #####:  543:                                                                        goto switch_1_break;
+    #####:  544:                                                                        switch_1_4368: ;
+    #####:  545:                                                                        switch_1_4369:
+    #####:  546:                                                                        s__shutdown = 0;
+    #####:  547:                                                                        ret = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:  548:                                                                        if (blastFlag == 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  549:goto Goal_95;
+    #####:  550:Goal_95:;
+        -:  551:
+    #####:  552:                                                                          blastFlag = 1;
+        -:  553:                                                                        } else {
+    #####:  554:goto Goal_96;
+    #####:  555:Goal_96:;
+        -:  556:
+        -:  557:
+        -:  558:                                                                        }
+    #####:  559:                                                                        if (ret <= 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  560:goto Goal_97;
+    #####:  561:Goal_97:;
+        -:  562:
+    #####:  563:                                                                          goto end;
+        -:  564:                                                                        } else {
+    #####:  565:goto Goal_98;
+    #####:  566:Goal_98:;
+        -:  567:
+        -:  568:
+        -:  569:                                                                        }
+    #####:  570:                                                                        s__state = 4384;
+    #####:  571:                                                                        ag_X = s__state - 32;
+    #####:  572:                                                                        s__init_num = 0;
+    #####:  573:                                                                        if ((unsigned long )s__bbio != (unsigned long )s__wbio) {
+branch  0 never executed
+branch  1 never executed
+    #####:  574:goto Goal_99;
+    #####:  575:Goal_99:;
+        -:  576:
+        -:  577:
+        -:  578:                                                                        } else {
+    #####:  579:goto Goal_100;
+    #####:  580:Goal_100:;
+        -:  581:
+        -:  582:
+        -:  583:                                                                        }
+    #####:  584:                                                                        goto switch_1_break;
+    #####:  585:                                                                        switch_1_4384: ;
+    #####:  586:                                                                        switch_1_4385:
+    #####:  587:                                                                        ret = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:  588:                                                                        if (blastFlag == 1) {
+branch  0 never executed
+branch  1 never executed
+    #####:  589:goto Goal_101;
+    #####:  590:Goal_101:;
+        -:  591:
+    #####:  592:                                                                          blastFlag = 2;
+        -:  593:                                                                        } else {
+    #####:  594:goto Goal_102;
+    #####:  595:Goal_102:;
+        -:  596:
+    #####:  597:                                                                          if (blastFlag == 4) {
+branch  0 never executed
+branch  1 never executed
+    #####:  598:goto Goal_103;
+    #####:  599:Goal_103:;
+        -:  600:
+    #####:  601:                                                                            blastFlag = 5;
+        -:  602:                                                                          } else {
+    #####:  603:goto Goal_104;
+    #####:  604:Goal_104:;
+        -:  605:
+        -:  606:
+        -:  607:                                                                          }
+        -:  608:                                                                        }
+    #####:  609:                                                                        if (ret <= 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  610:goto Goal_105;
+    #####:  611:Goal_105:;
+        -:  612:
+    #####:  613:                                                                          goto end;
+        -:  614:                                                                        } else {
+    #####:  615:goto Goal_106;
+    #####:  616:Goal_106:;
+        -:  617:
+        -:  618:
+        -:  619:                                                                        }
+    #####:  620:                                                                        s__state = ag_X;
+    #####:  621:                                                                        if (s__hit) {
+branch  0 never executed
+branch  1 never executed
+    #####:  622:goto Goal_107;
+    #####:  623:Goal_107:;
+        -:  624:
+    #####:  625:                                                                          s__state = s__state | ag_Y;
+        -:  626:                                                                        } else {
+    #####:  627:goto Goal_108;
+    #####:  628:Goal_108:;
+        -:  629:
+    #####:  630:                                                                          s__state = s__state | ag_Z;
+        -:  631:                                                                        }
+    #####:  632:                                                                        s__init_num = 0;
+    #####:  633:                                                                        goto switch_1_break;
+    #####:  634:                                                                        switch_1_4400: ;
+    #####:  635:                                                                        switch_1_4401: ;
+    #####:  636:                                                                        if ((unsigned long )s__s3__tmp__new_cipher__algorithms + 256UL) {
+branch  0 never executed
+branch  1 never executed
+    #####:  637:goto Goal_109;
+    #####:  638:Goal_109:;
+        -:  639:
+    #####:  640:                                                                          skip = 1;
+        -:  641:                                                                        } else {
+    #####:  642:goto Goal_110;
+    #####:  643:Goal_110:;
+        -:  644:
+    #####:  645:                                                                          ret = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:  646:                                                                          if (blastFlag == 2) {
+branch  0 never executed
+branch  1 never executed
+    #####:  647:goto Goal_111;
+    #####:  648:Goal_111:;
+        -:  649:
+    #####:  650:                                                                            blastFlag = 3;
+        -:  651:                                                                          } else {
+    #####:  652:goto Goal_112;
+    #####:  653:Goal_112:;
+        -:  654:
+        -:  655:
+        -:  656:                                                                          }
+    #####:  657:                                                                          if (ret <= 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  658:goto Goal_113;
+    #####:  659:Goal_113:;
+        -:  660:
+    #####:  661:                                                                            goto end;
+        -:  662:                                                                          } else {
+    #####:  663:goto Goal_114;
+    #####:  664:Goal_114:;
+        -:  665:
+        -:  666:
+        -:  667:                                                                          }
+        -:  668:                                                                        }
+    #####:  669:                                                                        s__state = 4416;
+    #####:  670:                                                                        s__init_num = 0;
+    #####:  671:                                                                        goto switch_1_break;
+    #####:  672:                                                                        switch_1_4416: ;
+    #####:  673:                                                                        switch_1_4417:
+    #####:  674:                                                                        ret = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:  675:                                                                        if (blastFlag == 3) {
+branch  0 never executed
+branch  1 never executed
+    #####:  676:goto Goal_115;
+    #####:  677:Goal_115:;
+        -:  678:
+    #####:  679:                                                                          blastFlag = 4;
+        -:  680:                                                                        } else {
+    #####:  681:goto Goal_116;
+    #####:  682:Goal_116:;
+        -:  683:
+        -:  684:
+        -:  685:                                                                        }
+    #####:  686:                                                                        if (ret <= 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  687:goto Goal_117;
+    #####:  688:Goal_117:;
+        -:  689:
+    #####:  690:                                                                          goto end;
+        -:  691:                                                                        } else {
+    #####:  692:goto Goal_118;
+    #####:  693:Goal_118:;
+        -:  694:
+        -:  695:
+        -:  696:                                                                        }
+    #####:  697:                                                                        s__state = 4432;
+    #####:  698:                                                                        s__init_num = 0;
+    #####:  699:                                                                        if (! tmp___6) {
+branch  0 never executed
+branch  1 never executed
+    #####:  700:goto Goal_119;
+    #####:  701:Goal_119:;
+        -:  702:
+    #####:  703:                                                                          ret = -1;
+    #####:  704:                                                                          goto end;
+        -:  705:                                                                        } else {
+    #####:  706:goto Goal_120;
+    #####:  707:Goal_120:;
+        -:  708:
+        -:  709:
+        -:  710:                                                                        }
+    #####:  711:                                                                        goto switch_1_break;
+    #####:  712:                                                                        switch_1_4432: ;
+    #####:  713:                                                                        switch_1_4433:
+    #####:  714:                                                                        ret = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:  715:                                                                        if (blastFlag <= 5) {
+branch  0 never executed
+branch  1 never executed
+    #####:  716:goto Goal_121;
+    #####:  717:Goal_121:;
+        -:  718:
+    #####:  719:                                                                          goto ERROR;
+        -:  720:                                                                        } else {
+    #####:  721:goto Goal_122;
+    #####:  722:Goal_122:;
+        -:  723:
+        -:  724:
+        -:  725:                                                                        }
+    #####:  726:                                                                        if (ret <= 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  727:goto Goal_123;
+    #####:  728:Goal_123:;
+        -:  729:
+    #####:  730:                                                                          goto end;
+        -:  731:                                                                        } else {
+    #####:  732:goto Goal_124;
+    #####:  733:Goal_124:;
+        -:  734:
+        -:  735:
+        -:  736:                                                                        }
+    #####:  737:                                                                        s__state = 4448;
+    #####:  738:                                                                        s__init_num = 0;
+    #####:  739:                                                                        goto switch_1_break;
+    #####:  740:                                                                        switch_1_4448: ;
+    #####:  741:                                                                        switch_1_4449:
+    #####:  742:                                                                        ret = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:  743:                                                                        if (ret <= 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  744:goto Goal_125;
+    #####:  745:Goal_125:;
+        -:  746:
+    #####:  747:                                                                          goto end;
+        -:  748:                                                                        } else {
+    #####:  749:goto Goal_126;
+    #####:  750:Goal_126:;
+        -:  751:
+        -:  752:
+        -:  753:                                                                        }
+    #####:  754:                                                                        if (s__s3__tmp__cert_req) {
+branch  0 never executed
+branch  1 never executed
+    #####:  755:goto Goal_127;
+    #####:  756:Goal_127:;
+        -:  757:
+    #####:  758:                                                                          s__state = 4464;
+        -:  759:                                                                        } else {
+    #####:  760:goto Goal_128;
+    #####:  761:Goal_128:;
+        -:  762:
+    #####:  763:                                                                          s__state = 4480;
+        -:  764:                                                                        }
+    #####:  765:                                                                        s__init_num = 0;
+    #####:  766:                                                                        goto switch_1_break;
+    #####:  767:                                                                        switch_1_4464: ;
+    #####:  768:                                                                        switch_1_4465: ;
+    #####:  769:                                                                        switch_1_4466: ;
+    #####:  770:                                                                        switch_1_4467:
+    #####:  771:                                                                        ret = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:  772:                                                                        if (ret <= 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  773:goto Goal_129;
+    #####:  774:Goal_129:;
+        -:  775:
+    #####:  776:                                                                          goto end;
+        -:  777:                                                                        } else {
+    #####:  778:goto Goal_130;
+    #####:  779:Goal_130:;
+        -:  780:
+        -:  781:
+        -:  782:                                                                        }
+    #####:  783:                                                                        s__state = 4480;
+    #####:  784:                                                                        s__init_num = 0;
+    #####:  785:                                                                        goto switch_1_break;
+    #####:  786:                                                                        switch_1_4480: ;
+    #####:  787:                                                                        switch_1_4481:
+    #####:  788:                                                                        ret = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:  789:                                                                        if (ret <= 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  790:goto Goal_131;
+    #####:  791:Goal_131:;
+        -:  792:
+    #####:  793:                                                                          goto end;
+        -:  794:                                                                        } else {
+    #####:  795:goto Goal_132;
+    #####:  796:Goal_132:;
+        -:  797:
+        -:  798:
+        -:  799:                                                                        }
+    #####:  800:                                                                        l = s__s3__tmp__new_cipher__algorithms;
+    #####:  801:                                                                        if (s__s3__tmp__cert_req == 1) {
+branch  0 never executed
+branch  1 never executed
+    #####:  802:goto Goal_133;
+    #####:  803:Goal_133:;
+        -:  804:
+    #####:  805:                                                                          s__state = 4496;
+        -:  806:                                                                        } else {
+    #####:  807:goto Goal_134;
+    #####:  808:Goal_134:;
+        -:  809:
+    #####:  810:                                                                          s__state = 4512;
+    #####:  811:                                                                          s__s3__change_cipher_spec = 0;
+        -:  812:                                                                        }
+    #####:  813:                                                                        s__init_num = 0;
+    #####:  814:                                                                        goto switch_1_break;
+    #####:  815:                                                                        switch_1_4496: ;
+    #####:  816:                                                                        switch_1_4497:
+    #####:  817:                                                                        ret = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:  818:                                                                        if (ret <= 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  819:goto Goal_135;
+    #####:  820:Goal_135:;
+        -:  821:
+    #####:  822:                                                                          goto end;
+        -:  823:                                                                        } else {
+    #####:  824:goto Goal_136;
+    #####:  825:Goal_136:;
+        -:  826:
+        -:  827:
+        -:  828:                                                                        }
+    #####:  829:                                                                        s__state = 4512;
+    #####:  830:                                                                        s__init_num = 0;
+    #####:  831:                                                                        s__s3__change_cipher_spec = 0;
+    #####:  832:                                                                        goto switch_1_break;
+    #####:  833:                                                                        switch_1_4512: ;
+    #####:  834:                                                                        switch_1_4513:
+    #####:  835:                                                                        ret = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:  836:                                                                        if (ret <= 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  837:goto Goal_137;
+    #####:  838:Goal_137:;
+        -:  839:
+    #####:  840:                                                                          goto end;
+        -:  841:                                                                        } else {
+    #####:  842:goto Goal_138;
+    #####:  843:Goal_138:;
+        -:  844:
+        -:  845:
+        -:  846:                                                                        }
+    #####:  847:                                                                        s__state = 4528;
+    #####:  848:                                                                        s__init_num = 0;
+    #####:  849:                                                                        s__session__cipher = s__s3__tmp__new_cipher;
+    #####:  850:                                                                        if (s__s3__tmp__new_compression == 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  851:goto Goal_139;
+    #####:  852:Goal_139:;
+        -:  853:
+    #####:  854:                                                                          s__session__compress_meth = 0;
+        -:  855:                                                                        } else {
+    #####:  856:goto Goal_140;
+    #####:  857:Goal_140:;
+        -:  858:
+    #####:  859:                                                                          s__session__compress_meth = s__s3__tmp__new_compression__id;
+        -:  860:                                                                        }
+    #####:  861:                                                                        if (! tmp___7) {
+branch  0 never executed
+branch  1 never executed
+    #####:  862:goto Goal_141;
+    #####:  863:Goal_141:;
+        -:  864:
+    #####:  865:                                                                          ret = -1;
+    #####:  866:                                                                          goto end;
+        -:  867:                                                                        } else {
+    #####:  868:goto Goal_142;
+    #####:  869:Goal_142:;
+        -:  870:
+        -:  871:
+        -:  872:                                                                        }
+    #####:  873:                                                                        if (! tmp___8) {
+branch  0 never executed
+branch  1 never executed
+    #####:  874:goto Goal_143;
+    #####:  875:Goal_143:;
+        -:  876:
+    #####:  877:                                                                          ret = -1;
+    #####:  878:                                                                          goto end;
+        -:  879:                                                                        } else {
+    #####:  880:goto Goal_144;
+    #####:  881:Goal_144:;
+        -:  882:
+        -:  883:
+        -:  884:                                                                        }
+    #####:  885:                                                                        goto switch_1_break;
+    #####:  886:                                                                        switch_1_4528: ;
+    #####:  887:                                                                        switch_1_4529:
+    #####:  888:                                                                        ret = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:  889:                                                                        if (ret <= 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  890:goto Goal_145;
+    #####:  891:Goal_145:;
+        -:  892:
+    #####:  893:                                                                          goto end;
+        -:  894:                                                                        } else {
+    #####:  895:goto Goal_146;
+    #####:  896:Goal_146:;
+        -:  897:
+        -:  898:
+        -:  899:                                                                        }
+    #####:  900:                                                                        s__state = 4352;
+    #####:  901:                                                                        s__s3__flags = (unsigned long )s__s3__flags + -5L;
+    #####:  902:                                                                        if (s__hit) {
+branch  0 never executed
+branch  1 never executed
+    #####:  903:goto Goal_147;
+    #####:  904:Goal_147:;
+        -:  905:
+    #####:  906:                                                                          s__s3__tmp__next_state___0 = 3;
+    #####:  907:                                                                          if ((unsigned long )s__s3__flags + 2L) {
+branch  0 never executed
+branch  1 never executed
+    #####:  908:goto Goal_149;
+    #####:  909:Goal_149:;
+        -:  910:
+    #####:  911:                                                                            s__state = 3;
+    #####:  912:                                                                            s__s3__flags = (unsigned long )s__s3__flags * 4L;
+    #####:  913:                                                                            s__s3__delay_buf_pop_ret = 0;
+        -:  914:                                                                          } else {
+    #####:  915:goto Goal_150;
+    #####:  916:Goal_150:;
+        -:  917:
+        -:  918:
+        -:  919:                                                                          }
+        -:  920:                                                                        } else {
+    #####:  921:goto Goal_148;
+    #####:  922:Goal_148:;
+        -:  923:
+    #####:  924:                                                                          s__s3__tmp__next_state___0 = 4560;
+        -:  925:                                                                        }
+    #####:  926:                                                                        s__init_num = 0;
+    #####:  927:                                                                        goto switch_1_break;
+    #####:  928:                                                                        switch_1_4560: ;
+    #####:  929:                                                                        switch_1_4561:
+    #####:  930:                                                                        ret = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:  931:                                                                        if (ret <= 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  932:goto Goal_151;
+    #####:  933:Goal_151:;
+        -:  934:
+    #####:  935:                                                                          goto end;
+        -:  936:                                                                        } else {
+    #####:  937:goto Goal_152;
+    #####:  938:Goal_152:;
+        -:  939:
+        -:  940:
+        -:  941:                                                                        }
+    #####:  942:                                                                        if (s__hit) {
+branch  0 never executed
+branch  1 never executed
+    #####:  943:goto Goal_153;
+    #####:  944:Goal_153:;
+        -:  945:
+    #####:  946:                                                                          s__state = 4512;
+        -:  947:                                                                        } else {
+    #####:  948:goto Goal_154;
+    #####:  949:Goal_154:;
+        -:  950:
+    #####:  951:                                                                          s__state = 3;
+        -:  952:                                                                        }
+    #####:  953:                                                                        s__init_num = 0;
+    #####:  954:                                                                        goto switch_1_break;
+    #####:  955:                                                                        switch_1_4352:
+    #####:  956:                                                                        if ((long )num1 > 0L) {
+branch  0 never executed
+branch  1 never executed
+    #####:  957:goto Goal_155;
+    #####:  958:Goal_155:;
+        -:  959:
+    #####:  960:                                                                          s__rwstate = 2;
+    #####:  961:                                                                          num1 = (long )tmp___9;
+    #####:  962:                                                                          if ((long )num1 <= 0L) {
+branch  0 never executed
+branch  1 never executed
+    #####:  963:goto Goal_157;
+    #####:  964:Goal_157:;
+        -:  965:
+    #####:  966:                                                                            ret = -1;
+    #####:  967:                                                                            goto end;
+        -:  968:                                                                          } else {
+    #####:  969:goto Goal_158;
+    #####:  970:Goal_158:;
+        -:  971:
+        -:  972:
+        -:  973:                                                                          }
+    #####:  974:                                                                          s__rwstate = 1;
+        -:  975:                                                                        } else {
+    #####:  976:goto Goal_156;
+    #####:  977:Goal_156:;
+        -:  978:
+        -:  979:
+        -:  980:                                                                        }
+    #####:  981:                                                                        s__state = s__s3__tmp__next_state___0;
+    #####:  982:                                                                        goto switch_1_break;
+    #####:  983:                                                                        switch_1_3:
+    #####:  984:                                                                        if (s__init_buf___0 != 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  985:goto Goal_159;
+    #####:  986:Goal_159:;
+        -:  987:
+    #####:  988:                                                                          s__init_buf___0 = 0;
+        -:  989:                                                                        } else {
+    #####:  990:goto Goal_160;
+    #####:  991:Goal_160:;
+        -:  992:
+        -:  993:
+        -:  994:                                                                        }
+    #####:  995:                                                                        if (! ((unsigned long )s__s3__flags + 4L)) {
+branch  0 never executed
+branch  1 never executed
+    #####:  996:goto Goal_161;
+    #####:  997:Goal_161:;
+        -:  998:
+        -:  999:
+        -: 1000:                                                                        } else {
+    #####: 1001:goto Goal_162;
+    #####: 1002:Goal_162:;
+        -: 1003:
+        -: 1004:
+        -: 1005:                                                                        }
+    #####: 1006:                                                                        s__init_num = 0;
+    #####: 1007:                                                                        s__new_session = 0;
+    #####: 1008:                                                                        if (s__hit) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1009:goto Goal_163;
+    #####: 1010:Goal_163:;
+        -: 1011:
+    #####: 1012:                                                                          s__ctx__stats__sess_hit = s__ctx__stats__sess_hit + 1;
+        -: 1013:                                                                        } else {
+    #####: 1014:goto Goal_164;
+    #####: 1015:Goal_164:;
+        -: 1016:
+        -: 1017:
+        -: 1018:                                                                        }
+    #####: 1019:                                                                        ret = 1;
+    #####: 1020:                                                                        s__ctx__stats__sess_connect_good = s__ctx__stats__sess_connect_good + 1;
+    #####: 1021:                                                                        if (cb != 0) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1022:goto Goal_165;
+    #####: 1023:Goal_165:;
+        -: 1024:
+        -: 1025:
+        -: 1026:                                                                        } else {
+    #####: 1027:goto Goal_166;
+    #####: 1028:Goal_166:;
+        -: 1029:
+        -: 1030:
+        -: 1031:                                                                        }
+    #####: 1032:                                                                        goto end;
+    #####: 1033:                                                                        switch_1_default:
+    #####: 1034:                                                                        ret = -1;
+    #####: 1035:                                                                        goto end;
+        -: 1036:                                                                      } else {
+        -: 1037:goto Goal_80;
+        -: 1038:Goal_80:;
+        -: 1039:
+    #####: 1040:                                                                        switch_1_break: ;
+        -: 1041:                                                                      }
+        -: 1042:                                                                      }
+        -: 1043:                                                                    }
+        -: 1044:                                                                  }
+        -: 1045:                                                                }
+        -: 1046:                                                              }
+        -: 1047:                                                            }
+        -: 1048:                                                          }
+        -: 1049:                                                        }
+        -: 1050:                                                      }
+        -: 1051:                                                    }
+        -: 1052:                                                  }
+        -: 1053:                                                }
+        -: 1054:                                              }
+        -: 1055:                                            }
+        -: 1056:                                          }
+        -: 1057:                                        }
+        -: 1058:                                      }
+        -: 1059:                                    }
+        -: 1060:                                  }
+        -: 1061:                                }
+        -: 1062:                              }
+        -: 1063:                            }
+        -: 1064:                          }
+        -: 1065:                        }
+        -: 1066:                      }
+        -: 1067:                    }
+        -: 1068:                  }
+        -: 1069:                }
+        -: 1070:              }
+        -: 1071:            }
+        -: 1072:          }
+        -: 1073:        }
+        -: 1074:      }
+        -: 1075:    }
+    #####: 1076:    if (! s__s3__tmp__reuse_message) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1077:goto Goal_167;
+    #####: 1078:Goal_167:;
+        -: 1079:
+    #####: 1080:      if (! skip) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1081:goto Goal_169;
+    #####: 1082:Goal_169:;
+        -: 1083:
+    #####: 1084:        if (s__debug) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1085:goto Goal_171;
+    #####: 1086:Goal_171:;
+        -: 1087:
+    #####: 1088:          ret = __VERIFIER_nondet_int();
+call    0 never executed
+    #####: 1089:          if (ret <= 0) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1090:goto Goal_173;
+    #####: 1091:Goal_173:;
+        -: 1092:
+    #####: 1093:            goto end;
+        -: 1094:          } else {
+    #####: 1095:goto Goal_174;
+    #####: 1096:Goal_174:;
+        -: 1097:
+        -: 1098:
+        -: 1099:          }
+        -: 1100:        } else {
+    #####: 1101:goto Goal_172;
+    #####: 1102:Goal_172:;
+        -: 1103:
+        -: 1104:
+        -: 1105:        }
+    #####: 1106:        if (cb != 0) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1107:goto Goal_175;
+    #####: 1108:Goal_175:;
+        -: 1109:
+    #####: 1110:          if (s__state != state) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1111:goto Goal_177;
+    #####: 1112:Goal_177:;
+        -: 1113:
+    #####: 1114:            new_state = s__state;
+    #####: 1115:            s__state = state;
+    #####: 1116:            s__state = new_state;
+        -: 1117:          } else {
+    #####: 1118:goto Goal_178;
+    #####: 1119:Goal_178:;
+        -: 1120:
+        -: 1121:
+        -: 1122:          }
+        -: 1123:        } else {
+    #####: 1124:goto Goal_176;
+    #####: 1125:Goal_176:;
+        -: 1126:
+        -: 1127:
+        -: 1128:        }
+        -: 1129:      } else {
+    #####: 1130:goto Goal_170;
+    #####: 1131:Goal_170:;
+        -: 1132:
+        -: 1133:
+        -: 1134:      }
+        -: 1135:    } else {
+    #####: 1136:goto Goal_168;
+    #####: 1137:Goal_168:;
+        -: 1138:
+        -: 1139:
+        -: 1140:    }
+    #####: 1141:    skip = 0;
+        -: 1142:  }
+        -: 1143:  
+        -: 1144:goto Goal_12;
+        -: 1145:Goal_12:;
+        -: 1146:while_0_break: ;
+        -: 1147:  }
+    #####: 1148:  end:
+    #####: 1149:  s__in_handshake = s__in_handshake - 1;
+    #####: 1150:  if (cb != 0) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1151:goto Goal_179;
+    #####: 1152:Goal_179:;
+        -: 1153:
+        -: 1154:
+        -: 1155:  } else {
+    #####: 1156:goto Goal_180;
+    #####: 1157:Goal_180:;
+        -: 1158:
+        -: 1159:
+        -: 1160:  }
+    #####: 1161:  __retres60 = ret;
+    #####: 1162:  goto return_label;
+    #####: 1163:  ERROR: {reach_error();{
+call    0 never executed
+        -: 1164:#ifdef GCOV
+    #####: 1165:__gcov_dump();
+call    0 never executed
+        -: 1166:#endif
+    #####: 1167:abort();
+call    0 never executed
+        -: 1168:}}
+        -: 1169:  {
+        -: 1170:  }
+        -: 1171:  __retres60 = -1;
+    #####: 1172:  return_label:
+    #####: 1173:  return (__retres60);
+        -: 1174:}
+        -: 1175:}
+function main called 1 returned 0% blocks executed 67%
+        1: 1176:int main(void)
+        -: 1177:{ int __retres1 ;
+        -: 1178:
+        -: 1179:  {
+        -: 1180:  {
+        1: 1181:  ssl3_connect();
+call    0 returned 0
+        -: 1182:  }
+    #####: 1183:  __retres1 = 0;
+    #####: 1184:  return (__retres1);
+        -: 1185:}
+        -: 1186:}

@@ -88,12 +88,12 @@ elif is_overflow:
   
 elif is_cov_call:
   command_line_bkp = command_line + " --timeout "+timemapsplit+" --smt-solver yices2 --target-function --generate-witness "
-  command_line += " --timeout "+timemapsplit+" --smt-solver yices2 --add-invariants --target-function --generate-witness "   
+  command_line += " --timeout "+timemapsplit+" --smt-solver yices2 --target-function --generate-witness "   
   ## linha adicionada para o Testcomp (coverage-error-calls)
   
 elif is_cov_branches:
   command_line_bkp = command_line + " --timeout "+timemapsplit+"  --check-overflow --smt-solver yices2 --target-function --generate-witness "
-  command_line += " --timeout "+timemapsplit+" --smt-solver yices2 --add-invariants --target-function --generate-witness "   # linha adicionada para o Testcomp (coverage-branches)
+  command_line += " --timeout "+timemapsplit+" --smt-solver yices2 --target-function --generate-witness "   # linha adicionada para o Testcomp (coverage-branches)
 
 print("Verifying with MAP2CHECK ")
 

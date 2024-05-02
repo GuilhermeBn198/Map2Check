@@ -1,0 +1,222 @@
+        -:    0:Source:output/instrumented_string-2.i
+        -:    0:Graph:output/a-harness.gcno
+        -:    0:Data:output/a-harness.gcda
+        -:    0:Runs:1
+        -:    1:#ifdef GCOV
+        -:    2:extern void __gcov_dump(void);
+        -:    3:#endif
+        -:    4:extern void abort(void);
+        -:    5:
+        -:    6:extern void __assert_fail (const char *__assertion, const char *__file,
+        -:    7:      unsigned int __line, const char *__function)
+        -:    8:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:    9:extern void __assert_perror_fail (int __errnum, const char *__file,
+        -:   10:      unsigned int __line, const char *__function)
+        -:   11:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:   12:extern void __assert (const char *__assertion, const char *__file, int __line)
+        -:   13:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:   14:
+function reach_error called 1 returned 0% blocks executed 100%
+        1:   15:void reach_error() { ((void) sizeof ((0) ? ({
+        -:   16:goto Goal_1;
+        -:   17:Goal_1:;
+        -:   18:1;}) : ({
+        -:   19:goto Goal_2;
+        -:   20:Goal_2:;
+        -:   21:0;})), __extension__ ({ if (0) {
+        -:   22:goto Goal_3;
+        -:   23:Goal_3:;
+        -:   24: ; } else {
+        1:   25:goto Goal_4;
+        1:   26:Goal_4:;
+        -:   27:
+        -:   28:#ifdef GCOV
+        1:   29: __gcov_dump();
+call    0 returned 0
+        -:   30: #endif
+    #####:   31: __assert_fail ("0", "string-2.c", 3, __extension__ __PRETTY_FUNCTION__); 
+        -:   32:}})); }
+        -:   33:
+        -:   34:extern void abort(void);
+function assume_abort_if_not called 0 returned 0% blocks executed 0%
+    #####:   35:void assume_abort_if_not(int cond) {
+    #####:   36:  if(!cond) {
+branch  0 never executed
+branch  1 never executed
+    #####:   37:goto Goal_5;
+    #####:   38:Goal_5:;
+        -:   39:{
+        -:   40:#ifdef GCOV
+    #####:   41:__gcov_dump();
+call    0 never executed
+        -:   42:#endif
+    #####:   43:abort();
+call    0 never executed
+        -:   44:}}
+        -:   45: else { 
+    #####:   46:goto Goal_6;
+    #####:   47:Goal_6:;
+    #####:   48:}}
+function __VERIFIER_assert called 1 returned 0% blocks executed 56%
+        1:   49:void __VERIFIER_assert(int cond) {
+        1:   50:  if (!(cond)) {
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   51:goto Goal_7;
+        1:   52:Goal_7:;
+        -:   53:
+        1:   54:    ERROR: {reach_error();{
+call    0 returned 0
+        -:   55:#ifdef GCOV
+    #####:   56:__gcov_dump();
+call    0 never executed
+        -:   57:#endif
+    #####:   58:abort();
+call    0 never executed
+        -:   59:}}
+        -:   60:  }
+        -:   61:   else { 
+    #####:   62:goto Goal_8;
+    #####:   63:Goal_8:;
+    #####:   64:}return;
+        -:   65:}
+        -:   66:
+        -:   67:
+        -:   68:
+        -:   69:extern char __VERIFIER_nondet_char();
+        -:   70:
+function main called 1 returned 0% blocks executed 79%
+        1:   71:int main()
+        -:   72:{
+        -:   73:  char string_A[5], string_B[5];
+        1:   74:  int i, j, nc_A, nc_B, found=0;
+        -:   75:
+        -:   76:
+        6:   77:  for(i=0; i<5; i++) {
+branch  0 taken 5
+branch  1 taken 1 (fallthrough)
+        5:   78:goto Goal_9;
+        5:   79:Goal_9:;
+        -:   80:
+        5:   81:    string_A[i]=__VERIFIER_nondet_char();
+call    0 returned 5
+        -:   82:}
+        -:   83:  
+        1:   84:goto Goal_10;
+        1:   85:Goal_10:;
+        1:   86:if (!(string_A[5 -1]=='\0')) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   87:goto Goal_11;
+    #####:   88:Goal_11:;
+    #####:   89: return 0;
+        -:   90:}
+        -:   91:
+        -:   92:   else { 
+        1:   93:goto Goal_12;
+        1:   94:Goal_12:;
+        6:   95:}for(i=0; i<5; i++) {
+branch  0 taken 5
+branch  1 taken 1 (fallthrough)
+        5:   96:goto Goal_13;
+        5:   97:Goal_13:;
+        -:   98:
+        5:   99:    string_B[i]=__VERIFIER_nondet_char();
+call    0 returned 5
+        -:  100:}
+        -:  101:  
+        1:  102:goto Goal_14;
+        1:  103:Goal_14:;
+        1:  104:if (!(string_B[5 -1]=='\0')) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  105:goto Goal_15;
+    #####:  106:Goal_15:;
+    #####:  107: return 0;
+        -:  108:}
+        -:  109:
+        -:  110:   else { 
+        1:  111:goto Goal_16;
+        1:  112:Goal_16:;
+        1:  113:}nc_A = 0;
+        2:  114:  while(string_A[nc_A]!='\0') {
+branch  0 taken 1
+branch  1 taken 1 (fallthrough)
+        1:  115:goto Goal_17;
+        1:  116:Goal_17:;
+        -:  117:
+        1:  118:    nc_A++;
+        -:  119:}
+        -:  120:
+        -:  121:  
+        1:  122:goto Goal_18;
+        1:  123:Goal_18:;
+        1:  124:nc_B = 0;
+        2:  125:  while(string_B[nc_B]!='\0') {
+branch  0 taken 1
+branch  1 taken 1 (fallthrough)
+        1:  126:goto Goal_19;
+        1:  127:Goal_19:;
+        -:  128:
+        1:  129:    nc_B++;
+        -:  130:}
+        -:  131:
+        -:  132:  
+        1:  133:goto Goal_20;
+        1:  134:Goal_20:;
+        1:  135:if (!(nc_B >= nc_A)) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  136:goto Goal_21;
+    #####:  137:Goal_21:;
+    #####:  138: return 0;
+        -:  139:}
+        -:  140:
+        -:  141:
+        -:  142:   else { 
+        1:  143:goto Goal_22;
+        1:  144:Goal_22:;
+        1:  145:}i=j=0;
+        2:  146:  while((i<nc_A) && (j<nc_B))
+branch  0 taken 1 (fallthrough)
+branch  1 taken 1
+branch  2 taken 1
+branch  3 taken 0 (fallthrough)
+        -:  147:  {
+        1:  148:goto Goal_23;
+        1:  149:Goal_23:;
+        -:  150:
+        1:  151:    if(string_A[i] == string_B[j])
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        -:  152:    {
+        1:  153:goto Goal_25;
+        1:  154:Goal_25:;
+        -:  155:
+        1:  156:       i++;
+        1:  157:       j++;
+        -:  158:    }
+        -:  159:    else
+        -:  160:    {
+    #####:  161:goto Goal_26;
+    #####:  162:Goal_26:;
+        -:  163:
+    #####:  164:       i = i-j+1;
+    #####:  165:       j = 0;
+        -:  166:    }
+        -:  167:  }
+        -:  168:
+        -:  169:  
+        1:  170:goto Goal_24;
+        1:  171:Goal_24:;
+        1:  172:found = (j>nc_B-1)<<i;
+        -:  173:
+       1*:  174:  __VERIFIER_assert(found == 0 || found == 1);
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+call    4 returned 0
+        -:  175:
+    #####:  176:  return 0;
+        -:  177:}

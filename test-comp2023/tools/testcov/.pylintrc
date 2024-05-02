@@ -1,0 +1,19 @@
+# This file is part of TestCov,
+# a robust test executor with reliable coverage measurement:
+# https://gitlab.com/sosy-lab/software/test-suite-validator/
+#
+# SPDX-FileCopyrightText: 2019 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+[GENERAL]
+extension-pkg-whitelist=lxml
+
+[REPORTS]
+output-format = colorized
+reports = yes
+
+[MESSAGES CONTROL]
+# no-member is disabled because of a false-positive with lxml
+disable=too-many-lines,too-many-statements,too-many-locals,too-many-branches,too-many-instance-attributes,too-many-arguments,too-few-public-methods,missing-docstring,duplicate-code,no-member,line-too-long,import-outside-toplevel
+good-names=a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,tv,ax,tc,pl,id

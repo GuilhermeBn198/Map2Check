@@ -1,0 +1,403 @@
+        -:    0:Source:output/instrumented_byte_add-1.i
+        -:    0:Graph:output/a-harness.gcno
+        -:    0:Data:output/a-harness.gcda
+        -:    0:Runs:1
+        -:    1:#ifdef GCOV
+        -:    2:extern void __gcov_dump(void);
+        -:    3:#endif
+        -:    4:// This file is part of the SV-Benchmarks collection of verification tasks:
+        -:    5:// https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks
+        -:    6://
+        -:    7:// SPDX-FileCopyrightText: 2012-2021 The SV-Benchmarks Community
+        -:    8:// SPDX-FileCopyrightText: 2012 FBK-ES <https://es.fbk.eu/>
+        -:    9://
+        -:   10:// SPDX-License-Identifier: Apache-2.0
+        -:   11:
+        -:   12:extern void abort(void);
+        -:   13:
+        -:   14:extern void __assert_fail (const char *__assertion, const char *__file,
+        -:   15:      unsigned int __line, const char *__function)
+        -:   16:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:   17:extern void __assert_perror_fail (int __errnum, const char *__file,
+        -:   18:      unsigned int __line, const char *__function)
+        -:   19:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:   20:extern void __assert (const char *__assertion, const char *__file, int __line)
+        -:   21:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:   22:
+function reach_error called 0 returned 0% blocks executed 0%
+    #####:   23:void reach_error() { ((void) sizeof ((0) ? ({
+        -:   24:goto Goal_1;
+        -:   25:Goal_1:;
+        -:   26:1;}) : ({
+        -:   27:goto Goal_2;
+        -:   28:Goal_2:;
+        -:   29:0;})), __extension__ ({ if (0) {
+        -:   30:goto Goal_3;
+        -:   31:Goal_3:;
+        -:   32: ; } else {
+    #####:   33:goto Goal_4;
+    #####:   34:Goal_4:;
+        -:   35:
+        -:   36:#ifdef GCOV
+    #####:   37: __gcov_dump();
+call    0 never executed
+        -:   38: #endif
+    #####:   39: __assert_fail ("0", "byte_add-1.c", 3, __extension__ __PRETTY_FUNCTION__); 
+        -:   40:}})); }
+        -:   41:
+        -:   42:extern unsigned int __VERIFIER_nondet_uint(void);
+function __VERIFIER_assert called 0 returned 0% blocks executed 0%
+    #####:   43:void __VERIFIER_assert(int cond) {
+    #####:   44:  if (!(cond)) {
+branch  0 never executed
+branch  1 never executed
+    #####:   45:goto Goal_5;
+    #####:   46:Goal_5:;
+        -:   47:
+    #####:   48:    ERROR: {reach_error();{
+call    0 never executed
+        -:   49:#ifdef GCOV
+    #####:   50:__gcov_dump();
+call    0 never executed
+        -:   51:#endif
+    #####:   52:abort();
+call    0 never executed
+        -:   53:}}
+        -:   54:  }
+        -:   55:   else { 
+    #####:   56:goto Goal_6;
+    #####:   57:Goal_6:;
+    #####:   58:}return;
+        -:   59:}
+        -:   60:
+        -:   61:extern void __assert_fail (__const char *__assertion, __const char *__file,
+        -:   62:      unsigned int __line, __const char *__function)
+        -:   63:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:   64:extern void __assert_perror_fail (int __errnum, __const char *__file,
+        -:   65:      unsigned int __line,
+        -:   66:      __const char *__function)
+        -:   67:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:   68:extern void __assert (const char *__assertion, const char *__file, int __line)
+        -:   69:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:   70:
+function mp_add called 0 returned 0% blocks executed 0%
+    #####:   71:unsigned int mp_add(unsigned int a, unsigned int b)
+        -:   72:{
+        -:   73:    unsigned char a0, a1, a2, a3;
+        -:   74:    unsigned char b0, b1, b2, b3;
+        -:   75:    unsigned char r0, r1, r2, r3;
+        -:   76:    unsigned short carry;
+        -:   77:    unsigned short partial_sum;
+        -:   78:    unsigned int r;
+        -:   79:    unsigned char i;
+        -:   80:    unsigned char na, nb;
+    #####:   81:    a0 = a;
+    #####:   82:    a1 = a >> 8;
+    #####:   83:    a2 = a >> 16U;
+    #####:   84:    a3 = a >> 24U;
+    #####:   85:    b0 = b;
+    #####:   86:    b1 = b >> 8U;
+    #####:   87:    b2 = b >> 16U;
+    #####:   88:    b3 = b >> 24U;
+    #####:   89:    na = (unsigned char)4;
+    #####:   90:    if (a3 == (unsigned char)0) {
+branch  0 never executed
+branch  1 never executed
+    #####:   91:goto Goal_7;
+    #####:   92:Goal_7:;
+        -:   93:
+    #####:   94:        na = na - 1;
+    #####:   95:        if (a2 == (unsigned char)0) {
+branch  0 never executed
+branch  1 never executed
+    #####:   96:goto Goal_9;
+    #####:   97:Goal_9:;
+        -:   98:
+    #####:   99:            na = na - 1;
+    #####:  100:            if (a1 == (unsigned char)0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  101:goto Goal_11;
+    #####:  102:Goal_11:;
+        -:  103:
+    #####:  104:                na = na - 1;
+        -:  105:            }
+        -:  106:         else { 
+    #####:  107:goto Goal_12;
+    #####:  108:Goal_12:;
+        -:  109:}}
+        -:  110:     else { 
+    #####:  111:goto Goal_10;
+    #####:  112:Goal_10:;
+        -:  113:}}
+        -:  114:     else { 
+    #####:  115:goto Goal_8;
+    #####:  116:Goal_8:;
+    #####:  117:}nb = (unsigned char)4;
+    #####:  118:    if (b3 == (unsigned char)0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  119:goto Goal_13;
+    #####:  120:Goal_13:;
+        -:  121:
+    #####:  122:        nb = nb - 1;
+    #####:  123:        if (b2 == (unsigned char)0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  124:goto Goal_15;
+    #####:  125:Goal_15:;
+        -:  126:
+    #####:  127:            nb = nb - 1;
+    #####:  128:            if (b1 == (unsigned char)0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  129:goto Goal_17;
+    #####:  130:Goal_17:;
+        -:  131:
+    #####:  132:                nb = nb - 1;
+        -:  133:            }
+        -:  134:         else { 
+    #####:  135:goto Goal_18;
+    #####:  136:Goal_18:;
+        -:  137:}}
+        -:  138:     else { 
+    #####:  139:goto Goal_16;
+    #####:  140:Goal_16:;
+        -:  141:}}
+        -:  142:     else { 
+    #####:  143:goto Goal_14;
+    #####:  144:Goal_14:;
+    #####:  145:}carry = (unsigned short)0;
+    #####:  146:    i = (unsigned char)0;
+    #####:  147:    while ((i < na) || (i < nb) || (carry != (unsigned short)0)) {
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:  148:goto Goal_19;
+    #####:  149:Goal_19:;
+        -:  150:
+    #####:  151:        partial_sum = carry;
+    #####:  152:        carry = (unsigned short)0;
+    #####:  153:        if (i < na) {
+branch  0 never executed
+branch  1 never executed
+    #####:  154:goto Goal_21;
+    #####:  155:Goal_21:;
+        -:  156:
+    #####:  157:            if (i == (unsigned char)0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  158:goto Goal_23;
+    #####:  159:Goal_23:;
+    #####:  160: partial_sum = partial_sum + a0; }
+        -:  161:             else { 
+    #####:  162:goto Goal_24;
+    #####:  163:Goal_24:;
+    #####:  164:}if (i == (unsigned char)1) {
+branch  0 never executed
+branch  1 never executed
+    #####:  165:goto Goal_25;
+    #####:  166:Goal_25:;
+    #####:  167: partial_sum = partial_sum + a1; }
+        -:  168:             else { 
+    #####:  169:goto Goal_26;
+    #####:  170:Goal_26:;
+    #####:  171:}if (i == (unsigned char)2) {
+branch  0 never executed
+branch  1 never executed
+    #####:  172:goto Goal_27;
+    #####:  173:Goal_27:;
+    #####:  174: partial_sum = partial_sum + a2; }
+        -:  175:             else { 
+    #####:  176:goto Goal_28;
+    #####:  177:Goal_28:;
+    #####:  178:}if (i == (unsigned char)3) {
+branch  0 never executed
+branch  1 never executed
+    #####:  179:goto Goal_29;
+    #####:  180:Goal_29:;
+    #####:  181: partial_sum = partial_sum + a3; }
+        -:  182:         else { 
+    #####:  183:goto Goal_30;
+    #####:  184:Goal_30:;
+        -:  185:}}
+        -:  186:         else { 
+    #####:  187:goto Goal_22;
+    #####:  188:Goal_22:;
+    #####:  189:}if (i < nb) {
+branch  0 never executed
+branch  1 never executed
+    #####:  190:goto Goal_31;
+    #####:  191:Goal_31:;
+        -:  192:
+    #####:  193:            if (i == (unsigned char)0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  194:goto Goal_33;
+    #####:  195:Goal_33:;
+    #####:  196: partial_sum = partial_sum + b0; }
+        -:  197:             else { 
+    #####:  198:goto Goal_34;
+    #####:  199:Goal_34:;
+    #####:  200:}if (i == (unsigned char)1) {
+branch  0 never executed
+branch  1 never executed
+    #####:  201:goto Goal_35;
+    #####:  202:Goal_35:;
+    #####:  203: partial_sum = partial_sum + b1; }
+        -:  204:             else { 
+    #####:  205:goto Goal_36;
+    #####:  206:Goal_36:;
+    #####:  207:}if (i == (unsigned char)2) {
+branch  0 never executed
+branch  1 never executed
+    #####:  208:goto Goal_37;
+    #####:  209:Goal_37:;
+    #####:  210: partial_sum = partial_sum + b2; }
+        -:  211:             else { 
+    #####:  212:goto Goal_38;
+    #####:  213:Goal_38:;
+    #####:  214:}if (i == (unsigned char)3) {
+branch  0 never executed
+branch  1 never executed
+    #####:  215:goto Goal_39;
+    #####:  216:Goal_39:;
+    #####:  217: partial_sum = partial_sum + b3; }
+        -:  218:         else { 
+    #####:  219:goto Goal_40;
+    #####:  220:Goal_40:;
+        -:  221:}}
+        -:  222:         else { 
+    #####:  223:goto Goal_32;
+    #####:  224:Goal_32:;
+    #####:  225:}if (partial_sum > ((unsigned char)254)) {
+branch  0 never executed
+branch  1 never executed
+    #####:  226:goto Goal_41;
+    #####:  227:Goal_41:;
+        -:  228:
+    #####:  229:            partial_sum = partial_sum & ((unsigned char)255);
+    #####:  230:            carry = (unsigned short)1;
+        -:  231:        }
+        -:  232:         else { 
+    #####:  233:goto Goal_42;
+    #####:  234:Goal_42:;
+    #####:  235:}if (i == (unsigned char)0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  236:goto Goal_43;
+    #####:  237:Goal_43:;
+    #####:  238: r0 = (unsigned char)partial_sum; }
+        -:  239:         else { 
+    #####:  240:goto Goal_44;
+    #####:  241:Goal_44:;
+    #####:  242:}if (i == (unsigned char)1) {
+branch  0 never executed
+branch  1 never executed
+    #####:  243:goto Goal_45;
+    #####:  244:Goal_45:;
+    #####:  245: r1 = (unsigned char)partial_sum; }
+        -:  246:         else { 
+    #####:  247:goto Goal_46;
+    #####:  248:Goal_46:;
+    #####:  249:}if (i == (unsigned char)2) {
+branch  0 never executed
+branch  1 never executed
+    #####:  250:goto Goal_47;
+    #####:  251:Goal_47:;
+    #####:  252: r2 = (unsigned char)partial_sum; }
+        -:  253:         else { 
+    #####:  254:goto Goal_48;
+    #####:  255:Goal_48:;
+    #####:  256:}if (i == (unsigned char)3) {
+branch  0 never executed
+branch  1 never executed
+    #####:  257:goto Goal_49;
+    #####:  258:Goal_49:;
+    #####:  259: r3 = (unsigned char)partial_sum; }
+        -:  260:
+        -:  261:         else { 
+    #####:  262:goto Goal_50;
+    #####:  263:Goal_50:;
+    #####:  264:}i = i + (unsigned char)1;
+        -:  265:    }
+        -:  266:
+        -:  267:    
+    #####:  268:goto Goal_20;
+    #####:  269:Goal_20:;
+    #####:  270:while (i < (unsigned char)4) {
+branch  0 never executed
+branch  1 never executed
+    #####:  271:goto Goal_51;
+    #####:  272:Goal_51:;
+        -:  273:
+    #####:  274:        if (i == (unsigned char)0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  275:goto Goal_53;
+    #####:  276:Goal_53:;
+    #####:  277: r0 = (unsigned char)0; }
+        -:  278:         else { 
+    #####:  279:goto Goal_54;
+    #####:  280:Goal_54:;
+    #####:  281:}if (i == (unsigned char)1) {
+branch  0 never executed
+branch  1 never executed
+    #####:  282:goto Goal_55;
+    #####:  283:Goal_55:;
+    #####:  284: r1 = (unsigned char)0; }
+        -:  285:         else { 
+    #####:  286:goto Goal_56;
+    #####:  287:Goal_56:;
+    #####:  288:}if (i == (unsigned char)2) {
+branch  0 never executed
+branch  1 never executed
+    #####:  289:goto Goal_57;
+    #####:  290:Goal_57:;
+    #####:  291: r2 = (unsigned char)0; }
+        -:  292:         else { 
+    #####:  293:goto Goal_58;
+    #####:  294:Goal_58:;
+    #####:  295:}if (i == (unsigned char)3) {
+branch  0 never executed
+branch  1 never executed
+    #####:  296:goto Goal_59;
+    #####:  297:Goal_59:;
+    #####:  298: r3 = (unsigned char)0; }
+        -:  299:
+        -:  300:         else { 
+    #####:  301:goto Goal_60;
+    #####:  302:Goal_60:;
+    #####:  303:}i = i + (unsigned char)1;
+        -:  304:    }
+        -:  305:
+        -:  306:    
+    #####:  307:goto Goal_52;
+    #####:  308:Goal_52:;
+    #####:  309:r = r0 | (r1 << 8U) | (r2 << 16U) | ((unsigned int)r3 << 24U);
+        -:  310:
+    #####:  311:    return r;
+        -:  312:}
+        -:  313:
+        -:  314:
+function main called 1 returned 0% blocks executed 33%
+        1:  315:int main()
+        -:  316:{
+        -:  317:    unsigned int a, b, r;
+        -:  318:
+        1:  319:    a = __VERIFIER_nondet_uint();
+call    0 returned 0
+    #####:  320:    b = __VERIFIER_nondet_uint();
+call    0 never executed
+        -:  321:
+    #####:  322:    r = mp_add(a, b);
+call    0 never executed
+        -:  323:
+    #####:  324:    __VERIFIER_assert(r == a + b);
+call    0 never executed
+        -:  325:
+    #####:  326:    return 0;
+        -:  327:}

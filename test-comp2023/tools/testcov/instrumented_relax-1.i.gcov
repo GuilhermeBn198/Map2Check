@@ -1,0 +1,833 @@
+        -:    0:Source:output/instrumented_relax-1.i
+        -:    0:Graph:output/a-harness.gcno
+        -:    0:Data:output/a-harness.gcda
+        -:    0:Runs:1
+        -:    1:#ifdef GCOV
+        -:    2:extern void __gcov_dump(void);
+        -:    3:#endif
+        -:    4:extern void abort(void);
+function assume_abort_if_not called 0 returned 0% blocks executed 0%
+    #####:    5:void assume_abort_if_not(int cond) {
+    #####:    6:  if(!cond) {
+branch  0 never executed
+branch  1 never executed
+    #####:    7:goto Goal_1;
+    #####:    8:Goal_1:;
+        -:    9:{
+        -:   10:#ifdef GCOV
+    #####:   11:__gcov_dump();
+call    0 never executed
+        -:   12:#endif
+    #####:   13:abort();
+call    0 never executed
+        -:   14:}}
+        -:   15: else { 
+    #####:   16:goto Goal_2;
+    #####:   17:Goal_2:;
+    #####:   18:}}
+        -:   19:extern unsigned long __VERIFIER_nondet_ulong(void);
+        -:   20:extern void abort(void);
+        -:   21:
+        -:   22:extern void __assert_fail (const char *__assertion, const char *__file,
+        -:   23:      unsigned int __line, const char *__function)
+        -:   24:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:   25:extern void __assert_perror_fail (int __errnum, const char *__file,
+        -:   26:      unsigned int __line, const char *__function)
+        -:   27:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:   28:extern void __assert (const char *__assertion, const char *__file, int __line)
+        -:   29:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:   30:
+function reach_error called 0 returned 0% blocks executed 0%
+    #####:   31:void reach_error() { ((void) sizeof ((0) ? ({
+        -:   32:goto Goal_3;
+        -:   33:Goal_3:;
+        -:   34:1;}) : ({
+        -:   35:goto Goal_4;
+        -:   36:Goal_4:;
+        -:   37:0;})), __extension__ ({ if (0) {
+        -:   38:goto Goal_5;
+        -:   39:Goal_5:;
+        -:   40: ; } else {
+    #####:   41:goto Goal_6;
+    #####:   42:Goal_6:;
+        -:   43:
+        -:   44:#ifdef GCOV
+    #####:   45: __gcov_dump();
+call    0 never executed
+        -:   46: #endif
+    #####:   47: __assert_fail ("0", "relax-1.c", 91, __extension__ __PRETTY_FUNCTION__); 
+        -:   48:}})); }
+        -:   49:extern int __VERIFIER_nondet_int();
+function __VERIFIER_assert called 0 returned 0% blocks executed 0%
+    #####:   50:void __VERIFIER_assert(int cond) {
+    #####:   51:  if (!(cond)) {
+branch  0 never executed
+branch  1 never executed
+    #####:   52:goto Goal_7;
+    #####:   53:Goal_7:;
+        -:   54:
+    #####:   55:    ERROR: {reach_error();{
+call    0 never executed
+        -:   56:#ifdef GCOV
+    #####:   57:__gcov_dump();
+call    0 never executed
+        -:   58:#endif
+    #####:   59:abort();
+call    0 never executed
+        -:   60:}}
+        -:   61:  }
+        -:   62:   else { 
+    #####:   63:goto Goal_8;
+    #####:   64:Goal_8:;
+    #####:   65:}return;
+        -:   66:}
+        -:   67:typedef unsigned int size_t;
+        -:   68:typedef long int wchar_t;
+        -:   69:
+        -:   70:typedef enum
+        -:   71:{
+        -:   72:  P_ALL,
+        -:   73:  P_PID,
+        -:   74:  P_PGID
+        -:   75:} idtype_t;
+        -:   76:typedef unsigned char __u_char;
+        -:   77:typedef unsigned short int __u_short;
+        -:   78:typedef unsigned int __u_int;
+        -:   79:typedef unsigned long int __u_long;
+        -:   80:typedef signed char __int8_t;
+        -:   81:typedef unsigned char __uint8_t;
+        -:   82:typedef signed short int __int16_t;
+        -:   83:typedef unsigned short int __uint16_t;
+        -:   84:typedef signed int __int32_t;
+        -:   85:typedef unsigned int __uint32_t;
+        -:   86:__extension__ typedef signed long long int __int64_t;
+        -:   87:__extension__ typedef unsigned long long int __uint64_t;
+        -:   88:__extension__ typedef long long int __quad_t;
+        -:   89:__extension__ typedef unsigned long long int __u_quad_t;
+        -:   90:__extension__ typedef __u_quad_t __dev_t;
+        -:   91:__extension__ typedef unsigned int __uid_t;
+        -:   92:__extension__ typedef unsigned int __gid_t;
+        -:   93:__extension__ typedef unsigned long int __ino_t;
+        -:   94:__extension__ typedef __u_quad_t __ino64_t;
+        -:   95:__extension__ typedef unsigned int __mode_t;
+        -:   96:__extension__ typedef unsigned int __nlink_t;
+        -:   97:__extension__ typedef long int __off_t;
+        -:   98:__extension__ typedef __quad_t __off64_t;
+        -:   99:__extension__ typedef int __pid_t;
+        -:  100:__extension__ typedef struct { int __val[2]; } __fsid_t;
+        -:  101:__extension__ typedef long int __clock_t;
+        -:  102:__extension__ typedef unsigned long int __rlim_t;
+        -:  103:__extension__ typedef __u_quad_t __rlim64_t;
+        -:  104:__extension__ typedef unsigned int __id_t;
+        -:  105:__extension__ typedef long int __time_t;
+        -:  106:__extension__ typedef unsigned int __useconds_t;
+        -:  107:__extension__ typedef long int __suseconds_t;
+        -:  108:__extension__ typedef int __daddr_t;
+        -:  109:__extension__ typedef int __key_t;
+        -:  110:__extension__ typedef int __clockid_t;
+        -:  111:__extension__ typedef void * __timer_t;
+        -:  112:__extension__ typedef long int __blksize_t;
+        -:  113:__extension__ typedef long int __blkcnt_t;
+        -:  114:__extension__ typedef __quad_t __blkcnt64_t;
+        -:  115:__extension__ typedef unsigned long int __fsblkcnt_t;
+        -:  116:__extension__ typedef __u_quad_t __fsblkcnt64_t;
+        -:  117:__extension__ typedef unsigned long int __fsfilcnt_t;
+        -:  118:__extension__ typedef __u_quad_t __fsfilcnt64_t;
+        -:  119:__extension__ typedef int __fsword_t;
+        -:  120:__extension__ typedef int __ssize_t;
+        -:  121:__extension__ typedef long int __syscall_slong_t;
+        -:  122:__extension__ typedef unsigned long int __syscall_ulong_t;
+        -:  123:typedef __off64_t __loff_t;
+        -:  124:typedef __quad_t *__qaddr_t;
+        -:  125:typedef char *__caddr_t;
+        -:  126:__extension__ typedef int __intptr_t;
+        -:  127:__extension__ typedef unsigned int __socklen_t;
+        -:  128:static __inline unsigned int
+        -:  129:__bswap_32 (unsigned int __bsx)
+        -:  130:{
+        -:  131:  return __builtin_bswap32 (__bsx);
+        -:  132:}
+        -:  133:static __inline __uint64_t
+        -:  134:__bswap_64 (__uint64_t __bsx)
+        -:  135:{
+        -:  136:  return __builtin_bswap64 (__bsx);
+        -:  137:}
+        -:  138:union wait
+        -:  139:  {
+        -:  140:    int w_status;
+        -:  141:    struct
+        -:  142:      {
+        -:  143: unsigned int __w_termsig:7;
+        -:  144: unsigned int __w_coredump:1;
+        -:  145: unsigned int __w_retcode:8;
+        -:  146: unsigned int:16;
+        -:  147:      } __wait_terminated;
+        -:  148:    struct
+        -:  149:      {
+        -:  150: unsigned int __w_stopval:8;
+        -:  151: unsigned int __w_stopsig:8;
+        -:  152: unsigned int:16;
+        -:  153:      } __wait_stopped;
+        -:  154:  };
+        -:  155:typedef union
+        -:  156:  {
+        -:  157:    union wait *__uptr;
+        -:  158:    int *__iptr;
+        -:  159:  } __WAIT_STATUS __attribute__ ((__transparent_union__));
+        -:  160:
+        -:  161:typedef struct
+        -:  162:  {
+        -:  163:    int quot;
+        -:  164:    int rem;
+        -:  165:  } div_t;
+        -:  166:typedef struct
+        -:  167:  {
+        -:  168:    long int quot;
+        -:  169:    long int rem;
+        -:  170:  } ldiv_t;
+        -:  171:
+        -:  172:
+        -:  173:__extension__ typedef struct
+        -:  174:  {
+        -:  175:    long long int quot;
+        -:  176:    long long int rem;
+        -:  177:  } lldiv_t;
+        -:  178:
+        -:  179:extern size_t __ctype_get_mb_cur_max (void) __attribute__ ((__nothrow__ , __leaf__)) ;
+        -:  180:
+        -:  181:extern double atof (const char *__nptr)
+        -:  182:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+        -:  183:extern int atoi (const char *__nptr)
+        -:  184:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+        -:  185:extern long int atol (const char *__nptr)
+        -:  186:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+        -:  187:
+        -:  188:
+        -:  189:__extension__ extern long long int atoll (const char *__nptr)
+        -:  190:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+        -:  191:
+        -:  192:
+        -:  193:extern double strtod (const char *__restrict __nptr,
+        -:  194:        char **__restrict __endptr)
+        -:  195:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  196:
+        -:  197:
+        -:  198:extern float strtof (const char *__restrict __nptr,
+        -:  199:       char **__restrict __endptr) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  200:extern long double strtold (const char *__restrict __nptr,
+        -:  201:       char **__restrict __endptr)
+        -:  202:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  203:
+        -:  204:
+        -:  205:extern long int strtol (const char *__restrict __nptr,
+        -:  206:   char **__restrict __endptr, int __base)
+        -:  207:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  208:extern unsigned long int strtoul (const char *__restrict __nptr,
+        -:  209:      char **__restrict __endptr, int __base)
+        -:  210:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  211:
+        -:  212:__extension__
+        -:  213:extern long long int strtoq (const char *__restrict __nptr,
+        -:  214:        char **__restrict __endptr, int __base)
+        -:  215:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  216:__extension__
+        -:  217:extern unsigned long long int strtouq (const char *__restrict __nptr,
+        -:  218:           char **__restrict __endptr, int __base)
+        -:  219:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  220:
+        -:  221:__extension__
+        -:  222:extern long long int strtoll (const char *__restrict __nptr,
+        -:  223:         char **__restrict __endptr, int __base)
+        -:  224:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  225:__extension__
+        -:  226:extern unsigned long long int strtoull (const char *__restrict __nptr,
+        -:  227:     char **__restrict __endptr, int __base)
+        -:  228:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  229:
+        -:  230:extern char *l64a (long int __n) __attribute__ ((__nothrow__ , __leaf__)) ;
+        -:  231:extern long int a64l (const char *__s)
+        -:  232:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+        -:  233:
+        -:  234:typedef __u_char u_char;
+        -:  235:typedef __u_short u_short;
+        -:  236:typedef __u_int u_int;
+        -:  237:typedef __u_long u_long;
+        -:  238:typedef __quad_t quad_t;
+        -:  239:typedef __u_quad_t u_quad_t;
+        -:  240:typedef __fsid_t fsid_t;
+        -:  241:typedef __loff_t loff_t;
+        -:  242:typedef __ino_t ino_t;
+        -:  243:typedef __dev_t dev_t;
+        -:  244:typedef __gid_t gid_t;
+        -:  245:typedef __mode_t mode_t;
+        -:  246:typedef __nlink_t nlink_t;
+        -:  247:typedef __uid_t uid_t;
+        -:  248:typedef __off_t off_t;
+        -:  249:typedef __pid_t pid_t;
+        -:  250:typedef __id_t id_t;
+        -:  251:typedef __ssize_t ssize_t;
+        -:  252:typedef __daddr_t daddr_t;
+        -:  253:typedef __caddr_t caddr_t;
+        -:  254:typedef __key_t key_t;
+        -:  255:
+        -:  256:typedef __clock_t clock_t;
+        -:  257:
+        -:  258:
+        -:  259:
+        -:  260:typedef __time_t time_t;
+        -:  261:
+        -:  262:
+        -:  263:typedef __clockid_t clockid_t;
+        -:  264:typedef __timer_t timer_t;
+        -:  265:typedef unsigned long int ulong;
+        -:  266:typedef unsigned short int ushort;
+        -:  267:typedef unsigned int uint;
+        -:  268:typedef int int8_t __attribute__ ((__mode__ (__QI__)));
+        -:  269:typedef int int16_t __attribute__ ((__mode__ (__HI__)));
+        -:  270:typedef int int32_t __attribute__ ((__mode__ (__SI__)));
+        -:  271:typedef int int64_t __attribute__ ((__mode__ (__DI__)));
+        -:  272:typedef unsigned int u_int8_t __attribute__ ((__mode__ (__QI__)));
+        -:  273:typedef unsigned int u_int16_t __attribute__ ((__mode__ (__HI__)));
+        -:  274:typedef unsigned int u_int32_t __attribute__ ((__mode__ (__SI__)));
+        -:  275:typedef unsigned int u_int64_t __attribute__ ((__mode__ (__DI__)));
+        -:  276:typedef int register_t __attribute__ ((__mode__ (__word__)));
+        -:  277:typedef int __sig_atomic_t;
+        -:  278:typedef struct
+        -:  279:  {
+        -:  280:    unsigned long int __val[(1024 / (8 * sizeof (unsigned long int)))];
+        -:  281:  } __sigset_t;
+        -:  282:typedef __sigset_t sigset_t;
+        -:  283:struct timespec
+        -:  284:  {
+        -:  285:    __time_t tv_sec;
+        -:  286:    __syscall_slong_t tv_nsec;
+        -:  287:  };
+        -:  288:struct timeval
+        -:  289:  {
+        -:  290:    __time_t tv_sec;
+        -:  291:    __suseconds_t tv_usec;
+        -:  292:  };
+        -:  293:typedef __suseconds_t suseconds_t;
+        -:  294:typedef long int __fd_mask;
+        -:  295:typedef struct
+        -:  296:  {
+        -:  297:    __fd_mask __fds_bits[1024 / (8 * (int) sizeof (__fd_mask))];
+        -:  298:  } fd_set;
+        -:  299:typedef __fd_mask fd_mask;
+        -:  300:
+        -:  301:extern int select (int __nfds, fd_set *__restrict __readfds,
+        -:  302:     fd_set *__restrict __writefds,
+        -:  303:     fd_set *__restrict __exceptfds,
+        -:  304:     struct timeval *__restrict __timeout);
+        -:  305:extern int pselect (int __nfds, fd_set *__restrict __readfds,
+        -:  306:      fd_set *__restrict __writefds,
+        -:  307:      fd_set *__restrict __exceptfds,
+        -:  308:      const struct timespec *__restrict __timeout,
+        -:  309:      const __sigset_t *__restrict __sigmask);
+        -:  310:
+        -:  311:
+        -:  312:__extension__
+        -:  313:extern unsigned int gnu_dev_major (unsigned long long int __dev)
+        -:  314:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+        -:  315:__extension__
+        -:  316:extern unsigned int gnu_dev_minor (unsigned long long int __dev)
+        -:  317:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+        -:  318:__extension__
+        -:  319:extern unsigned long long int gnu_dev_makedev (unsigned int __major,
+        -:  320:            unsigned int __minor)
+        -:  321:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+        -:  322:
+        -:  323:typedef __blksize_t blksize_t;
+        -:  324:typedef __blkcnt_t blkcnt_t;
+        -:  325:typedef __fsblkcnt_t fsblkcnt_t;
+        -:  326:typedef __fsfilcnt_t fsfilcnt_t;
+        -:  327:typedef unsigned long int pthread_t;
+        -:  328:union pthread_attr_t
+        -:  329:{
+        -:  330:  char __size[36];
+        -:  331:  long int __align;
+        -:  332:};
+        -:  333:typedef union pthread_attr_t pthread_attr_t;
+        -:  334:typedef struct __pthread_internal_slist
+        -:  335:{
+        -:  336:  struct __pthread_internal_slist *__next;
+        -:  337:} __pthread_slist_t;
+        -:  338:typedef union
+        -:  339:{
+        -:  340:  struct __pthread_mutex_s
+        -:  341:  {
+        -:  342:    int __lock;
+        -:  343:    unsigned int __count;
+        -:  344:    int __owner;
+        -:  345:    int __kind;
+        -:  346:    unsigned int __nusers;
+        -:  347:    __extension__ union
+        -:  348:    {
+        -:  349:      struct
+        -:  350:      {
+        -:  351: short __espins;
+        -:  352: short __elision;
+        -:  353:      } d;
+        -:  354:      __pthread_slist_t __list;
+        -:  355:    };
+        -:  356:  } __data;
+        -:  357:  char __size[24];
+        -:  358:  long int __align;
+        -:  359:} pthread_mutex_t;
+        -:  360:typedef union
+        -:  361:{
+        -:  362:  char __size[4];
+        -:  363:  int __align;
+        -:  364:} pthread_mutexattr_t;
+        -:  365:typedef union
+        -:  366:{
+        -:  367:  struct
+        -:  368:  {
+        -:  369:    int __lock;
+        -:  370:    unsigned int __futex;
+        -:  371:    __extension__ unsigned long long int __total_seq;
+        -:  372:    __extension__ unsigned long long int __wakeup_seq;
+        -:  373:    __extension__ unsigned long long int __woken_seq;
+        -:  374:    void *__mutex;
+        -:  375:    unsigned int __nwaiters;
+        -:  376:    unsigned int __broadcast_seq;
+        -:  377:  } __data;
+        -:  378:  char __size[48];
+        -:  379:  __extension__ long long int __align;
+        -:  380:} pthread_cond_t;
+        -:  381:typedef union
+        -:  382:{
+        -:  383:  char __size[4];
+        -:  384:  int __align;
+        -:  385:} pthread_condattr_t;
+        -:  386:typedef unsigned int pthread_key_t;
+        -:  387:typedef int pthread_once_t;
+        -:  388:typedef union
+        -:  389:{
+        -:  390:  struct
+        -:  391:  {
+        -:  392:    int __lock;
+        -:  393:    unsigned int __nr_readers;
+        -:  394:    unsigned int __readers_wakeup;
+        -:  395:    unsigned int __writer_wakeup;
+        -:  396:    unsigned int __nr_readers_queued;
+        -:  397:    unsigned int __nr_writers_queued;
+        -:  398:    unsigned char __flags;
+        -:  399:    unsigned char __shared;
+        -:  400:    unsigned char __pad1;
+        -:  401:    unsigned char __pad2;
+        -:  402:    int __writer;
+        -:  403:  } __data;
+        -:  404:  char __size[32];
+        -:  405:  long int __align;
+        -:  406:} pthread_rwlock_t;
+        -:  407:typedef union
+        -:  408:{
+        -:  409:  char __size[8];
+        -:  410:  long int __align;
+        -:  411:} pthread_rwlockattr_t;
+        -:  412:typedef volatile int pthread_spinlock_t;
+        -:  413:typedef union
+        -:  414:{
+        -:  415:  char __size[20];
+        -:  416:  long int __align;
+        -:  417:} pthread_barrier_t;
+        -:  418:typedef union
+        -:  419:{
+        -:  420:  char __size[4];
+        -:  421:  int __align;
+        -:  422:} pthread_barrierattr_t;
+        -:  423:
+        -:  424:extern long int random (void) __attribute__ ((__nothrow__ , __leaf__));
+        -:  425:extern void srandom (unsigned int __seed) __attribute__ ((__nothrow__ , __leaf__));
+        -:  426:extern char *initstate (unsigned int __seed, char *__statebuf,
+        -:  427:   size_t __statelen) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (2)));
+        -:  428:extern char *setstate (char *__statebuf) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  429:struct random_data
+        -:  430:  {
+        -:  431:    int32_t *fptr;
+        -:  432:    int32_t *rptr;
+        -:  433:    int32_t *state;
+        -:  434:    int rand_type;
+        -:  435:    int rand_deg;
+        -:  436:    int rand_sep;
+        -:  437:    int32_t *end_ptr;
+        -:  438:  };
+        -:  439:extern int random_r (struct random_data *__restrict __buf,
+        -:  440:       int32_t *__restrict __result) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+        -:  441:extern int srandom_r (unsigned int __seed, struct random_data *__buf)
+        -:  442:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (2)));
+        -:  443:extern int initstate_r (unsigned int __seed, char *__restrict __statebuf,
+        -:  444:   size_t __statelen,
+        -:  445:   struct random_data *__restrict __buf)
+        -:  446:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (2, 4)));
+        -:  447:extern int setstate_r (char *__restrict __statebuf,
+        -:  448:         struct random_data *__restrict __buf)
+        -:  449:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+        -:  450:
+        -:  451:extern int rand (void) __attribute__ ((__nothrow__ , __leaf__));
+        -:  452:extern void srand (unsigned int __seed) __attribute__ ((__nothrow__ , __leaf__));
+        -:  453:
+        -:  454:extern int rand_r (unsigned int *__seed) __attribute__ ((__nothrow__ , __leaf__));
+        -:  455:extern double drand48 (void) __attribute__ ((__nothrow__ , __leaf__));
+        -:  456:extern double erand48 (unsigned short int __xsubi[3]) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  457:extern long int lrand48 (void) __attribute__ ((__nothrow__ , __leaf__));
+        -:  458:extern long int nrand48 (unsigned short int __xsubi[3])
+        -:  459:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  460:extern long int mrand48 (void) __attribute__ ((__nothrow__ , __leaf__));
+        -:  461:extern long int jrand48 (unsigned short int __xsubi[3])
+        -:  462:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  463:extern void srand48 (long int __seedval) __attribute__ ((__nothrow__ , __leaf__));
+        -:  464:extern unsigned short int *seed48 (unsigned short int __seed16v[3])
+        -:  465:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  466:extern void lcong48 (unsigned short int __param[7]) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  467:struct drand48_data
+        -:  468:  {
+        -:  469:    unsigned short int __x[3];
+        -:  470:    unsigned short int __old_x[3];
+        -:  471:    unsigned short int __c;
+        -:  472:    unsigned short int __init;
+        -:  473:    __extension__ unsigned long long int __a;
+        -:  474:  };
+        -:  475:extern int drand48_r (struct drand48_data *__restrict __buffer,
+        -:  476:        double *__restrict __result) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+        -:  477:extern int erand48_r (unsigned short int __xsubi[3],
+        -:  478:        struct drand48_data *__restrict __buffer,
+        -:  479:        double *__restrict __result) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+        -:  480:extern int lrand48_r (struct drand48_data *__restrict __buffer,
+        -:  481:        long int *__restrict __result)
+        -:  482:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+        -:  483:extern int nrand48_r (unsigned short int __xsubi[3],
+        -:  484:        struct drand48_data *__restrict __buffer,
+        -:  485:        long int *__restrict __result)
+        -:  486:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+        -:  487:extern int mrand48_r (struct drand48_data *__restrict __buffer,
+        -:  488:        long int *__restrict __result)
+        -:  489:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+        -:  490:extern int jrand48_r (unsigned short int __xsubi[3],
+        -:  491:        struct drand48_data *__restrict __buffer,
+        -:  492:        long int *__restrict __result)
+        -:  493:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+        -:  494:extern int srand48_r (long int __seedval, struct drand48_data *__buffer)
+        -:  495:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (2)));
+        -:  496:extern int seed48_r (unsigned short int __seed16v[3],
+        -:  497:       struct drand48_data *__buffer) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+        -:  498:extern int lcong48_r (unsigned short int __param[7],
+        -:  499:        struct drand48_data *__buffer)
+        -:  500:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+        -:  501:
+        -:  502:extern void *malloc (size_t __size) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__malloc__)) ;
+        -:  503:extern void *calloc (size_t __nmemb, size_t __size)
+        -:  504:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__malloc__)) ;
+        -:  505:
+        -:  506:
+        -:  507:extern void *realloc (void *__ptr, size_t __size)
+        -:  508:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__warn_unused_result__));
+        -:  509:extern void free (void *__ptr) __attribute__ ((__nothrow__ , __leaf__));
+        -:  510:
+        -:  511:extern void cfree (void *__ptr) __attribute__ ((__nothrow__ , __leaf__));
+        -:  512:
+        -:  513:extern void *alloca (size_t __size) __attribute__ ((__nothrow__ , __leaf__));
+        -:  514:
+        -:  515:extern void *valloc (size_t __size) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__malloc__)) ;
+        -:  516:extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
+        -:  517:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1))) ;
+        -:  518:
+        -:  519:extern void abort (void) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:  520:extern int atexit (void (*__func) (void)) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  521:
+        -:  522:extern int on_exit (void (*__func) (int __status, void *__arg), void *__arg)
+        -:  523:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  524:
+        -:  525:extern void exit (int __status) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:  526:
+        -:  527:
+        -:  528:extern void _Exit (int __status) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:  529:
+        -:  530:
+        -:  531:extern char *getenv (const char *__name) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1))) ;
+        -:  532:
+        -:  533:extern int putenv (char *__string) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  534:extern int setenv (const char *__name, const char *__value, int __replace)
+        -:  535:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (2)));
+        -:  536:extern int unsetenv (const char *__name) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  537:extern int clearenv (void) __attribute__ ((__nothrow__ , __leaf__));
+        -:  538:extern char *mktemp (char *__template) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  539:extern int mkstemp (char *__template) __attribute__ ((__nonnull__ (1))) ;
+        -:  540:extern int mkstemps (char *__template, int __suffixlen) __attribute__ ((__nonnull__ (1))) ;
+        -:  541:extern char *mkdtemp (char *__template) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1))) ;
+        -:  542:
+        -:  543:extern int system (const char *__command) ;
+        -:  544:
+        -:  545:extern char *realpath (const char *__restrict __name,
+        -:  546:         char *__restrict __resolved) __attribute__ ((__nothrow__ , __leaf__)) ;
+        -:  547:typedef int (*__compar_fn_t) (const void *, const void *);
+        -:  548:
+        -:  549:extern void *bsearch (const void *__key, const void *__base,
+        -:  550:        size_t __nmemb, size_t __size, __compar_fn_t __compar)
+        -:  551:     __attribute__ ((__nonnull__ (1, 2, 5))) ;
+        -:  552:extern void qsort (void *__base, size_t __nmemb, size_t __size,
+        -:  553:     __compar_fn_t __compar) __attribute__ ((__nonnull__ (1, 4)));
+        -:  554:extern int abs (int __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)) ;
+        -:  555:extern long int labs (long int __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)) ;
+        -:  556:
+        -:  557:__extension__ extern long long int llabs (long long int __x)
+        -:  558:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)) ;
+        -:  559:
+        -:  560:extern div_t div (int __numer, int __denom)
+        -:  561:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)) ;
+        -:  562:extern ldiv_t ldiv (long int __numer, long int __denom)
+        -:  563:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)) ;
+        -:  564:
+        -:  565:
+        -:  566:__extension__ extern lldiv_t lldiv (long long int __numer,
+        -:  567:        long long int __denom)
+        -:  568:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)) ;
+        -:  569:
+        -:  570:extern char *ecvt (double __value, int __ndigit, int *__restrict __decpt,
+        -:  571:     int *__restrict __sign) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (3, 4))) ;
+        -:  572:extern char *fcvt (double __value, int __ndigit, int *__restrict __decpt,
+        -:  573:     int *__restrict __sign) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (3, 4))) ;
+        -:  574:extern char *gcvt (double __value, int __ndigit, char *__buf)
+        -:  575:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (3))) ;
+        -:  576:extern char *qecvt (long double __value, int __ndigit,
+        -:  577:      int *__restrict __decpt, int *__restrict __sign)
+        -:  578:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (3, 4))) ;
+        -:  579:extern char *qfcvt (long double __value, int __ndigit,
+        -:  580:      int *__restrict __decpt, int *__restrict __sign)
+        -:  581:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (3, 4))) ;
+        -:  582:extern char *qgcvt (long double __value, int __ndigit, char *__buf)
+        -:  583:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (3))) ;
+        -:  584:extern int ecvt_r (double __value, int __ndigit, int *__restrict __decpt,
+        -:  585:     int *__restrict __sign, char *__restrict __buf,
+        -:  586:     size_t __len) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (3, 4, 5)));
+        -:  587:extern int fcvt_r (double __value, int __ndigit, int *__restrict __decpt,
+        -:  588:     int *__restrict __sign, char *__restrict __buf,
+        -:  589:     size_t __len) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (3, 4, 5)));
+        -:  590:extern int qecvt_r (long double __value, int __ndigit,
+        -:  591:      int *__restrict __decpt, int *__restrict __sign,
+        -:  592:      char *__restrict __buf, size_t __len)
+        -:  593:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (3, 4, 5)));
+        -:  594:extern int qfcvt_r (long double __value, int __ndigit,
+        -:  595:      int *__restrict __decpt, int *__restrict __sign,
+        -:  596:      char *__restrict __buf, size_t __len)
+        -:  597:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (3, 4, 5)));
+        -:  598:
+        -:  599:extern int mblen (const char *__s, size_t __n) __attribute__ ((__nothrow__ , __leaf__));
+        -:  600:extern int mbtowc (wchar_t *__restrict __pwc,
+        -:  601:     const char *__restrict __s, size_t __n) __attribute__ ((__nothrow__ , __leaf__));
+        -:  602:extern int wctomb (char *__s, wchar_t __wchar) __attribute__ ((__nothrow__ , __leaf__));
+        -:  603:extern size_t mbstowcs (wchar_t *__restrict __pwcs,
+        -:  604:   const char *__restrict __s, size_t __n) __attribute__ ((__nothrow__ , __leaf__));
+        -:  605:extern size_t wcstombs (char *__restrict __s,
+        -:  606:   const wchar_t *__restrict __pwcs, size_t __n)
+        -:  607:     __attribute__ ((__nothrow__ , __leaf__));
+        -:  608:
+        -:  609:extern int rpmatch (const char *__response) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1))) ;
+        -:  610:extern int getsubopt (char **__restrict __optionp,
+        -:  611:        char *const *__restrict __tokens,
+        -:  612:        char **__restrict __valuep)
+        -:  613:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2, 3))) ;
+        -:  614:extern int getloadavg (double __loadavg[], int __nelem)
+        -:  615:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1)));
+        -:  616:
+function is_relaxed_prefix called 0 returned 0% blocks executed 0%
+    #####:  617:_Bool is_relaxed_prefix(
+        -:  618:  int pat[], unsigned long pat_length,
+        -:  619:  int a[], unsigned long a_length)
+        -:  620:{
+    #####:  621:  if(pat_length>a_length+1) {
+branch  0 never executed
+branch  1 never executed
+    #####:  622:goto Goal_9;
+    #####:  623:Goal_9:;
+        -:  624:
+    #####:  625:    return 0;
+        -:  626:}
+        -:  627:   else { 
+    #####:  628:goto Goal_10;
+    #####:  629:Goal_10:;
+    #####:  630:}int shift=0;
+    #####:  631:  for(int i=0; i<pat_length && i<a_length; i++)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+        -:  632:  {
+    #####:  633:goto Goal_11;
+    #####:  634:Goal_11:;
+        -:  635:
+    #####:  636:    if(pat[i]!=a[i-shift])
+branch  0 never executed
+branch  1 never executed
+        -:  637:    {
+    #####:  638:goto Goal_13;
+    #####:  639:Goal_13:;
+        -:  640:
+    #####:  641:      if(shift==0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  642:goto Goal_15;
+    #####:  643:Goal_15:;
+        -:  644:
+    #####:  645:        shift=1;
+        -:  646:      } else {
+    #####:  647:goto Goal_16;
+    #####:  648:Goal_16:;
+        -:  649:
+    #####:  650:        return 0;
+        -:  651:}
+        -:  652:    }
+        -:  653:   else { 
+    #####:  654:goto Goal_14;
+    #####:  655:Goal_14:;
+        -:  656:}}
+        -:  657:  
+    #####:  658:goto Goal_12;
+    #####:  659:Goal_12:;
+    #####:  660:if(pat_length>a_length && shift==1) {
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####:  661:goto Goal_17;
+    #####:  662:Goal_17:;
+        -:  663:
+    #####:  664:    return 0;
+        -:  665:  } else {
+    #####:  666:goto Goal_18;
+    #####:  667:Goal_18:;
+        -:  668:
+    #####:  669:    return 1;
+        -:  670:}
+        -:  671:}
+function main called 1 returned 0% blocks executed 4%
+        1:  672:int main()
+        -:  673:{
+       1*:  674:  unsigned long pat_len = __VERIFIER_nondet_ulong(), a_len = __VERIFIER_nondet_ulong();
+call    0 returned 0
+call    1 never executed
+    #####:  675:  int *pat=malloc(sizeof(int)*pat_len);
+    #####:  676:  int *a=malloc(sizeof(int)*a_len);
+    #####:  677:  if(is_relaxed_prefix(pat, pat_len, a, a_len))
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  678:  {
+    #####:  679:goto Goal_19;
+    #####:  680:Goal_19:;
+        -:  681:
+    #####:  682:    __VERIFIER_assert(pat_len<=a_len+1);
+call    0 never executed
+    #####:  683:    unsigned long different = __VERIFIER_nondet_ulong();
+call    0 never executed
+    #####:  684:    if(pat_len>a_len) {
+branch  0 never executed
+branch  1 never executed
+    #####:  685:goto Goal_20;
+    #####:  686:Goal_20:;
+        -:  687:
+    #####:  688:      different=pat_len-1;
+        -:  689:}
+        -:  690:     else { 
+    #####:  691:goto Goal_21;
+    #####:  692:Goal_21:;
+    #####:  693:}for(int i=0; i<pat_len && i<a_len; i++)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+        -:  694:    {
+    #####:  695:goto Goal_22;
+    #####:  696:Goal_22:;
+        -:  697:
+    #####:  698:				pat[i] = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:  699:				a[i] = __VERIFIER_nondet_int();
+call    0 never executed
+    #####:  700:        if(i<different) {
+branch  0 never executed
+branch  1 never executed
+    #####:  701:goto Goal_24;
+    #####:  702:Goal_24:;
+        -:  703:
+    #####:  704:          assume_abort_if_not(pat[i]==a[i]);
+call    0 never executed
+    #####:  705:        } else if(i==different) {
+branch  0 never executed
+branch  1 never executed
+    #####:  706:goto Goal_25;
+    #####:  707:Goal_25:;
+        -:  708:
+    #####:  709:          assume_abort_if_not(pat[i]!=a[i]);
+call    0 never executed
+    #####:  710:        } else if(i>different) {
+branch  0 never executed
+branch  1 never executed
+    #####:  711:goto Goal_26;
+    #####:  712:Goal_26:;
+        -:  713:
+    #####:  714:          __VERIFIER_assert(pat[i]==a[i-1]);
+call    0 never executed
+        -:  715:}
+        -:  716:     else { 
+    #####:  717:goto Goal_27;
+    #####:  718:Goal_27:;
+        -:  719:}}
+        -:  720:  
+    #####:  721:goto Goal_23;
+    #####:  722:Goal_23:;
+        -:  723:}
+    #####:  724:  else if(pat_len<=a_len+1)
+branch  0 never executed
+branch  1 never executed
+        -:  725:  {
+    #####:  726:goto Goal_28;
+    #####:  727:Goal_28:;
+        -:  728:
+    #####:  729:    unsigned long differences=0;
+    #####:  730:    for(int i=0; i<pat_len && i<a_len; i++)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+        -:  731:    {
+    #####:  732:goto Goal_30;
+    #####:  733:Goal_30:;
+        -:  734:
+    #####:  735:      if(pat[i]!=a[i-differences]) {
+branch  0 never executed
+branch  1 never executed
+    #####:  736:goto Goal_32;
+    #####:  737:Goal_32:;
+        -:  738:
+    #####:  739:        ++differences;
+        -:  740:}
+        -:  741:     else { 
+    #####:  742:goto Goal_33;
+    #####:  743:Goal_33:;
+        -:  744:}}
+        -:  745:    
+    #####:  746:goto Goal_31;
+    #####:  747:Goal_31:;
+    #####:  748:if(pat_len>a_len) {
+branch  0 never executed
+branch  1 never executed
+    #####:  749:goto Goal_34;
+    #####:  750:Goal_34:;
+        -:  751:
+    #####:  752:      ++differences;
+        -:  753:}
+        -:  754:     else { 
+    #####:  755:goto Goal_35;
+    #####:  756:Goal_35:;
+    #####:  757:}__VERIFIER_assert(differences>1);
+call    0 never executed
+        -:  758:  }
+        -:  759:   else { 
+    #####:  760:goto Goal_29;
+    #####:  761:Goal_29:;
+    #####:  762:}free(pat);
+    #####:  763:  free(a);
+    #####:  764:  return 0;
+        -:  765:}

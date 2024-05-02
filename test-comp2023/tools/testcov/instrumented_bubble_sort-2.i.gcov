@@ -1,0 +1,1275 @@
+        -:    0:Source:output/instrumented_bubble_sort-2.i
+        -:    0:Graph:output/a-harness.gcno
+        -:    0:Data:output/a-harness.gcda
+        -:    0:Runs:1
+        -:    1:#ifdef GCOV
+        -:    2:extern void __gcov_dump(void);
+        -:    3:#endif
+        -:    4:extern void abort(void);
+        -:    5:
+        -:    6:extern void __assert_fail (const char *__assertion, const char *__file,
+        -:    7:      unsigned int __line, const char *__function)
+        -:    8:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:    9:extern void __assert_perror_fail (int __errnum, const char *__file,
+        -:   10:      unsigned int __line, const char *__function)
+        -:   11:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:   12:extern void __assert (const char *__assertion, const char *__file, int __line)
+        -:   13:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:   14:
+function reach_error called 1 returned 0% blocks executed 100%
+        1:   15:void reach_error() { ((void) sizeof ((0) ? ({
+        -:   16:goto Goal_1;
+        -:   17:Goal_1:;
+        -:   18:1;}) : ({
+        -:   19:goto Goal_2;
+        -:   20:Goal_2:;
+        -:   21:0;})), __extension__ ({ if (0) {
+        -:   22:goto Goal_3;
+        -:   23:Goal_3:;
+        -:   24: ; } else {
+        1:   25:goto Goal_4;
+        1:   26:Goal_4:;
+        -:   27:
+        -:   28:#ifdef GCOV
+        1:   29: __gcov_dump();
+call    0 returned 0
+        -:   30: #endif
+    #####:   31: __assert_fail ("0", "bubble_sort-2.c", 3, __extension__ __PRETTY_FUNCTION__); 
+        -:   32:}})); }
+        -:   33:
+        -:   34:
+        -:   35:extern void __assert_fail (__const char *__assertion, __const char *__file,
+        -:   36:      unsigned int __line, __const char *__function)
+        -:   37:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:   38:extern void __assert_perror_fail (int __errnum, __const char *__file,
+        -:   39:      unsigned int __line,
+        -:   40:      __const char *__function)
+        -:   41:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:   42:extern void __assert (const char *__assertion, const char *__file, int __line)
+        -:   43:     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:   44:
+        -:   45:typedef unsigned int size_t;
+        -:   46:
+        -:   47:
+        -:   48:
+        -:   49:
+        -:   50:struct list_head {
+        -:   51:   struct list_head *next ;
+        -:   52:   struct list_head *prev ;
+        -:   53:};
+        -:   54:struct node {
+        -:   55:   int value ;
+        -:   56:   struct list_head linkage ;
+        -:   57:   struct list_head nested ;
+        -:   58:};
+        -:   59:extern __attribute__((__nothrow__)) void *malloc(size_t __size ) __attribute__((__malloc__)) ;
+        -:   60:extern __attribute__((__nothrow__)) void free(void *__ptr ) ;
+        -:   61:extern __attribute__((__nothrow__, __noreturn__)) void abort(void) ;
+        -:   62:extern int __VERIFIER_nondet_int(void);
+function fail called 1 returned 0% blocks executed 67%
+        1:   63:static void fail(void)
+        -:   64:{
+        -:   65:  {
+        1:   66:  ERROR: {reach_error();{
+call    0 returned 0
+        -:   67:#ifdef GCOV
+    #####:   68:__gcov_dump();
+call    0 never executed
+        -:   69:#endif
+    #####:   70:abort();
+        -:   71:}}((0) ? ({
+        -:   72:goto Goal_5;
+        -:   73:Goal_5:;
+        -:   74:(void) (0);}) : ({
+        -:   75:goto Goal_6;
+        -:   76:Goal_6:;
+        -:   77:
+        -:   78:#ifdef GCOV
+        -:   79:__gcov_dump();
+        -:   80:#endif
+        -:   81:__assert_fail ("0", "test-0180.c", 11, __PRETTY_FUNCTION__);}));
+        -:   82:  goto ERROR;
+        -:   83:}
+        -:   84:}
+        -:   85:
+        -:   86:
+        -:   87:struct list_head gl_list = {& gl_list, & gl_list};
+        -:   88:
+function inspect called 1 returned 0% blocks executed 37%
+        1:   89:static void inspect(struct list_head const *head )
+        -:   90:{ struct node const *node ;
+        -:   91:  unsigned int __cil_tmp3 ;
+        -:   92:  struct list_head *__cil_tmp4 ;
+        -:   93:  unsigned int __cil_tmp5 ;
+        -:   94:  int __cil_tmp6 ;
+        -:   95:  unsigned int __cil_tmp7 ;
+        -:   96:  unsigned int __cil_tmp8 ;
+        -:   97:  unsigned int __cil_tmp9 ;
+        -:   98:  struct list_head *__cil_tmp10 ;
+        -:   99:  unsigned int __cil_tmp11 ;
+        -:  100:  int __cil_tmp12 ;
+        -:  101:  unsigned int __cil_tmp13 ;
+        -:  102:  unsigned int __cil_tmp14 ;
+        -:  103:  struct list_head *__cil_tmp15 ;
+        -:  104:  unsigned int __cil_tmp16 ;
+        -:  105:  struct list_head *__cil_tmp17 ;
+        -:  106:  unsigned int __cil_tmp18 ;
+        -:  107:  int __cil_tmp19 ;
+        -:  108:  unsigned int __cil_tmp20 ;
+        -:  109:  unsigned int __cil_tmp21 ;
+        -:  110:  unsigned int __cil_tmp22 ;
+        -:  111:  struct list_head *__cil_tmp23 ;
+        -:  112:  unsigned int __cil_tmp24 ;
+        -:  113:  int __cil_tmp25 ;
+        -:  114:  struct node *__cil_tmp26 ;
+        -:  115:  unsigned int __cil_tmp27 ;
+        -:  116:  unsigned int __cil_tmp28 ;
+        -:  117:  struct list_head *__cil_tmp29 ;
+        -:  118:  unsigned long __cil_tmp30 ;
+        -:  119:  char *__cil_tmp31 ;
+        -:  120:  char *__cil_tmp32 ;
+        -:  121:  struct node *__cil_tmp33 ;
+        -:  122:  unsigned int __cil_tmp34 ;
+        -:  123:  unsigned int __cil_tmp35 ;
+        -:  124:  struct list_head const *__cil_tmp36 ;
+        -:  125:  unsigned int __cil_tmp37 ;
+        -:  126:  unsigned int __cil_tmp38 ;
+        -:  127:  unsigned int __cil_tmp39 ;
+        -:  128:  struct list_head *__cil_tmp40 ;
+        -:  129:  unsigned int __cil_tmp41 ;
+        -:  130:  int __cil_tmp42 ;
+        -:  131:  unsigned int __cil_tmp43 ;
+        -:  132:  unsigned int __cil_tmp44 ;
+        -:  133:  struct list_head const *__cil_tmp45 ;
+        -:  134:  unsigned int __cil_tmp46 ;
+        -:  135:  unsigned int __cil_tmp47 ;
+        -:  136:  unsigned int __cil_tmp48 ;
+        -:  137:  unsigned int __cil_tmp49 ;
+        -:  138:  struct list_head *__cil_tmp50 ;
+        -:  139:  unsigned int __cil_tmp51 ;
+        -:  140:  int __cil_tmp52 ;
+        -:  141:  unsigned int __cil_tmp53 ;
+        -:  142:  unsigned int __cil_tmp54 ;
+        -:  143:  struct list_head const *__cil_tmp55 ;
+        -:  144:  unsigned int __cil_tmp56 ;
+        -:  145:  unsigned int __cil_tmp57 ;
+        -:  146:  unsigned int __cil_tmp58 ;
+        -:  147:  struct list_head *__cil_tmp59 ;
+        -:  148:  unsigned int __cil_tmp60 ;
+        -:  149:  int __cil_tmp61 ;
+        -:  150:  unsigned int __cil_tmp62 ;
+        -:  151:  unsigned int __cil_tmp63 ;
+        -:  152:  struct list_head const *__cil_tmp64 ;
+        -:  153:  unsigned int __cil_tmp65 ;
+        -:  154:  unsigned int __cil_tmp66 ;
+        -:  155:  unsigned int __cil_tmp67 ;
+        -:  156:  unsigned int __cil_tmp68 ;
+        -:  157:  struct list_head *__cil_tmp69 ;
+        -:  158:  unsigned int __cil_tmp70 ;
+        -:  159:  int __cil_tmp71 ;
+        -:  160:  struct node const *__cil_tmp72 ;
+        -:  161:  unsigned int __cil_tmp73 ;
+        -:  162:  unsigned int __cil_tmp74 ;
+        -:  163:  int __cil_tmp75 ;
+        -:  164:  unsigned int __cil_tmp76 ;
+        -:  165:  unsigned int __cil_tmp77 ;
+        -:  166:  struct list_head const *__cil_tmp78 ;
+        -:  167:  struct node const *__cil_tmp79 ;
+        -:  168:  unsigned int __cil_tmp80 ;
+        -:  169:  unsigned int __cil_tmp81 ;
+        -:  170:  int __cil_tmp82 ;
+        -:  171:  int const *__cil_tmp83 ;
+        -:  172:  struct node const *__cil_tmp84 ;
+        -:  173:  unsigned int __cil_tmp85 ;
+        -:  174:  unsigned int __cil_tmp86 ;
+        -:  175:  int __cil_tmp87 ;
+        -:  176:  unsigned int __cil_tmp88 ;
+        -:  177:  unsigned int __cil_tmp89 ;
+        -:  178:  struct list_head *__cil_tmp90 ;
+        -:  179:  unsigned int __cil_tmp91 ;
+        -:  180:  unsigned int __cil_tmp92 ;
+        -:  181:  struct list_head *__cil_tmp93 ;
+        -:  182:  unsigned int __cil_tmp94 ;
+        -:  183:  unsigned int __cil_tmp95 ;
+        -:  184:  int __cil_tmp96 ;
+        -:  185:  unsigned int __cil_tmp97 ;
+        -:  186:  unsigned int __cil_tmp98 ;
+        -:  187:  unsigned int __cil_tmp99 ;
+        -:  188:  struct list_head *__cil_tmp100 ;
+        -:  189:  struct list_head *__cil_tmp101 ;
+        -:  190:  unsigned int __cil_tmp102 ;
+        -:  191:  unsigned int __cil_tmp103 ;
+        -:  192:  int __cil_tmp104 ;
+        -:  193:  struct list_head *__cil_tmp105 ;
+        -:  194:  unsigned int __cil_tmp106 ;
+        -:  195:  unsigned int __cil_tmp107 ;
+        -:  196:  unsigned int __cil_tmp108 ;
+        -:  197:  struct list_head const *__cil_tmp109 ;
+        -:  198:  unsigned int __cil_tmp110 ;
+        -:  199:  struct list_head *__cil_tmp111 ;
+        -:  200:  unsigned int __cil_tmp112 ;
+        -:  201:  struct node *__cil_tmp113 ;
+        -:  202:  unsigned int __cil_tmp114 ;
+        -:  203:  unsigned int __cil_tmp115 ;
+        -:  204:  struct list_head *__cil_tmp116 ;
+        -:  205:  unsigned long __cil_tmp117 ;
+        -:  206:  char *__cil_tmp118 ;
+        -:  207:  char *__cil_tmp119 ;
+        -:  208:  struct node *__cil_tmp120 ;
+        -:  209:  unsigned int __cil_tmp121 ;
+        -:  210:  int __cil_tmp122 ;
+        -:  211:
+        -:  212:  {
+        -:  213:  {
+        -:  214:  while (1) {
+        1:  215:goto Goal_7;
+        1:  216:Goal_7:;
+        -:  217:
+        1:  218:    while_0_continue: ;
+        1:  219:    if (! head) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  220:goto Goal_9;
+    #####:  221:Goal_9:;
+        -:  222:
+        -:  223:      {
+    #####:  224:      fail();
+call    0 never executed
+        -:  225:      }
+        -:  226:    } else {
+        1:  227:goto Goal_10;
+        1:  228:Goal_10:;
+        -:  229:
+        -:  230:    }
+        1:  231:    goto while_0_break;
+        -:  232:  }
+        -:  233:  
+        -:  234:goto Goal_8;
+        -:  235:Goal_8:;
+        1:  236:while_0_break: ;
+        -:  237:  }
+        -:  238:  {
+        -:  239:  while (1) {
+        1:  240:goto Goal_11;
+        1:  241:Goal_11:;
+        -:  242:
+        1:  243:    while_1_continue: ;
+        -:  244:    {
+        1:  245:    __cil_tmp3 = (unsigned int )head;
+        1:  246:    __cil_tmp4 = *((struct list_head * const *)head);
+        1:  247:    __cil_tmp5 = (unsigned int )__cil_tmp4;
+        1:  248:    __cil_tmp6 = __cil_tmp5 != __cil_tmp3;
+        1:  249:    if (! __cil_tmp6) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  250:goto Goal_13;
+    #####:  251:Goal_13:;
+        -:  252:
+        -:  253:      {
+    #####:  254:      fail();
+call    0 never executed
+        -:  255:      }
+        -:  256:    } else {
+        1:  257:goto Goal_14;
+        1:  258:Goal_14:;
+        -:  259:
+        -:  260:    }
+        -:  261:    }
+        1:  262:    goto while_1_break;
+        -:  263:  }
+        -:  264:  
+        -:  265:goto Goal_12;
+        -:  266:Goal_12:;
+        1:  267:while_1_break: ;
+        -:  268:  }
+        -:  269:  {
+        -:  270:  while (1) {
+        1:  271:goto Goal_15;
+        1:  272:Goal_15:;
+        -:  273:
+        1:  274:    while_2_continue: ;
+        -:  275:    {
+        1:  276:    __cil_tmp7 = (unsigned int )head;
+        1:  277:    __cil_tmp8 = (unsigned int )head;
+        1:  278:    __cil_tmp9 = __cil_tmp8 + 4;
+        1:  279:    __cil_tmp10 = *((struct list_head * const *)__cil_tmp9);
+        1:  280:    __cil_tmp11 = (unsigned int )__cil_tmp10;
+        1:  281:    __cil_tmp12 = __cil_tmp11 != __cil_tmp7;
+        1:  282:    if (! __cil_tmp12) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  283:goto Goal_17;
+    #####:  284:Goal_17:;
+        -:  285:
+        -:  286:      {
+    #####:  287:      fail();
+call    0 never executed
+        -:  288:      }
+        -:  289:    } else {
+        1:  290:goto Goal_18;
+        1:  291:Goal_18:;
+        -:  292:
+        -:  293:    }
+        -:  294:    }
+        1:  295:    goto while_2_break;
+        -:  296:  }
+        -:  297:  
+        -:  298:goto Goal_16;
+        -:  299:Goal_16:;
+        1:  300:while_2_break: ;
+        -:  301:  }
+        1:  302:  __cil_tmp13 = (unsigned int )head;
+        1:  303:  __cil_tmp14 = __cil_tmp13 + 4;
+        1:  304:  __cil_tmp15 = *((struct list_head * const *)__cil_tmp14);
+        1:  305:  head = (struct list_head const *)__cil_tmp15;
+        -:  306:  {
+        -:  307:  while (1) {
+        1:  308:goto Goal_19;
+        1:  309:Goal_19:;
+        -:  310:
+        1:  311:    while_3_continue: ;
+        1:  312:    if (! head) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  313:goto Goal_21;
+    #####:  314:Goal_21:;
+        -:  315:
+        -:  316:      {
+    #####:  317:      fail();
+call    0 never executed
+        -:  318:      }
+        -:  319:    } else {
+        1:  320:goto Goal_22;
+        1:  321:Goal_22:;
+        -:  322:
+        -:  323:    }
+        1:  324:    goto while_3_break;
+        -:  325:  }
+        -:  326:  
+        -:  327:goto Goal_20;
+        -:  328:Goal_20:;
+        1:  329:while_3_break: ;
+        -:  330:  }
+        -:  331:  {
+        -:  332:  while (1) {
+        1:  333:goto Goal_23;
+        1:  334:Goal_23:;
+        -:  335:
+        1:  336:    while_4_continue: ;
+        -:  337:    {
+        1:  338:    __cil_tmp16 = (unsigned int )head;
+        1:  339:    __cil_tmp17 = *((struct list_head * const *)head);
+        1:  340:    __cil_tmp18 = (unsigned int )__cil_tmp17;
+        1:  341:    __cil_tmp19 = __cil_tmp18 != __cil_tmp16;
+        1:  342:    if (! __cil_tmp19) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  343:goto Goal_25;
+    #####:  344:Goal_25:;
+        -:  345:
+        -:  346:      {
+    #####:  347:      fail();
+call    0 never executed
+        -:  348:      }
+        -:  349:    } else {
+        1:  350:goto Goal_26;
+        1:  351:Goal_26:;
+        -:  352:
+        -:  353:    }
+        -:  354:    }
+        1:  355:    goto while_4_break;
+        -:  356:  }
+        -:  357:  
+        -:  358:goto Goal_24;
+        -:  359:Goal_24:;
+        1:  360:while_4_break: ;
+        -:  361:  }
+        -:  362:  {
+        -:  363:  while (1) {
+        1:  364:goto Goal_27;
+        1:  365:Goal_27:;
+        -:  366:
+        1:  367:    while_5_continue: ;
+        -:  368:    {
+        1:  369:    __cil_tmp20 = (unsigned int )head;
+        1:  370:    __cil_tmp21 = (unsigned int )head;
+        1:  371:    __cil_tmp22 = __cil_tmp21 + 4;
+        1:  372:    __cil_tmp23 = *((struct list_head * const *)__cil_tmp22);
+        1:  373:    __cil_tmp24 = (unsigned int )__cil_tmp23;
+        1:  374:    __cil_tmp25 = __cil_tmp24 != __cil_tmp20;
+        1:  375:    if (! __cil_tmp25) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  376:goto Goal_29;
+    #####:  377:Goal_29:;
+        -:  378:
+        -:  379:      {
+    #####:  380:      fail();
+call    0 never executed
+        -:  381:      }
+        -:  382:    } else {
+        1:  383:goto Goal_30;
+        1:  384:Goal_30:;
+        -:  385:
+        -:  386:    }
+        -:  387:    }
+        1:  388:    goto while_5_break;
+        -:  389:  }
+        -:  390:  
+        -:  391:goto Goal_28;
+        -:  392:Goal_28:;
+        1:  393:while_5_break: ;
+        -:  394:  }
+        1:  395:  __cil_tmp26 = (struct node *)0;
+        1:  396:  __cil_tmp27 = (unsigned int )__cil_tmp26;
+        1:  397:  __cil_tmp28 = __cil_tmp27 + 4;
+        1:  398:  __cil_tmp29 = (struct list_head *)__cil_tmp28;
+        1:  399:  __cil_tmp30 = (unsigned long )__cil_tmp29;
+        1:  400:  __cil_tmp31 = (char *)head;
+        1:  401:  __cil_tmp32 = __cil_tmp31 - __cil_tmp30;
+        1:  402:  __cil_tmp33 = (struct node *)__cil_tmp32;
+        1:  403:  node = (struct node const *)__cil_tmp33;
+        -:  404:  {
+        -:  405:  while (1) {
+        1:  406:goto Goal_31;
+        1:  407:Goal_31:;
+        -:  408:
+        1:  409:    while_6_continue: ;
+        1:  410:    if (! node) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  411:goto Goal_33;
+    #####:  412:Goal_33:;
+        -:  413:
+        -:  414:      {
+    #####:  415:      fail();
+call    0 never executed
+        -:  416:      }
+        -:  417:    } else {
+        1:  418:goto Goal_34;
+        1:  419:Goal_34:;
+        -:  420:
+        -:  421:    }
+        1:  422:    goto while_6_break;
+        -:  423:  }
+        -:  424:  
+        -:  425:goto Goal_32;
+        -:  426:Goal_32:;
+        1:  427:while_6_break: ;
+        -:  428:  }
+        -:  429:  {
+        -:  430:  while (1) {
+        1:  431:goto Goal_35;
+        1:  432:Goal_35:;
+        -:  433:
+        1:  434:    while_7_continue: ;
+        -:  435:    {
+        1:  436:    __cil_tmp34 = (unsigned int )node;
+        1:  437:    __cil_tmp35 = __cil_tmp34 + 12;
+        1:  438:    __cil_tmp36 = (struct list_head const *)__cil_tmp35;
+        1:  439:    __cil_tmp37 = (unsigned int )__cil_tmp36;
+        1:  440:    __cil_tmp38 = (unsigned int )node;
+        1:  441:    __cil_tmp39 = __cil_tmp38 + 12;
+        1:  442:    __cil_tmp40 = *((struct list_head * const *)__cil_tmp39);
+        1:  443:    __cil_tmp41 = (unsigned int )__cil_tmp40;
+        1:  444:    __cil_tmp42 = __cil_tmp41 == __cil_tmp37;
+        1:  445:    if (! __cil_tmp42) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  446:goto Goal_37;
+    #####:  447:Goal_37:;
+        -:  448:
+        -:  449:      {
+    #####:  450:      fail();
+call    0 never executed
+        -:  451:      }
+        -:  452:    } else {
+        1:  453:goto Goal_38;
+        1:  454:Goal_38:;
+        -:  455:
+        -:  456:    }
+        -:  457:    }
+        1:  458:    goto while_7_break;
+        -:  459:  }
+        -:  460:  
+        -:  461:goto Goal_36;
+        -:  462:Goal_36:;
+        1:  463:while_7_break: ;
+        -:  464:  }
+        -:  465:  {
+        -:  466:  while (1) {
+        1:  467:goto Goal_39;
+        1:  468:Goal_39:;
+        -:  469:
+        1:  470:    while_8_continue: ;
+        -:  471:    {
+        1:  472:    __cil_tmp43 = (unsigned int )node;
+        1:  473:    __cil_tmp44 = __cil_tmp43 + 12;
+        1:  474:    __cil_tmp45 = (struct list_head const *)__cil_tmp44;
+        1:  475:    __cil_tmp46 = (unsigned int )__cil_tmp45;
+        1:  476:    __cil_tmp47 = 12 + 4;
+        1:  477:    __cil_tmp48 = (unsigned int )node;
+        1:  478:    __cil_tmp49 = __cil_tmp48 + __cil_tmp47;
+        1:  479:    __cil_tmp50 = *((struct list_head * const *)__cil_tmp49);
+        1:  480:    __cil_tmp51 = (unsigned int )__cil_tmp50;
+        1:  481:    __cil_tmp52 = __cil_tmp51 == __cil_tmp46;
+        1:  482:    if (! __cil_tmp52) {
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  483:goto Goal_41;
+        1:  484:Goal_41:;
+        -:  485:
+        -:  486:      {
+        1:  487:      fail();
+call    0 returned 0
+        -:  488:      }
+        -:  489:    } else {
+    #####:  490:goto Goal_42;
+    #####:  491:Goal_42:;
+        -:  492:
+        -:  493:    }
+        -:  494:    }
+    #####:  495:    goto while_8_break;
+        -:  496:  }
+        -:  497:  
+        -:  498:goto Goal_40;
+        -:  499:Goal_40:;
+    #####:  500:while_8_break: ;
+        -:  501:  }
+        -:  502:  {
+        -:  503:  while (1) {
+    #####:  504:goto Goal_43;
+    #####:  505:Goal_43:;
+        -:  506:
+    #####:  507:    while_9_continue: ;
+        -:  508:    {
+    #####:  509:    __cil_tmp53 = (unsigned int )node;
+    #####:  510:    __cil_tmp54 = __cil_tmp53 + 4;
+    #####:  511:    __cil_tmp55 = (struct list_head const *)__cil_tmp54;
+    #####:  512:    __cil_tmp56 = (unsigned int )__cil_tmp55;
+    #####:  513:    __cil_tmp57 = (unsigned int )node;
+    #####:  514:    __cil_tmp58 = __cil_tmp57 + 12;
+    #####:  515:    __cil_tmp59 = *((struct list_head * const *)__cil_tmp58);
+    #####:  516:    __cil_tmp60 = (unsigned int )__cil_tmp59;
+    #####:  517:    __cil_tmp61 = __cil_tmp60 != __cil_tmp56;
+    #####:  518:    if (! __cil_tmp61) {
+branch  0 never executed
+branch  1 never executed
+    #####:  519:goto Goal_45;
+    #####:  520:Goal_45:;
+        -:  521:
+        -:  522:      {
+    #####:  523:      fail();
+call    0 never executed
+        -:  524:      }
+        -:  525:    } else {
+    #####:  526:goto Goal_46;
+    #####:  527:Goal_46:;
+        -:  528:
+        -:  529:    }
+        -:  530:    }
+    #####:  531:    goto while_9_break;
+        -:  532:  }
+        -:  533:  
+        -:  534:goto Goal_44;
+        -:  535:Goal_44:;
+    #####:  536:while_9_break: ;
+        -:  537:  }
+        -:  538:  {
+        -:  539:  while (1) {
+    #####:  540:goto Goal_47;
+    #####:  541:Goal_47:;
+        -:  542:
+    #####:  543:    while_10_continue: ;
+        -:  544:    {
+    #####:  545:    __cil_tmp62 = (unsigned int )node;
+    #####:  546:    __cil_tmp63 = __cil_tmp62 + 4;
+    #####:  547:    __cil_tmp64 = (struct list_head const *)__cil_tmp63;
+    #####:  548:    __cil_tmp65 = (unsigned int )__cil_tmp64;
+    #####:  549:    __cil_tmp66 = 12 + 4;
+    #####:  550:    __cil_tmp67 = (unsigned int )node;
+    #####:  551:    __cil_tmp68 = __cil_tmp67 + __cil_tmp66;
+    #####:  552:    __cil_tmp69 = *((struct list_head * const *)__cil_tmp68);
+    #####:  553:    __cil_tmp70 = (unsigned int )__cil_tmp69;
+    #####:  554:    __cil_tmp71 = __cil_tmp70 != __cil_tmp65;
+    #####:  555:    if (! __cil_tmp71) {
+branch  0 never executed
+branch  1 never executed
+    #####:  556:goto Goal_49;
+    #####:  557:Goal_49:;
+        -:  558:
+        -:  559:      {
+    #####:  560:      fail();
+call    0 never executed
+        -:  561:      }
+        -:  562:    } else {
+    #####:  563:goto Goal_50;
+    #####:  564:Goal_50:;
+        -:  565:
+        -:  566:    }
+        -:  567:    }
+    #####:  568:    goto while_10_break;
+        -:  569:  }
+        -:  570:  
+        -:  571:goto Goal_48;
+        -:  572:Goal_48:;
+    #####:  573:while_10_break: ;
+        -:  574:  }
+        -:  575:  {
+        -:  576:  while (1) {
+    #####:  577:goto Goal_51;
+    #####:  578:Goal_51:;
+        -:  579:
+    #####:  580:    while_11_continue: ;
+        -:  581:    {
+    #####:  582:    __cil_tmp72 = (struct node const *)head;
+    #####:  583:    __cil_tmp73 = (unsigned int )__cil_tmp72;
+    #####:  584:    __cil_tmp74 = (unsigned int )node;
+    #####:  585:    __cil_tmp75 = __cil_tmp74 != __cil_tmp73;
+    #####:  586:    if (! __cil_tmp75) {
+branch  0 never executed
+branch  1 never executed
+    #####:  587:goto Goal_53;
+    #####:  588:Goal_53:;
+        -:  589:
+        -:  590:      {
+    #####:  591:      fail();
+call    0 never executed
+        -:  592:      }
+        -:  593:    } else {
+    #####:  594:goto Goal_54;
+    #####:  595:Goal_54:;
+        -:  596:
+        -:  597:    }
+        -:  598:    }
+    #####:  599:    goto while_11_break;
+        -:  600:  }
+        -:  601:  
+        -:  602:goto Goal_52;
+        -:  603:Goal_52:;
+    #####:  604:while_11_break: ;
+        -:  605:  }
+        -:  606:  {
+        -:  607:  while (1) {
+    #####:  608:goto Goal_55;
+    #####:  609:Goal_55:;
+        -:  610:
+    #####:  611:    while_12_continue: ;
+        -:  612:    {
+    #####:  613:    __cil_tmp76 = (unsigned int )node;
+    #####:  614:    __cil_tmp77 = __cil_tmp76 + 4;
+    #####:  615:    __cil_tmp78 = (struct list_head const *)__cil_tmp77;
+    #####:  616:    __cil_tmp79 = (struct node const *)__cil_tmp78;
+    #####:  617:    __cil_tmp80 = (unsigned int )__cil_tmp79;
+    #####:  618:    __cil_tmp81 = (unsigned int )node;
+    #####:  619:    __cil_tmp82 = __cil_tmp81 != __cil_tmp80;
+    #####:  620:    if (! __cil_tmp82) {
+branch  0 never executed
+branch  1 never executed
+    #####:  621:goto Goal_57;
+    #####:  622:Goal_57:;
+        -:  623:
+        -:  624:      {
+    #####:  625:      fail();
+call    0 never executed
+        -:  626:      }
+        -:  627:    } else {
+    #####:  628:goto Goal_58;
+    #####:  629:Goal_58:;
+        -:  630:
+        -:  631:    }
+        -:  632:    }
+    #####:  633:    goto while_12_break;
+        -:  634:  }
+        -:  635:  
+        -:  636:goto Goal_56;
+        -:  637:Goal_56:;
+    #####:  638:while_12_break: ;
+        -:  639:  }
+        -:  640:  {
+        -:  641:  while (1) {
+    #####:  642:goto Goal_59;
+    #####:  643:Goal_59:;
+        -:  644:
+    #####:  645:    while_13_continue: ;
+        -:  646:    {
+    #####:  647:    __cil_tmp83 = (int const *)node;
+    #####:  648:    __cil_tmp84 = (struct node const *)__cil_tmp83;
+    #####:  649:    __cil_tmp85 = (unsigned int )__cil_tmp84;
+    #####:  650:    __cil_tmp86 = (unsigned int )node;
+    #####:  651:    __cil_tmp87 = __cil_tmp86 == __cil_tmp85;
+    #####:  652:    if (! __cil_tmp87) {
+branch  0 never executed
+branch  1 never executed
+    #####:  653:goto Goal_61;
+    #####:  654:Goal_61:;
+        -:  655:
+        -:  656:      {
+    #####:  657:      fail();
+call    0 never executed
+        -:  658:      }
+        -:  659:    } else {
+    #####:  660:goto Goal_62;
+    #####:  661:Goal_62:;
+        -:  662:
+        -:  663:    }
+        -:  664:    }
+    #####:  665:    goto while_13_break;
+        -:  666:  }
+        -:  667:  
+        -:  668:goto Goal_60;
+        -:  669:Goal_60:;
+    #####:  670:while_13_break: ;
+        -:  671:  }
+        -:  672:  {
+        -:  673:  while (1) {
+    #####:  674:goto Goal_63;
+    #####:  675:Goal_63:;
+        -:  676:
+    #####:  677:    while_14_continue: ;
+        -:  678:    {
+    #####:  679:    __cil_tmp88 = (unsigned int )node;
+    #####:  680:    __cil_tmp89 = __cil_tmp88 + 4;
+    #####:  681:    __cil_tmp90 = *((struct list_head * const *)__cil_tmp89);
+    #####:  682:    __cil_tmp91 = (unsigned int )__cil_tmp90;
+    #####:  683:    __cil_tmp92 = __cil_tmp91 + 4;
+    #####:  684:    __cil_tmp93 = *((struct list_head **)__cil_tmp92);
+    #####:  685:    __cil_tmp94 = (unsigned int )__cil_tmp93;
+    #####:  686:    __cil_tmp95 = (unsigned int )head;
+    #####:  687:    __cil_tmp96 = __cil_tmp95 == __cil_tmp94;
+    #####:  688:    if (! __cil_tmp96) {
+branch  0 never executed
+branch  1 never executed
+    #####:  689:goto Goal_65;
+    #####:  690:Goal_65:;
+        -:  691:
+        -:  692:      {
+    #####:  693:      fail();
+call    0 never executed
+        -:  694:      }
+        -:  695:    } else {
+    #####:  696:goto Goal_66;
+    #####:  697:Goal_66:;
+        -:  698:
+        -:  699:    }
+        -:  700:    }
+    #####:  701:    goto while_14_break;
+        -:  702:  }
+        -:  703:  
+        -:  704:goto Goal_64;
+        -:  705:Goal_64:;
+    #####:  706:while_14_break: ;
+        -:  707:  }
+        -:  708:  {
+        -:  709:  while (1) {
+    #####:  710:goto Goal_67;
+    #####:  711:Goal_67:;
+        -:  712:
+    #####:  713:    while_15_continue: ;
+        -:  714:    {
+    #####:  715:    __cil_tmp97 = 4 + 4;
+    #####:  716:    __cil_tmp98 = (unsigned int )node;
+    #####:  717:    __cil_tmp99 = __cil_tmp98 + __cil_tmp97;
+    #####:  718:    __cil_tmp100 = *((struct list_head * const *)__cil_tmp99);
+    #####:  719:    __cil_tmp101 = *((struct list_head **)__cil_tmp100);
+    #####:  720:    __cil_tmp102 = (unsigned int )__cil_tmp101;
+    #####:  721:    __cil_tmp103 = (unsigned int )head;
+    #####:  722:    __cil_tmp104 = __cil_tmp103 == __cil_tmp102;
+    #####:  723:    if (! __cil_tmp104) {
+branch  0 never executed
+branch  1 never executed
+    #####:  724:goto Goal_69;
+    #####:  725:Goal_69:;
+        -:  726:
+        -:  727:      {
+    #####:  728:      fail();
+call    0 never executed
+        -:  729:      }
+        -:  730:    } else {
+    #####:  731:goto Goal_70;
+    #####:  732:Goal_70:;
+        -:  733:
+        -:  734:    }
+        -:  735:    }
+    #####:  736:    goto while_15_break;
+        -:  737:  }
+        -:  738:  
+        -:  739:goto Goal_68;
+        -:  740:Goal_68:;
+    #####:  741:while_15_break: ;
+        -:  742:  }
+    #####:  743:  __cil_tmp105 = *((struct list_head * const *)head);
+    #####:  744:  head = (struct list_head const *)__cil_tmp105;
+        -:  745:  {
+        -:  746:  while (1) {
+    #####:  747:goto Goal_71;
+    #####:  748:Goal_71:;
+        -:  749:
+    #####:  750:    while_16_continue: ;
+        -:  751:    {
+    #####:  752:    __cil_tmp106 = (unsigned int )head;
+    #####:  753:    __cil_tmp107 = (unsigned int )node;
+    #####:  754:    __cil_tmp108 = __cil_tmp107 + 4;
+    #####:  755:    __cil_tmp109 = (struct list_head const *)__cil_tmp108;
+    #####:  756:    __cil_tmp110 = (unsigned int )__cil_tmp109;
+    #####:  757:    if (__cil_tmp110 != __cil_tmp106) {
+branch  0 never executed
+branch  1 never executed
+    #####:  758:goto Goal_73;
+    #####:  759:Goal_73:;
+        -:  760:
+        -:  761:    } else {
+    #####:  762:goto Goal_74;
+    #####:  763:Goal_74:;
+        -:  764:
+    #####:  765:      goto while_16_break;
+        -:  766:    }
+        -:  767:    }
+    #####:  768:    __cil_tmp111 = *((struct list_head * const *)head);
+    #####:  769:    head = (struct list_head const *)__cil_tmp111;
+        -:  770:  }
+        -:  771:  
+        -:  772:goto Goal_72;
+        -:  773:Goal_72:;
+    #####:  774:while_16_break: ;
+        -:  775:  }
+        -:  776:  {
+        -:  777:  while (1) {
+    #####:  778:goto Goal_75;
+    #####:  779:Goal_75:;
+        -:  780:
+    #####:  781:    while_17_continue: ;
+        -:  782:    {
+    #####:  783:    __cil_tmp112 = (unsigned int )node;
+    #####:  784:    __cil_tmp113 = (struct node *)0;
+    #####:  785:    __cil_tmp114 = (unsigned int )__cil_tmp113;
+    #####:  786:    __cil_tmp115 = __cil_tmp114 + 4;
+    #####:  787:    __cil_tmp116 = (struct list_head *)__cil_tmp115;
+    #####:  788:    __cil_tmp117 = (unsigned long )__cil_tmp116;
+    #####:  789:    __cil_tmp118 = (char *)head;
+    #####:  790:    __cil_tmp119 = __cil_tmp118 - __cil_tmp117;
+    #####:  791:    __cil_tmp120 = (struct node *)__cil_tmp119;
+    #####:  792:    __cil_tmp121 = (unsigned int )__cil_tmp120;
+    #####:  793:    __cil_tmp122 = __cil_tmp121 == __cil_tmp112;
+    #####:  794:    if (! __cil_tmp122) {
+branch  0 never executed
+branch  1 never executed
+    #####:  795:goto Goal_77;
+    #####:  796:Goal_77:;
+        -:  797:
+        -:  798:      {
+    #####:  799:      fail();
+call    0 never executed
+        -:  800:      }
+        -:  801:    } else {
+    #####:  802:goto Goal_78;
+    #####:  803:Goal_78:;
+        -:  804:
+        -:  805:    }
+        -:  806:    }
+    #####:  807:    goto while_17_break;
+        -:  808:  }
+        -:  809:  
+        -:  810:goto Goal_76;
+        -:  811:Goal_76:;
+    #####:  812:while_17_break: ;
+        -:  813:  }
+    #####:  814:  return;
+        -:  815:}
+        -:  816:}
+function __list_add called 1 returned 100% blocks executed 100%
+        1:  817:__inline static void __list_add(struct list_head *new , struct list_head *prev , struct list_head *next )
+        -:  818:{ unsigned int __cil_tmp4 ;
+        -:  819:  unsigned int __cil_tmp5 ;
+        -:  820:  unsigned int __cil_tmp6 ;
+        -:  821:  unsigned int __cil_tmp7 ;
+        -:  822:  {
+        1:  823:  __cil_tmp4 = (unsigned int )next;
+        1:  824:  __cil_tmp5 = __cil_tmp4 + 4;
+        1:  825:  *((struct list_head **)__cil_tmp5) = new;
+        1:  826:  *((struct list_head **)new) = next;
+        1:  827:  __cil_tmp6 = (unsigned int )new;
+        1:  828:  __cil_tmp7 = __cil_tmp6 + 4;
+        1:  829:  *((struct list_head **)__cil_tmp7) = prev;
+        1:  830:  *((struct list_head **)prev) = new;
+        1:  831:  return;
+        -:  832:}
+        -:  833:}
+function __list_del called 0 returned 0% blocks executed 0%
+    #####:  834:__inline static void __list_del(struct list_head *prev , struct list_head *next )
+        -:  835:{ unsigned int __cil_tmp3 ;
+        -:  836:  unsigned int __cil_tmp4 ;
+        -:  837:  {
+    #####:  838:  __cil_tmp3 = (unsigned int )next;
+    #####:  839:  __cil_tmp4 = __cil_tmp3 + 4;
+    #####:  840:  *((struct list_head **)__cil_tmp4) = prev;
+    #####:  841:  *((struct list_head **)prev) = next;
+    #####:  842:  return;
+        -:  843:}
+        -:  844:}
+function list_add called 1 returned 100% blocks executed 100%
+        1:  845:__inline static void list_add(struct list_head *new , struct list_head *head )
+        -:  846:{ struct list_head *__cil_tmp3 ;
+        -:  847:  {
+        -:  848:  {
+        1:  849:  __cil_tmp3 = *((struct list_head **)head);
+        1:  850:  __list_add(new, head, __cil_tmp3);
+call    0 returned 1
+        -:  851:  }
+        1:  852:  return;
+        -:  853:}
+        -:  854:}
+function list_move called 0 returned 0% blocks executed 0%
+    #####:  855:__inline static void list_move(struct list_head *list , struct list_head *head )
+        -:  856:{ unsigned int __cil_tmp3 ;
+        -:  857:  unsigned int __cil_tmp4 ;
+        -:  858:  struct list_head *__cil_tmp5 ;
+        -:  859:  struct list_head *__cil_tmp6 ;
+        -:  860:  {
+        -:  861:  {
+    #####:  862:  __cil_tmp3 = (unsigned int )list;
+    #####:  863:  __cil_tmp4 = __cil_tmp3 + 4;
+    #####:  864:  __cil_tmp5 = *((struct list_head **)__cil_tmp4);
+    #####:  865:  __cil_tmp6 = *((struct list_head **)list);
+    #####:  866:  __list_del(__cil_tmp5, __cil_tmp6);
+call    0 never executed
+    #####:  867:  list_add(list, head);
+call    0 never executed
+        -:  868:  }
+    #####:  869:  return;
+        -:  870:}
+        -:  871:}
+function gl_insert called 1 returned 100% blocks executed 73%
+        1:  872:static void gl_insert(int value )
+        -:  873:{ struct node *node ;
+        -:  874:  void *tmp ;
+        -:  875:  unsigned int __cil_tmp4 ;
+        -:  876:  unsigned int __cil_tmp5 ;
+        -:  877:  unsigned int __cil_tmp6 ;
+        -:  878:  struct list_head *__cil_tmp7 ;
+        -:  879:  unsigned int __cil_tmp8 ;
+        -:  880:  unsigned int __cil_tmp9 ;
+        -:  881:  unsigned int __cil_tmp10 ;
+        -:  882:  unsigned int __cil_tmp11 ;
+        -:  883:  unsigned int __cil_tmp12 ;
+        -:  884:  unsigned int __cil_tmp13 ;
+        -:  885:  unsigned int __cil_tmp14 ;
+        -:  886:  unsigned int __cil_tmp15 ;
+        -:  887:  {
+        -:  888:  {
+        1:  889:  __cil_tmp4 = (unsigned int )20UL;
+        1:  890:  tmp = malloc(__cil_tmp4);
+        1:  891:  node = (struct node *)tmp;
+        -:  892:  }
+        1:  893:  if (! node) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  894:goto Goal_79;
+    #####:  895:Goal_79:;
+        -:  896:
+        -:  897:    {
+        -:  898:    {
+        -:  899:    #ifdef GCOV
+    #####:  900:    __gcov_dump();
+call    0 never executed
+        -:  901:    #endif
+    #####:  902:    abort();
+call    0 never executed
+        -:  903:    }
+        -:  904:    }
+        -:  905:  } else {
+        1:  906:goto Goal_80;
+        1:  907:Goal_80:;
+        -:  908:
+        -:  909:  }
+        -:  910:  {
+        1:  911:  *((int *)node) = value;
+        1:  912:  __cil_tmp5 = (unsigned int )node;
+        1:  913:  __cil_tmp6 = __cil_tmp5 + 4;
+        1:  914:  __cil_tmp7 = (struct list_head *)__cil_tmp6;
+        1:  915:  list_add(__cil_tmp7, & gl_list);
+call    0 returned 1
+        -:  916:  }
+        -:  917:  {
+        -:  918:  while (1) {
+        1:  919:goto Goal_81;
+        1:  920:Goal_81:;
+        -:  921:
+        1:  922:    while_18_continue: ;
+        1:  923:    __cil_tmp8 = (unsigned int )node;
+        1:  924:    __cil_tmp9 = __cil_tmp8 + 12;
+        1:  925:    __cil_tmp10 = (unsigned int )node;
+        1:  926:    __cil_tmp11 = __cil_tmp10 + 12;
+        1:  927:    *((struct list_head **)__cil_tmp9) = (struct list_head *)__cil_tmp11;
+        1:  928:    __cil_tmp12 = (unsigned int )node;
+        1:  929:    __cil_tmp13 = __cil_tmp12 + 12;
+        1:  930:    __cil_tmp14 = (unsigned int )node;
+        1:  931:    __cil_tmp15 = __cil_tmp14 + 12;
+        1:  932:    *((struct list_head **)__cil_tmp13) = (struct list_head *)__cil_tmp15;
+        1:  933:    goto while_18_break;
+        -:  934:  }
+        -:  935:  
+        -:  936:goto Goal_82;
+        -:  937:Goal_82:;
+        1:  938:while_18_break: ;
+        -:  939:  }
+        1:  940:  return;
+        -:  941:}
+        -:  942:}
+function gl_read called 1 returned 100% blocks executed 77%
+        1:  943:static void gl_read(void)
+        -:  944:{ int tmp ;
+        -:  945:  int tmp___0 ;
+        -:  946:  {
+        -:  947:  {
+        -:  948:  while (1) {
+        1:  949:goto Goal_83;
+        1:  950:Goal_83:;
+        -:  951:
+        1:  952:    while_19_continue: ;
+        -:  953:    {
+        1:  954:    tmp = __VERIFIER_nondet_int();
+call    0 returned 1
+        1:  955:    gl_insert(tmp);
+call    0 returned 1
+        1:  956:    tmp___0 = __VERIFIER_nondet_int();
+call    0 returned 1
+        -:  957:    }
+        1:  958:    if (tmp___0) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  959:goto Goal_85;
+    #####:  960:Goal_85:;
+        -:  961:
+        -:  962:    } else {
+        1:  963:goto Goal_86;
+        1:  964:Goal_86:;
+        -:  965:
+        1:  966:      goto while_19_break;
+        -:  967:    }
+        -:  968:  }
+        -:  969:  
+        -:  970:goto Goal_84;
+        -:  971:Goal_84:;
+        1:  972:while_19_break: ;
+        -:  973:  }
+        1:  974:  return;
+        -:  975:}
+        -:  976:}
+function gl_destroy called 0 returned 0% blocks executed 0%
+    #####:  977:static void gl_destroy(void)
+        -:  978:{ struct list_head *next ;
+        -:  979:  struct list_head *__cil_tmp2 ;
+        -:  980:  unsigned int __cil_tmp3 ;
+        -:  981:  unsigned int __cil_tmp4 ;
+        -:  982:  struct list_head *__cil_tmp5 ;
+        -:  983:  struct node *__cil_tmp6 ;
+        -:  984:  unsigned int __cil_tmp7 ;
+        -:  985:  unsigned int __cil_tmp8 ;
+        -:  986:  struct list_head *__cil_tmp9 ;
+        -:  987:  unsigned long __cil_tmp10 ;
+        -:  988:  char *__cil_tmp11 ;
+        -:  989:  char *__cil_tmp12 ;
+        -:  990:  struct node *__cil_tmp13 ;
+        -:  991:  void *__cil_tmp14 ;
+        -:  992:  {
+        -:  993:  {
+        -:  994:  while (1) {
+    #####:  995:goto Goal_87;
+    #####:  996:Goal_87:;
+        -:  997:
+    #####:  998:    while_20_continue: ;
+    #####:  999:    __cil_tmp2 = & gl_list;
+    #####: 1000:    next = *((struct list_head **)__cil_tmp2);
+        -: 1001:    {
+    #####: 1002:    __cil_tmp3 = (unsigned int )next;
+    #####: 1003:    __cil_tmp4 = (unsigned int )(& gl_list);
+    #####: 1004:    if (__cil_tmp4 != __cil_tmp3) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1005:goto Goal_89;
+    #####: 1006:Goal_89:;
+        -: 1007:
+        -: 1008:    } else {
+    #####: 1009:goto Goal_90;
+    #####: 1010:Goal_90:;
+        -: 1011:
+    #####: 1012:      goto while_20_break;
+        -: 1013:    }
+        -: 1014:    }
+        -: 1015:    {
+    #####: 1016:    __cil_tmp5 = & gl_list;
+    #####: 1017:    *((struct list_head **)__cil_tmp5) = *((struct list_head **)next);
+    #####: 1018:    __cil_tmp6 = (struct node *)0;
+    #####: 1019:    __cil_tmp7 = (unsigned int )__cil_tmp6;
+    #####: 1020:    __cil_tmp8 = __cil_tmp7 + 4;
+    #####: 1021:    __cil_tmp9 = (struct list_head *)__cil_tmp8;
+    #####: 1022:    __cil_tmp10 = (unsigned long )__cil_tmp9;
+    #####: 1023:    __cil_tmp11 = (char *)next;
+    #####: 1024:    __cil_tmp12 = __cil_tmp11 - __cil_tmp10;
+    #####: 1025:    __cil_tmp13 = (struct node *)__cil_tmp12;
+    #####: 1026:    __cil_tmp14 = (void *)__cil_tmp13;
+    #####: 1027:    free(__cil_tmp14);
+        -: 1028:    }
+        -: 1029:  }
+        -: 1030:  
+        -: 1031:goto Goal_88;
+        -: 1032:Goal_88:;
+    #####: 1033:while_20_break: ;
+        -: 1034:  }
+    #####: 1035:  return;
+        -: 1036:}
+        -: 1037:}
+function val_from_node called 0 returned 0% blocks executed 0%
+    #####: 1038:static int val_from_node(struct list_head *head )
+        -: 1039:{ struct node *entry ;
+        -: 1040:  struct node *__cil_tmp3 ;
+        -: 1041:  unsigned int __cil_tmp4 ;
+        -: 1042:  unsigned int __cil_tmp5 ;
+        -: 1043:  struct list_head *__cil_tmp6 ;
+        -: 1044:  unsigned long __cil_tmp7 ;
+        -: 1045:  char *__cil_tmp8 ;
+        -: 1046:  char *__cil_tmp9 ;
+        -: 1047:  {
+    #####: 1048:  __cil_tmp3 = (struct node *)0;
+    #####: 1049:  __cil_tmp4 = (unsigned int )__cil_tmp3;
+    #####: 1050:  __cil_tmp5 = __cil_tmp4 + 4;
+    #####: 1051:  __cil_tmp6 = (struct list_head *)__cil_tmp5;
+    #####: 1052:  __cil_tmp7 = (unsigned long )__cil_tmp6;
+    #####: 1053:  __cil_tmp8 = (char *)head;
+    #####: 1054:  __cil_tmp9 = __cil_tmp8 - __cil_tmp7;
+    #####: 1055:  entry = (struct node *)__cil_tmp9;
+    #####: 1056:  return (*((int *)entry));
+        -: 1057:}
+        -: 1058:}
+function gl_sort_pass called 0 returned 0% blocks executed 0%
+    #####: 1059:static _Bool gl_sort_pass(void)
+        -: 1060:{ _Bool any_change ;
+        -: 1061:  struct list_head *pos0 ;
+        -: 1062:  struct list_head *pos1 ;
+        -: 1063:  int val0 ;
+        -: 1064:  int tmp ;
+        -: 1065:  int val1 ;
+        -: 1066:  int tmp___0 ;
+        -: 1067:  struct list_head *__cil_tmp8 ;
+        -: 1068:  unsigned int __cil_tmp9 ;
+        -: 1069:  unsigned int __cil_tmp10 ;
+        -: 1070:  {
+    #####: 1071:  any_change = (_Bool)0;
+    #####: 1072:  __cil_tmp8 = & gl_list;
+    #####: 1073:  pos0 = *((struct list_head **)__cil_tmp8);
+        -: 1074:  {
+        -: 1075:  while (1) {
+    #####: 1076:goto Goal_91;
+    #####: 1077:Goal_91:;
+        -: 1078:
+    #####: 1079:    while_21_continue: ;
+    #####: 1080:    pos1 = *((struct list_head **)pos0);
+        -: 1081:    {
+    #####: 1082:    __cil_tmp9 = (unsigned int )pos1;
+    #####: 1083:    __cil_tmp10 = (unsigned int )(& gl_list);
+    #####: 1084:    if (__cil_tmp10 != __cil_tmp9) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1085:goto Goal_93;
+    #####: 1086:Goal_93:;
+        -: 1087:
+        -: 1088:    } else {
+    #####: 1089:goto Goal_94;
+    #####: 1090:Goal_94:;
+        -: 1091:
+    #####: 1092:      goto while_21_break;
+        -: 1093:    }
+        -: 1094:    }
+        -: 1095:    {
+    #####: 1096:    tmp = val_from_node(pos0);
+call    0 never executed
+    #####: 1097:    val0 = tmp;
+    #####: 1098:    tmp___0 = val_from_node(pos1);
+call    0 never executed
+    #####: 1099:    val1 = tmp___0;
+        -: 1100:    }
+    #####: 1101:    if (val0 <= val1) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1102:goto Goal_95;
+    #####: 1103:Goal_95:;
+        -: 1104:
+    #####: 1105:      pos0 = pos1;
+    #####: 1106:      goto while_21_continue;
+        -: 1107:    } else {
+    #####: 1108:goto Goal_96;
+    #####: 1109:Goal_96:;
+        -: 1110:
+        -: 1111:    }
+        -: 1112:    {
+    #####: 1113:    any_change = (_Bool)1;
+    #####: 1114:    list_move(pos0, pos1);
+call    0 never executed
+        -: 1115:    }
+        -: 1116:  }
+        -: 1117:  
+        -: 1118:goto Goal_92;
+        -: 1119:Goal_92:;
+    #####: 1120:while_21_break: ;
+        -: 1121:  }
+    #####: 1122:  return (any_change);
+        -: 1123:}
+        -: 1124:}
+function gl_sort called 0 returned 0% blocks executed 0%
+    #####: 1125:static void gl_sort(void)
+        -: 1126:{ _Bool tmp ;
+        -: 1127:  {
+        -: 1128:  {
+        -: 1129:  while (1) {
+    #####: 1130:goto Goal_97;
+    #####: 1131:Goal_97:;
+        -: 1132:
+    #####: 1133:    while_22_continue: ;
+        -: 1134:    {
+    #####: 1135:    tmp = gl_sort_pass();
+call    0 never executed
+        -: 1136:    }
+    #####: 1137:    if (tmp) {
+branch  0 never executed
+branch  1 never executed
+    #####: 1138:goto Goal_99;
+    #####: 1139:Goal_99:;
+        -: 1140:
+        -: 1141:    } else {
+    #####: 1142:goto Goal_100;
+    #####: 1143:Goal_100:;
+        -: 1144:
+    #####: 1145:      goto while_22_break;
+        -: 1146:    }
+        -: 1147:  }
+        -: 1148:  
+        -: 1149:goto Goal_98;
+        -: 1150:Goal_98:;
+    #####: 1151:while_22_break: ;
+        -: 1152:  }
+    #####: 1153:  return;
+        -: 1154:}
+        -: 1155:}
+function main called 1 returned 0% blocks executed 43%
+        1: 1156:int main(void)
+        -: 1157:{ struct list_head const *__cil_tmp1 ;
+        -: 1158:  struct list_head const *__cil_tmp2 ;
+        -: 1159:  {
+        -: 1160:  {
+        1: 1161:  gl_read();
+call    0 returned 1
+        1: 1162:  __cil_tmp1 = (struct list_head const *)(& gl_list);
+        1: 1163:  inspect(__cil_tmp1);
+call    0 returned 0
+    #####: 1164:  gl_sort();
+call    0 never executed
+    #####: 1165:  __cil_tmp2 = (struct list_head const *)(& gl_list);
+    #####: 1166:  inspect(__cil_tmp2);
+call    0 never executed
+    #####: 1167:  gl_destroy();
+call    0 never executed
+        -: 1168:  }
+    #####: 1169:  return (0);
+        -: 1170:}
+        -: 1171:}

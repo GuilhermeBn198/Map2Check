@@ -1,0 +1,63 @@
+        -:    0:Source:output/instrumented_sum02-1.c
+        -:    0:Graph:output/a-harness.gcno
+        -:    0:Data:output/a-harness.gcda
+        -:    0:Runs:1
+        -:    1:#ifdef GCOV
+        -:    2:extern void __gcov_dump(void);
+        -:    3:#endif
+        -:    4:extern void abort(void);
+        -:    5:extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+function reach_error called 0 returned 0% blocks executed 0%
+    #####:    6:void reach_error() {
+        -:    7:#ifdef GCOV
+    #####:    8: __gcov_dump();
+call    0 never executed
+        -:    9: #endif
+    #####:   10: __assert_fail("0", "sum02-1.c", 3, "reach_error"); }
+        -:   11:
+function __VERIFIER_assert called 1 returned 100% blocks executed 44%
+        1:   12:void __VERIFIER_assert(int cond) {
+        1:   13:  if (!(cond)) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   14:goto Goal_1;
+    #####:   15:Goal_1:;
+        -:   16:
+    #####:   17:    ERROR: {reach_error();{
+call    0 never executed
+        -:   18:#ifdef GCOV
+    #####:   19:__gcov_dump();
+call    0 never executed
+        -:   20:#endif
+    #####:   21:abort();
+call    0 never executed
+        -:   22:}}
+        -:   23:  }
+        -:   24:   else { 
+        1:   25:goto Goal_2;
+        1:   26:Goal_2:;
+        1:   27:}return;
+        -:   28:}
+        -:   29:extern unsigned int __VERIFIER_nondet_uint();
+function main called 1 returned 100% blocks executed 85%
+        1:   30:int main() {
+        1:   31:  unsigned int i, n=__VERIFIER_nondet_uint(), sn=0;
+call    0 returned 1
+    32444:   32:  for(i=0; i<=n; i++) {
+branch  0 taken 32443
+branch  1 taken 1 (fallthrough)
+    32443:   33:goto Goal_3;
+    32443:   34:Goal_3:;
+        -:   35:
+    32443:   36:    sn = sn + i;
+        -:   37:  }
+        -:   38:  
+        1:   39:goto Goal_4;
+        1:   40:Goal_4:;
+       1*:   41:__VERIFIER_assert(sn==(n*(n+1))/2 || sn == 0);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+branch  2 never executed
+branch  3 never executed
+call    4 returned 1
+        -:   42:}

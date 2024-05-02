@@ -1,0 +1,78 @@
+        -:    0:Source:output/instrumented_simple_1-1_abstracted.c
+        -:    0:Graph:output/a-harness.gcno
+        -:    0:Data:output/a-harness.gcda
+        -:    0:Runs:1
+        -:    1:#ifdef GCOV
+        -:    2:extern void __gcov_dump(void);
+        -:    3:#endif
+        -:    4:extern void abort(void);
+        -:    5:extern int __VERIFIER_nondet_int();
+        -:    6:extern _Bool __VERIFIER_nondet_bool();
+        -:    7:extern char __VERIFIER_nondet_char();
+        -:    8:extern double __VERIFIER_nondet_double();
+        -:    9:extern float __VERIFIER_nondet_float();
+        -:   10:extern unsigned long __VERIFIER_nondet_ulong();
+        -:   11:extern unsigned long long __VERIFIER_nondet_ulonglong();
+        -:   12:extern unsigned int __VERIFIER_nondet_uint();
+        -:   13:extern int __VERIFIER_nondet_int();
+        -:   14:extern void abort(void);
+        -:   15:extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+function reach_error called 1 returned 0% blocks executed 100%
+        1:   16:void reach_error() {
+        -:   17:#ifdef GCOV
+        1:   18: __gcov_dump();
+call    0 returned 0
+        -:   19: #endif
+    #####:   20: __assert_fail("0", "simple_1-1_abstracted.c", 3, "reach_error"); }
+        -:   21:
+function __VERIFIER_assert called 1 returned 0% blocks executed 56%
+        1:   22:void __VERIFIER_assert(int cond) {
+        1:   23:  if (!(cond)) {
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   24:goto Goal_1;
+        1:   25:Goal_1:;
+        -:   26:
+        1:   27:    ERROR: {reach_error();{
+call    0 returned 0
+        -:   28:#ifdef GCOV
+    #####:   29:__gcov_dump();
+call    0 never executed
+        -:   30:#endif
+    #####:   31:abort();
+call    0 never executed
+        -:   32:}}
+        -:   33:  }
+        -:   34:   else { 
+    #####:   35:goto Goal_2;
+    #####:   36:Goal_2:;
+    #####:   37:}return;
+        -:   38:}
+        -:   39:
+function main called 1 returned 0% blocks executed 62%
+        1:   40:int main(void) {
+        1:   41:  unsigned int x = 0;
+        -:   42:
+        -:   43:
+        1:   44:  if (x < (268435455)) {
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   45:goto Goal_3;
+        1:   46:Goal_3:;
+        -:   47:
+        -:   48:    long long int x__VERIFIER_LA_tmp0;
+        1:   49:    x__VERIFIER_LA_tmp0 = x;
+        -:   50:    long long int __VERIFIER_LA_iterations0;
+        1:   51:    __VERIFIER_LA_iterations0 = (268435455 - x__VERIFIER_LA_tmp0) / 2L;
+        -:   52:    unsigned int x__VERIFIER_LA_old_tmp0;
+        1:   53:    x__VERIFIER_LA_old_tmp0 = x;
+        1:   54:    x = (__VERIFIER_LA_iterations0 * 2L) + x__VERIFIER_LA_old_tmp0;
+        -:   55:  }
+        -:   56:
+        -:   57:
+        -:   58:   else { 
+    #####:   59:goto Goal_4;
+    #####:   60:Goal_4:;
+        1:   61:}__VERIFIER_assert(x % 2);
+call    0 returned 0
+        -:   62:}

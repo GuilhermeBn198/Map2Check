@@ -1,0 +1,61 @@
+        -:    0:Source:output/instrumented_array_1-1.c
+        -:    0:Graph:output/a-harness.gcno
+        -:    0:Data:output/a-harness.gcda
+        -:    0:Runs:1
+        -:    1:#ifdef GCOV
+        -:    2:extern void __gcov_dump(void);
+        -:    3:#endif
+        -:    4:extern void abort(void);
+        -:    5:extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+function reach_error called 1 returned 0% blocks executed 100%
+        1:    6:void reach_error() {
+        -:    7:#ifdef GCOV
+        1:    8: __gcov_dump();
+call    0 returned 0
+        -:    9: #endif
+    #####:   10: __assert_fail("0", "array_1-1.c", 3, "reach_error"); }
+        -:   11:
+function __VERIFIER_assert called 1 returned 0% blocks executed 56%
+        1:   12:void __VERIFIER_assert(int cond) {
+        1:   13:  if (!(cond)) {
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   14:goto Goal_1;
+        1:   15:Goal_1:;
+        -:   16:
+        1:   17:    ERROR: {reach_error();{
+call    0 returned 0
+        -:   18:#ifdef GCOV
+    #####:   19:__gcov_dump();
+call    0 never executed
+        -:   20:#endif
+    #####:   21:abort();
+call    0 never executed
+        -:   22:}}
+        -:   23:  }
+        -:   24:   else { 
+    #####:   25:goto Goal_2;
+    #####:   26:Goal_2:;
+    #####:   27:}return;
+        -:   28:}
+        -:   29:
+function main called 1 returned 0% blocks executed 88%
+        1:   30:int main(void) {
+        -:   31:  int A[2048];
+        -:   32:  int i;
+        -:   33:
+     1025:   34:  for (i = 0; i < 1024; i++) {
+branch  0 taken 1024
+branch  1 taken 1 (fallthrough)
+     1024:   35:goto Goal_3;
+     1024:   36:Goal_3:;
+        -:   37:
+     1024:   38:    A[i] = i;
+        -:   39:  }
+        -:   40:
+        -:   41:  
+        1:   42:goto Goal_4;
+        1:   43:Goal_4:;
+        1:   44:__VERIFIER_assert(A[1023] != 1023);
+call    0 returned 0
+        -:   45:}

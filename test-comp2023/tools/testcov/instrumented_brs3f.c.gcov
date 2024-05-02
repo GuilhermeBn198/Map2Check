@@ -1,0 +1,141 @@
+        -:    0:Source:output/instrumented_brs3f.c
+        -:    0:Graph:output/a-harness.gcno
+        -:    0:Data:output/a-harness.gcda
+        -:    0:Runs:1
+        -:    1:#ifdef GCOV
+        -:    2:extern void __gcov_dump(void);
+        -:    3:#endif
+        -:    4:
+        -:    5:
+        -:    6:
+        -:    7:
+        -:    8:
+        -:    9:
+        -:   10:
+        -:   11:extern void abort(void);
+        -:   12:extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+function reach_error called 0 returned 0% blocks executed 0%
+    #####:   13:void reach_error() {
+        -:   14:#ifdef GCOV
+    #####:   15: __gcov_dump();
+call    0 never executed
+        -:   16: #endif
+    #####:   17: __assert_fail("0", "brs3f.c", 10, "reach_error"); }
+        -:   18:extern void abort(void);
+function assume_abort_if_not called 0 returned 0% blocks executed 0%
+    #####:   19:void assume_abort_if_not(int cond) {
+    #####:   20:  if(!cond) {
+branch  0 never executed
+branch  1 never executed
+    #####:   21:goto Goal_1;
+    #####:   22:Goal_1:;
+        -:   23:{
+        -:   24:#ifdef GCOV
+    #####:   25:__gcov_dump();
+call    0 never executed
+        -:   26:#endif
+    #####:   27:abort();
+call    0 never executed
+        -:   28:}}
+        -:   29: else { 
+    #####:   30:goto Goal_2;
+    #####:   31:Goal_2:;
+    #####:   32:}}
+function __VERIFIER_assert called 0 returned 0% blocks executed 0%
+    #####:   33:void __VERIFIER_assert(int cond) { if(!(cond)) {
+branch  0 never executed
+branch  1 never executed
+    #####:   34:goto Goal_3;
+    #####:   35:Goal_3:;
+    #####:   36: ERROR: {reach_error();{
+call    0 never executed
+        -:   37:#ifdef GCOV
+    #####:   38:__gcov_dump();
+call    0 never executed
+        -:   39:#endif
+    #####:   40:abort();
+call    0 never executed
+        -:   41:}} }  else { 
+    #####:   42:goto Goal_4;
+    #####:   43:Goal_4:;
+    #####:   44:}}
+        -:   45:extern int __VERIFIER_nondet_int(void);
+        -:   46:void* malloc(unsigned int size);
+        -:   47:
+        -:   48:int N;
+        -:   49:
+function main called 1 returned 0% blocks executed 7%
+        1:   50:int main()
+        -:   51:{
+       1*:   52: N = __VERIFIER_nondet_int();
+call    0 returned 0
+    #####:   53: if(N <= 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:   54:goto Goal_5;
+    #####:   55:Goal_5:;
+    #####:   56: return 1;
+        -:   57:}
+        -:   58:  else { 
+    #####:   59:goto Goal_6;
+    #####:   60:Goal_6:;
+    #####:   61:}assume_abort_if_not(N <= 2147483647/sizeof(int));
+call    0 never executed
+        -:   62:
+        -:   63: int i;
+        -:   64: long long sum[1];
+    #####:   65: int *a = malloc(sizeof(int)*N);
+        -:   66:
+    #####:   67: for(i=0; i<N; i++)
+branch  0 never executed
+branch  1 never executed
+        -:   68: {
+    #####:   69:goto Goal_7;
+    #####:   70:Goal_7:;
+        -:   71:
+    #####:   72:  if(i%3==0) {
+branch  0 never executed
+branch  1 never executed
+    #####:   73:goto Goal_9;
+    #####:   74:Goal_9:;
+        -:   75:
+    #####:   76:   a[i] = 3;
+        -:   77:  } else {
+    #####:   78:goto Goal_10;
+    #####:   79:Goal_10:;
+        -:   80:
+    #####:   81:   a[i] = 30;
+        -:   82:  }
+        -:   83: }
+        -:   84:
+        -:   85: 
+    #####:   86:goto Goal_8;
+    #####:   87:Goal_8:;
+    #####:   88:for(i=0; i<N; i++)
+branch  0 never executed
+branch  1 never executed
+        -:   89: {
+    #####:   90:goto Goal_11;
+    #####:   91:Goal_11:;
+        -:   92:
+    #####:   93:  if(i==0) {
+branch  0 never executed
+branch  1 never executed
+    #####:   94:goto Goal_13;
+    #####:   95:Goal_13:;
+        -:   96:
+    #####:   97:   sum[0] = 0;
+        -:   98:  } else {
+    #####:   99:goto Goal_14;
+    #####:  100:Goal_14:;
+        -:  101:
+    #####:  102:   sum[0] = sum[0] + a[i];
+        -:  103:  }
+        -:  104: }
+        -:  105: 
+    #####:  106:goto Goal_12;
+    #####:  107:Goal_12:;
+    #####:  108:__VERIFIER_assert(sum[0] <= 3*N);
+call    0 never executed
+    #####:  109: return 1;
+        -:  110:}

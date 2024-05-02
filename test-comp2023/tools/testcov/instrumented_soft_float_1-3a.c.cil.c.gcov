@@ -1,0 +1,698 @@
+        -:    0:Source:output/instrumented_soft_float_1-3a.c.cil.c
+        -:    0:Graph:output/a-harness.gcno
+        -:    0:Data:output/a-harness.gcda
+        -:    0:Runs:1
+        -:    1:#ifdef GCOV
+        -:    2:extern void __gcov_dump(void);
+        -:    3:#endif
+        -:    4:extern void abort(void);
+        -:    5:extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+function reach_error called 0 returned 0% blocks executed 0%
+    #####:    6:void reach_error() {
+        -:    7:#ifdef GCOV
+    #####:    8: __gcov_dump();
+call    0 never executed
+        -:    9: #endif
+    #####:   10: __assert_fail("0", "soft_float_1-3a.c.cil.c", 3, "reach_error"); }
+        -:   11:
+        -:   12:extern char __VERIFIER_nondet_char(void);
+        -:   13:extern unsigned int __VERIFIER_nondet_uint(void);
+function __VERIFIER_assert called 0 returned 0% blocks executed 0%
+    #####:   14:void __VERIFIER_assert(int cond) {
+    #####:   15:  if (!(cond)) {
+branch  0 never executed
+branch  1 never executed
+    #####:   16:goto Goal_1;
+    #####:   17:Goal_1:;
+        -:   18:
+    #####:   19:    ERROR: {reach_error();{
+call    0 never executed
+        -:   20:#ifdef GCOV
+    #####:   21:__gcov_dump();
+call    0 never executed
+        -:   22:#endif
+    #####:   23:abort();
+call    0 never executed
+        -:   24:}}
+        -:   25:  }
+        -:   26:   else { 
+    #####:   27:goto Goal_2;
+    #####:   28:Goal_2:;
+    #####:   29:}return;
+        -:   30:}
+        -:   31:
+        -:   32:
+        -:   33:
+function base2flt called 0 returned 0% blocks executed 0%
+    #####:   34:unsigned int base2flt(unsigned int m , int e )
+        -:   35:{ unsigned int res ;
+        -:   36:  unsigned int __retres4 ;
+        -:   37:
+        -:   38:  {
+    #####:   39:  if (! m) {
+branch  0 never executed
+branch  1 never executed
+    #####:   40:goto Goal_3;
+    #####:   41:Goal_3:;
+        -:   42:
+    #####:   43:    __retres4 = 0U;
+    #####:   44:    goto return_label;
+        -:   45:  } else {
+    #####:   46:goto Goal_4;
+    #####:   47:Goal_4:;
+        -:   48:
+        -:   49:
+        -:   50:  }
+    #####:   51:  if (m < 1U << 24U) {
+branch  0 never executed
+branch  1 never executed
+    #####:   52:goto Goal_5;
+    #####:   53:Goal_5:;
+        -:   54:
+        -:   55:    {
+        -:   56:    while (1) {
+    #####:   57:goto Goal_7;
+    #####:   58:Goal_7:;
+        -:   59:
+    #####:   60:      while_0_continue: ;
+    #####:   61:      if (e <= -128) {
+branch  0 never executed
+branch  1 never executed
+    #####:   62:goto Goal_9;
+    #####:   63:Goal_9:;
+        -:   64:
+    #####:   65:        __retres4 = 0U;
+    #####:   66:        goto return_label;
+        -:   67:      } else {
+    #####:   68:goto Goal_10;
+    #####:   69:Goal_10:;
+        -:   70:
+        -:   71:
+        -:   72:      }
+    #####:   73:      e = e - 1;
+    #####:   74:      m = m << 1U;
+    #####:   75:      if (m < 1U << 24U) {
+branch  0 never executed
+branch  1 never executed
+    #####:   76:goto Goal_11;
+    #####:   77:Goal_11:;
+        -:   78:
+        -:   79:
+        -:   80:      } else {
+    #####:   81:goto Goal_12;
+    #####:   82:Goal_12:;
+        -:   83:
+    #####:   84:        goto while_0_break;
+        -:   85:      }
+        -:   86:    }
+        -:   87:    
+        -:   88:goto Goal_8;
+        -:   89:Goal_8:;
+    #####:   90:while_0_break: ;
+        -:   91:    }
+        -:   92:  } else {
+    #####:   93:goto Goal_6;
+    #####:   94:Goal_6:;
+        -:   95:
+        -:   96:    {
+        -:   97:    while (1) {
+    #####:   98:goto Goal_13;
+    #####:   99:Goal_13:;
+        -:  100:
+    #####:  101:      while_1_continue: ;
+    #####:  102:      if (m >= 1U << 25U) {
+branch  0 never executed
+branch  1 never executed
+    #####:  103:goto Goal_15;
+    #####:  104:Goal_15:;
+        -:  105:
+        -:  106:
+        -:  107:      } else {
+    #####:  108:goto Goal_16;
+    #####:  109:Goal_16:;
+        -:  110:
+    #####:  111:        goto while_1_break;
+        -:  112:      }
+    #####:  113:      if (e >= 127) {
+branch  0 never executed
+branch  1 never executed
+    #####:  114:goto Goal_17;
+    #####:  115:Goal_17:;
+        -:  116:
+    #####:  117:        __retres4 = 4294967295U;
+    #####:  118:        goto return_label;
+        -:  119:      } else {
+    #####:  120:goto Goal_18;
+    #####:  121:Goal_18:;
+        -:  122:
+        -:  123:
+        -:  124:      }
+    #####:  125:      e = e + 1;
+    #####:  126:      m = m >> 1U;
+        -:  127:    }
+        -:  128:    
+        -:  129:goto Goal_14;
+        -:  130:Goal_14:;
+    #####:  131:while_1_break: ;
+        -:  132:    }
+        -:  133:  }
+    #####:  134:  m = m & ~ (1U << 24U);
+    #####:  135:  res = m | ((unsigned int )(e + 128) << 24U);
+    #####:  136:  __retres4 = res;
+    #####:  137:  return_label:
+    #####:  138:  return (__retres4);
+        -:  139:}
+        -:  140:}
+function addflt called 0 returned 0% blocks executed 0%
+    #####:  141:unsigned int addflt(unsigned int a , unsigned int b )
+        -:  142:{ unsigned int res ;
+        -:  143:  unsigned int ma ;
+        -:  144:  unsigned int mb ;
+        -:  145:  unsigned int delta ;
+        -:  146:  int ea ;
+        -:  147:  int eb ;
+        -:  148:  unsigned int tmp ;
+        -:  149:  unsigned int __retres10 ;
+        -:  150:
+        -:  151:  {
+    #####:  152:  if (a < b) {
+branch  0 never executed
+branch  1 never executed
+    #####:  153:goto Goal_19;
+    #####:  154:Goal_19:;
+        -:  155:
+    #####:  156:    tmp = a;
+    #####:  157:    a = b;
+    #####:  158:    b = tmp;
+        -:  159:  } else {
+    #####:  160:goto Goal_20;
+    #####:  161:Goal_20:;
+        -:  162:
+        -:  163:
+        -:  164:  }
+    #####:  165:  if (! b) {
+branch  0 never executed
+branch  1 never executed
+    #####:  166:goto Goal_21;
+    #####:  167:Goal_21:;
+        -:  168:
+    #####:  169:    __retres10 = a;
+    #####:  170:    goto return_label;
+        -:  171:  } else {
+    #####:  172:goto Goal_22;
+    #####:  173:Goal_22:;
+        -:  174:
+        -:  175:
+        -:  176:  }
+        -:  177:  {
+    #####:  178:  ma = a & ((1U << 24U) - 1U);
+    #####:  179:  ea = (int )(a >> 24U) - 128;
+    #####:  180:  ma = ma | (1U << 24U);
+    #####:  181:  mb = b & ((1U << 24U) - 1U);
+    #####:  182:  eb = (int )(b >> 24U) - 128;
+    #####:  183:  mb = mb | (1U << 24U);
+    #####:  184:  __VERIFIER_assert(ea >= eb);
+call    0 never executed
+    #####:  185:  delta = ea - eb;
+    #####:  186:  __VERIFIER_assert(delta < sizeof(mb) * 8);
+call    0 never executed
+    #####:  187:  mb = mb >> delta;
+        -:  188:  }
+    #####:  189:  if (! mb) {
+branch  0 never executed
+branch  1 never executed
+    #####:  190:goto Goal_23;
+    #####:  191:Goal_23:;
+        -:  192:
+    #####:  193:    __retres10 = a;
+    #####:  194:    goto return_label;
+        -:  195:  } else {
+    #####:  196:goto Goal_24;
+    #####:  197:Goal_24:;
+        -:  198:
+        -:  199:
+        -:  200:  }
+    #####:  201:  ma = ma + mb;
+    #####:  202:  if (ma & (1U << 25U)) {
+branch  0 never executed
+branch  1 never executed
+    #####:  203:goto Goal_25;
+    #####:  204:Goal_25:;
+        -:  205:
+    #####:  206:    if (ea == 127) {
+branch  0 never executed
+branch  1 never executed
+    #####:  207:goto Goal_27;
+    #####:  208:Goal_27:;
+        -:  209:
+    #####:  210:      __retres10 = 4294967295U;
+    #####:  211:      goto return_label;
+        -:  212:    } else {
+    #####:  213:goto Goal_28;
+    #####:  214:Goal_28:;
+        -:  215:
+        -:  216:
+        -:  217:    }
+    #####:  218:    ea = ea + 1;
+    #####:  219:    ma = ma >> 1U;
+        -:  220:  } else {
+    #####:  221:goto Goal_26;
+    #####:  222:Goal_26:;
+        -:  223:
+        -:  224:
+        -:  225:  }
+        -:  226:  {
+    #####:  227:  __VERIFIER_assert(ma < 1U << 25U);
+call    0 never executed
+    #####:  228:  ma = ma & ((1U << 24U) - 1U);
+    #####:  229:  res = ma | ((unsigned int )(ea + 128) << 24U);
+        -:  230:  }
+    #####:  231:  __retres10 = res;
+    #####:  232:  return_label:
+    #####:  233:  return (__retres10);
+        -:  234:}
+        -:  235:}
+function mulflt called 0 returned 0% blocks executed 0%
+    #####:  236:unsigned int mulflt(unsigned int a , unsigned int b )
+        -:  237:{ unsigned int res ;
+        -:  238:  unsigned int ma ;
+        -:  239:  unsigned int mb ;
+        -:  240:  unsigned long long accu ;
+        -:  241:  int ea ;
+        -:  242:  int eb ;
+        -:  243:  unsigned int tmp ;
+        -:  244:  unsigned int __retres10 ;
+        -:  245:
+        -:  246:  {
+    #####:  247:  if (a < b) {
+branch  0 never executed
+branch  1 never executed
+    #####:  248:goto Goal_29;
+    #####:  249:Goal_29:;
+        -:  250:
+    #####:  251:    tmp = a;
+    #####:  252:    a = b;
+    #####:  253:    b = tmp;
+        -:  254:  } else {
+    #####:  255:goto Goal_30;
+    #####:  256:Goal_30:;
+        -:  257:
+        -:  258:
+        -:  259:  }
+    #####:  260:  if (! b) {
+branch  0 never executed
+branch  1 never executed
+    #####:  261:goto Goal_31;
+    #####:  262:Goal_31:;
+        -:  263:
+    #####:  264:    __retres10 = 0U;
+    #####:  265:    goto return_label;
+        -:  266:  } else {
+    #####:  267:goto Goal_32;
+    #####:  268:Goal_32:;
+        -:  269:
+        -:  270:
+        -:  271:  }
+    #####:  272:  ma = a & ((1U << 24U) - 1U);
+    #####:  273:  ea = (int )(a >> 24U) - 128;
+    #####:  274:  ma = ma | (1U << 24U);
+    #####:  275:  mb = b & ((1U << 24U) - 1U);
+    #####:  276:  eb = (int )(b >> 24U) - 128;
+    #####:  277:  mb = mb | (1U << 24U);
+    #####:  278:  ea = ea + eb;
+    #####:  279:  ea = ea + 24;
+    #####:  280:  if (ea > 127) {
+branch  0 never executed
+branch  1 never executed
+    #####:  281:goto Goal_33;
+    #####:  282:Goal_33:;
+        -:  283:
+    #####:  284:    __retres10 = 4294967295U;
+    #####:  285:    goto return_label;
+        -:  286:  } else {
+    #####:  287:goto Goal_34;
+    #####:  288:Goal_34:;
+        -:  289:
+        -:  290:
+        -:  291:  }
+    #####:  292:  if (ea < -128) {
+branch  0 never executed
+branch  1 never executed
+    #####:  293:goto Goal_35;
+    #####:  294:Goal_35:;
+        -:  295:
+    #####:  296:    __retres10 = 0U;
+    #####:  297:    goto return_label;
+        -:  298:  } else {
+    #####:  299:goto Goal_36;
+    #####:  300:Goal_36:;
+        -:  301:
+        -:  302:
+        -:  303:  }
+    #####:  304:  accu = ma;
+    #####:  305:  accu = accu * (unsigned long long )mb;
+    #####:  306:  accu = accu >> 24U;
+    #####:  307:  if (accu >= (unsigned long long )(1U << 25U)) {
+branch  0 never executed
+branch  1 never executed
+    #####:  308:goto Goal_37;
+    #####:  309:Goal_37:;
+        -:  310:
+    #####:  311:    if (ea == 127) {
+branch  0 never executed
+branch  1 never executed
+    #####:  312:goto Goal_39;
+    #####:  313:Goal_39:;
+        -:  314:
+    #####:  315:      __retres10 = 4294967295U;
+    #####:  316:      goto return_label;
+        -:  317:    } else {
+    #####:  318:goto Goal_40;
+    #####:  319:Goal_40:;
+        -:  320:
+        -:  321:
+        -:  322:    }
+    #####:  323:    ea = ea + 1;
+    #####:  324:    accu = accu >> 1U;
+    #####:  325:    if (accu >= (unsigned long long )(1U << 25U)) {
+branch  0 never executed
+branch  1 never executed
+    #####:  326:goto Goal_41;
+    #####:  327:Goal_41:;
+        -:  328:
+    #####:  329:      __retres10 = 4294967295U;
+    #####:  330:      goto return_label;
+        -:  331:    } else {
+    #####:  332:goto Goal_42;
+    #####:  333:Goal_42:;
+        -:  334:
+        -:  335:
+        -:  336:    }
+        -:  337:  } else {
+    #####:  338:goto Goal_38;
+    #####:  339:Goal_38:;
+        -:  340:
+        -:  341:
+        -:  342:  }
+        -:  343:  {
+    #####:  344:  __VERIFIER_assert(accu < (unsigned long long )(1U << 25U));
+call    0 never executed
+    #####:  345:  __VERIFIER_assert(accu & (unsigned long long )(1U << 24U));
+call    0 never executed
+    #####:  346:  ma = accu;
+    #####:  347:  ma = ma & ~ (1U << 24U);
+    #####:  348:  res = ma | (unsigned int )((ea + 128) << 24U);
+        -:  349:  }
+    #####:  350:  __retres10 = res;
+    #####:  351:  return_label:
+    #####:  352:  return (__retres10);
+        -:  353:}
+        -:  354:}
+function main called 1 returned 0% blocks executed 3%
+        1:  355:int main(void)
+        -:  356:{ unsigned int a ;
+        1:  357:  unsigned int ma = __VERIFIER_nondet_uint();
+call    0 returned 1
+        1:  358:  signed char ea = __VERIFIER_nondet_char();
+call    0 returned 0
+        -:  359:  unsigned int b ;
+    #####:  360:  unsigned int mb = __VERIFIER_nondet_uint();
+call    0 never executed
+    #####:  361:  signed char eb = __VERIFIER_nondet_char();
+call    0 never executed
+        -:  362:  unsigned int r_add ;
+        -:  363:  unsigned int zero ;
+        -:  364:  int sa ;
+        -:  365:  int sb ;
+        -:  366:  int tmp ;
+        -:  367:  int tmp___0 ;
+        -:  368:  int tmp___1 ;
+        -:  369:  int tmp___2 ;
+        -:  370:  int tmp___3 ;
+        -:  371:  int tmp___4 ;
+        -:  372:  int tmp___5 ;
+        -:  373:  int tmp___6 ;
+        -:  374:  int tmp___7 ;
+        -:  375:  int tmp___8 ;
+        -:  376:  int tmp___9 ;
+        -:  377:  int __retres23 ;
+        -:  378:
+        -:  379:  {
+        -:  380:  {
+    #####:  381:  zero = base2flt(0, 0);
+call    0 never executed
+    #####:  382:  a = base2flt(ma, ea);
+call    0 never executed
+    #####:  383:  b = base2flt(mb, eb);
+call    0 never executed
+        -:  384:  }
+    #####:  385:  if (a < zero) {
+branch  0 never executed
+branch  1 never executed
+    #####:  386:goto Goal_43;
+    #####:  387:Goal_43:;
+        -:  388:
+    #####:  389:    sa = -1;
+        -:  390:  } else {
+    #####:  391:goto Goal_44;
+    #####:  392:Goal_44:;
+        -:  393:
+    #####:  394:    if (a > zero) {
+branch  0 never executed
+branch  1 never executed
+    #####:  395:goto Goal_45;
+    #####:  396:Goal_45:;
+        -:  397:
+    #####:  398:      tmp = 1;
+        -:  399:    } else {
+    #####:  400:goto Goal_46;
+    #####:  401:Goal_46:;
+        -:  402:
+    #####:  403:      tmp = 0;
+        -:  404:    }
+    #####:  405:    sa = tmp;
+        -:  406:  }
+    #####:  407:  if (b < zero) {
+branch  0 never executed
+branch  1 never executed
+    #####:  408:goto Goal_47;
+    #####:  409:Goal_47:;
+        -:  410:
+    #####:  411:    sb = -1;
+        -:  412:  } else {
+    #####:  413:goto Goal_48;
+    #####:  414:Goal_48:;
+        -:  415:
+    #####:  416:    if (b > zero) {
+branch  0 never executed
+branch  1 never executed
+    #####:  417:goto Goal_49;
+    #####:  418:Goal_49:;
+        -:  419:
+    #####:  420:      tmp___0 = 1;
+        -:  421:    } else {
+    #####:  422:goto Goal_50;
+    #####:  423:Goal_50:;
+        -:  424:
+    #####:  425:      tmp___0 = 0;
+        -:  426:    }
+    #####:  427:    sb = tmp___0;
+        -:  428:  }
+        -:  429:  {
+    #####:  430:  r_add = addflt(a, b);
+call    0 never executed
+        -:  431:  }
+    #####:  432:  if (sa > 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  433:goto Goal_51;
+    #####:  434:Goal_51:;
+        -:  435:
+    #####:  436:    if (sb > 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  437:goto Goal_53;
+    #####:  438:Goal_53:;
+        -:  439:
+    #####:  440:      if (r_add < a) {
+branch  0 never executed
+branch  1 never executed
+    #####:  441:goto Goal_55;
+    #####:  442:Goal_55:;
+        -:  443:
+    #####:  444:        tmp___2 = -1;
+        -:  445:      } else {
+    #####:  446:goto Goal_56;
+    #####:  447:Goal_56:;
+        -:  448:
+    #####:  449:        if (r_add > a) {
+branch  0 never executed
+branch  1 never executed
+    #####:  450:goto Goal_57;
+    #####:  451:Goal_57:;
+        -:  452:
+    #####:  453:          tmp___1 = 1;
+        -:  454:        } else {
+    #####:  455:goto Goal_58;
+    #####:  456:Goal_58:;
+        -:  457:
+    #####:  458:          tmp___1 = 0;
+        -:  459:        }
+    #####:  460:        tmp___2 = tmp___1;
+        -:  461:      }
+        -:  462:      {
+    #####:  463:      __VERIFIER_assert(tmp___2 >= 0);
+call    0 never executed
+        -:  464:      }
+    #####:  465:      if (r_add < b) {
+branch  0 never executed
+branch  1 never executed
+    #####:  466:goto Goal_59;
+    #####:  467:Goal_59:;
+        -:  468:
+    #####:  469:        tmp___4 = -1;
+        -:  470:      } else {
+    #####:  471:goto Goal_60;
+    #####:  472:Goal_60:;
+        -:  473:
+    #####:  474:        if (r_add > b) {
+branch  0 never executed
+branch  1 never executed
+    #####:  475:goto Goal_61;
+    #####:  476:Goal_61:;
+        -:  477:
+    #####:  478:          tmp___3 = 1;
+        -:  479:        } else {
+    #####:  480:goto Goal_62;
+    #####:  481:Goal_62:;
+        -:  482:
+    #####:  483:          tmp___3 = 0;
+        -:  484:        }
+    #####:  485:        tmp___4 = tmp___3;
+        -:  486:      }
+        -:  487:      {
+    #####:  488:      __VERIFIER_assert(tmp___4 >= 0);
+call    0 never executed
+        -:  489:      }
+        -:  490:    } else {
+    #####:  491:goto Goal_54;
+    #####:  492:Goal_54:;
+        -:  493:
+        -:  494:
+        -:  495:    }
+        -:  496:  } else {
+    #####:  497:goto Goal_52;
+    #####:  498:Goal_52:;
+        -:  499:
+        -:  500:
+        -:  501:  }
+    #####:  502:  if (sa == 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  503:goto Goal_63;
+    #####:  504:Goal_63:;
+        -:  505:
+    #####:  506:    goto _L;
+        -:  507:  } else {
+    #####:  508:goto Goal_64;
+    #####:  509:Goal_64:;
+        -:  510:
+    #####:  511:    if (sb == 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  512:goto Goal_65;
+    #####:  513:Goal_65:;
+        -:  514:
+    #####:  515:      _L:
+    #####:  516:      if (r_add < a) {
+branch  0 never executed
+branch  1 never executed
+    #####:  517:goto Goal_67;
+    #####:  518:Goal_67:;
+        -:  519:
+    #####:  520:        tmp___6 = -1;
+        -:  521:      } else {
+    #####:  522:goto Goal_68;
+    #####:  523:Goal_68:;
+        -:  524:
+    #####:  525:        if (r_add > a) {
+branch  0 never executed
+branch  1 never executed
+    #####:  526:goto Goal_69;
+    #####:  527:Goal_69:;
+        -:  528:
+    #####:  529:          tmp___5 = 1;
+        -:  530:        } else {
+    #####:  531:goto Goal_70;
+    #####:  532:Goal_70:;
+        -:  533:
+    #####:  534:          tmp___5 = 0;
+        -:  535:        }
+    #####:  536:        tmp___6 = tmp___5;
+        -:  537:      }
+    #####:  538:      if (tmp___6 == 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  539:goto Goal_71;
+    #####:  540:Goal_71:;
+        -:  541:
+    #####:  542:        tmp___9 = 1;
+        -:  543:      } else {
+    #####:  544:goto Goal_72;
+    #####:  545:Goal_72:;
+        -:  546:
+    #####:  547:        if (r_add < b) {
+branch  0 never executed
+branch  1 never executed
+    #####:  548:goto Goal_73;
+    #####:  549:Goal_73:;
+        -:  550:
+    #####:  551:          tmp___8 = -1;
+        -:  552:        } else {
+    #####:  553:goto Goal_74;
+    #####:  554:Goal_74:;
+        -:  555:
+    #####:  556:          if (r_add > b) {
+branch  0 never executed
+branch  1 never executed
+    #####:  557:goto Goal_75;
+    #####:  558:Goal_75:;
+        -:  559:
+    #####:  560:            tmp___7 = 1;
+        -:  561:          } else {
+    #####:  562:goto Goal_76;
+    #####:  563:Goal_76:;
+        -:  564:
+    #####:  565:            tmp___7 = 0;
+        -:  566:          }
+    #####:  567:          tmp___8 = tmp___7;
+        -:  568:        }
+    #####:  569:        if (tmp___8 == 0) {
+branch  0 never executed
+branch  1 never executed
+    #####:  570:goto Goal_77;
+    #####:  571:Goal_77:;
+        -:  572:
+    #####:  573:          tmp___9 = 1;
+        -:  574:        } else {
+    #####:  575:goto Goal_78;
+    #####:  576:Goal_78:;
+        -:  577:
+    #####:  578:          tmp___9 = 0;
+        -:  579:        }
+        -:  580:      }
+        -:  581:      {
+    #####:  582:      __VERIFIER_assert(tmp___9);
+call    0 never executed
+        -:  583:      }
+        -:  584:    } else {
+    #####:  585:goto Goal_66;
+    #####:  586:Goal_66:;
+        -:  587:
+        -:  588:
+        -:  589:    }
+        -:  590:  }
+    #####:  591:  __retres23 = 0;
+    #####:  592:  return (__retres23);
+        -:  593:}
+        -:  594:}

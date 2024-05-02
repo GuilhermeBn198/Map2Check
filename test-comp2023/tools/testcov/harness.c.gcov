@@ -1,0 +1,316 @@
+        -:    0:Source:output/harness.c
+        -:    0:Graph:output/a-harness.gcno
+        -:    0:Data:output/a-harness.gcda
+        -:    0:Runs:1
+        -:    1:struct _IO_FILE;
+        -:    2:typedef struct _IO_FILE FILE;
+        -:    3:extern struct _IO_FILE *stdin;
+        -:    4:extern struct _IO_FILE *stderr;
+        -:    5:typedef long unsigned int size_t;
+        -:    6:extern void exit (int __status) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
+        -:    7:extern char *fgets (char *__restrict __s, int __n, FILE *__restrict __stream);
+        -:    8:extern int sscanf (const char *__restrict __s, const char *__restrict __format, ...) __attribute__ ((__nothrow__ , __leaf__));
+        -:    9: extern size_t strlen (const char *__s __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))));
+        -:   10:extern int fprintf (FILE *__restrict __stream, const char *__restrict __format, ...);
+        -:   11: extern void *malloc (size_t __size __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__malloc__)));
+        -:   12: extern void *memcpy (void *__restrict __dest, const void *__restrict __src, size_t __n) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+        -:   13: extern char *strcpy (char *__restrict __dest, const char *__restrict __src) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+        -:   14: extern char *strcat (char *__restrict __dest, const char *__restrict __src) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
+        -:   15:extern char *strchr (const char *__s, int __c) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+        -:   16:// This file is part of TestCov,
+        -:   17:// a robust test executor with reliable coverage measurement:
+        -:   18:// https://gitlab.com/sosy-lab/software/test-suite-validator/
+        -:   19://
+        -:   20:// Copyright (C) 2018 - 2020  Dirk Beyer
+        -:   21:// SPDX-FileCopyrightText: 2019 Dirk Beyer <https://www.sosy-lab.org>
+        -:   22://
+        -:   23:// SPDX-License-Identifier: Apache-2.0
+        -:   24:
+        -:   25:#define MAX_INPUT_SIZE 3000
+        -:   26:#ifdef GCOV
+        -:   27:extern void __gcov_dump(void);
+        -:   28:#endif
+        -:   29:
+function abort_prog called 0 returned 0% blocks executed 0%
+    #####:   30:void abort_prog() {
+        -:   31:#ifdef GCOV
+    #####:   32:  __gcov_dump();
+call    0 never executed
+        -:   33:#endif
+    #####:   34:  abort();
+        -:   35:}
+        -:   36:
+function __VERIFIER_assume called 0 returned 0% blocks executed 0%
+    #####:   37:void __VERIFIER_assume(int cond) {
+    #####:   38:  if (!cond) {
+branch  0 never executed
+branch  1 never executed
+    #####:   39:    abort_prog();
+call    0 never executed
+        -:   40:  }
+    #####:   41:}
+        -:   42:
+        -:   43:char *get_input();
+        -:   44:
+        -:   45:// taken from https://stackoverflow.com/a/32496721
+function replace_char called 0 returned 0% blocks executed 0%
+    #####:   46:void replace_char(char *str, char find, char replace) {
+    #####:   47:  char *current_pos = strchr(str, find);
+    #####:   48:  while (current_pos) {
+branch  0 never executed
+branch  1 never executed
+    #####:   49:    *current_pos = replace;
+    #####:   50:    current_pos = strchr(current_pos, find);
+        -:   51:  }
+    #####:   52:}
+        -:   53:
+function parse_input_from called 1 returned 100% blocks executed 47%
+        1:   54:void parse_input_from(char *inp_var, char *format, void *destination) {
+        -:   55:  char format_with_fallback[13];
+        1:   56:  strcpy(format_with_fallback, format);
+        1:   57:  strcat(format_with_fallback, "%c%c%c%c");
+       1*:   58:  if (inp_var[0] == '0' && inp_var[1] == 'x') {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+branch  2 never executed
+branch  3 never executed
+    #####:   59:    replace_char(format_with_fallback, 'd', 'x');
+call    0 never executed
+    #####:   60:    replace_char(format_with_fallback, 'u', 'x');
+call    0 never executed
+        -:   61:  } else {
+        1:   62:    if (inp_var[0] == '\'' || inp_var[0] == '\"') {
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    #####:   63:      int inp_length = strlen(inp_var);
+        -:   64:      // Remove ' at the end
+    #####:   65:      inp_var[inp_length - 1] = '\0';
+        -:   66:      // Remove ' in the beginning
+    #####:   67:      inp_var++;
+        -:   68:    }
+        -:   69:  }
+        -:   70:  char leftover[4];
+        1:   71:  int filled = sscanf(inp_var, format_with_fallback, destination, &leftover[0],
+        -:   72:                      &leftover[1], &leftover[2], &leftover[3]);
+        1:   73:  _Bool is_valid = 1;
+        1:   74:  if (filled == 5 || filled == 0) {
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    #####:   75:    is_valid = 0;
+        -:   76:  }
+        1:   77:  while (filled > 1) {
+branch  0 taken 0
+branch  1 taken 1 (fallthrough)
+    #####:   78:    filled--;
+    #####:   79:    char literal = leftover[filled - 1];
+    #####:   80:    switch (literal) {
+branch  0 never executed
+branch  1 never executed
+    #####:   81:    case 'l':
+        -:   82:    case 'L':
+        -:   83:    case 'u':
+        -:   84:    case 'U':
+        -:   85:    case 'f':
+        -:   86:    case 'F':
+    #####:   87:      break;
+    #####:   88:    default:
+    #####:   89:      is_valid = 0;
+        -:   90:    }
+        -:   91:  }
+        -:   92:
+        1:   93:  if (!is_valid) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   94:    fprintf(stderr, "Can't parse input: '%s'\n", inp_var);
+call    0 never executed
+    #####:   95:    abort_prog();
+call    0 never executed
+        -:   96:  }
+        1:   97:}
+        -:   98:
+function parse_input called 2 returned 50% blocks executed 100%
+        2:   99:void parse_input(char *format, void *destination) {
+        2:  100:  char *inp_var = get_input();
+call    0 returned 1
+        1:  101:  parse_input_from(inp_var, format, destination);
+call    0 returned 1
+        1:  102:}
+        -:  103:
+function __VERIFIER_nondet_char called 0 returned 0% blocks executed 0%
+    #####:  104:char __VERIFIER_nondet_char() {
+        -:  105:  char val;
+    #####:  106:  char *inp_var = get_input();
+call    0 never executed
+    #####:  107:  if (inp_var[0] == '\'') {
+branch  0 never executed
+branch  1 never executed
+    #####:  108:    parse_input_from(inp_var, "%c", &val);
+call    0 never executed
+        -:  109:  } else {
+    #####:  110:    parse_input_from(inp_var, "%hhd", &val);
+call    0 never executed
+        -:  111:  }
+    #####:  112:  return val;
+        -:  113:}
+        -:  114:
+function __VERIFIER_nondet_uchar called 0 returned 0% blocks executed 0%
+    #####:  115:unsigned char __VERIFIER_nondet_uchar() {
+        -:  116:  unsigned char val;
+    #####:  117:  parse_input("%hhu", &val);
+call    0 never executed
+    #####:  118:  return val;
+        -:  119:}
+        -:  120:
+function __VERIFIER_nondet_short called 0 returned 0% blocks executed 0%
+    #####:  121:short __VERIFIER_nondet_short() {
+        -:  122:  short val;
+    #####:  123:  parse_input("%hd", &val);
+call    0 never executed
+    #####:  124:  return val;
+        -:  125:}
+        -:  126:
+function __VERIFIER_nondet_ushort called 0 returned 0% blocks executed 0%
+    #####:  127:unsigned short __VERIFIER_nondet_ushort() {
+        -:  128:  unsigned short val;
+    #####:  129:  parse_input("%hu", &val);
+call    0 never executed
+    #####:  130:  return val;
+        -:  131:}
+        -:  132:
+function __VERIFIER_nondet_int called 2 returned 50% blocks executed 100%
+        2:  133:int __VERIFIER_nondet_int() {
+        -:  134:  int val;
+        2:  135:  parse_input("%d", &val);
+call    0 returned 1
+        1:  136:  return val;
+        -:  137:}
+        -:  138:
+function __VERIFIER_nondet_uint called 0 returned 0% blocks executed 0%
+    #####:  139:unsigned int __VERIFIER_nondet_uint() {
+        -:  140:  unsigned int val;
+    #####:  141:  parse_input("%u", &val);
+call    0 never executed
+    #####:  142:  return val;
+        -:  143:}
+        -:  144:
+function __VERIFIER_nondet_long called 0 returned 0% blocks executed 0%
+    #####:  145:long __VERIFIER_nondet_long() {
+        -:  146:  long val;
+    #####:  147:  parse_input("%ld", &val);
+call    0 never executed
+    #####:  148:  return val;
+        -:  149:}
+        -:  150:
+function __VERIFIER_nondet_ulong called 0 returned 0% blocks executed 0%
+    #####:  151:unsigned long __VERIFIER_nondet_ulong() {
+        -:  152:  unsigned long val;
+    #####:  153:  parse_input("%lu", &val);
+call    0 never executed
+    #####:  154:  return val;
+        -:  155:}
+        -:  156:
+function __VERIFIER_nondet_longlong called 0 returned 0% blocks executed 0%
+    #####:  157:long long __VERIFIER_nondet_longlong() {
+        -:  158:  long long val;
+    #####:  159:  parse_input("%lld", &val);
+call    0 never executed
+    #####:  160:  return val;
+        -:  161:}
+        -:  162:
+function __VERIFIER_nondet_ulonglong called 0 returned 0% blocks executed 0%
+    #####:  163:unsigned long long __VERIFIER_nondet_ulonglong() {
+        -:  164:  unsigned long long val;
+    #####:  165:  parse_input("%llu", &val);
+call    0 never executed
+    #####:  166:  return val;
+        -:  167:}
+        -:  168:
+function __VERIFIER_nondet_float called 0 returned 0% blocks executed 0%
+    #####:  169:float __VERIFIER_nondet_float() {
+        -:  170:  float val;
+    #####:  171:  parse_input("%f", &val);
+call    0 never executed
+    #####:  172:  return val;
+        -:  173:}
+        -:  174:
+function __VERIFIER_nondet_double called 0 returned 0% blocks executed 0%
+    #####:  175:double __VERIFIER_nondet_double() {
+        -:  176:  double val;
+    #####:  177:  parse_input("%lf", &val);
+call    0 never executed
+    #####:  178:  return val;
+        -:  179:}
+        -:  180:
+function __VERIFIER_nondet_bool called 0 returned 0% blocks executed 0%
+    #####:  181:_Bool __VERIFIER_nondet_bool() { return (_Bool)__VERIFIER_nondet_int(); }
+call    0 never executed
+        -:  182:
+function __VERIFIER_nondet_pointer called 0 returned 0% blocks executed 0%
+    #####:  183:void *__VERIFIER_nondet_pointer() { return (void *)__VERIFIER_nondet_ulong(); }
+call    0 never executed
+        -:  184:
+function __VERIFIER_nondet_size_t called 0 returned 0% blocks executed 0%
+    #####:  185:unsigned int __VERIFIER_nondet_size_t() { return __VERIFIER_nondet_uint(); }
+call    0 never executed
+        -:  186:
+function __VERIFIER_nondet_u8 called 0 returned 0% blocks executed 0%
+    #####:  187:unsigned char __VERIFIER_nondet_u8() { return __VERIFIER_nondet_uchar(); }
+call    0 never executed
+        -:  188:
+function __VERIFIER_nondet_u16 called 0 returned 0% blocks executed 0%
+    #####:  189:unsigned short __VERIFIER_nondet_u16() { return __VERIFIER_nondet_ushort(); }
+call    0 never executed
+        -:  190:
+function __VERIFIER_nondet_u32 called 0 returned 0% blocks executed 0%
+    #####:  191:unsigned int __VERIFIER_nondet_u32() { return __VERIFIER_nondet_uint(); }
+call    0 never executed
+        -:  192:
+function __VERIFIER_nondet_U32 called 0 returned 0% blocks executed 0%
+    #####:  193:unsigned int __VERIFIER_nondet_U32() { return __VERIFIER_nondet_u32(); }
+call    0 never executed
+        -:  194:
+function __VERIFIER_nondet_unsigned_char called 0 returned 0% blocks executed 0%
+    #####:  195:unsigned char __VERIFIER_nondet_unsigned_char() {
+    #####:  196:  return __VERIFIER_nondet_uchar();
+call    0 never executed
+        -:  197:}
+        -:  198:
+function __VERIFIER_nondet_unsigned called 0 returned 0% blocks executed 0%
+    #####:  199:unsigned int __VERIFIER_nondet_unsigned() { return __VERIFIER_nondet_uint(); }
+call    0 never executed
+        -:  200:
+function __VERIFIER_nondet_string called 0 returned 0% blocks executed 0%
+    #####:  201:const char *__VERIFIER_nondet_string() {
+    #####:  202:  char *val = malloc(MAX_INPUT_SIZE + 1);
+        -:  203:  // Read to end of line
+    #####:  204:  parse_input("%[^\n]", val);
+call    0 never executed
+    #####:  205:  return val;
+        -:  206:}
+        -:  207:
+function get_input called 2 returned 50% blocks executed 88%
+        2:  208:char * get_input() {
+        2:  209:    char * inp_var = malloc(MAX_INPUT_SIZE);
+        2:  210:    char * result = fgets(inp_var, MAX_INPUT_SIZE, stdin);
+call    0 returned 2
+        2:  211:    if (result == 0) {
+branch  0 taken 1 (fallthrough)
+branch  1 taken 1
+        1:  212:        fprintf(stderr, "No more test inputs available, exiting\n");
+call    0 returned 1
+        1:  213:        exit(1);
+call    0 returned 0
+        -:  214:    }
+        1:  215:    unsigned int input_length = strlen(inp_var)-1;
+        -:  216:    /* Remove '\n' at end of input */
+        1:  217:    if (inp_var[input_length] == '\n') {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  218:        inp_var[input_length] = '\0';
+        -:  219:    }
+        1:  220:    return inp_var;
+        -:  221:}
