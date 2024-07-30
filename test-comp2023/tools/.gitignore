@@ -1,6 +1,10 @@
-/esbmc
 /map2check/*
 !map2check/map2check-wrapper-modificado.py
 !map2check/map2check-wrapper.py
 !map2check/data_extractor.py
-/sv-benchmarks
+/esbmc/*
+/sv-benchmarks/*
+/testcomp23-archives/*
+/sosy-lab-benchexec-2bc3c11/*
+/klee/*
+/coveriteam-1.0/*
