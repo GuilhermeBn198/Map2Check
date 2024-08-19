@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<test-metadata><sourcecodelang>C</sourcecodelang><producer>Map2Check</producer><specification>CHECK( init(main()), LTL(G ! call(__VERIFIER_error())) )</specification><programfile>/home/guilherme/github/Map2Check/test-comp2023/tools/map2check/../sv-benchmarks/map2checktests/array-fpi/brs1f.c</programfile><programhash>317fb3a79739c1cd0249b287df4601776016a864</programhash><architecture>32bit</architecture><entryfunction>main</entryfunction><creationtime>2024-08-15T19:36:10.222584</creationtime></test-metadata>
