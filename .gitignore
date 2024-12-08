@@ -74,3 +74,6 @@ target_wrapper.*
 
 # QtCreator CMake
 CMakeLists.txt.user*
+/test-comp2023/simulation/sv-benchmarks
+/test-comp2023/simulation/tools/map2check
+/test-comp2023/simulation/tools/testcov
