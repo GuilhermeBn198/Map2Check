@@ -1,4 +1,4 @@
-extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+extern void reach_error() __attribute__ ((__noreturn__));
 extern int __VERIFIER_nondet_int();
 typedef unsigned int size_t;
 typedef long int wchar_t;
@@ -553,7 +553,7 @@ int main() {
     p = p->n;
   }
   if(p->h != 3 || (i + y) < 20)
-    ERROR: __VERIFIER_error();
+    ERROR: reach_error();
   p = a;
   while (p->n != 0) {
     t = p->n;

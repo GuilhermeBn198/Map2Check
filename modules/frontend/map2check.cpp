@@ -302,7 +302,7 @@ int main(int argc, char **argv) {
 z3 (Z3 is default), btor (Boolector), and yices2 (Yices))")
         ("timeout", po::value<unsigned>(),
                       "\ttimeout for map2check execution")
-        ("target-function", "\tsearches for __VERIFIER_error is reachable")
+        ("target-function", "\tsearches for reach_error is reachable")
         ("generate-testcase", "\tcreates c program with fail testcase (experimental)")
         ("memtrack", "\tcheck for memory errors")
         ("print-counter", "\tprint counterexample")
@@ -371,7 +371,7 @@ z3 (Z3 is default), btor (Boolector), and yices2 (Yices))")
       args.timeout = timeout;
     }
     if (vm.count("target-function")) {
-      string function = "__VERIFIER_error";
+      string function = "reach_error";
       args.function = function;
       args.mode = Map2Check::Map2CheckMode::REACHABILITY_MODE;
       args.spectTrue = "target-function";

@@ -1,4 +1,4 @@
-extern void __VERIFIER_error() __attribute__ ((__noreturn__));
+extern void reach_error() __attribute__ ((__noreturn__));
 
 /*
  * This source code is licensed under the GPL license, see License.GPLv2.txt
