@@ -26,7 +26,6 @@ RUN apt-get install -y sudo \
     libboost-all-dev \
     libboost-program-options-dev \
     python-minimal \
-    cmake \
     ninja-build \
     wget \
     curl \
@@ -36,6 +35,13 @@ RUN apt-get install -y sudo \
     graphviz \
     python3 \
     python3-pip 
+
+# Install a specific version of CMake
+ARG CMAKE_VERSION=3.13.0
+RUN wget https://github.com/Kitware/CMake/releases/download/v${CMAKE_VERSION}/cmake-${CMAKE_VERSION}-linux-x86_64.sh \
+    && chmod +x cmake-${CMAKE_VERSION}-linux-x86_64.sh \
+    && ./cmake-${CMAKE_VERSION}-linux-x86_64.sh --skip-license --prefix=/usr/local \
+    && rm cmake-${CMAKE_VERSION}-linux-x86_64.sh
 
 # Clean packages installation
 RUN apt-get clean

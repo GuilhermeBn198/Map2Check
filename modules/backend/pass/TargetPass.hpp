@@ -56,7 +56,7 @@ struct TargetPass : public FunctionPass {
   BasicBlock::iterator currentInstruction;
   Constant *targetFunctionMap2Check = NULL;
   Value *functionName = NULL;
-  std::string targetFunctionName = "__VERIFIER_error";
+  std::string targetFunctionName = "reach_error";
 };
 
 #endif  // MODULES_BACKEND_PASS_TARGETPASS_HPP_

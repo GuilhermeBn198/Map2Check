@@ -114,7 +114,7 @@ elif "CHECK( init(main()), LTL(G valid-memtrack) )" in property_file_content:
   is_memsafety = True
 elif "CHECK( init(main()), LTL(G ! overflow) )" in property_file_content:
   is_overflow = True
-elif "CHECK( init(main()), LTL(G ! call(__VERIFIER_error())) )" in property_file_content:
+elif "CHECK( init(main()), LTL(G ! call(reach_error())) )" in property_file_content:
   is_reachability = True
 else:
   # We don't support termination
@@ -124,7 +124,7 @@ else:
 if is_memsafety:
   command_line += " --assume-malloc-true --generate-witness "
 elif is_reachability:
-  command_line += " --target-function __VERIFIER_error --generate-witness "
+  command_line += " --target-function reach_error --generate-witness "
 elif is_overflow:
   command_line += " --check-overflow --generate-witness "
 
