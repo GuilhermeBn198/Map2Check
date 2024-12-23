@@ -83,11 +83,11 @@ whether _a_ contains _pat_ in the above relaxed sense, i.e., whether
 _pat_ is a relaxed prefix of any suffix of _a_.
 */
 
-extern void reach_error() __attribute__ ((__noreturn__));
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 
 void __VERIFIER_assert(int cond) {
   if (!(cond)) {
-    ERROR: reach_error();
+    ERROR: __VERIFIER_error();
   }
   return;
 }

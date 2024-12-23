@@ -54,7 +54,7 @@ void map2check_track_bb(unsigned line, const char *function_name) {
   }
 }
 
-void reach_error() {
+void __VERIFIER_error() {
   // DO NOTHING
 }
 
