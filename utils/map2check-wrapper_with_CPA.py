@@ -115,7 +115,7 @@ elif "CHECK( init(main()), LTL(G ! overflow) )" in property_file_content:
   is_overflow = True
   print "Unsupported Property"
   exit(1)
-elif "CHECK( init(main()), LTL(G ! call(reach_error())) )" in property_file_content:
+elif "CHECK( init(main()), LTL(G ! call(__VERIFIER_error())) )" in property_file_content:
   is_reachability = True
 else:
   # We don't support termination
@@ -125,7 +125,7 @@ else:
 if is_memsafety:
   command_line += " --generate-witness "
 elif is_reachability:
-  command_line += " --target-function reach_error --generate-witness "
+  command_line += " --target-function __VERIFIER_error --generate-witness "
 
 print "Verifying with MAP2CHECK "
 # Call MAP2CHECK

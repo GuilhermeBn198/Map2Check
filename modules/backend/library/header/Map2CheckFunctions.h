@@ -50,7 +50,7 @@ void map2check_store(void *ptr, unsigned size_of_destiny);
 
 void map2check_assume(int expr);
 void map2check_assume_loop(char expr);
-void reach_error();
+void __VERIFIER_error();
 
 /**
  *

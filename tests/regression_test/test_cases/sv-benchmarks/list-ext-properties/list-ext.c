@@ -1,4 +1,4 @@
-extern void reach_error() __attribute__ ((__noreturn__));
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 
 extern int __VERIFIER_nondet_int();
 /*
@@ -67,7 +67,7 @@ int main() {
   }
 
   if(p->h != 3 || (i + y) < 20)
-    ERROR: reach_error();
+    ERROR: __VERIFIER_error();
 
   /* free memory */
   p = a;

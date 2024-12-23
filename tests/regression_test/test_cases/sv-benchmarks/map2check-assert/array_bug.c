@@ -1,10 +1,10 @@
 #define SIZE 1
 
-extern void reach_error() __attribute__ ((__noreturn__));
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 
 void __VERIFIER_assert(int cond) {
   if (!(cond)) {
-    ERROR: reach_error();
+    ERROR: __VERIFIER_error();
   }
   return;
 }

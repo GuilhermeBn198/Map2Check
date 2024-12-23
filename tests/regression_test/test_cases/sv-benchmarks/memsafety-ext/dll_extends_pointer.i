@@ -1,5 +1,5 @@
 extern int __VERIFIER_nondet_int(void);
-extern void reach_error() __attribute__ ((__noreturn__));
+extern void __VERIFIER_error() __attribute__ ((__noreturn__));
 typedef unsigned int size_t;
 typedef long int wchar_t;
 

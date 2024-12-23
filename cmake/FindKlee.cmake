@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.13)
+cmake_minimum_required(VERSION 3.5)
   include(ExternalProject)
 find_package(Git REQUIRED)
 # TODO: Fix z3
