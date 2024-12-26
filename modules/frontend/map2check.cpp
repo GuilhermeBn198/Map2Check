@@ -303,6 +303,7 @@ z3 (Z3 is default), btor (Boolector), and yices2 (Yices))")
         ("timeout", po::value<unsigned>(),
                       "\ttimeout for map2check execution")
         ("target-function", "\tsearches for __VERIFIER_error is reachable")
+        ("target-reach_error", "\tsearches for reach_error is reachable")
         ("generate-testcase", "\tcreates c program with fail testcase (experimental)")
         ("memtrack", "\tcheck for memory errors")
         ("print-counter", "\tprint counterexample")
@@ -375,6 +376,12 @@ z3 (Z3 is default), btor (Boolector), and yices2 (Yices))")
       args.function = function;
       args.mode = Map2Check::Map2CheckMode::REACHABILITY_MODE;
       args.spectTrue = "target-function";
+    }
+    if (vm.count("target-reach_error")) {
+      string function = "reach_error";
+      args.function = function;
+      args.mode = Map2Check::Map2CheckMode::REACHABILITY_MODE;
+      args.spectTrue = "target-reach_error";
     }
     if (vm.count("check-overflow")) {
       args.mode = Map2Check::Map2CheckMode::OVERFLOW_MODE;

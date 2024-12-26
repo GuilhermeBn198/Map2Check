@@ -40,6 +40,7 @@ is_memsafety 	= False
 is_reachability = False
 is_overflow 	= False
 is_memcleanup   = False
+is_reach_error = False
 
 f = open(property_file, 'r')
 property_file_content = f.read()
@@ -56,6 +57,8 @@ elif "CHECK( init(main()), LTL(G ! overflow) )" in property_file_content:
   is_overflow = True
 elif "CHECK( init(main()), LTL(G ! call(__VERIFIER_error())) )" in property_file_content:
   is_reachability = True
+elif "COVER( init(main()), FQL(COVER EDGES(@CALL(reach_error))) )" in property_file_content:
+  is_reach_error = True
 else:
   # We don't support termination
   print("Unsupported Property")
@@ -73,7 +76,9 @@ elif is_reachability:
   command_line += " --timeout "+timemapsplit+" --smt-solver yices2 --add-invariants --target-function --generate-witness "
 elif is_overflow:
   command_line += " --timeout "+timemapsplit+" --check-overflow --smt-solver yices2 --generate-witness "
-
+elif is_reach_error:
+  command_line_bkp = command_line + "--timeout "+timemapsplit+" --smt-solver yices2 --target-reach_error --generate-witness "
+  command_line += " --timeout "+timemapsplit+" --smtsolver yices2 --add-invariants --target-reach_error --generate-witness"
 print("Verifying with MAP2CHECK ")
 
 # Call MAP2CHECK
@@ -88,6 +93,10 @@ p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 # Check invariant conflict
 if b'failed external call: __map2check_main__' in stderr:
   if is_reachability:
+    args = shlex.split(command_line_bkp)
+    p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    (stdout, stderr) = p.communicate()
+  elif is_reach_error:
     args = shlex.split(command_line_bkp)
     p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     (stdout, stderr) = p.communicate()

@@ -67,7 +67,8 @@ enum class SpecificationType {
   DEREF,
   TARGET,
   SPECOVERFLOW,
-  MEMSAFETY
+  MEMSAFETY,
+  TARGET_REACH_ERROR
 };
 
 class Specification : public DataElement {
@@ -100,10 +101,14 @@ class Specification : public DataElement {
             "LTL(G valid-deref) )\nCHECK( init(main()), LTL(G valid-memtrack) "
             ")";
         break;
+      case SpecificationType::TARGET_REACH_ERROR:
+        this->value = "ERROR";
+        break;
     }
   }
   // TODO(hbgit): SHOULD THROW ERROR
   Specification(SpecificationType type, std::string target) : DataElement() {
+    std::ostringstream cnvt;
     switch (type) {
       case SpecificationType::FREE:
         this->value = "ERROR";
@@ -118,11 +123,18 @@ class Specification : public DataElement {
         this->value = "ERROR";
         break;
       case SpecificationType::TARGET:
-        std::ostringstream cnvt;
         cnvt.str("");
         cnvt << "CHECK( init(main()), LTL(G ! call(";
         cnvt << "__VERIFIER_error";
         cnvt << "())) )";
+        this->value = cnvt.str();
+        break;
+      case SpecificationType::TARGET_REACH_ERROR:
+        // std::ostringstream cnvt;
+        cnvt.str("");
+        cnvt << "COVER( init(main()), FQL(COVER EDGES(@CALL(";
+        cnvt << "reach_error";
+        cnvt << "))) )";
         this->value = cnvt.str();
         break;
     }

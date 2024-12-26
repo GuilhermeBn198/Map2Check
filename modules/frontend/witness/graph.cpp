@@ -248,6 +248,10 @@ SVCompWitness::SVCompWitness(std::string programPath, std::string programHash,
       // cout << specTrueString << "\n";
       specification = boost::make_unique<Specification>(
           SpecificationType::TARGET, targetFunction);
+    } else if (specTrueString == "target-reach_error"){
+      // cout << specTrueString << "\n";
+      specification = boost::make_unique<Specification>(
+          SpecificationType::TARGET_REACH_ERROR, targetFunction);
     } else if (specTrueString == "overflow") {
       specification =
           boost::make_unique<Specification>(SpecificationType::SPECOVERFLOW);

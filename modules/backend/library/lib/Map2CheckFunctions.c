@@ -58,6 +58,10 @@ void __VERIFIER_error() {
   // DO NOTHING
 }
 
+void reach_error(){
+  // DO NOTHING TOO
+}
+
 void map2check_target_function(const char *func_name, int scope, int line) {
   write_property(TARGET_REACHED, line, func_name);
 
