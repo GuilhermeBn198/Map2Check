@@ -24,7 +24,6 @@
 #include <sstream>
 #include <stdexcept>
 #include <string>
-#include <unordered_set> // Usado para armazenar múltiplas funções-alvo
 #include <vector>
 #include "DebugInfo.hpp"
 
@@ -44,9 +43,7 @@ struct TargetPass : public FunctionPass {
   static char ID;
   TargetPass() : FunctionPass(ID) {}
   explicit TargetPass(std::string FunctionName) : FunctionPass(ID) {
-    targetFunctionNames.insert(FunctionName);
-    targetFunctionNames.insert("__VERIFIER_error");
-    targetFunctionNames.insert("reach_error"); // Adiciona outra função-alvo
+    targetFunctionName = FunctionName;
   }
   virtual bool runOnFunction(Function &F);
 
@@ -59,7 +56,7 @@ struct TargetPass : public FunctionPass {
   BasicBlock::iterator currentInstruction;
   Constant *targetFunctionMap2Check = NULL;
   Value *functionName = NULL;
-  std::unordered_set<std::string> targetFunctionNames; // Conjunto de funções-alvo
+  std::string targetFunctionName = "__VERIFIER_error";
 };
 
 #endif  // MODULES_BACKEND_PASS_TARGETPASS_HPP_

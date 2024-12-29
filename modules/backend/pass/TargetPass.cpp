@@ -36,17 +36,19 @@ bool TargetPass::runOnFunction(Function& F) {
 void TargetPass::runOnCallInstruction(CallInst* callInst, LLVMContext* Ctx) {
   Function* calleeFunction = callInst->getCalledFunction();
 
-  if (calleeFunction == nullptr) {
+  if (calleeFunction == NULL) {
     Value* v = callInst->getCalledValue();
     calleeFunction = dyn_cast<Function>(v->stripPointerCasts());
 
-    if (calleeFunction == nullptr) {
+    if (calleeFunction == NULL) {
       return;
     }
   }
 
-  // Verifique se a função chamada é uma das funções-alvo
-  if (targetFunctionNames.count(calleeFunction->getName().str())) {
+  if (calleeFunction->getName() == targetFunctionName) {
+    this->instrumentErrorInstruction(callInst, Ctx);
+  }
+  if (calleeFunction->getName() == "reach_error") {
     this->instrumentErrorInstruction(callInst, Ctx);
   }
 }
