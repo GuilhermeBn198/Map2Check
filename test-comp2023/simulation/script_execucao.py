@@ -4,6 +4,7 @@ import subprocess
 import xml.etree.ElementTree as ET
 import yaml # type: ignore
 import time
+import glob
 
 # Função para criar pastas para organizar os resultados
 def criar_pasta_destino(base_dir, categoria, subcategoria):
@@ -42,40 +43,56 @@ def extrair_input_files(yml_path, subcategoria):
 
 # Função para processar os arquivos dentro de uma subcategoria
 def processar_subcategoria(subcategoria_path, destino, categoria, subcategoria_nome):
-    subcategoria_path = "sv-benchmarks/c/"+subcategoria_path
+    subcategoria_path = os.path.join("sv-benchmarks/c/", subcategoria_path)
     print(f"[INFO] Processando subcategoria: {subcategoria_nome} em {subcategoria_path}")
-    arquivos_yml = [
-        os.path.join(subcategoria_path, f) for f in os.listdir(subcategoria_path)
-        if os.path.isfile(os.path.join(subcategoria_path, f)) and f.endswith(".yml")
-    ]
 
+    # Debug do caminho
+    print(f"[DEBUG] Caminho final para glob: {subcategoria_path}")
+
+    # Coletar arquivos YML
+    arquivos_yml = glob.glob(subcategoria_path)
+    # print(f"[DEBUG] Arquivos encontrados: {arquivos_yml}")
     tempos = []
+
+    if not arquivos_yml:
+        print(f"[ERRO] Nenhum arquivo .yml encontrado em {subcategoria_path}")
+        return
 
     for yml_file in arquivos_yml:
         input_files = extrair_input_files(yml_file, subcategoria_nome)
         for input_file in input_files:
-            comando = ["python3", "tools/map2check/map2check-wrapper-modificado.py", "-p", "unreach-call-map2check.prp", input_file]
+            comando = ["python3", "Map2Check/release/map2check-wrapper.py", "-p", "coverage-error-call.prp", input_file]
             print(f"[INFO] Executando ferramenta para o arquivo: {input_file}")
             tempo_execucao, test_suite_path = executar_ferramenta(comando, input_file, destino)
-            time.sleep(2)  # Delay para visualização clara no terminal
+            time.sleep(1)  # Delay para visualização clara no terminal
 
             if tempo_execucao is not None and test_suite_path:
                 print(f"[INFO] Test-suite.zip gerado: {test_suite_path}")
                 resultado_testcov, output_file = executar_testcov(test_suite_path, input_file, destino)
                 tempos.append((os.path.basename(input_file), tempo_execucao, resultado_testcov, output_file))
-                time.sleep(2)
+                print("")
+                time.sleep(1)
             else:
                 print(f"[ERRO] Falha ao gerar test-suite.zip para {input_file}")
                 tempos.append((os.path.basename(input_file), tempo_execucao, "Erro", None))
+                print("")
 
     tempos_file = os.path.join(destino, "tempos.txt")
     with open(tempos_file, "w") as f:
         for arquivo, tempo, resultado, output_file in tempos:
-            linha = f"{arquivo}: {tempo} segundos, TestCov: {resultado}"
+            # Reduzir a precisão do tempo para 3 casas decimais
+            tempo_formatado = f"{tempo:.3f}" if tempo is not None else "N/A"
+            linha = f"{arquivo}: {tempo_formatado} segundos, TestCov: {resultado}"
             if output_file:
                 linha += f", Saída: {output_file}"
             f.write(linha + "\n")
     print(f"[INFO] Arquivo tempos.txt gerado: {tempos_file}")
+    print("")
+    print("")
+    print("")
+    print("")
+    print("")
+
 
 # Função principal para processar categorias e subcategorias
 def processar_tarefas(map2check_file, resultados_dir):
@@ -91,10 +108,12 @@ def processar_tarefas(map2check_file, resultados_dir):
         if includesfile_path and os.path.exists(includesfile_path):
             subcategorias = ler_includesfile(includesfile_path)
             for subcategoria_path in subcategorias:
-                subcategoria_nome = os.path.basename(subcategoria_path.strip("/*"))
+                subcategoria_nome = os.path.dirname(subcategoria_path).split("/")[-1]  # Nome correto
                 destino = criar_pasta_destino(resultados_dir, categoria, subcategoria_nome)
                 processar_subcategoria(subcategoria_path, destino, categoria, subcategoria_nome)
-                time.sleep(2)
+                time.sleep(1)
+                print("")
+                print("")    
         else:
             print(f"[ERRO] Arquivo includesfile não encontrado: {includesfile_path}")
 
