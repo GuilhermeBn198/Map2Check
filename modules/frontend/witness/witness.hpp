@@ -120,9 +120,9 @@ class Specification : public DataElement {
       case SpecificationType::TARGET:
         std::ostringstream cnvt;
         cnvt.str("");
-        cnvt << "CHECK( init(main()), LTL(G ! call(";
-        cnvt << "__VERIFIER_error";
-        cnvt << "())) )";
+        cnvt << "COVER( init(main()), FQL(COVER EDGES(@CALL(";
+        cnvt << "reach_error";
+        cnvt << "))) )";
         this->value = cnvt.str();
         break;
     }

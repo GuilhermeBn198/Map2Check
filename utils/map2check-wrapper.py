@@ -54,7 +54,7 @@ elif "CHECK( init(main()), LTL(G valid-memcleanup) )" in property_file_content:
   is_memcleanup = True
 elif "CHECK( init(main()), LTL(G ! overflow) )" in property_file_content:
   is_overflow = True
-elif "CHECK( init(main()), LTL(G ! call(__VERIFIER_error())) )" in property_file_content:
+elif "COVER( init(main()), FQL(COVER EDGES(@CALL(reach_error))) )" in property_file_content:
   is_reachability = True
 else:
   # We don't support termination

@@ -572,7 +572,7 @@ std::string GenerateAutomataTruePass::getPredicateSymOnXmlText(
   return predicateText;
 }
 
-// To identify a block with a error location by __VERIFIER_error call function
+// To identify a block with a error location by reach_error call function
 bool GenerateAutomataTruePass::checkBBHasLError(BasicBlock& nowB) {
   this->st_isErrorLocation = 0;
   for (auto& I : nowB) {
@@ -581,7 +581,7 @@ bool GenerateAutomataTruePass::checkBBHasLError(BasicBlock& nowB) {
         // errs() << callInst->getCalledFunction()->getName() << "\n";
         Value* v = callInst->getCalledValue();
         Function* calleeFunction = dyn_cast<Function>(v->stripPointerCasts());
-        if (calleeFunction->getName() == "__VERIFIER_error") {
+        if (calleeFunction->getName() == "reach_error") {
           this->st_isErrorLocation = 1;
           return true;
         }
