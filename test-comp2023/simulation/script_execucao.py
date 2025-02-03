@@ -157,4 +157,9 @@ if __name__ == "__main__":
     map2check_file = "map2check.xml"
     resultados_dir = "resultados_de_testes"
     os.makedirs(resultados_dir, exist_ok=True)
+    # Obter e exibir o caminho completo
+    caminho_completo = os.path.abspath(resultados_dir)
+    print(f"Pasta criada/em uso: {caminho_completo}")
+    input("aguardando confirmação visual do operador(press enter)...")
+    
     processar_tarefas(map2check_file, resultados_dir)
