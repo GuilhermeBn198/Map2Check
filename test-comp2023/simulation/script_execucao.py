@@ -46,11 +46,11 @@ def processar_subcategoria(subcategoria_path, destino, categoria, subcategoria_n
     subcategoria_path = os.path.join("sv-benchmarks/c/", subcategoria_path)
     print("[INFO] Processando subcategoria: {} em {}".format(subcategoria_nome,subcategoria_path))
 
-    # Debug do caminho
-    print("[DEBUG] Caminho final para glob: {}".format(subcategoria_path))
+    # print("[DEBUG] Caminho final para glob: {}".format(subcategoria_path))
 
     # Coletar arquivos YML
     arquivos_yml = glob.glob(subcategoria_path)
+    
     # print("[DEBUG] Arquivos encontrados: {}".format(arquivos_yml))
     tempos = []
 
@@ -64,10 +64,11 @@ def processar_subcategoria(subcategoria_path, destino, categoria, subcategoria_n
             comando = ["python3", "map2check-wrapper.py", "-p", "coverage-error-call.prp", input_file]
             print("[INFO] Executando ferramenta para o arquivo: {}".format(input_file))
             cwd_release = os.path.join(os.getcwd(), "release")
+            # A funcao agora sempre retorna o tempo de execucao, mesmo em caso de erro
             tempo_execucao, test_suite_path = executar_ferramenta(comando, input_file, destino, cwd=cwd_release)
             time.sleep(1)  # Delay para visualizacao clara no terminal
 
-            if tempo_execucao is not None and test_suite_path:
+            if test_suite_path:
                 print("[INFO] Test-suite.zip gerado: {}".format(test_suite_path))
                 resultado_testcov, output_file = executar_testcov(test_suite_path, input_file, destino)
                 tempos.append((os.path.basename(input_file), tempo_execucao, resultado_testcov, output_file))
@@ -88,12 +89,7 @@ def processar_subcategoria(subcategoria_path, destino, categoria, subcategoria_n
                 linha += ", Saída: {}".format(output_file)
             f.write(linha + "\n")
     print("[INFO] Arquivo tempos.txt gerado: {}".format(tempos_file))
-    print("")
-    print("")
-    print("")
-    print("")
-    print("")
-
+    print("\n" * 5)
 
 # Funcao principal para processar categorias e subcategorias
 def processar_tarefas(map2check_file, resultados_dir):
@@ -113,29 +109,29 @@ def processar_tarefas(map2check_file, resultados_dir):
                 destino = criar_pasta_destino(resultados_dir, categoria, subcategoria_nome)
                 processar_subcategoria(subcategoria_path, destino, categoria, subcategoria_nome)
                 time.sleep(1)
-                print("")
-                print("")    
+                print("\n" * 2)    
         else:
             print("[ERRO] Arquivo includesfile nao encontrado: {}".format(includesfile_path))
 
 # Funcao para executar a ferramenta principal e medir o tempo de execucao
 def executar_ferramenta(comando, arquivo, output_dir, cwd=None):
+    inicio = time.time()
     try:
-        inicio = time.time()
         subprocess.run(comando, check=True, cwd=cwd)
-        fim = time.time()
-
-        tempo_execucao = fim - inicio
-        generated_file = os.path.join(cwd if cwd is not None else os.getcwd(), "test-suite.zip")
-        if os.path.exists(generated_file):
-            destino_arquivo = os.path.join(output_dir, "test-suite.zip")
-            shutil.move(generated_file, destino_arquivo)
-            return tempo_execucao, destino_arquivo
-        else:
-            return tempo_execucao, None
     except subprocess.CalledProcessError as e:
         print("[ERRO] Erro ao executar a ferramenta para {}: {}".format(arquivo, e))
-        return None, None
+        # Não propagamos o erro para que possamos registrar o tempo mesmo que a execucao falhe
+    fim = time.time()
+
+    tempo_execucao = fim - inicio
+    # Procura o arquivo test-suite.zip no diretório de execucao definido (ou no diretório atual)
+    generated_file = os.path.join(cwd if cwd is not None else os.getcwd(), "test-suite.zip")
+    if os.path.exists(generated_file):
+        destino_arquivo = os.path.join(output_dir, "test-suite.zip")
+        shutil.move(generated_file, destino_arquivo)
+        return tempo_execucao, destino_arquivo
+    else:
+        return tempo_execucao, None
 
 # Funcao para analisar o arquivo test-suite.zip usando o testcov
 def executar_testcov(test_suite_path, arquivo_original, output_dir):
@@ -151,7 +147,7 @@ def executar_testcov(test_suite_path, arquivo_original, output_dir):
             subprocess.run(comando, check=True, stdout=output, stderr=output)
         return "Sucesso", output_file
     except subprocess.CalledProcessError as e:
-        print("[ERRO] Erro ao executar testcov para {}: {}".format(test_suite_path,e))
+        print("[ERRO] Erro ao executar testcov para {}: {}".format(test_suite_path, e))
         return "Erro", None
 
 if __name__ == "__main__":

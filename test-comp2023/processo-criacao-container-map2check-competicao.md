@@ -23,7 +23,9 @@
 python3 -m pip install 'pyyaml==5.3.1'
 ```
 
-4. executar o script de simulação do ambiente da competição
+4. Instalar TestCov
+
+5. executar o script de simulação do ambiente da competição
 
 ```bash
   cd test-comp2023/simulation
