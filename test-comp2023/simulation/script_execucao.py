@@ -34,7 +34,7 @@ def extrair_input_files(yml_path, subcategoria):
             data = yaml.safe_load(file)
             if "input_files" in data:
                 raw_input = data["input_files"].strip("'")
-                input_file_path = "./sv-benchmarks/c/{}/{}".format(subcategoria, raw_input)
+                input_file_path = "../sv-benchmarks/c/{}/{}".format(subcategoria, raw_input)
                 input_files.append(input_file_path)
                 print("[INFO] Input file encontrado: {}".format(input_file_path))
     except Exception as e:
@@ -61,9 +61,10 @@ def processar_subcategoria(subcategoria_path, destino, categoria, subcategoria_n
     for yml_file in arquivos_yml:
         input_files = extrair_input_files(yml_file, subcategoria_nome)
         for input_file in input_files:
-            comando = ["python3", "release/map2check-wrapper.py", "-p", "coverage-error-call.prp", input_file]
+            comando = ["python3", "map2check-wrapper.py", "-p", "coverage-error-call.prp", input_file]
             print("[INFO] Executando ferramenta para o arquivo: {}".format(input_file))
-            tempo_execucao, test_suite_path = executar_ferramenta(comando, input_file, destino)
+            cwd_release = os.path.join(os.getcwd(), "release")
+            tempo_execucao, test_suite_path = executar_ferramenta(comando, input_file, destino, cwd=cwd_release)
             time.sleep(1)  # Delay para visualizacao clara no terminal
 
             if tempo_execucao is not None and test_suite_path:
@@ -118,14 +119,14 @@ def processar_tarefas(map2check_file, resultados_dir):
             print("[ERRO] Arquivo includesfile nao encontrado: {}".format(includesfile_path))
 
 # Funcao para executar a ferramenta principal e medir o tempo de execucao
-def executar_ferramenta(comando, arquivo, output_dir):
+def executar_ferramenta(comando, arquivo, output_dir, cwd=None):
     try:
         inicio = time.time()
-        subprocess.run(comando, check=True)
+        subprocess.run(comando, check=True, cwd=cwd)
         fim = time.time()
 
         tempo_execucao = fim - inicio
-        generated_file = os.path.join(os.getcwd(), "test-suite.zip")
+        generated_file = os.path.join(cwd if cwd is not None else os.getcwd(), "test-suite.zip")
         if os.path.exists(generated_file):
             destino_arquivo = os.path.join(output_dir, "test-suite.zip")
             shutil.move(generated_file, destino_arquivo)
@@ -133,7 +134,7 @@ def executar_ferramenta(comando, arquivo, output_dir):
         else:
             return tempo_execucao, None
     except subprocess.CalledProcessError as e:
-        print("[ERRO] Erro ao executar a ferramenta para {}: {}".format(arquivo,e))
+        print("[ERRO] Erro ao executar a ferramenta para {}: {}".format(arquivo, e))
         return None, None
 
 # Funcao para analisar o arquivo test-suite.zip usando o testcov
