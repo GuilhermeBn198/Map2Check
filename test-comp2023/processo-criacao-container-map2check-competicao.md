@@ -17,9 +17,10 @@
   ./make-unit-test.sh; exec /bin/bash"
   ```
 
-3. Instalar pyaml 5.3.1
+3. Instalar pyaml 5.3.1 e docker dentro do container pois precisamos para executar o testcov
 
 ```bash
+curl -fsSL https://get.docker.com | sh
 python3 -m pip install 'pyyaml==5.3.1'
 ```
 
