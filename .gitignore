@@ -78,3 +78,4 @@ CMakeLists.txt.user*
 /test-comp2023/simulation/tools/map2check
 /test-comp2023/simulation/tools/testcov
 /test-comp2023/simulation/release
+/test-comp2023/simulation/testcov

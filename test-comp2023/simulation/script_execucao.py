@@ -110,11 +110,10 @@ def processar_tarefas(map2check_file, resultados_dir):
         else:
             print("[ERRO] Arquivo includesfile nao encontrado: {}".format(includesfile_path))
 
-# Funcao para executar a ferramenta principal e medir o tempo de execucao
+# --- Funcao executada para a ferramenta Map2Check ---
 def executar_ferramenta(comando, arquivo, output_dir, cwd=None):
     inicio = time.time()
     try:
-        # Capturamos a saida da ferramenta para identificar seu resultado
         result_output = subprocess.check_output(comando, cwd=cwd, stderr=subprocess.STDOUT)
     except subprocess.CalledProcessError as e:
         print("[ERRO] Erro ao executar a ferramenta para {}: {}".format(arquivo, e))
@@ -124,47 +123,46 @@ def executar_ferramenta(comando, arquivo, output_dir, cwd=None):
     fim = time.time()
     tempo_execucao = fim - inicio
 
-    # Verifica se o arquivo test-suite.zip foi gerado
     generated_file = os.path.join(cwd if cwd is not None else os.getcwd(), "test-suite.zip")
     if os.path.exists(generated_file):
-        destino_arquivo = os.path.join(output_dir, "test-suite.zip")
-        shutil.move(generated_file, destino_arquivo)
-        return tempo_execucao, destino_arquivo, "Test-Suite"
+        # Retorna o caminho do test-suite gerado sem movê-lo
+        return tempo_execucao, generated_file, "Test-Suite"
     else:
         resultado_str = result_output.decode("utf-8").strip()
         return tempo_execucao, None, resultado_str
 
-# Funcao para executar o testcov dentro do container e extrair os parametros relevantes
+# --- Funcao para executar o testcov dentro do container externo ---
 def executar_testcov(test_suite_path, arquivo_original, output_dir):
     """
-    Executa o testcov dentro de um container usando docker e extrai:
-      - Tests run
-      - Tests in suite
-      - Coverage
-      - Number of goals
-      - Result
+    Executa o testcov no container usando Docker e extrai os parâmetros relevantes.
+    Suposições:
+      - O script é executado a partir da pasta raiz:
+          /mnt/c/Users/bguil/Documents/GitHub/Map2Check/test-comp2023/simulation/
+      - Essa pasta contém as pastas: release/, testcov/, resultados_de_testes/, etc.
+      - O container será montado com a raiz (simulation) em /simulation.
+      - O comando será executado a partir do diretorio /simulation/testcov.
+      - Os parâmetros (test-suite e o arquivo original) sero fornecidos como caminhos relativos a /simulation/testcov.
     """
-    # Para que o testcov consiga encontrar o test-suite.zip corretamente,
-    # montamos o diretorio de output (que contém o arquivo) no container.
-    volume_host = os.path.abspath(output_dir)
-    volume_container = "/release"
-    # Assumindo que dentro do container o test-suite.zip estara em /release
-    test_suite_filename = os.path.basename(test_suite_path)
-    # Para o arquivo original, vamos usar seu basename (assumindo que ele esteja disponivel na montagem ou que o container consiga acessa-lo)
-    arquivo_basename = os.path.basename(arquivo_original)
+    # A raiz do projeto (simulation) é o diretorio corrente
+    volume_host = os.getcwd()  # Ex.: /mnt/c/Users/bguil/Documents/GitHub/Map2Check/test-comp2023/simulation
+    volume_container = "/simulation"
+    workdir_container = os.path.join(volume_container, "testcov")
     
-    # Montamos o comando do docker que:
-    # 1. Usa a imagem com o testcov (ja instalada)
-    # 2. Monta o diretorio de output no container
-    # 3. Define o diretorio de trabalho como /release
-    # 4. Executa: pip install tsbuilder && ./testcov/bin/testcov --no-isolation --test-suite "test-suite.zip" "<arquivo>"
+    # Calcula os caminhos relativos a partir do diretorio testcov no host
+    base_for_rel = os.path.join(volume_host, "testcov")
+    rel_test_suite = os.path.relpath(test_suite_path, base_for_rel)
+    rel_input = os.path.relpath(arquivo_original, base_for_rel)
+    
+    # Exemplo: se test_suite_path = /mnt/.../simulation/release/test-suite.zip e
+    # base_for_rel = /mnt/.../simulation/testcov, ento rel_test_suite será "../release/test-suite.zip"
+    
     docker_cmd = [
         "docker", "run", "--rm", "-i", "-t",
-        "-v {}:{}".format(volume_host, volume_container),
-        "-w", volume_container,
+        "-v", "{}:{}".format(volume_host, volume_container),
+        "-w", workdir_container,
         "registry.gitlab.com/sosy-lab/benchmarking/competition-scripts/user:latest",
         "bash", "-c",
-        "pip install tsbuilder && ./testcov/bin/testcov --no-isolation --test-suite '{}' '{}'".format(test_suite_filename, arquivo_basename)
+        "./bin/testcov --no-isolation --test-suite '{}' '{}'".format(rel_test_suite, rel_input)
     ]
     
     try:
@@ -181,7 +179,6 @@ def executar_testcov(test_suite_path, arquivo_original, output_dir):
         # Number of goals: 2
         # Result: DONE
 
-        # Extraimos os parametros relevantes:
         tests_run = tests_in_suite = coverage = number_of_goals = result_status = None
         for line in result_text.splitlines():
             line = line.strip()
@@ -195,11 +192,10 @@ def executar_testcov(test_suite_path, arquivo_original, output_dir):
                 number_of_goals = line.split("Number of goals:")[1].strip()
             elif line.startswith("Result:"):
                 result_status = line.split("Result:")[1].strip()
-        # Montamos um resumo com os parametros importantes:
         summary = "Tests run: {}, Tests in suite: {}, Coverage: {}, Number of goals: {}, Result: {}".format(
             tests_run, tests_in_suite, coverage, number_of_goals, result_status
         )
-        # Opcional: gravar a saida completa em um arquivo
+        # Grava a saida completa em um arquivo dentro do diretorio de resultados
         output_file = os.path.join(output_dir, "testcov_output.txt")
         with open(output_file, "w") as f:
             f.write(result_text)
