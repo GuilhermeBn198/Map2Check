@@ -60,6 +60,7 @@ def processar_subcategoria(subcategoria_path, destino, categoria, subcategoria_n
             comando = ["python3", "map2check-wrapper.py", "-p", "coverage-error-call.prp", input_file]
             print("[INFO] Executando ferramenta para o arquivo: {}".format(input_file))
             cwd_release = os.path.join(os.getcwd(), "release")
+            print("[DEBUG] cwd_release definido como: {}".format(cwd_release))
             # A funcao retorna: tempo de execucao, (opcional) caminho do test-suite e o resultado da ferramenta
             tempo_execucao, test_suite_path, resultado = executar_ferramenta(comando, input_file, destino, cwd=cwd_release)
             time.sleep(1)  # Delay para visualizacao clara no terminal
@@ -69,7 +70,7 @@ def processar_subcategoria(subcategoria_path, destino, categoria, subcategoria_n
                 # Chama o testcov (dentro do container) e extrai os parametros relevantes
                 resultado_testcov, output_file = executar_testcov(test_suite_path, input_file, destino)
                 tempos.append((os.path.basename(input_file), tempo_execucao, resultado_testcov, output_file))
-                print("")
+                print("[DEBUG] Resultado do testcov: {}".format(resultado_testcov))
                 time.sleep(1)
             else:
                 print("[INFO] Resultado da ferramenta: {}".format(resultado))
@@ -79,7 +80,7 @@ def processar_subcategoria(subcategoria_path, destino, categoria, subcategoria_n
     tempos_file = os.path.join(destino, "tempos.txt")
     with open(tempos_file, "w") as f:
         for arquivo, tempo, resultado, output_file in tempos:
-            # Reduzir a preciseo do tempo para 3 casas decimais
+            # Reduzir a precisao do tempo para 3 casas decimais
             tempo_formatado = "{:.3f}".format(tempo) if tempo is not None else "N/A"
             linha = "{}: {} segundos, Resultado: {}".format(arquivo, tempo_formatado, resultado)
             if output_file:
@@ -113,6 +114,7 @@ def processar_tarefas(map2check_file, resultados_dir):
 # --- Funcao executada para a ferramenta Map2Check ---
 def executar_ferramenta(comando, arquivo, output_dir, cwd=None):
     inicio = time.time()
+    print("[DEBUG] Comando executado: {}".format(" ".join(comando)))
     try:
         result_output = subprocess.check_output(comando, cwd=cwd, stderr=subprocess.STDOUT)
     except subprocess.CalledProcessError as e:
@@ -124,37 +126,45 @@ def executar_ferramenta(comando, arquivo, output_dir, cwd=None):
     tempo_execucao = fim - inicio
 
     generated_file = os.path.join(cwd if cwd is not None else os.getcwd(), "test-suite.zip")
+    print("[DEBUG] Verificando existência do arquivo: {}".format(generated_file))
     if os.path.exists(generated_file):
+        print("[DEBUG] Arquivo test-suite.zip encontrado.")
         # Retorna o caminho do test-suite gerado sem movê-lo
         return tempo_execucao, generated_file, "Test-Suite"
     else:
         resultado_str = result_output.decode("utf-8").strip()
+        print("[DEBUG] Resultado da execucao: {}".format(resultado_str))
         return tempo_execucao, None, resultado_str
 
 # --- Funcao para executar o testcov dentro do container externo ---
 def executar_testcov(test_suite_path, arquivo_original, output_dir):
     """
-    Executa o testcov no container usando Docker e extrai os parâmetros relevantes.
+    Executa o testcov no container usando Docker e extrai os parametros relevantes.
     Suposições:
-      - O script é executado a partir da pasta raiz:
+      - O script e executado a partir da pasta raiz:
           /mnt/c/Users/bguil/Documents/GitHub/Map2Check/test-comp2023/simulation/
-      - Essa pasta contém as pastas: release/, testcov/, resultados_de_testes/, etc.
-      - O container será montado com a raiz (simulation) em /simulation.
-      - O comando será executado a partir do diretorio /simulation/testcov.
-      - Os parâmetros (test-suite e o arquivo original) sero fornecidos como caminhos relativos a /simulation/testcov.
+      - Essa pasta contem as pastas: release/, testcov/, resultados_de_testes/, etc.
+      - O container sera montado com a raiz (simulation) em /simulation.
+      - O comando sera executado a partir do diretorio /simulation/testcov.
+      - Os parametros (test-suite e o arquivo original) serao fornecidos como caminhos relativos a /simulation/testcov.
     """
-    # A raiz do projeto (simulation) é o diretorio corrente
+    # A raiz do projeto (simulation) e o diretorio corrente
     volume_host = os.getcwd()  # Ex.: /mnt/c/Users/bguil/Documents/GitHub/Map2Check/test-comp2023/simulation
     volume_container = "/simulation"
     workdir_container = os.path.join(volume_container, "testcov")
     
+    print("[DEBUG] volume_host (host root): {}".format(volume_host))
+    print("[DEBUG] volume_container (container root): {}".format(volume_container))
+    print("[DEBUG] workdir_container (diretorio de trabalho no container): {}".format(workdir_container))
+    
     # Calcula os caminhos relativos a partir do diretorio testcov no host
     base_for_rel = os.path.join(volume_host, "testcov")
+    print("[DEBUG] Base para calculo de caminhos relativos: {}".format(base_for_rel))
     rel_test_suite = os.path.relpath(test_suite_path, base_for_rel)
     rel_input = os.path.relpath(arquivo_original, base_for_rel)
     
-    # Exemplo: se test_suite_path = /mnt/.../simulation/release/test-suite.zip e
-    # base_for_rel = /mnt/.../simulation/testcov, ento rel_test_suite será "../release/test-suite.zip"
+    print("[DEBUG] Caminho relativo do test-suite: {}".format(rel_test_suite))
+    print("[DEBUG] Caminho relativo do arquivo original: {}".format(rel_input))
     
     docker_cmd = [
         "docker", "run", "--rm", "-i", "-t",
@@ -165,9 +175,12 @@ def executar_testcov(test_suite_path, arquivo_original, output_dir):
         "./bin/testcov --no-isolation --test-suite '{}' '{}'".format(rel_test_suite, rel_input)
     ]
     
+    print("[DEBUG] Comando Docker para testcov: {}".format(" ".join(docker_cmd)))
+    
     try:
         result_output = subprocess.check_output(docker_cmd, stderr=subprocess.STDOUT)
         result_text = result_output.decode("utf-8")
+        print("[DEBUG] Saida do testcov:\n{}".format(result_text))
         # Exemplo de saida:
         # ⏳ Executing tests 2/2
         # ✔️  Done!
@@ -199,6 +212,7 @@ def executar_testcov(test_suite_path, arquivo_original, output_dir):
         output_file = os.path.join(output_dir, "testcov_output.txt")
         with open(output_file, "w") as f:
             f.write(result_text)
+        print("[DEBUG] Testcov executado com sucesso. Resumo: {}".format(summary))
         return summary, output_file
     except subprocess.CalledProcessError as e:
         print("[ERRO] Erro ao executar testcov para {}: {}".format(test_suite_path, e))
