@@ -40,5 +40,5 @@
 5. executar o script de simulação do ambiente da competição
 
 ```bash
-  python3 script-execucao.py
+  python3 script_execucao.py
 ```

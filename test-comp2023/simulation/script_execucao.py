@@ -126,10 +126,10 @@ def executar_ferramenta(comando, arquivo, output_dir, cwd=None):
     tempo_execucao = fim - inicio
 
     generated_file = os.path.join(cwd if cwd is not None else os.getcwd(), "test-suite.zip")
-    print("[DEBUG] Verificando existência do arquivo: {}".format(generated_file))
+    print("[DEBUG] Verificando existencia do arquivo: {}".format(generated_file))
     if os.path.exists(generated_file):
         print("[DEBUG] Arquivo test-suite.zip encontrado.")
-        # Retorna o caminho do test-suite gerado sem movê-lo
+        # Retorna o caminho do test-suite gerado sem move-lo
         return tempo_execucao, generated_file, "Test-Suite"
     else:
         resultado_str = result_output.decode("utf-8").strip()
