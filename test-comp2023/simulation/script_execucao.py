@@ -149,7 +149,7 @@ def executar_testcov(test_suite_path, arquivo_original, output_dir):
       - Os parametros (test-suite e o arquivo original) serao fornecidos como caminhos relativos a /simulation/testcov.
     """
     # A raiz do projeto (simulation) e o diretorio corrente
-    volume_host = os.getcwd()  # Ex.: /mnt/c/Users/bguil/Documents/GitHub/Map2Check/test-comp2023/simulation
+    volume_host = "/mnt/c/Users/bguil/Documents/GitHub/Map2Check/test-comp2023/simulation"
     volume_container = "/simulation"
     workdir_container = os.path.join(volume_container, "testcov")
     
@@ -160,14 +160,14 @@ def executar_testcov(test_suite_path, arquivo_original, output_dir):
     # Calcula os caminhos relativos a partir do diretorio testcov no host
     base_for_rel = os.path.join(volume_host, "testcov")
     print("[DEBUG] Base para calculo de caminhos relativos: {}".format(base_for_rel))
-    rel_test_suite = os.path.relpath(test_suite_path, base_for_rel)
+    rel_test_suite = "../release/test-suite.zip"
     rel_input = os.path.relpath(arquivo_original, base_for_rel)
     
     print("[DEBUG] Caminho relativo do test-suite: {}".format(rel_test_suite))
     print("[DEBUG] Caminho relativo do arquivo original: {}".format(rel_input))
     
     docker_cmd = [
-        "docker", "run", "--rm", "-i", "-t",
+        "sudo", "docker", "run", "--rm", "-i", "-t",
         "-v", "{}:{}".format(volume_host, volume_container),
         "-w", workdir_container,
         "registry.gitlab.com/sosy-lab/benchmarking/competition-scripts/user:latest",

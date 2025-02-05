@@ -13,7 +13,7 @@
 2. Executar container do testcov com as informações precisas:
 
 ```bash
-  docker run --name testcov_container -it   -v /mnt/c/Users/bguil/Documents/GitHub/Map2Check/test-comp2023/simulation:/release   registry.gitlab.com/sosy-lab/benchmarking/competition-scripts/user:latest   bash -c "apt update && apt install -y software-properties-common python3-venv python3-pip && \
+  docker run --name testcov_container -it   -v /mnt/c/Users/bguil/Documents/GitHub/Map2Check/test-comp2023/simulation:/simulation   registry.gitlab.com/sosy-lab/benchmarking/competition-scripts/user:latest   bash -c "apt update && apt install -y software-properties-common python3-venv python3-pip && \
            add-apt-repository -y ppa:sosy-lab/benchmarking && \
            apt update && apt install -y benchexec && \
            python3 -m venv --system-site-packages /testcov_env && \
@@ -25,20 +25,34 @@
 3. Criar Container da aplicação, instalar ferramenta e entrar dentro do container
 
 ```bash
-  docker run -it -v $(pwd):/home/map2check/devel_tool/mygitclone:Z --user $(id -u):$(id -g) \
-  hrocha/mapdevel /bin/bash -c "cd /home/map2check/devel_tool/mygitclone; ./make-release.sh; \ 
-  ./make-unit-test.sh; exec /bin/bash"
+  docker run -it \
+  -v $(pwd):/home/map2check/devel_tool/mygitclone:Z \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  --user $(id -u):$(id -g) \
+  hrocha/mapdevel \
+  /bin/bash -c "cd /home/map2check/devel_tool/mygitclone; ./make-release.sh; ./make-unit-test.sh; exec /bin/bash"
 ```
 
-4. Instalar pyaml 5.3.1 e se direcionar para o diretório correto
+4. Instalar Docker dentro do container para poder executar o script corretamente
+
+```bash
+  wget https://download.docker.com/linux/static/stable/x86_64/docker-20.10.8.tgz
+  tar xzvf docker-20.10.8.tgz
+  cp docker/docker /usr/local/bin/
+  chmod +x /usr/local/bin/docker
+  rm -rf docker/docker
+  docker --version
+```
+
+5. Instalar pyaml 5.3.1 e se direcionar para o diretório correto
 
 ```bash
   python3 -m pip install 'pyyaml==5.3.1'
   cd test-comp2023/simulation
 ```
 
-5. executar o script de simulação do ambiente da competição
+6. executar o script de simulação do ambiente da competição
 
 ```bash
-  python3 script_execucao.py
+  sudo python3 script_execucao.py
 ```
