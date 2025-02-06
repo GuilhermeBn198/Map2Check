@@ -1,0 +1,5 @@
+Pasta criada/em uso: /home/map2check/devel_tool/mygitclone/test-comp2023/simulation/resultados_de_testes
+Aguardando confirmacao visual do operador (pressione Enter)...Traceback (most recent call last):
+  File "script_execucao.py", line 244, in <module>
+    input("Aguardando confirmacao visual do operador (pressione Enter)...")
+OSError: [Errno 9] Bad file descriptor

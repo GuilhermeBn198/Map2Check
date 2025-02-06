@@ -5,6 +5,41 @@ import xml.etree.ElementTree as ET
 import yaml  # type: ignore
 import time
 import glob
+import re
+
+def iniciar_e_configurar_container():
+    """
+    Cria e configura o container 'testcov_container' com as dependências necessarias.
+    Se o container ja existir, ele sera removido e recriado.
+    """
+    # Remove o container, se ele ja existir
+    try:
+        subprocess.run("sudo docker rm -f testcov_container", shell=True, check=True)
+        print("[INFO] Container 'testcov_container' removido (se existia).")
+    except subprocess.CalledProcessError:
+        print("[INFO] Nenhum container 'testcov_container' existente para remover.")
+
+    # Comando de setup do container
+    setup_cmd = (
+        "sudo docker run --name testcov_container -d -it "  # '-d' para rodar em background
+        "-v /mnt/c/Users/bguil/Documents/GitHub/Map2Check/test-comp2023/simulation:/simulation "
+        "registry.gitlab.com/sosy-lab/benchmarking/competition-scripts/user:latest "
+        "bash -c \""
+        "apt update && apt install -y software-properties-common python3-venv python3-pip && "
+        "add-apt-repository -y ppa:sosy-lab/benchmarking && "
+        "apt update && apt install -y benchexec && "
+        "python3 -m venv --system-site-packages /testcov_env && "
+        "source /testcov_env/bin/activate && "
+        "pip install tsbuilder lxml numpy pycparser matplotlib && "
+        "exec bash\""
+    )
+    
+    print("[INFO] Iniciando e configurando o container 'testcov_container'...")
+    try:
+        subprocess.run(setup_cmd, shell=True, check=True)
+        print("[INFO] Container 'testcov_container' iniciado e configurado com sucesso.")
+    except subprocess.CalledProcessError as e:
+        print("[ERRO] Falha ao iniciar/configurar o container: {}".format(e))
 
 # Funcao para criar pastas para organizar os resultados
 def criar_pasta_destino(base_dir, categoria, subcategoria):
@@ -136,62 +171,41 @@ def executar_ferramenta(comando, arquivo, output_dir, cwd=None):
         print("[DEBUG] Resultado da execucao: {}".format(resultado_str))
         return tempo_execucao, None, resultado_str
 
-# --- Funcao para executar o testcov dentro do container externo ---
 def executar_testcov(test_suite_path, arquivo_original, output_dir):
     """
-    Executa o testcov no container usando Docker e extrai os parametros relevantes.
-    Suposições:
-      - O script e executado a partir da pasta raiz:
-          /mnt/c/Users/bguil/Documents/GitHub/Map2Check/test-comp2023/simulation/
-      - Essa pasta contem as pastas: release/, testcov/, resultados_de_testes/, etc.
-      - O container sera montado com a raiz (simulation) em /simulation.
-      - O comando sera executado a partir do diretorio /simulation/testcov.
-      - Os parametros (test-suite e o arquivo original) serao fornecidos como caminhos relativos a /simulation/testcov.
+    Executa o testcov dentro do container já configurado utilizando docker exec.
+    
+    O comando executado é:
+      ./bin/testcov --no-isolation --test-suite '<rel_test_suite>' '<arquivo_original>'
+      
+    Onde:
+      - <rel_test_suite> é um caminho relativo (por exemplo, "simulation/release/test-suite.zip")
+      - <arquivo_original> é o caminho do arquivo original.
     """
-    # A raiz do projeto (simulation) e o diretorio corrente
-    volume_host = "/mnt/c/Users/bguil/Documents/GitHub/Map2Check/test-comp2023/simulation"
-    volume_container = "/simulation"
-    workdir_container = os.path.join(volume_container, "testcov")
+    # Substitui "../" no início de arquivo_original por "/simulation/"
+    arquivo_original = re.sub(r'^\.\./', 'simulation/', arquivo_original)
     
-    print("[DEBUG] volume_host (host root): {}".format(volume_host))
-    print("[DEBUG] volume_container (container root): {}".format(volume_container))
-    print("[DEBUG] workdir_container (diretorio de trabalho no container): {}".format(workdir_container))
+    # Defina o caminho relativo para o test-suite conforme o que o testcov espera
+    rel_test_suite = "simulation/release/test-suite.zip"
     
-    # Calcula os caminhos relativos a partir do diretorio testcov no host
-    base_for_rel = os.path.join(volume_host, "testcov")
-    print("[DEBUG] Base para calculo de caminhos relativos: {}".format(base_for_rel))
-    rel_test_suite = "../release/test-suite.zip"
-    rel_input = os.path.relpath(arquivo_original, base_for_rel)
-    
-    print("[DEBUG] Caminho relativo do test-suite: {}".format(rel_test_suite))
-    print("[DEBUG] Caminho relativo do arquivo original: {}".format(rel_input))
+    # Constrói o comando que será executado dentro do container
+    comando_interno = "/testcov_env/bin/python ./simulation/testcov/bin/testcov --no-isolation --test-suite '{}' '{}'".format(
+        rel_test_suite, arquivo_original
+    )
     
     docker_cmd = [
-        "sudo", "docker", "run", "--rm", "-i", "-t",
-        "-v", "{}:{}".format(volume_host, volume_container),
-        "-w", workdir_container,
-        "registry.gitlab.com/sosy-lab/benchmarking/competition-scripts/user:latest",
-        "bash", "-c",
-        "./bin/testcov --no-isolation --test-suite '{}' '{}'".format(rel_test_suite, rel_input)
+        "sudo", "docker", "exec", "-i", "testcov_container",
+        "bash", "-c", comando_interno
     ]
     
-    print("[DEBUG] Comando Docker para testcov: {}".format(" ".join(docker_cmd)))
+    print("[DEBUG] Comando Docker para testcov (docker exec): {}".format(" ".join(docker_cmd)))
     
     try:
         result_output = subprocess.check_output(docker_cmd, stderr=subprocess.STDOUT)
         result_text = result_output.decode("utf-8")
-        print("[DEBUG] Saida do testcov:\n{}".format(result_text))
-        # Exemplo de saida:
-        # ⏳ Executing tests 2/2
-        # ✔️  Done!
-        #
-        # ---Results---
-        # Tests run: 2
-        # Tests in suite: 2
-        # Coverage: 100.0%
-        # Number of goals: 2
-        # Result: DONE
-
+        print("[DEBUG] Saída do testcov:\n{}".format(result_text))
+        
+        # Processa a saída para extrair os parâmetros desejados
         tests_run = tests_in_suite = coverage = number_of_goals = result_status = None
         for line in result_text.splitlines():
             line = line.strip()
@@ -208,12 +222,14 @@ def executar_testcov(test_suite_path, arquivo_original, output_dir):
         summary = "Tests run: {}, Tests in suite: {}, Coverage: {}, Number of goals: {}, Result: {}".format(
             tests_run, tests_in_suite, coverage, number_of_goals, result_status
         )
-        # Grava a saida completa em um arquivo dentro do diretorio de resultados
+        
+        # Grava a saída completa em um arquivo dentro do diretório de resultados
         output_file = os.path.join(output_dir, "testcov_output.txt")
         with open(output_file, "w") as f:
             f.write(result_text)
         print("[DEBUG] Testcov executado com sucesso. Resumo: {}".format(summary))
         return summary, output_file
+        
     except subprocess.CalledProcessError as e:
         print("[ERRO] Erro ao executar testcov para {}: {}".format(test_suite_path, e))
         return "Erro", None
@@ -224,6 +240,11 @@ if __name__ == "__main__":
     os.makedirs(resultados_dir, exist_ok=True)
     caminho_completo = os.path.abspath(resultados_dir)
     print("Pasta criada/em uso: {}".format(caminho_completo))
-    input("aguardando confirmacao visual do operador(press enter)...")
     
+    input("Aguardando confirmacao visual do operador (pressione Enter)...")
+    
+    # Cria e configura o container uma unica vez
+    iniciar_e_configurar_container()
+    
+    # Processa as tarefas normalmente
     processar_tarefas(map2check_file, resultados_dir)
