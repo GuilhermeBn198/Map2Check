@@ -1,0 +1,48 @@
+array10_pattern.c: 283.148 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-patterns/array10_pattern.c
+UNKNOWN
+array11_pattern.c: 857.661 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-patterns/array11_pattern.c
+UNKNOWN
+array12_pattern.c: 86.968 segundos, Resultado: Sucesso
+array13_pattern.c: 87.220 segundos, Resultado: Sucesso
+array14_pattern.c: 91.010 segundos, Resultado: Sucesso
+array15_pattern.c: 89.877 segundos, Resultado: Sucesso
+array16_pattern.c: 89.458 segundos, Resultado: Sucesso
+array17_pattern.c: 89.524 segundos, Resultado: Sucesso
+array18_pattern.c: 91.500 segundos, Resultado: Sucesso
+array19_pattern.c: 39.827 segundos, Resultado: Sucesso
+array1_pattern.c: 11784.935 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-patterns/array1_pattern.c
+UNKNOWN
+array20_pattern.c: 88.412 segundos, Resultado: Sucesso
+array21_pattern.c: 88.850 segundos, Resultado: Sucesso
+array22_pattern.c: 89.741 segundos, Resultado: Sucesso
+array23_pattern.c: 121.136 segundos, Resultado: Sucesso
+array24_pattern.c: 97.937 segundos, Resultado: Sucesso
+array25_pattern.c: 118.930 segundos, Resultado: Sucesso
+array26_pattern.c: 145.204 segundos, Resultado: Sucesso
+array27_pattern.c: 116.285 segundos, Resultado: Sucesso
+array28_pattern.c: 120.861 segundos, Resultado: Sucesso
+array29_pattern.c: 124.414 segundos, Resultado: Sucesso
+array2_pattern.c: 326.778 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-patterns/array2_pattern.c
+UNKNOWN
+array30_pattern.c: 126.755 segundos, Resultado: Sucesso
+array3_pattern.c: 4573.105 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-patterns/array3_pattern.c
+UNKNOWN
+array4_pattern.c: 360.000 segundos, Resultado: UNKNOWN
+array5_pattern.c: 279.327 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-patterns/array5_pattern.c
+UNKNOWN
+array6_pattern.c: 360.000 segundos, Resultado: UNKNOWN
+array7_pattern.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-patterns/array7_pattern.c
+UNKNOWN
+array8_pattern.c: 290.133 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-patterns/array8_pattern.c
+UNKNOWN
+array9_pattern.c: 297.628 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-patterns/array9_pattern.c
+UNKNOWN

@@ -1,0 +1,33 @@
+base_case.i: 297.035 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-lopstr16/base_case.i
+UNKNOWN
+break-1.i: 31.351 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-lopstr16/break-1.i
+TRUE
+break-2.i: 88.714 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-lopstr16/break-2.i
+TRUE
+flag_loopdep.i: 49.611 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-lopstr16/flag_loopdep.i
+TRUE
+flag_loopdep_simple.i: 304.118 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-lopstr16/flag_loopdep_simple.i
+UNKNOWN
+motivex.i: 22.967 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-lopstr16/motivex.i
+UNKNOWN
+partial_lesser_bound-1.i: 119.167 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-lopstr16/partial_lesser_bound-1.i
+TRUE
+partial_lesser_bound.i: 92.318 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-lopstr16/partial_lesser_bound.i
+TRUE
+scalar_loopdep.i: 86.567 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-lopstr16/scalar_loopdep.i
+TRUE
+single_elem_safe.i: 318.034 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-lopstr16/single_elem_safe.i
+UNKNOWN
+sum_multi_array.i: 316.036 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-lopstr16/sum_multi_array.i
+UNKNOWN
