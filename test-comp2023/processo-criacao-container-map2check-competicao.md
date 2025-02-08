@@ -24,12 +24,7 @@
 3. Instalar Docker dentro do container para poder executar o script corretamente
 
 ```bash
-  wget https://download.docker.com/linux/static/stable/x86_64/docker-20.10.8.tgz
-  tar xzvf docker-20.10.8.tgz
-  cp docker/docker /usr/local/bin/
-  chmod +x /usr/local/bin/docker
-  rm -rf docker/ && rm docker-20.10.8.tgz
-  docker --version
+wget -qO- https://download.docker.com/linux/static/stable/x86_64/docker-20.10.8.tgz | tar xzvf - && sudo cp docker/docker /usr/local/bin/ && sudo chmod +x /usr/local/bin/docker && rm -rf docker/ && docker --version
 ```
 
 4. Instalar pyaml 5.3.1 e se direcionar para o diretório correto

@@ -16,6 +16,12 @@
   <tasks name="ReachSafety-BitVectors">
     <includesfile>./sv-benchmarks/c/BitVectors.set</includesfile>
   </tasks>
+    <tasks name="ReachSafety-Loops">
+    <includesfile>./sv-benchmarks/c/Loops.set</includesfile>
+  </tasks>
+    <tasks name="ReachSafety-ControlFlow">
+    <includesfile>./sv-benchmarks/c/ControlFlow.set</includesfile>
+  </tasks>
  <!-- resto das coisas aqui:-->
 </benchmark>
 

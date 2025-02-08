@@ -1,22 +1,14 @@
 <!-- resto do map2check.xml: -->
- <tasks name="ReachSafety-BitVectors">
-    <includesfile>./sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
-  </tasks>
-  <tasks name="ReachSafety-ControlFlow">
-    <includesfile>./sv-benchmarks/c/ReachSafety-ControlFlow.set</includesfile>
-  </tasks>
+
   <tasks name="ReachSafety-ECA">
-    <includesfile>./sv-benchmarks/c/ReachSafety-ECA.set</includesfile>
-    <excludesfile>excludes/ReachSafety-ECA-excludes.set</excludesfile>
+    <includesfile>./sv-benchmarks/c/ECA.set</includesfile>
+    <excludesfile>excludes/ECA-excludes.set</excludesfile>
   </tasks>
   <tasks name="ReachSafety-Floats">
-    <includesfile>./sv-benchmarks/c/ReachSafety-Floats.set</includesfile>
+    <includesfile>./sv-benchmarks/c/Floats.set</includesfile>
   </tasks>
   <tasks name="ReachSafety-Heap">
-    <includesfile>./sv-benchmarks/c/ReachSafety-Heap.set</includesfile>
-  </tasks>
-  <tasks name="ReachSafety-Loops">
-    <includesfile>./sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
+    <includesfile>./sv-benchmarks/c/Heap.set</includesfile>
   </tasks>
   <tasks name="ReachSafety-ProductLines">
     <includesfile>./sv-benchmarks/c/ReachSafety-ProductLines.set</includesfile>
@@ -25,16 +17,16 @@
     <includesfile>./sv-benchmarks/c/ReachSafety-Recursive.set</includesfile>
   </tasks>
   <tasks name="ReachSafety-Sequentialized">
-    <includesfile>./sv-benchmarks/c/ReachSafety-Sequentialized.set</includesfile>
+    <includesfile>./sv-benchmarks/c/Sequentialized.set</includesfile>
   </tasks>
   <tasks name="ReachSafety-XCSP">
-    <includesfile>./sv-benchmarks/c/ReachSafety-XCSP.set</includesfile>
+    <includesfile>./sv-benchmarks/c/XCSP.set</includesfile>
   </tasks>
   <tasks name="ReachSafety-Combinations">
-    <includesfile>./sv-benchmarks/c/ReachSafety-Combinations.set</includesfile>
+    <includesfile>./sv-benchmarks/c/Combinations.set</includesfile>
   </tasks>
   <tasks name="ReachSafety-Hardware">
-    <includesfile>./sv-benchmarks/c/ReachSafety-Hardware.set</includesfile>
+    <includesfile>./sv-benchmarks/c/Hardware.set</includesfile>
   </tasks>
 
   <tasks name="SoftwareSystems-BusyBox-MemSafety">
@@ -53,15 +45,3 @@
   <tasks name="Termination-MainHeap">
     <includesfile>./sv-benchmarks/c/Termination-MainHeap.set</includesfile>
   </tasks>
-
-
-<!-- resto do REACHSAFETY-ARRAYS.SET: -->
-reducercommutativity/*.yml
-array-tiling/*.yml
-array-programs/*.yml
-array-crafted/*.yml
-array-multidimensional/*.yml
-array-patterns/*.yml
-array-cav19/*.yml
-array-lopstr16/*.yml
-array-fpi/*.yml
