@@ -1,0 +1,6 @@
+2SB.i: 47.861 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/memory-model/2SB.i
+UNKNOWN
+4SB.i: 61.059 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/memory-model/4SB.i
+UNKNOWN

@@ -1,0 +1,45 @@
+AdditionIntMax.i: 95.737 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/signedintegeroverflow-regression/AdditionIntMax.i
+TRUE
+AdditionIntMin.i: 95.803 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/signedintegeroverflow-regression/AdditionIntMin.i
+TRUE
+ConversionToSignedInt.i: 94.757 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/signedintegeroverflow-regression/ConversionToSignedInt.i
+TRUE
+Division-1.i: 95.628 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/signedintegeroverflow-regression/Division-1.i
+TRUE
+IntegerPromotion-1.i: 95.925 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/signedintegeroverflow-regression/IntegerPromotion-1.i
+TRUE
+Multiplication-1.i: 94.880 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/signedintegeroverflow-regression/Multiplication-1.i
+TRUE
+Multiplication-2.i: 95.842 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/signedintegeroverflow-regression/Multiplication-2.i
+TRUE
+NoConversion.i: 95.970 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/signedintegeroverflow-regression/NoConversion.i
+TRUE
+NoNegativeIntegerConstant.i: 94.564 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/signedintegeroverflow-regression/NoNegativeIntegerConstant.i
+TRUE
+PostfixDecrement.i: 94.929 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/signedintegeroverflow-regression/PostfixDecrement.i
+TRUE
+PostfixIncrement.i: 94.185 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/signedintegeroverflow-regression/PostfixIncrement.i
+TRUE
+PrefixDecrement.i: 95.011 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/signedintegeroverflow-regression/PrefixDecrement.i
+TRUE
+PrefixIncrement.i: 93.952 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/signedintegeroverflow-regression/PrefixIncrement.i
+TRUE
+UnaryMinus.i: 93.791 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/signedintegeroverflow-regression/UnaryMinus.i
+TRUE
+UsualArithmeticConversions.i: 94.169 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/signedintegeroverflow-regression/UsualArithmeticConversions.i
+TRUE
