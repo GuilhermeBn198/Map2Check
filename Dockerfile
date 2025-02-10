@@ -38,7 +38,7 @@ RUN apt-get install -y sudo \
 
 # Clean packages installation
 
-ARG CMAKE_VERSION=3.13.0
+ARG CMAKE_VERSION=3.16.0
 RUN wget https://github.com/Kitware/CMake/releases/download/v${CMAKE_VERSION}/cmake-${CMAKE_VERSION}-linux-x86_64.sh \
     && chmod +x cmake-${CMAKE_VERSION}-linux-x86_64.sh \
     && ./cmake-${CMAKE_VERSION}-linux-x86_64.sh --skip-license --prefix=/usr/local \

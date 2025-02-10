@@ -1,0 +1,3 @@
+linear-inequality-inv-d.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-invariants64/linear-inequality-inv-d.c
+UNKNOWN
