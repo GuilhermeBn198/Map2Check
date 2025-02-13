@@ -30,8 +30,7 @@ wget -qO- https://download.docker.com/linux/static/stable/x86_64/docker-20.10.8.
 4. Instalar pyaml 5.3.1 e se direcionar para o diretório correto
 
 ```bash
-  python3 -m pip install 'pyyaml==5.3.1'
-  cd test-comp2023/simulation
+  python3 -m pip install 'pyyaml==5.3.1' && cd test-comp2023/simulation
 ```
 
 5. executar o script de simulação do ambiente da competição

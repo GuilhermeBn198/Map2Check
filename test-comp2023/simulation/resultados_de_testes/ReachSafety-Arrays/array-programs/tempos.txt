@@ -1,26 +1,48 @@
-copysome1-1.i: 290.533 segundos, Resultado: Verifying with MAP2CHECK 
+copysome1-1.i: 287.478 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/copysome1-1.i
 UNKNOWN
-copysome1-2.i: 47.637 segundos, Resultado: Sucesso
-copysome2-1.i: 296.657 segundos, Resultado: Verifying with MAP2CHECK 
+copysome1-2.i: 54.537 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/copysome1-2.i
+FALSE
+copysome2-1.i: 300.383 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/copysome2-1.i
 UNKNOWN
-copysome2-2.i: 77.928 segundos, Resultado: Sucesso
-partial_mod_count_1.c: 85.147 segundos, Resultado: Sucesso
-partial_mod_count_2.c: 88.070 segundos, Resultado: Sucesso
-partial_mod_count_3.c: 88.014 segundos, Resultado: Sucesso
-partial_mod_count_4.c: 87.996 segundos, Resultado: Sucesso
-partial_mod_count_5.c: 87.854 segundos, Resultado: Sucesso
-partial_mod_count_limited_1.c: 275.495 segundos, Resultado: Verifying with MAP2CHECK 
+copysome2-2.i: 69.384 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/copysome2-2.i
+FALSE
+partial_mod_count_1.c: 88.879 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_1.c
+TRUE
+partial_mod_count_2.c: 89.122 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_2.c
+TRUE
+partial_mod_count_3.c: 89.152 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_3.c
+TRUE
+partial_mod_count_4.c: 86.397 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_4.c
+TRUE
+partial_mod_count_5.c: 88.748 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_5.c
+TRUE
+partial_mod_count_limited_1.c: 276.404 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_limited_1.c
 UNKNOWN
-partial_mod_count_limited_2.c: 26.714 segundos, Resultado: Sucesso
-partial_mod_count_limited_3.c: 109.164 segundos, Resultado: Sucesso
-partial_mod_count_limited_4.c: 58.627 segundos, Resultado: Sucesso
-partial_mod_count_limited_5.c: 41.770 segundos, Resultado: Sucesso
-partial_mod_count_limited_base.c: 277.227 segundos, Resultado: Verifying with MAP2CHECK 
+partial_mod_count_limited_2.c: 27.966 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_limited_2.c
+TRUE
+partial_mod_count_limited_3.c: 115.878 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_limited_3.c
+TRUE
+partial_mod_count_limited_4.c: 60.887 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_limited_4.c
+TRUE
+partial_mod_count_limited_5.c: 41.155 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_limited_5.c
+TRUE
+partial_mod_count_limited_base.c: 278.246 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_limited_base.c
 UNKNOWN
-partial_mod_count_limited_gen.c: 277.887 segundos, Resultado: Verifying with MAP2CHECK 
+partial_mod_count_limited_gen.c: 277.875 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_limited_gen.c
 UNKNOWN

@@ -1,110 +1,150 @@
-avg.i: 28.252 segundos, Resultado: Verifying with MAP2CHECK 
+avg.i: 32.691 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/avg.i
 UNKNOWN
-avg05-1.i: 28.218 segundos, Resultado: Verifying with MAP2CHECK 
+avg05-1.i: 28.001 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/avg05-1.i
 UNKNOWN
-avg05-2.i: 82.615 segundos, Resultado: Sucesso
-avg10-1.i: 82.638 segundos, Resultado: Sucesso
-avg10-2.i: 28.340 segundos, Resultado: Verifying with MAP2CHECK 
+avg05-2.i: 84.483 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/avg05-2.i
+TRUE
+avg10-1.i: 84.244 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/avg10-1.i
+TRUE
+avg10-2.i: 30.601 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/avg10-2.i
 UNKNOWN
-avg20-1.i: 82.540 segundos, Resultado: Sucesso
-avg20-2.i: 28.245 segundos, Resultado: Verifying with MAP2CHECK 
+avg20-1.i: 84.449 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/avg20-1.i
+TRUE
+avg20-2.i: 30.632 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/avg20-2.i
 UNKNOWN
-avg40-1.i: 16.861 segundos, Resultado: Sucesso
-avg40-2.i: 28.298 segundos, Resultado: Verifying with MAP2CHECK 
+avg40-1.i: 18.620 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/avg40-1.i
+TRUE
+avg40-2.i: 30.324 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/avg40-2.i
 UNKNOWN
-avg60-1.i: 28.331 segundos, Resultado: Verifying with MAP2CHECK 
+avg60-1.i: 30.532 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/avg60-1.i
 UNKNOWN
-avg60-2.i: 17.040 segundos, Resultado: Sucesso
-max.i: 28.202 segundos, Resultado: Verifying with MAP2CHECK 
+avg60-2.i: 18.515 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/avg60-2.i
+TRUE
+max.i: 30.596 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/max.i
 UNKNOWN
-max05-1.i: 28.638 segundos, Resultado: Verifying with MAP2CHECK 
+max05-1.i: 30.148 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/max05-1.i
 UNKNOWN
-max05-2.i: 82.747 segundos, Resultado: Sucesso
-max10-1.i: 28.615 segundos, Resultado: Verifying with MAP2CHECK 
+max05-2.i: 84.637 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/max05-2.i
+TRUE
+max10-1.i: 30.579 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/max10-1.i
 UNKNOWN
-max10-2.i: 82.554 segundos, Resultado: Sucesso
-max20-1.i: 28.088 segundos, Resultado: Verifying with MAP2CHECK 
+max10-2.i: 84.306 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/max10-2.i
+TRUE
+max20-1.i: 29.689 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/max20-1.i
 UNKNOWN
-max20-2.i: 82.657 segundos, Resultado: Sucesso
-max40-1.i: 28.327 segundos, Resultado: Verifying with MAP2CHECK 
+max20-2.i: 83.659 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/max20-2.i
+TRUE
+max40-1.i: 29.324 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/max40-1.i
 UNKNOWN
-max40-2.i: 82.656 segundos, Resultado: Sucesso
-max60-1.i: 82.719 segundos, Resultado: Sucesso
-max60-2.i: 28.186 segundos, Resultado: Verifying with MAP2CHECK 
+max40-2.i: 83.998 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/max40-2.i
+TRUE
+max60-1.i: 84.195 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/max60-1.i
+TRUE
+max60-2.i: 30.307 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/max60-2.i
 UNKNOWN
-rangesum.i: 28.342 segundos, Resultado: Verifying with MAP2CHECK 
+rangesum.i: 30.211 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/rangesum.i
 UNKNOWN
-rangesum05.i: 28.022 segundos, Resultado: Verifying with MAP2CHECK 
+rangesum05.i: 28.182 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/rangesum05.i
 UNKNOWN
-rangesum10.i: 28.277 segundos, Resultado: Verifying with MAP2CHECK 
+rangesum10.i: 30.967 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/rangesum10.i
 UNKNOWN
-rangesum20.i: 28.471 segundos, Resultado: Verifying with MAP2CHECK 
+rangesum20.i: 30.823 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/rangesum20.i
 UNKNOWN
-rangesum40.i: 28.278 segundos, Resultado: Verifying with MAP2CHECK 
+rangesum40.i: 30.642 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/rangesum40.i
 UNKNOWN
-rangesum60.i: 28.323 segundos, Resultado: Verifying with MAP2CHECK 
+rangesum60.i: 30.292 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/rangesum60.i
 UNKNOWN
-sep.i: 28.149 segundos, Resultado: Verifying with MAP2CHECK 
+sep.i: 30.417 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sep.i
 UNKNOWN
-sep05-1.i: 28.412 segundos, Resultado: Verifying with MAP2CHECK 
+sep05-1.i: 30.645 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sep05-1.i
 UNKNOWN
-sep05-2.i: 80.092 segundos, Resultado: Sucesso
-sep10-1.i: 82.478 segundos, Resultado: Sucesso
-sep10-2.i: 28.594 segundos, Resultado: Verifying with MAP2CHECK 
+sep05-2.i: 84.532 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sep05-2.i
+TRUE
+sep10-1.i: 84.789 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sep10-1.i
+TRUE
+sep10-2.i: 30.206 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sep10-2.i
 UNKNOWN
-sep20-1.i: 28.444 segundos, Resultado: Verifying with MAP2CHECK 
+sep20-1.i: 27.958 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sep20-1.i
 UNKNOWN
-sep20-2.i: 82.328 segundos, Resultado: Sucesso
-sep40-1.i: 28.142 segundos, Resultado: Verifying with MAP2CHECK 
+sep20-2.i: 84.491 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sep20-2.i
+TRUE
+sep40-1.i: 30.126 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sep40-1.i
 UNKNOWN
-sep40-2.i: 82.589 segundos, Resultado: Sucesso
-sep60-1.i: 82.691 segundos, Resultado: Sucesso
-sep60-2.i: 28.372 segundos, Resultado: Verifying with MAP2CHECK 
+sep40-2.i: 84.353 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sep40-2.i
+TRUE
+sep60-1.i: 84.339 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sep60-1.i
+TRUE
+sep60-2.i: 30.537 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sep60-2.i
 UNKNOWN
-sum.i: 28.455 segundos, Resultado: Verifying with MAP2CHECK 
+sum.i: 30.496 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sum.i
 UNKNOWN
-sum05-1.i: 82.488 segundos, Resultado: Sucesso
-sum05-2.i: 28.346 segundos, Resultado: Verifying with MAP2CHECK 
+sum05-1.i: 84.513 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sum05-1.i
+TRUE
+sum05-2.i: 30.614 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sum05-2.i
 UNKNOWN
-sum10-1.i: 28.347 segundos, Resultado: Verifying with MAP2CHECK 
+sum10-1.i: 30.391 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sum10-1.i
 UNKNOWN
-sum10-2.i: 82.393 segundos, Resultado: Sucesso
-sum20-1.i: 82.981 segundos, Resultado: Sucesso
-sum20-2.i: 28.890 segundos, Resultado: Verifying with MAP2CHECK 
+sum10-2.i: 84.663 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sum10-2.i
+TRUE
+sum20-1.i: 84.307 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sum20-1.i
+TRUE
+sum20-2.i: 27.864 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sum20-2.i
 UNKNOWN
-sum40-1.i: 18.081 segundos, Resultado: Sucesso
-sum40-2.i: 29.490 segundos, Resultado: Verifying with MAP2CHECK 
+sum40-1.i: 21.021 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sum40-1.i
+TRUE
+sum40-2.i: 29.654 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sum40-2.i
 UNKNOWN
-sum60-1.i: 20.810 segundos, Resultado: Sucesso
-sum60-2.i: 27.275 segundos, Resultado: Verifying with MAP2CHECK 
+sum60-1.i: 17.832 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sum60-1.i
+TRUE
+sum60-2.i: 29.732 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/reducercommutativity/sum60-2.i
 UNKNOWN

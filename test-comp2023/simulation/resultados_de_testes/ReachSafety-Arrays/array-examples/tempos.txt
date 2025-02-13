@@ -1,207 +1,291 @@
-data_abc.c: 13.281 segundos, Resultado: Sucesso
-data_structures_set_multi_proc_ground-1.i: 31.397 segundos, Resultado: Verifying with MAP2CHECK 
+data_abc.c: 12.354 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/data_abc.c
+FALSE
+data_structures_set_multi_proc_ground-1.i: 30.865 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/data_structures_set_multi_proc_ground-1.i
 UNKNOWN
-data_structures_set_multi_proc_ground-2.i: 297.419 segundos, Resultado: Verifying with MAP2CHECK 
+data_structures_set_multi_proc_ground-2.i: 303.412 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/data_structures_set_multi_proc_ground-2.i
 UNKNOWN
-data_structures_set_multi_proc_trivial_ground.i: 295.719 segundos, Resultado: Verifying with MAP2CHECK 
+data_structures_set_multi_proc_trivial_ground.i: 304.808 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/data_structures_set_multi_proc_trivial_ground.i
 UNKNOWN
-relax-1.i: 23.758 segundos, Resultado: Sucesso
-relax-2-2.i: 21.724 segundos, Resultado: Sucesso
-relax-2.i: 20.539 segundos, Resultado: Sucesso
-sanfoundry_02_ground.i: 328.722 segundos, Resultado: Verifying with MAP2CHECK 
+relax-1.i: 24.414 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/relax-1.i
+TRUE
+relax-2-2.i: 22.329 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/relax-2-2.i
+TRUE
+relax-2.i: 22.604 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/relax-2.i
+TRUE
+sanfoundry_02_ground.i: 314.725 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sanfoundry_02_ground.i
 UNKNOWN
-sanfoundry_10_ground.c: 306.345 segundos, Resultado: Verifying with MAP2CHECK 
+sanfoundry_10_ground.c: 325.037 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sanfoundry_10_ground.c
 UNKNOWN
-sanfoundry_24-1.i: 429.587 segundos, Resultado: Verifying with MAP2CHECK 
+sanfoundry_24-1.i: 295.062 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sanfoundry_24-1.i
 UNKNOWN
-sanfoundry_24-2.i: 840.839 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sanfoundry_24-2.i
+sanfoundry_24-2.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sanfoundry_24-2.i
 UNKNOWN
-sanfoundry_27_ground.i: 290.991 segundos, Resultado: Verifying with MAP2CHECK 
+sanfoundry_27_ground.i: 305.467 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sanfoundry_27_ground.i
 UNKNOWN
-sanfoundry_43_ground.i: 29.418 segundos, Resultado: Verifying with MAP2CHECK 
+sanfoundry_43_ground.i: 36.045 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sanfoundry_43_ground.i
 UNKNOWN
-sorting_bubblesort_2_ground.i: 340.608 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sorting_bubblesort_2_ground.i
+sorting_bubblesort_2_ground.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sorting_bubblesort_2_ground.i
 UNKNOWN
-sorting_bubblesort_ground-1.i: 343.014 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sorting_bubblesort_ground-1.i
+sorting_bubblesort_ground-1.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sorting_bubblesort_ground-1.i
 UNKNOWN
-sorting_bubblesort_ground-2.i: 340.046 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sorting_bubblesort_ground-2.i
+sorting_bubblesort_ground-2.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sorting_bubblesort_ground-2.i
 UNKNOWN
-sorting_selectionsort_2_ground.i: 342.315 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sorting_selectionsort_2_ground.i
+sorting_selectionsort_2_ground.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sorting_selectionsort_2_ground.i
 UNKNOWN
-sorting_selectionsort_ground-1.i: 340.029 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sorting_selectionsort_ground-1.i
+sorting_selectionsort_ground-1.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sorting_selectionsort_ground-1.i
 UNKNOWN
-sorting_selectionsort_ground-2.i: 342.621 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sorting_selectionsort_ground-2.i
+sorting_selectionsort_ground-2.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/sorting_selectionsort_ground-2.i
 UNKNOWN
-standard_allDiff2_ground.i: 340.908 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_allDiff2_ground.i
+standard_allDiff2_ground.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_allDiff2_ground.i
 UNKNOWN
-standard_compareModified_ground.i: 294.012 segundos, Resultado: Verifying with MAP2CHECK 
+standard_compareModified_ground.i: 307.211 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_compareModified_ground.i
 UNKNOWN
-standard_compare_ground.i: 285.320 segundos, Resultado: Verifying with MAP2CHECK 
+standard_compare_ground.i: 305.075 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_compare_ground.i
 UNKNOWN
-standard_copy1_ground-1.i: 287.724 segundos, Resultado: Verifying with MAP2CHECK 
+standard_copy1_ground-1.i: 304.342 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copy1_ground-1.i
 UNKNOWN
-standard_copy1_ground-2.i: 30.158 segundos, Resultado: Sucesso
-standard_copy2_ground-1.i: 29.764 segundos, Resultado: Sucesso
-standard_copy2_ground-2.i: 285.881 segundos, Resultado: Verifying with MAP2CHECK 
+standard_copy1_ground-2.i: 36.128 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copy1_ground-2.i
+FALSE
+standard_copy2_ground-1.i: 30.177 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copy2_ground-1.i
+FALSE
+standard_copy2_ground-2.i: 300.157 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copy2_ground-2.i
 UNKNOWN
-standard_copy3_ground-1.i: 289.059 segundos, Resultado: Verifying with MAP2CHECK 
+standard_copy3_ground-1.i: 297.372 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copy3_ground-1.i
 UNKNOWN
-standard_copy3_ground-2.i: 28.241 segundos, Resultado: Sucesso
-standard_copy4_ground-1.i: 287.676 segundos, Resultado: Verifying with MAP2CHECK 
+standard_copy3_ground-2.i: 32.873 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copy3_ground-2.i
+FALSE
+standard_copy4_ground-1.i: 297.456 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copy4_ground-1.i
 UNKNOWN
-standard_copy4_ground-2.i: 30.263 segundos, Resultado: Sucesso
-standard_copy5_ground-1.i: 291.455 segundos, Resultado: Verifying with MAP2CHECK 
+standard_copy4_ground-2.i: 32.346 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copy4_ground-2.i
+FALSE
+standard_copy5_ground-1.i: 309.610 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copy5_ground-1.i
 UNKNOWN
-standard_copy5_ground-2.i: 29.891 segundos, Resultado: Sucesso
-standard_copy6_ground-1.i: 30.372 segundos, Resultado: Sucesso
-standard_copy6_ground-2.i: 285.531 segundos, Resultado: Verifying with MAP2CHECK 
+standard_copy5_ground-2.i: 33.412 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copy5_ground-2.i
+FALSE
+standard_copy6_ground-1.i: 32.545 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copy6_ground-1.i
+FALSE
+standard_copy6_ground-2.i: 298.904 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copy6_ground-2.i
 UNKNOWN
-standard_copy7_ground-1.i: 30.351 segundos, Resultado: Sucesso
-standard_copy7_ground-2.i: 291.993 segundos, Resultado: Verifying with MAP2CHECK 
+standard_copy7_ground-1.i: 32.441 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copy7_ground-1.i
+FALSE
+standard_copy7_ground-2.i: 295.442 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copy7_ground-2.i
 UNKNOWN
-standard_copy8_ground-1.i: 286.956 segundos, Resultado: Verifying with MAP2CHECK 
+standard_copy8_ground-1.i: 297.256 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copy8_ground-1.i
 UNKNOWN
-standard_copy8_ground-2.i: 30.047 segundos, Resultado: Sucesso
-standard_copy9_ground-1.i: 30.203 segundos, Resultado: Sucesso
-standard_copy9_ground-2.i: 290.542 segundos, Resultado: Verifying with MAP2CHECK 
+standard_copy8_ground-2.i: 32.946 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copy8_ground-2.i
+FALSE
+standard_copy9_ground-1.i: 32.559 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copy9_ground-1.i
+FALSE
+standard_copy9_ground-2.i: 295.385 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copy9_ground-2.i
 UNKNOWN
-standard_copyInitSum2_ground-1.i: 12.710 segundos, Resultado: Sucesso
-standard_copyInitSum2_ground-2.i: 84.568 segundos, Resultado: Sucesso
-standard_copyInitSum3_ground.i: 84.360 segundos, Resultado: Sucesso
-standard_copyInitSum_ground.i: 83.788 segundos, Resultado: Sucesso
-standard_copyInit_ground.i: 83.380 segundos, Resultado: Sucesso
-standard_find_ground-1.i: 284.980 segundos, Resultado: Verifying with MAP2CHECK 
+standard_copyInitSum2_ground-1.i: 13.406 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copyInitSum2_ground-1.i
+FALSE
+standard_copyInitSum2_ground-2.i: 85.403 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copyInitSum2_ground-2.i
+TRUE
+standard_copyInitSum3_ground.i: 87.755 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copyInitSum3_ground.i
+TRUE
+standard_copyInitSum_ground.i: 87.535 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copyInitSum_ground.i
+TRUE
+standard_copyInit_ground.i: 87.519 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_copyInit_ground.i
+TRUE
+standard_find_ground-1.i: 298.584 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_find_ground-1.i
 UNKNOWN
-standard_find_ground-2.i: 288.029 segundos, Resultado: Verifying with MAP2CHECK 
+standard_find_ground-2.i: 297.190 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_find_ground-2.i
 UNKNOWN
-standard_init1_ground-1.i: 10.334 segundos, Resultado: Sucesso
-standard_init1_ground-2.i: 84.049 segundos, Resultado: Sucesso
-standard_init2_ground-1.i: 12.599 segundos, Resultado: Sucesso
-standard_init2_ground-2.i: 84.897 segundos, Resultado: Sucesso
-standard_init3_ground-1.i: 10.073 segundos, Resultado: Sucesso
-standard_init3_ground-2.i: 84.577 segundos, Resultado: Sucesso
-standard_init4_ground-1.i: 12.794 segundos, Resultado: Sucesso
-standard_init4_ground-2.i: 84.697 segundos, Resultado: Sucesso
-standard_init5_ground-1.i: 82.441 segundos, Resultado: Sucesso
-standard_init5_ground-2.i: 13.296 segundos, Resultado: Sucesso
-standard_init6_ground-1.i: 13.018 segundos, Resultado: Sucesso
-standard_init6_ground-2.i: 82.741 segundos, Resultado: Sucesso
-standard_init7_ground-1.i: 13.111 segundos, Resultado: Sucesso
-standard_init7_ground-2.i: 85.192 segundos, Resultado: Sucesso
-standard_init8_ground-1.i: 10.193 segundos, Resultado: Sucesso
-standard_init8_ground-2.i: 85.017 segundos, Resultado: Sucesso
-standard_init9_ground-1.i: 13.028 segundos, Resultado: Sucesso
-standard_init9_ground-2.i: 85.086 segundos, Resultado: Sucesso
-standard_maxInArray_ground.i: 285.313 segundos, Resultado: Verifying with MAP2CHECK 
+standard_init1_ground-1.i: 11.193 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_init1_ground-1.i
+FALSE
+standard_init1_ground-2.i: 86.994 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_init1_ground-2.i
+TRUE
+standard_init2_ground-1.i: 13.205 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_init2_ground-1.i
+FALSE
+standard_init2_ground-2.i: 87.128 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_init2_ground-2.i
+TRUE
+standard_init3_ground-1.i: 11.073 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_init3_ground-1.i
+FALSE
+standard_init3_ground-2.i: 87.309 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_init3_ground-2.i
+TRUE
+standard_init4_ground-1.i: 13.305 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_init4_ground-1.i
+FALSE
+standard_init4_ground-2.i: 87.237 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_init4_ground-2.i
+TRUE
+standard_init5_ground-1.i: 85.480 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_init5_ground-1.i
+TRUE
+standard_init5_ground-2.i: 13.346 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_init5_ground-2.i
+FALSE
+standard_init6_ground-1.i: 13.317 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_init6_ground-1.i
+FALSE
+standard_init6_ground-2.i: 85.710 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_init6_ground-2.i
+TRUE
+standard_init7_ground-1.i: 13.277 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_init7_ground-1.i
+FALSE
+standard_init7_ground-2.i: 87.830 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_init7_ground-2.i
+TRUE
+standard_init8_ground-1.i: 11.521 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_init8_ground-1.i
+FALSE
+standard_init8_ground-2.i: 88.067 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_init8_ground-2.i
+TRUE
+standard_init9_ground-1.i: 13.573 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_init9_ground-1.i
+FALSE
+standard_init9_ground-2.i: 87.895 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_init9_ground-2.i
+TRUE
+standard_maxInArray_ground.i: 295.024 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_maxInArray_ground.i
 UNKNOWN
-standard_minInArray_ground-1.i: 21.914 segundos, Resultado: Sucesso
-standard_minInArray_ground-2.i: 281.887 segundos, Resultado: Verifying with MAP2CHECK 
+standard_minInArray_ground-1.i: 21.413 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_minInArray_ground-1.i
+FALSE
+standard_minInArray_ground-2.i: 293.091 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_minInArray_ground-2.i
 UNKNOWN
-standard_palindrome_ground.i: 289.316 segundos, Resultado: Verifying with MAP2CHECK 
+standard_palindrome_ground.i: 293.343 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_palindrome_ground.i
 UNKNOWN
-standard_partial_init_ground.i: 286.193 segundos, Resultado: Verifying with MAP2CHECK 
+standard_partial_init_ground.i: 299.676 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_partial_init_ground.i
 UNKNOWN
-standard_partition_ground-1.i: 279.414 segundos, Resultado: Verifying with MAP2CHECK 
+standard_partition_ground-1.i: 284.255 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_partition_ground-1.i
 UNKNOWN
-standard_partition_ground-2.i: 286.792 segundos, Resultado: Verifying with MAP2CHECK 
+standard_partition_ground-2.i: 298.001 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_partition_ground-2.i
 UNKNOWN
-standard_partition_original_ground.i: 285.377 segundos, Resultado: Verifying with MAP2CHECK 
+standard_partition_original_ground.i: 290.431 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_partition_original_ground.i
 UNKNOWN
-standard_password_ground.i: 296.566 segundos, Resultado: Verifying with MAP2CHECK 
+standard_password_ground.i: 294.152 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_password_ground.i
 UNKNOWN
-standard_reverse_ground.i: 288.321 segundos, Resultado: Verifying with MAP2CHECK 
+standard_reverse_ground.i: 298.509 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_reverse_ground.i
 UNKNOWN
-standard_running-1.i: 286.345 segundos, Resultado: Verifying with MAP2CHECK 
+standard_running-1.i: 293.028 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_running-1.i
 UNKNOWN
-standard_running-2.i: 286.021 segundos, Resultado: Verifying with MAP2CHECK 
+standard_running-2.i: 296.147 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_running-2.i
 UNKNOWN
-standard_sentinel-1.i: 292.496 segundos, Resultado: Verifying with MAP2CHECK 
+standard_sentinel-1.i: 293.627 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_sentinel-1.i
 UNKNOWN
-standard_sentinel-2.i: 285.376 segundos, Resultado: Verifying with MAP2CHECK 
+standard_sentinel-2.i: 291.567 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_sentinel-2.i
 UNKNOWN
-standard_sentinel.i.v+cfa-reducer.c: 289.202 segundos, Resultado: Verifying with MAP2CHECK 
+standard_sentinel.i.v+cfa-reducer.c: 324.149 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_sentinel.i.v+cfa-reducer.c
 UNKNOWN
-standard_seq_init_ground.i: 83.921 segundos, Resultado: Sucesso
-standard_strcmp_ground.i: 30.119 segundos, Resultado: Verifying with MAP2CHECK 
+standard_seq_init_ground.i: 85.898 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_seq_init_ground.i
+TRUE
+standard_strcmp_ground.i: 30.670 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_strcmp_ground.i
 UNKNOWN
-standard_strcpy_ground-1.i: 285.674 segundos, Resultado: Verifying with MAP2CHECK 
+standard_strcpy_ground-1.i: 290.793 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_strcpy_ground-1.i
 UNKNOWN
-standard_strcpy_ground-2.i: 304.357 segundos, Resultado: Verifying with MAP2CHECK 
+standard_strcpy_ground-2.i: 292.647 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_strcpy_ground-2.i
 UNKNOWN
-standard_strcpy_original-1.i: 19.676 segundos, Resultado: Sucesso
-standard_strcpy_original-2.i: 292.387 segundos, Resultado: Verifying with MAP2CHECK 
+standard_strcpy_original-1.i: 20.472 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_strcpy_original-1.i
+FALSE
+standard_strcpy_original-2.i: 292.288 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_strcpy_original-2.i
 UNKNOWN
-standard_two_index_01.i: 174.663 segundos, Resultado: Sucesso
-standard_two_index_02.i: 287.838 segundos, Resultado: Verifying with MAP2CHECK 
+standard_two_index_01.i: 172.133 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_two_index_01.i
+TRUE
+standard_two_index_02.i: 296.133 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_two_index_02.i
 UNKNOWN
-standard_two_index_03.i: 175.799 segundos, Resultado: Sucesso
-standard_two_index_04.i: 288.047 segundos, Resultado: Verifying with MAP2CHECK 
+standard_two_index_03.i: 178.003 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_two_index_03.i
+TRUE
+standard_two_index_04.i: 292.700 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_two_index_04.i
 UNKNOWN
-standard_two_index_05.i: 284.686 segundos, Resultado: Verifying with MAP2CHECK 
+standard_two_index_05.i: 292.617 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_two_index_05.i
 UNKNOWN
-standard_two_index_06.i: 177.428 segundos, Resultado: Sucesso
-standard_two_index_07.i: 290.170 segundos, Resultado: Verifying with MAP2CHECK 
+standard_two_index_06.i: 179.728 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_two_index_06.i
+TRUE
+standard_two_index_07.i: 290.766 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_two_index_07.i
 UNKNOWN
-standard_two_index_08.i: 287.760 segundos, Resultado: Verifying with MAP2CHECK 
+standard_two_index_08.i: 292.481 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_two_index_08.i
 UNKNOWN
-standard_two_index_09.i: 287.111 segundos, Resultado: Verifying with MAP2CHECK 
+standard_two_index_09.i: 292.208 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_two_index_09.i
 UNKNOWN
-standard_vararg_ground.i: 338.181 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_vararg_ground.i
+standard_vararg_ground.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_vararg_ground.i
 UNKNOWN
-standard_vector_difference_ground.i: 289.263 segundos, Resultado: Verifying with MAP2CHECK 
+standard_vector_difference_ground.i: 289.336 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-examples/standard_vector_difference_ground.i
 UNKNOWN

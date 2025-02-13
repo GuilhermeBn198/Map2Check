@@ -1,33 +1,51 @@
-array_assert_loop_dep.i: 11.828 segundos, Resultado: Sucesso
-array_monotonic.i: 286.433 segundos, Resultado: Verifying with MAP2CHECK 
+array_assert_loop_dep.i: 12.914 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/array_assert_loop_dep.i
+FALSE
+array_monotonic.i: 292.557 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/array_monotonic.i
 UNKNOWN
-array_mul_init.i: 287.914 segundos, Resultado: Verifying with MAP2CHECK 
+array_mul_init.i: 301.312 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/array_mul_init.i
 UNKNOWN
-array_of_struct_break.i: 83.662 segundos, Resultado: Sucesso
-array_of_struct_loop_dep.i: 12.201 segundos, Resultado: Sucesso
-array_of_struct_ptr_cond_init.i: 286.457 segundos, Resultado: Verifying with MAP2CHECK 
+array_of_struct_break.i: 84.984 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/array_of_struct_break.i
+TRUE
+array_of_struct_loop_dep.i: 13.019 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/array_of_struct_loop_dep.i
+FALSE
+array_of_struct_ptr_cond_init.i: 290.747 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/array_of_struct_ptr_cond_init.i
 UNKNOWN
-array_of_struct_ptr_flag_init.i: 31.652 segundos, Resultado: Sucesso
-array_of_struct_ptr_monotonic.i: 313.332 segundos, Resultado: Verifying with MAP2CHECK 
+array_of_struct_ptr_flag_init.i: 34.472 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/array_of_struct_ptr_flag_init.i
+TRUE
+array_of_struct_ptr_monotonic.i: 318.988 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/array_of_struct_ptr_monotonic.i
 UNKNOWN
-array_of_struct_ptr_mul_init.i: 311.079 segundos, Resultado: Verifying with MAP2CHECK 
+array_of_struct_ptr_mul_init.i: 286.879 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/array_of_struct_ptr_mul_init.i
 UNKNOWN
-array_of_struct_single_elem_init.i: 287.422 segundos, Resultado: Verifying with MAP2CHECK 
+array_of_struct_single_elem_init.i: 289.918 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/array_of_struct_single_elem_init.i
 UNKNOWN
-array_ptr_partial_init.i: 83.117 segundos, Resultado: Sucesso
-array_ptr_single_elem_init-1.i: 285.942 segundos, Resultado: Verifying with MAP2CHECK 
+array_ptr_partial_init.i: 85.096 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/array_ptr_partial_init.i
+TRUE
+array_ptr_single_elem_init-1.i: 316.260 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/array_ptr_single_elem_init-1.i
 UNKNOWN
-array_ptr_single_elem_init-2.i: 23.552 segundos, Resultado: Sucesso
-array_range_init.i: 9.658 segundos, Resultado: Sucesso
-array_shadowinit.i: 19.909 segundos, Resultado: Sucesso
-array_single_elem_init.i: 289.961 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/array_single_elem_init.i
+array_ptr_single_elem_init-2.i: 19.838 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/array_ptr_single_elem_init-2.i
+FALSE
+array_range_init.i: 12.712 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/array_range_init.i
+FALSE
+array_shadowinit.i: 21.652 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/array_shadowinit.i
+TRUE
+array_single_elem_init.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/array_single_elem_init.i
 UNKNOWN
-check_removal_from_set_after_insertion.c: 28.218 segundos, Resultado: Sucesso
+check_removal_from_set_after_insertion.c: 31.691 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/check_removal_from_set_after_insertion.c
+FALSE

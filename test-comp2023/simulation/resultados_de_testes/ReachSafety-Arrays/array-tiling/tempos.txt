@@ -1,33 +1,87 @@
-mbpr2.c: 23.798 segundos, Resultado: Sucesso
-mbpr3.c: 21.141 segundos, Resultado: Sucesso
-mbpr4.c: 20.330 segundos, Resultado: Sucesso
-mbpr5.c: 20.540 segundos, Resultado: Sucesso
-mlceu.c: 20.306 segundos, Resultado: Sucesso
-mlceu2.c: 82.960 segundos, Resultado: Sucesso
-nr2.c: 20.365 segundos, Resultado: Sucesso
-nr3.c: 20.259 segundos, Resultado: Sucesso
-nr4.c: 20.236 segundos, Resultado: Sucesso
-nr5.c: 22.889 segundos, Resultado: Sucesso
-pnr2.c: 72.542 segundos, Resultado: Sucesso
-pnr3.c: 84.123 segundos, Resultado: Sucesso
-pnr4.c: 84.504 segundos, Resultado: Sucesso
-pnr5.c: 83.970 segundos, Resultado: Sucesso
-poly1.c: 83.012 segundos, Resultado: Sucesso
-poly2.c: 83.006 segundos, Resultado: Sucesso
-pr2.c: 80.445 segundos, Resultado: Sucesso
-pr3.c: 82.914 segundos, Resultado: Sucesso
-pr4.c: 83.248 segundos, Resultado: Sucesso
-pr5.c: 83.228 segundos, Resultado: Sucesso
-revcpyswp2.c: 50.663 segundos, Resultado: Sucesso
-rew.c: 81.078 segundos, Resultado: Sucesso
-rewnif.c: 83.514 segundos, Resultado: Sucesso
-rewnifrev.c: 83.778 segundos, Resultado: Sucesso
-rewnifrev2.c: 83.813 segundos, Resultado: Sucesso
-rewrev.c: 83.886 segundos, Resultado: Sucesso
-skipped.c: 327.341 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/skipped.c
+mbpr2.c: 21.122 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/mbpr2.c
+TRUE
+mbpr3.c: 21.030 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/mbpr3.c
+TRUE
+mbpr4.c: 23.579 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/mbpr4.c
+TRUE
+mbpr5.c: 20.843 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/mbpr5.c
+TRUE
+mlceu.c: 17.982 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/mlceu.c
+TRUE
+mlceu2.c: 84.481 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/mlceu2.c
+TRUE
+nr2.c: 21.683 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/nr2.c
+TRUE
+nr3.c: 21.506 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/nr3.c
+TRUE
+nr4.c: 24.622 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/nr4.c
+TRUE
+nr5.c: 21.585 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/nr5.c
+TRUE
+pnr2.c: 85.371 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pnr2.c
+TRUE
+pnr3.c: 85.528 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pnr3.c
+TRUE
+pnr4.c: 83.928 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pnr4.c
+TRUE
+pnr5.c: 85.910 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pnr5.c
+TRUE
+poly1.c: 84.733 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/poly1.c
+TRUE
+poly2.c: 84.245 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/poly2.c
+TRUE
+pr2.c: 84.333 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pr2.c
+TRUE
+pr3.c: 84.562 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pr3.c
+TRUE
+pr4.c: 84.369 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pr4.c
+TRUE
+pr5.c: 84.731 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pr5.c
+TRUE
+revcpyswp2.c: 53.302 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/revcpyswp2.c
+TRUE
+rew.c: 83.450 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/rew.c
+TRUE
+rewnif.c: 85.694 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/rewnif.c
+TRUE
+rewnifrev.c: 85.116 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/rewnifrev.c
+TRUE
+rewnifrev2.c: 82.333 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/rewnifrev2.c
+TRUE
+rewrev.c: 85.042 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/rewrev.c
+TRUE
+skipped.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/skipped.c
 UNKNOWN
-skippedu.c: 327.318 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/skippedu.c
+skippedu.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/skippedu.c
 UNKNOWN
-tcpy.c: 70.304 segundos, Resultado: Sucesso
+tcpy.c: 81.191 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/tcpy.c
+TRUE
