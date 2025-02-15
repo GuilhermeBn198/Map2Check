@@ -74,56 +74,92 @@ xor5.i: 30.554 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/xor5.i
 UNKNOWN
 zero_sum1.c: 84.552 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/zero_sum1.c
 TRUE
 zero_sum2.c: 84.824 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/zero_sum2.c
 TRUE
 zero_sum3.c: 85.391 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/20 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/zero_sum3.c
 TRUE
 zero_sum4.c: 85.762 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/24 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/zero_sum4.c
 TRUE
 zero_sum5.c: 82.971 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/28 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/zero_sum5.c
 TRUE
 zero_sum_const1.c: 83.777 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/zero_sum_const1.c
 TRUE
 zero_sum_const2.c: 84.142 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/zero_sum_const2.c
 TRUE
 zero_sum_const3.c: 85.129 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/20 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/zero_sum_const3.c
 TRUE
 zero_sum_const4.c: 87.497 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/24 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/zero_sum_const4.c
 TRUE
 zero_sum_const5.c: 94.232 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/28 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/zero_sum_const5.c
 TRUE
 zero_sum_const_m2.c: 84.760 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/zero_sum_const_m2.c
 TRUE
 zero_sum_const_m3.c: 85.332 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/20 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/zero_sum_const_m3.c
 TRUE
 zero_sum_const_m4.c: 87.463 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/24 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/zero_sum_const_m4.c
 TRUE
 zero_sum_const_m5.c: 97.206 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/28 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/zero_sum_const_m5.c
 TRUE
 zero_sum_m2.c: 82.452 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/zero_sum_m2.c
 TRUE
 zero_sum_m3.c: 85.474 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/20 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/zero_sum_m3.c
 TRUE
 zero_sum_m4.c: 85.804 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/24 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/zero_sum_m4.c
 TRUE
 zero_sum_m5.c: 86.056 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/28 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-crafted/zero_sum_m5.c
 TRUE

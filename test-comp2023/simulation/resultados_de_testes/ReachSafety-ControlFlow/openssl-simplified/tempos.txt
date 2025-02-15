@@ -11,9 +11,13 @@ s3_clnt_2.cil-2.c: 43.975 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/openssl-simplified/s3_clnt_2.cil-2.c
 UNKNOWN
 s3_clnt_3.cil-1.c: 125.172 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/175 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/openssl-simplified/s3_clnt_3.cil-1.c
 TRUE
 s3_clnt_3.cil-2.c: 135.589 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/175 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/openssl-simplified/s3_clnt_3.cil-2.c
 TRUE
 s3_clnt_3.cil-3.c: 43.103 segundos, Resultado: Verifying with MAP2CHECK 
@@ -23,6 +27,8 @@ s3_clnt_4.cil-1.c: 44.201 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/openssl-simplified/s3_clnt_4.cil-1.c
 UNKNOWN
 s3_clnt_4.cil-2.c: 136.172 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/175 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/openssl-simplified/s3_clnt_4.cil-2.c
 TRUE
 s3_srvr_1.cil-1.c: 299.374 segundos, Resultado: Verifying with MAP2CHECK 
@@ -44,6 +50,8 @@ s3_srvr_13.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/openssl-simplified/s3_srvr_13.cil.c
 UNKNOWN
 s3_srvr_14.cil.c: 49.487 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/217 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/openssl-simplified/s3_srvr_14.cil.c
 FALSE
 s3_srvr_1a.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
@@ -65,6 +73,8 @@ s3_srvr_4.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/openssl-simplified/s3_srvr_4.cil.c
 UNKNOWN
 s3_srvr_6.cil-1.c: 24.000 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/233 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/openssl-simplified/s3_srvr_6.cil-1.c
 FALSE
 s3_srvr_6.cil-2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK

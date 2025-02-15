@@ -2,42 +2,64 @@ copysome1-1.i: 287.478 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/copysome1-1.i
 UNKNOWN
 copysome1-2.i: 54.537 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/7.69% coverage/13 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/copysome1-2.i
 FALSE
 copysome2-1.i: 300.383 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/copysome2-1.i
 UNKNOWN
 copysome2-2.i: 69.384 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/6.67% coverage/15 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/copysome2-2.i
 FALSE
 partial_mod_count_1.c: 88.879 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/90.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_1.c
 TRUE
 partial_mod_count_2.c: 89.122 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/90.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_2.c
 TRUE
 partial_mod_count_3.c: 89.152 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/90.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_3.c
 TRUE
 partial_mod_count_4.c: 86.397 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/90.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_4.c
 TRUE
 partial_mod_count_5.c: 88.748 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/90.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_5.c
 TRUE
 partial_mod_count_limited_1.c: 276.404 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_limited_1.c
 UNKNOWN
 partial_mod_count_limited_2.c: 27.966 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_limited_2.c
 TRUE
 partial_mod_count_limited_3.c: 115.878 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_limited_3.c
 TRUE
 partial_mod_count_limited_4.c: 60.887 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_limited_4.c
 TRUE
 partial_mod_count_limited_5.c: 41.155 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/partial_mod_count_limited_5.c
 TRUE
 partial_mod_count_limited_base.c: 278.246 segundos, Resultado: Verifying with MAP2CHECK 

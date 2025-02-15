@@ -1,0 +1,10 @@
+⏳ Executing tests 1/1
+INFO:suite_validation:GCov coverage could not be computed: Expected coverage output not found in gcov output
+✔️  Done!
+
+---Results---
+Tests run: 1
+Tests in suite: 1
+Coverage: 100%
+Number of goals: 0
+Result: DONE

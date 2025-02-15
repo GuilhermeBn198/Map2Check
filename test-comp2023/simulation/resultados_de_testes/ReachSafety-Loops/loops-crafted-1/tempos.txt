@@ -5,30 +5,48 @@ iftelse.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/iftelse.c
 UNKNOWN
 in-de20.c: 81.979 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/in-de20.c
 TRUE
 in-de31.c: 82.203 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/in-de31.c
 TRUE
 in-de32.c: 82.126 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/in-de32.c
 TRUE
 in-de41.c: 82.169 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/in-de41.c
 TRUE
 in-de42.c: 82.220 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/in-de42.c
 TRUE
 in-de51.c: 82.424 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/in-de51.c
 TRUE
 in-de52.c: 82.077 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/in-de52.c
 TRUE
 in-de61.c: 82.380 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/in-de61.c
 TRUE
 in-de62.c: 82.404 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/in-de62.c
 TRUE
 loopv1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
@@ -41,54 +59,88 @@ loopv3.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/loopv3.c
 UNKNOWN
 mono-crafted_1.c: 83.643 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/87.5% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/mono-crafted_1.c
 TRUE
 mono-crafted_10.c: 96.119 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/83.33% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/mono-crafted_10.c
 TRUE
 mono-crafted_11.c: 141.076 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/83.33% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/mono-crafted_11.c
 TRUE
 mono-crafted_12.c: 96.031 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/83.33% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/mono-crafted_12.c
 TRUE
 mono-crafted_13.c: 82.960 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/87.5% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/mono-crafted_13.c
 TRUE
 mono-crafted_14.c: 83.463 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/87.5% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/mono-crafted_14.c
 TRUE
 mono-crafted_3.c: 83.498 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/87.5% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/mono-crafted_3.c
 TRUE
 mono-crafted_6.c: 83.201 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/87.5% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/mono-crafted_6.c
 TRUE
 mono-crafted_7.c: 83.560 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/87.5% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/mono-crafted_7.c
 TRUE
 mono-crafted_8.c: 93.120 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/83.33% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/mono-crafted_8.c
 TRUE
 mono-crafted_9.c: 83.227 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/83.33% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/mono-crafted_9.c
 TRUE
 Mono1_1-1.c: 13.823 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/83.33% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/Mono1_1-1.c
 FALSE
 Mono1_1-2.c: 143.346 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/83.33% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/Mono1_1-2.c
 TRUE
 Mono3_1.c: 9.604 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/83.33% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/Mono3_1.c
 FALSE
 Mono4_1.c: 12.012 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/83.33% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/Mono4_1.c
 FALSE
 Mono5_1.c: 9.710 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/83.33% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/Mono5_1.c
 FALSE
 Mono6_1.c: 12.709 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/83.33% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/Mono6_1.c
 FALSE
 nested3-1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
@@ -98,24 +150,46 @@ nested3-1_abstracted.c: 277.050 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/nested3-1_abstracted.c
 UNKNOWN
 nested3-2.c: 20.080 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/62.5% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/nested3-2.c
 FALSE
 nested3-2_abstracted.c: 12.123 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/50.0% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/nested3-2_abstracted.c
 FALSE
 nested5-1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/nested5-1.c
 UNKNOWN
 nested5-2.c: 29.665 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/58.33% coverage/12 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/nested5-2.c
 FALSE
 nested_delay_nd.c: 82.309 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/nested_delay_nd.c
 TRUE
 nested_delay_notd2.c: 274.737 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/nested_delay_notd2.c
 UNKNOWN
 net_reset.c: 81.869 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: Error: ⏳ Executing tests 1/1
+ERROR:suite_validation:Compilation failed for harness output/harness.c:
+    /usr/bin/ld: /tmp/ccFCoaaB.o: in function `net_send_batch':
+    harness.c:(.text+0x293): undefined reference to `af'
+    collect2: error: ld returned 1 exit status
+    
+
+---Results---
+Tests run: 0
+Tests in suite: 1
+No coverage information available
+Result: ERROR
+
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/net_reset.c
 TRUE
 sumt2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
@@ -143,12 +217,18 @@ sumt9.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/sumt9.c
 UNKNOWN
 sum_by_3.c: 82.298 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/sum_by_3.c
 TRUE
 sum_by_3_abstracted.c: 19.553 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/18 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/sum_by_3_abstracted.c
 TRUE
 sum_natnum.c: 81.862 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/50.0% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/sum_natnum.c
 TRUE
 theatreSquare.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
@@ -161,5 +241,7 @@ vnew2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/vnew2.c
 UNKNOWN
 watermelon.c: 82.377 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops-crafted-1/watermelon.c
 TRUE

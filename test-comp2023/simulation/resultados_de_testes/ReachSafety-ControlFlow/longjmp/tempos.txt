@@ -2,18 +2,26 @@
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_04-counting-local_true.i
 UNKNOWN
 68-longjmp_04-counting-local_unknown_1_neg.i: 16.023 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/40.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_04-counting-local_unknown_1_neg.i
 FALSE
 68-longjmp_04-counting-local_unknown_1_pos.i: 15.841 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/80.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_04-counting-local_unknown_1_pos.i
 FALSE
 68-longjmp_05-heap-counting-return-one-method_true.i: 96.842 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_05-heap-counting-return-one-method_true.i
 UNKNOWN
 68-longjmp_05-heap-counting-return-one-method_unknown_1_neg.i: 16.069 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/40.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_05-heap-counting-return-one-method_unknown_1_neg.i
 FALSE
 68-longjmp_05-heap-counting-return-one-method_unknown_1_pos.i: 15.435 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/80.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_05-heap-counting-return-one-method_unknown_1_pos.i
 FALSE
 68-longjmp_07-returns_true.i: 94.196 segundos, Resultado: Verifying with MAP2CHECK 
@@ -23,69 +31,101 @@ UNKNOWN
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_11-counting-return_true.i
 UNKNOWN
 68-longjmp_11-counting-return_unknown_1_neg.i: 14.961 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/40.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_11-counting-return_unknown_1_neg.i
 FALSE
 68-longjmp_11-counting-return_unknown_1_pos.i: 15.476 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/80.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_11-counting-return_unknown_1_pos.i
 FALSE
 68-longjmp_12-counting-global_true.i: 96.387 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_12-counting-global_true.i
 UNKNOWN
 68-longjmp_12-counting-global_unknown_1_neg.i: 16.642 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/40.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_12-counting-global_unknown_1_neg.i
 FALSE
 68-longjmp_12-counting-global_unknown_1_pos.i: 16.552 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/80.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_12-counting-global_unknown_1_pos.i
 FALSE
 68-longjmp_13-counting-local_true.i: 96.378 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_13-counting-local_true.i
 UNKNOWN
 68-longjmp_13-counting-local_unknown_1_neg.i: 14.762 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/40.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_13-counting-local_unknown_1_neg.i
 FALSE
 68-longjmp_13-counting-local_unknown_1_pos.i: 16.308 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/80.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_13-counting-local_unknown_1_pos.i
 FALSE
 68-longjmp_14-counting-return-one-method_true.i: 95.172 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_14-counting-return-one-method_true.i
 UNKNOWN
 68-longjmp_14-counting-return-one-method_unknown_1_neg.i: 15.627 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/40.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_14-counting-return-one-method_unknown_1_neg.i
 FALSE
 68-longjmp_14-counting-return-one-method_unknown_1_pos.i: 14.549 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/80.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_14-counting-return-one-method_unknown_1_pos.i
 FALSE
 68-longjmp_15-counting-global-one-method_true.i: 95.308 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_15-counting-global-one-method_true.i
 UNKNOWN
 68-longjmp_15-counting-global-one-method_unknown_1_neg.i: 16.459 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/40.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_15-counting-global-one-method_unknown_1_neg.i
 FALSE
 68-longjmp_15-counting-global-one-method_unknown_1_pos.i: 16.117 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/80.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_15-counting-global-one-method_unknown_1_pos.i
 FALSE
 68-longjmp_16-counting-local-one-method_true.i: 96.152 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_16-counting-local-one-method_true.i
 UNKNOWN
 68-longjmp_16-counting-local-one-method_unknown_1_neg.i: 16.785 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/40.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_16-counting-local-one-method_unknown_1_neg.i
 FALSE
 68-longjmp_16-counting-local-one-method_unknown_1_pos.i: 16.151 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/80.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_16-counting-local-one-method_unknown_1_pos.i
 FALSE
 68-longjmp_18-simple-else_true.i: 26.924 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_18-simple-else_true.i
 UNKNOWN
 68-longjmp_18-simple-else_unknown_1_neg.i: 17.067 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/40.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_18-simple-else_unknown_1_neg.i
 FALSE
 68-longjmp_18-simple-else_unknown_1_pos.i: 16.982 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/80.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_18-simple-else_unknown_1_pos.i
 FALSE
 68-longjmp_18-simple-else_unknown_2_neg.i: 17.558 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/80.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_18-simple-else_unknown_2_neg.i
 FALSE
 68-longjmp_18-simple-else_unknown_2_pos.i: 17.335 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/40.0% coverage/5 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_18-simple-else_unknown_2_pos.i
 FALSE
 68-longjmp_19-simpler_true.i: 97.544 segundos, Resultado: Verifying with MAP2CHECK 
@@ -101,6 +141,8 @@ UNKNOWN
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_22-multifun-arg_true.i
 UNKNOWN
 68-longjmp_42-poison-reduced_true.i: 15.557 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/57.14% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/longjmp/68-longjmp_42-poison-reduced_true.i
 FALSE
 68-longjmp_44-simple-else-path_true.i: 25.064 segundos, Resultado: Verifying with MAP2CHECK 

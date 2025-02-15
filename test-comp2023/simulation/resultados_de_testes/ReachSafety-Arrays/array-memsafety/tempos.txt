@@ -1,25 +1,35 @@
 add_last-alloca-1.i: 19.943 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/add_last-alloca-1.i
 TRUE
 add_last_unsafe.i: 19.963 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/add_last_unsafe.i
 UNKNOWN
 array01-alloca-2.i: 20.322 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/array01-alloca-2.i
 TRUE
 array02-alloca-2.i: 22.809 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/array02-alloca-2.i
 TRUE
 array03-alloca-2.i: 290.133 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/array03-alloca-2.i
 UNKNOWN
 bubblesort-alloca-2.i: 19.939 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/bubblesort-alloca-2.i
 TRUE
 bubblesort_unsafe.c: 18.602 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/bubblesort_unsafe.c
 UNKNOWN
 count_down-alloca-1.i: 20.982 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/count_down-alloca-1.i
 TRUE
 count_down_unsafe.i: 21.023 segundos, Resultado: Verifying with MAP2CHECK 
@@ -35,21 +45,29 @@ cstrchr-alloca-2.i: 276.525 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/cstrchr-alloca-2.i
 UNKNOWN
 cstrchr_unsafe.i: 70.883 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/cstrchr_unsafe.i
 TRUE
 cstrcmp-alloca-2.i: 292.569 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/cstrcmp-alloca-2.i
 UNKNOWN
 cstrcpy-alloca-1.i: 122.973 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/cstrcpy-alloca-1.i
 TRUE
 cstrcspn-alloca-1.i: 294.455 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/cstrcspn-alloca-1.i
 UNKNOWN
 cstrlen-alloca-2.i: 117.224 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/cstrlen-alloca-2.i
 TRUE
 cstrlen_unsafe.i: 132.523 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/cstrlen_unsafe.i
 TRUE
 cstrncat-alloca-2.i: 290.413 segundos, Resultado: Verifying with MAP2CHECK 
@@ -59,12 +77,18 @@ cstrncat_unsafe.c: 15.695 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/cstrncat_unsafe.c
 UNKNOWN
 cstrncmp-alloca-1.i: 22.057 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/cstrncmp-alloca-1.i
 TRUE
 cstrncpy-alloca-2.i: 19.644 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/cstrncpy-alloca-2.i
 TRUE
 cstrncpy_unsafe.c: 81.318 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/cstrncpy_unsafe.c
 TRUE
 cstrpbrk-alloca-2.i: 290.741 segundos, Resultado: Verifying with MAP2CHECK 
@@ -77,24 +101,34 @@ cstrspn-alloca-1.i: 293.282 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/cstrspn-alloca-1.i
 UNKNOWN
 diff-alloca-2.i: 22.753 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/diff-alloca-2.i
 TRUE
 diff_usafe.c: 15.897 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/diff_usafe.c
 UNKNOWN
 insertionsort-alloca-1.i: 20.315 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/insertionsort-alloca-1.i
 TRUE
 java_BubbleSort-alloca-1.i: 22.859 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/java_BubbleSort-alloca-1.i
 TRUE
 knapsack_alloca_unsafe.i: 19.658 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/knapsack_alloca_unsafe.i
 UNKNOWN
 lis-alloca-1.i: 20.246 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/lis-alloca-1.i
 TRUE
 lis_unsafe.i: 28.407 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/lis_unsafe.i
 TRUE
 mult_array-alloca-1.i: 326.197 segundos, Resultado: Verifying with MAP2CHECK 
@@ -104,6 +138,8 @@ mult_array_unsafe.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/mult_array_unsafe.i
 UNKNOWN
 openbsd_cbzero-alloca-2.i: 19.352 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/openbsd_cbzero-alloca-2.i
 TRUE
 openbsd_cmemchr-alloca-2.i: 278.367 segundos, Resultado: Verifying with MAP2CHECK 
@@ -113,12 +149,18 @@ openbsd_cmemrchr-alloca-2.i: 360.000 segundos, Resultado: Verifying with MAP2CHE
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/openbsd_cmemrchr-alloca-2.i
 UNKNOWN
 openbsd_cmemset-alloca-1.i: 20.336 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/openbsd_cmemset-alloca-1.i
 TRUE
 openbsd_cstpcpy-alloca-1.i: 119.367 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/openbsd_cstpcpy-alloca-1.i
 TRUE
 openbsd_cstpncpy-alloca-1.i: 20.013 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/13 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/openbsd_cstpncpy-alloca-1.i
 TRUE
 openbsd_cstrcat-alloca-2.i: 301.215 segundos, Resultado: Verifying with MAP2CHECK 
@@ -128,27 +170,41 @@ openbsd_cstrcmp-alloca-1.i: 297.110 segundos, Resultado: Verifying with MAP2CHEC
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/openbsd_cstrcmp-alloca-1.i
 UNKNOWN
 openbsd_cstrcpy-alloca-2.i: 116.500 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/openbsd_cstrcpy-alloca-2.i
 TRUE
 openbsd_cstrcspn-alloca-2.i: 295.103 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/openbsd_cstrcspn-alloca-2.i
 UNKNOWN
 openbsd_cstrlcpy-alloca-1.i: 209.307 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/20 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/openbsd_cstrlcpy-alloca-1.i
 TRUE
 openbsd_cstrlen-alloca-1.i: 116.743 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/openbsd_cstrlen-alloca-1.i
 TRUE
 openbsd_cstrncat-alloca-2.i: 115.487 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/19 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/openbsd_cstrncat-alloca-2.i
 TRUE
 openbsd_cstrncmp-alloca-2.i: 21.798 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/15 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/openbsd_cstrncmp-alloca-2.i
 TRUE
 openbsd_cstrncpy-alloca-2.i: 23.085 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/13 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/openbsd_cstrncpy-alloca-2.i
 TRUE
 openbsd_cstrnlen-alloca-1.i: 20.764 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/openbsd_cstrnlen-alloca-1.i
 TRUE
 openbsd_cstrpbrk-alloca-2.i: 293.894 segundos, Resultado: Verifying with MAP2CHECK 
@@ -170,21 +226,29 @@ reverse_array_unsafe.i: 19.796 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/reverse_array_unsafe.i
 UNKNOWN
 selectionsort-alloca-1.i: 21.533 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/selectionsort-alloca-1.i
 TRUE
 selectionsort_unsafe.c: 18.097 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/selectionsort_unsafe.c
 UNKNOWN
 stroeder1-alloca-1.i: 19.292 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/stroeder1-alloca-1.i
 TRUE
 stroeder1_unsafe.c: 16.948 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/stroeder1_unsafe.c
 UNKNOWN
 stroeder2-alloca-1.i: 20.925 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/stroeder2-alloca-1.i
 TRUE
 strreplace-alloca-2.i: 19.944 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-memsafety/strreplace-alloca-2.i
 TRUE
 subseq-alloca-2.i: 304.152 segundos, Resultado: Verifying with MAP2CHECK 

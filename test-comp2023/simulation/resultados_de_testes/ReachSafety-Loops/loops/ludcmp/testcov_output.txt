@@ -1,0 +1,9 @@
+⏳ Executing tests 1/1
+✔️  Done!
+
+---Results---
+Tests run: 1
+Tests in suite: 1
+Coverage: 17.65%
+Number of goals: 34
+Result: DONE

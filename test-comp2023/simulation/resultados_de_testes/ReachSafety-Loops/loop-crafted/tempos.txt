@@ -1,4 +1,6 @@
 simple_array_index_value_1-1.i: 82.900 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/77.78% coverage/9 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-crafted/simple_array_index_value_1-1.i
 TRUE
 simple_array_index_value_1-2.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
@@ -8,6 +10,8 @@ simple_array_index_value_2.i: 278.999 segundos, Resultado: Verifying with MAP2CH
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-crafted/simple_array_index_value_2.i
 UNKNOWN
 simple_array_index_value_3.i: 82.958 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/55.56% coverage/9 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-crafted/simple_array_index_value_3.i
 TRUE
 simple_array_index_value_4.i.v+lhb-reducer.c: 291.655 segundos, Resultado: Verifying with MAP2CHECK 
@@ -20,8 +24,12 @@ simple_array_index_value_4.i: 280.738 segundos, Resultado: Verifying with MAP2CH
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-crafted/simple_array_index_value_4.i
 UNKNOWN
 simple_vardep_1.c: 153.627 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/75.0% coverage/4 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-crafted/simple_vardep_1.c
 TRUE
 simple_vardep_2.c: 157.067 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/75.0% coverage/4 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-crafted/simple_vardep_2.c
 TRUE

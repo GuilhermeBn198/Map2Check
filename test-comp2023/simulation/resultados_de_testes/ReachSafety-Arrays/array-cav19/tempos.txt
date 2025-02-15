@@ -1,13 +1,21 @@
 array_doub_access_init_const.c: 82.834 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/62.5% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-cav19/array_doub_access_init_const.c
 TRUE
 array_init_both_ends_multiple_sum.c: 82.649 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/70.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-cav19/array_init_both_ends_multiple_sum.c
 TRUE
 array_init_nondet_vars.c: 16.909 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-cav19/array_init_nondet_vars.c
 TRUE
 array_init_pair_sum_const.c: 82.728 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/70.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-cav19/array_init_pair_sum_const.c
 TRUE
 array_init_pair_symmetr.c: 276.927 segundos, Resultado: Verifying with MAP2CHECK 
@@ -17,6 +25,8 @@ array_init_pair_symmetr2.c: 276.626 segundos, Resultado: Verifying with MAP2CHEC
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-cav19/array_init_pair_symmetr2.c
 UNKNOWN
 array_init_var_plus_ind.c: 42.744 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/40.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-cav19/array_init_var_plus_ind.c
 FALSE
 array_init_var_plus_ind2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
@@ -26,12 +36,18 @@ array_init_var_plus_ind3.c: 360.000 segundos, Resultado: Verifying with MAP2CHEC
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-cav19/array_init_var_plus_ind3.c
 UNKNOWN
 array_min_and_copy_shift_sum_add.c: 42.543 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-cav19/array_min_and_copy_shift_sum_add.c
 TRUE
 array_tiling_poly6.c: 23.643 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-cav19/array_tiling_poly6.c
 TRUE
 array_tiling_tcpy.c: 22.162 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-cav19/array_tiling_tcpy.c
 TRUE
 array_tripl_access_init_const.c: 83.029 segundos, Resultado: Verifying with MAP2CHECK 

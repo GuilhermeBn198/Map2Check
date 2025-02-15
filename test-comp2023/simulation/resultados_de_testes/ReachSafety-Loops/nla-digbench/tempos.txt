@@ -23,6 +23,8 @@ dijkstra.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench/dijkstra.c
 UNKNOWN
 divbin.i: 12.165 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/15 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench/divbin.i
 FALSE
 divbin2.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
@@ -50,12 +52,16 @@ fermat1-ll.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench/fermat1-ll.c
 UNKNOWN
 fermat1.c: 16.164 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench/fermat1.c
 TRUE
 fermat2-ll.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench/fermat2-ll.c
 UNKNOWN
 fermat2.c: 19.078 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench/fermat2.c
 TRUE
 geo1-ll.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
@@ -104,6 +110,8 @@ hard2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench/hard2.c
 UNKNOWN
 knuth.i: 19.479 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/13 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench/knuth.i
 TRUE
 lcm1.c: 303.193 segundos, Resultado: Verifying with MAP2CHECK 
@@ -125,6 +133,8 @@ prodbin-ll.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench/prodbin-ll.c
 UNKNOWN
 prodbin.c: 20.531 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench/prodbin.c
 TRUE
 ps2-ll.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
@@ -146,12 +156,16 @@ ps4.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench/ps4.c
 UNKNOWN
 ps5-ll.c: 113.406 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench/ps5-ll.c
 TRUE
 ps5.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench/ps5.c
 UNKNOWN
 ps6-ll.c: 113.473 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench/ps6-ll.c
 TRUE
 ps6.c: 302.398 segundos, Resultado: Verifying with MAP2CHECK 

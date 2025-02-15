@@ -1,0 +1,10 @@
+⏳ Executing tests 1/1
+INFO:suite_validation:Aborted execution for test testcase.xml
+✔️  Done!
+
+---Results---
+Tests run: 1
+Tests in suite: 1
+Coverage: 71.43%
+Number of goals: 14
+Result: UNKNOWN

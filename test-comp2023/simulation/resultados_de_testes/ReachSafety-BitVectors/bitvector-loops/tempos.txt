@@ -1,9 +1,15 @@
 diamond_2-1.c: 11.095 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/54.17% coverage/24 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector-loops/diamond_2-1.c
 FALSE
 overflow_1-2.c: 10.910 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0% coverage/0 goals | Result: UNKNOWN
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector-loops/overflow_1-2.c
 FALSE
 verisec_sendmail_tTflag_arr_one_loop.c: 18.042 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/16.67% coverage/6 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector-loops/verisec_sendmail_tTflag_arr_one_loop.c
 FALSE

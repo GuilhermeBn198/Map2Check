@@ -23,6 +23,8 @@ diff-3-n-u.c: 45.109 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-multidimensional/diff-3-n-u.c
 UNKNOWN
 init-2-n-u.c: 89.396 segundos, Resultado: Sucesso
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
+
 init-3-u.c: 43.809 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-multidimensional/init-3-u.c
 UNKNOWN
@@ -30,6 +32,8 @@ init-4-n-u.c: 212.374 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-multidimensional/init-4-n-u.c
 UNKNOWN
 init-non-constant-2-n-u.c: 50.408 segundos, Resultado: Sucesso
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+
 init-non-constant-3-u.c: 42.065 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-multidimensional/init-non-constant-3-u.c
 UNKNOWN

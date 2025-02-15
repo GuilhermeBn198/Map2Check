@@ -11,6 +11,8 @@ benchmark03_linear.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark03_linear.i
 UNKNOWN
 benchmark04_conjunctive.i: 82.404 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark04_conjunctive.i
 TRUE
 benchmark05_conjunctive.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
@@ -20,6 +22,8 @@ benchmark06_conjunctive.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark06_conjunctive.i
 UNKNOWN
 benchmark07_linear.i: 30.918 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/9 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark07_linear.i
 FALSE
 benchmark08_conjunctive.i: 26.882 segundos, Resultado: Verifying with MAP2CHECK 
@@ -32,21 +36,31 @@ benchmark10_conjunctive.i: 27.131 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark10_conjunctive.i
 UNKNOWN
 benchmark11_linear.i: 81.622 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark11_linear.i
 TRUE
 benchmark11_linear_abstracted.i: 19.855 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/13 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark11_linear_abstracted.i
 TRUE
 benchmark12_linear.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark12_linear.i
 UNKNOWN
 benchmark13_conjunctive.i: 82.067 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark13_conjunctive.i
 TRUE
 benchmark14_linear.i: 82.042 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark14_linear.i
 TRUE
 benchmark15_conjunctive.i: 82.043 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark15_conjunctive.i
 TRUE
 benchmark16_conjunctive.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
@@ -56,9 +70,13 @@ benchmark17_conjunctive.i: 27.153 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark17_conjunctive.i
 UNKNOWN
 benchmark18_conjunctive.i: 81.867 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark18_conjunctive.i
 TRUE
 benchmark19_conjunctive.i: 81.917 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark19_conjunctive.i
 TRUE
 benchmark20_conjunctive.i: 27.096 segundos, Resultado: Verifying with MAP2CHECK 
@@ -71,9 +89,13 @@ benchmark22_conjunctive.i: 27.180 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark22_conjunctive.i
 UNKNOWN
 benchmark23_conjunctive.i: 81.941 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark23_conjunctive.i
 TRUE
 benchmark24_conjunctive.i: 81.848 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark24_conjunctive.i
 TRUE
 benchmark25_linear.i: 26.714 segundos, Resultado: Verifying with MAP2CHECK 
@@ -83,12 +105,18 @@ benchmark25_linear_abstracted.i: 26.892 segundos, Resultado: Verifying with MAP2
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark25_linear_abstracted.i
 UNKNOWN
 benchmark26_linear.i: 82.094 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark26_linear.i
 TRUE
 benchmark26_linear_abstracted.i: 16.653 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/13 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark26_linear_abstracted.i
 TRUE
 benchmark27_linear.i: 104.047 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark27_linear.i
 FALSE
 benchmark28_linear.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
@@ -107,9 +135,13 @@ benchmark32_linear.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark32_linear.i
 UNKNOWN
 benchmark33_linear.i: 81.599 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark33_linear.i
 TRUE
 benchmark34_conjunctive.i: 82.057 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark34_conjunctive.i
 TRUE
 benchmark35_linear.i: 26.692 segundos, Resultado: Verifying with MAP2CHECK 
@@ -119,12 +151,16 @@ benchmark36_conjunctive.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark36_conjunctive.i
 UNKNOWN
 benchmark37_conjunctive.i: 81.770 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark37_conjunctive.i
 TRUE
 benchmark38_conjunctive.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark38_conjunctive.i
 UNKNOWN
 benchmark39_conjunctive.i: 82.128 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark39_conjunctive.i
 FALSE
 benchmark40_polynomial.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
@@ -134,12 +170,18 @@ benchmark41_conjunctive.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark41_conjunctive.i
 UNKNOWN
 benchmark42_conjunctive.i: 82.125 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark42_conjunctive.i
 TRUE
 benchmark43_conjunctive.i: 81.968 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark43_conjunctive.i
 TRUE
 benchmark43_conjunctive_abstracted.i: 19.171 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/13 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark43_conjunctive_abstracted.i
 TRUE
 benchmark44_disjunctive.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
@@ -152,21 +194,31 @@ benchmark46_disjunctive.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark46_disjunctive.i
 UNKNOWN
 benchmark47_linear.i: 60.778 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/11 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark47_linear.i
 FALSE
 benchmark48_linear.i: 27.604 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark48_linear.i
 FALSE
 benchmark49_linear.i: 19.711 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark49_linear.i
 TRUE
 benchmark50_linear.i: 9.717 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark50_linear.i
 FALSE
 benchmark51_polynomial.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark51_polynomial.i
 UNKNOWN
 benchmark52_polynomial.i: 83.125 segundos, Resultado: Verifying with MAP2CHECK 
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
+
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-zilu/benchmark52_polynomial.i
 TRUE
 benchmark53_polynomial.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
