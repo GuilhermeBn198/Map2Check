@@ -1,26 +1,33 @@
 deep-nested.c: 31.347 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-simple/deep-nested.c
 UNKNOWN
+
 nested_1.c: 27.108 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-simple/nested_1.c
 UNKNOWN
-nested_1b.c: 12.243 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/75.0% coverage/4 goals | Result: DONE
 
+nested_1b.c: 12.243 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-simple/nested_1b.c
 FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/75.0% coverage/4 goals | Result: DONE
+
 nested_2.c: 27.137 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-simple/nested_2.c
 UNKNOWN
+
 nested_3.c: 27.381 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-simple/nested_3.c
 UNKNOWN
+
 nested_4.c: 28.000 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-simple/nested_4.c
 UNKNOWN
+
 nested_5.c: 30.837 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-simple/nested_5.c
 UNKNOWN
+
 nested_6.c: 40.484 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-simple/nested_6.c
 UNKNOWN
+

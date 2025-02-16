@@ -1,258 +1,304 @@
 byte_add-1.i: 21.376 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/57 goals | Result: DONE
-
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/byte_add-1.i
 FALSE
-byte_add-2.i: 23.176 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/57 goals | Result: DONE
 
+byte_add-2.i: 23.176 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/byte_add-2.i
 FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/57 goals | Result: DONE
+
 byte_add_1-1.i: 28.473 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/byte_add_1-1.i
 UNKNOWN
+
 byte_add_1-2.i: 28.148 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/byte_add_1-2.i
 UNKNOWN
+
 byte_add_2-1.i: 26.010 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/byte_add_2-1.i
 UNKNOWN
+
 byte_add_2-2.i: 28.660 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/byte_add_2-2.i
 UNKNOWN
-gcd_1.c: 19.502 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
 
+gcd_1.c: 19.502 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/gcd_1.c
 TRUE
-gcd_2.c: 181.617 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
 
+gcd_2.c: 181.617 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/gcd_2.c
 TRUE
-gcd_3.c: 202.928 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
 
+gcd_3.c: 202.928 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/gcd_3.c
 TRUE
-gcd_4.c: 82.640 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/66.67% coverage/12 goals | Result: DONE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
 
+gcd_4.c: 82.640 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/gcd_4.c
 TRUE
-interleave_bits.i: 82.690 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/5 goals | Result: DONE
+TESTCOV: TESTCOV: 1 runs/1 suite/66.67% coverage/12 goals | Result: DONE
 
+interleave_bits.i: 82.690 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/interleave_bits.i
 TRUE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/5 goals | Result: DONE
+
 jain_1-1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/jain_1-1.c
 UNKNOWN
+
 jain_1-2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/jain_1-2.c
 UNKNOWN
+
 jain_2-1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/jain_2-1.c
 UNKNOWN
+
 jain_2-2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/jain_2-2.c
 UNKNOWN
+
 jain_4-1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/jain_4-1.c
 UNKNOWN
+
 jain_4-2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/jain_4-2.c
 UNKNOWN
+
 jain_5-1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/jain_5-1.c
 UNKNOWN
+
 jain_5-2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/jain_5-2.c
 UNKNOWN
+
 jain_6-1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/jain_6-1.c
 UNKNOWN
+
 jain_6-2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/jain_6-2.c
 UNKNOWN
+
 jain_7-1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/jain_7-1.c
 UNKNOWN
+
 jain_7-2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/jain_7-2.c
 UNKNOWN
-modulus-1.i: 55.496 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/13 goals | Result: DONE
 
+modulus-1.i: 55.496 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/modulus-1.i
 TRUE
-modulus-2.i: 54.266 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/13 goals | Result: DONE
 
+modulus-2.i: 54.266 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/modulus-2.i
 TRUE
-num_conversion_1.c: 82.528 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/83.33% coverage/6 goals | Result: DONE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/13 goals | Result: DONE
 
+num_conversion_1.c: 82.528 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/num_conversion_1.c
 TRUE
-num_conversion_2.c: 82.521 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/6 goals | Result: DONE
+TESTCOV: TESTCOV: 1 runs/1 suite/83.33% coverage/6 goals | Result: DONE
 
+num_conversion_2.c: 82.521 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/num_conversion_2.c
 TRUE
-parity.i: 86.583 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/9 goals | Result: DONE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/6 goals | Result: DONE
 
+parity.i: 86.583 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/parity.i
 TRUE
-s3_clnt_1.BV.c.cil-1.c: 128.654 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/175 goals | Result: DONE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/9 goals | Result: DONE
 
+s3_clnt_1.BV.c.cil-1.c: 128.654 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_clnt_1.BV.c.cil-1.c
 TRUE
-s3_clnt_1.BV.c.cil-1a.c: 127.698 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/175 goals | Result: DONE
 
+s3_clnt_1.BV.c.cil-1a.c: 127.698 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_clnt_1.BV.c.cil-1a.c
 TRUE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/175 goals | Result: DONE
+
 s3_clnt_1.BV.c.cil-2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_clnt_1.BV.c.cil-2.c
 UNKNOWN
+
 s3_clnt_1.BV.c.cil-2a.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_clnt_1.BV.c.cil-2a.c
 UNKNOWN
-s3_clnt_2.BV.c.cil-1.c: 105.581 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/175 goals | Result: DONE
 
+s3_clnt_2.BV.c.cil-1.c: 105.581 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_clnt_2.BV.c.cil-1.c
 TRUE
-s3_clnt_2.BV.c.cil-1a.c: 103.304 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/175 goals | Result: DONE
 
+s3_clnt_2.BV.c.cil-1a.c: 103.304 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_clnt_2.BV.c.cil-1a.c
 TRUE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/175 goals | Result: DONE
+
 s3_clnt_2.BV.c.cil-2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_clnt_2.BV.c.cil-2.c
 UNKNOWN
+
 s3_clnt_2.BV.c.cil-2a.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_clnt_2.BV.c.cil-2a.c
 UNKNOWN
-s3_clnt_3.BV.c.cil-1.c: 37.122 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/177 goals | Result: DONE
 
+s3_clnt_3.BV.c.cil-1.c: 37.122 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_clnt_3.BV.c.cil-1.c
 TRUE
-s3_clnt_3.BV.c.cil-1a.c: 39.281 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/177 goals | Result: DONE
 
+s3_clnt_3.BV.c.cil-1a.c: 39.281 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_clnt_3.BV.c.cil-1a.c
 TRUE
-s3_clnt_3.BV.c.cil-2.c: 22.899 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/177 goals | Result: DONE
 
+s3_clnt_3.BV.c.cil-2.c: 22.899 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_clnt_3.BV.c.cil-2.c
 FALSE
-s3_clnt_3.BV.c.cil-2a.c: 22.542 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/177 goals | Result: DONE
 
+s3_clnt_3.BV.c.cil-2a.c: 22.542 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_clnt_3.BV.c.cil-2a.c
 FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/177 goals | Result: DONE
+
 s3_srvr_1.BV.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_srvr_1.BV.c.cil.c
 UNKNOWN
+
 s3_srvr_1a.BV.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_srvr_1a.BV.c.cil.c
 UNKNOWN
+
 s3_srvr_1a_alt.BV.c.cil.c: 306.259 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_srvr_1a_alt.BV.c.cil.c
 UNKNOWN
+
 s3_srvr_1_alt.BV.c.cil.c: 279.522 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_srvr_1_alt.BV.c.cil.c
 UNKNOWN
+
 s3_srvr_2.BV.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_srvr_2.BV.c.cil.c
 UNKNOWN
+
 s3_srvr_2a.BV.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_srvr_2a.BV.c.cil.c
 UNKNOWN
+
 s3_srvr_2a_alt.BV.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_srvr_2a_alt.BV.c.cil.c
 UNKNOWN
+
 s3_srvr_2_alt.BV.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_srvr_2_alt.BV.c.cil.c
 UNKNOWN
+
 s3_srvr_3.BV.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_srvr_3.BV.c.cil.c
 UNKNOWN
+
 s3_srvr_3a.BV.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_srvr_3a.BV.c.cil.c
 UNKNOWN
+
 s3_srvr_3a_alt.BV.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_srvr_3a_alt.BV.c.cil.c
 UNKNOWN
+
 s3_srvr_3_alt.BV.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/s3_srvr_3_alt.BV.c.cil.c
 UNKNOWN
+
 soft_float_1-1.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/soft_float_1-1.c.cil.c
 UNKNOWN
+
 soft_float_1-2.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/soft_float_1-2.c.cil.c
 UNKNOWN
+
 soft_float_1-2a.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/soft_float_1-2a.c.cil.c
 UNKNOWN
-soft_float_1-3.c.cil.c: 13.148 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/76 goals | Result: DONE
 
+soft_float_1-3.c.cil.c: 13.148 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/soft_float_1-3.c.cil.c
 FALSE
-soft_float_1-3a.c.cil.c: 9.653 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/76 goals | Result: DONE
 
+soft_float_1-3a.c.cil.c: 9.653 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/soft_float_1-3a.c.cil.c
 FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/76 goals | Result: DONE
+
 soft_float_2.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/soft_float_2.c.cil.c
 UNKNOWN
+
 soft_float_2a.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/soft_float_2a.c.cil.c
 UNKNOWN
+
 soft_float_3.c.cil.c: 318.289 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/soft_float_3.c.cil.c
 UNKNOWN
+
 soft_float_3a.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/soft_float_3a.c.cil.c
 UNKNOWN
+
 soft_float_4-1.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/soft_float_4-1.c.cil.c
 UNKNOWN
+
 soft_float_4-2.c.cil.c: 314.086 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/soft_float_4-2.c.cil.c
 UNKNOWN
+
 soft_float_4-2a.c.cil.c: 313.022 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/soft_float_4-2a.c.cil.c
 UNKNOWN
-soft_float_4-3.c.cil.c: 12.781 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/44 goals | Result: DONE
 
+soft_float_4-3.c.cil.c: 12.781 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/soft_float_4-3.c.cil.c
 FALSE
-soft_float_4-3a.c.cil.c: 12.356 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/44 goals | Result: DONE
 
+soft_float_4-3a.c.cil.c: 12.356 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/soft_float_4-3a.c.cil.c
 FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/44 goals | Result: DONE
+
 soft_float_5.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/soft_float_5.c.cil.c
 UNKNOWN
+
 soft_float_5a.c.cil.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/soft_float_5a.c.cil.c
 UNKNOWN
+
 sum02-1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/sum02-1.c
 UNKNOWN
+
 sum02-2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector/sum02-2.c
 UNKNOWN
+

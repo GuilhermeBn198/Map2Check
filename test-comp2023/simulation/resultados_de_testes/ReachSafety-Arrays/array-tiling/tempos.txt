@@ -1,141 +1,143 @@
 mbpr2.c: 21.122 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/18 goals | Result: DONE
-
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/mbpr2.c
 TRUE
-mbpr3.c: 21.030 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/22 goals | Result: DONE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/18 goals | Result: DONE
 
+mbpr3.c: 21.030 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/mbpr3.c
 TRUE
-mbpr4.c: 23.579 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/26 goals | Result: DONE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/22 goals | Result: DONE
 
+mbpr4.c: 23.579 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/mbpr4.c
 TRUE
-mbpr5.c: 20.843 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/30 goals | Result: DONE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/26 goals | Result: DONE
 
+mbpr5.c: 20.843 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/mbpr5.c
 TRUE
-mlceu.c: 17.982 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/30 goals | Result: DONE
 
+mlceu.c: 17.982 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/mlceu.c
 TRUE
-mlceu2.c: 84.481 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
 
+mlceu2.c: 84.481 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/mlceu2.c
 TRUE
-nr2.c: 21.683 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
 
+nr2.c: 21.683 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/nr2.c
 TRUE
-nr3.c: 21.506 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
 
+nr3.c: 21.506 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/nr3.c
 TRUE
-nr4.c: 24.622 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
 
+nr4.c: 24.622 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/nr4.c
 TRUE
-nr5.c: 21.585 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
 
+nr5.c: 21.585 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/nr5.c
 TRUE
-pnr2.c: 85.371 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
 
+pnr2.c: 85.371 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pnr2.c
 TRUE
-pnr3.c: 85.528 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/18 goals | Result: DONE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
 
+pnr3.c: 85.528 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pnr3.c
 TRUE
-pnr4.c: 83.928 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/20 goals | Result: DONE
-
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pnr4.c
-TRUE
-pnr5.c: 85.910 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/22 goals | Result: DONE
-
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pnr5.c
-TRUE
-poly1.c: 84.733 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
-
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/poly1.c
-TRUE
-poly2.c: 84.245 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/poly2.c
-TRUE
-pr2.c: 84.333 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pr2.c
-TRUE
-pr3.c: 84.562 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/18 goals | Result: DONE
 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pr3.c
+pnr4.c: 83.928 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pnr4.c
 TRUE
-pr4.c: 84.369 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/20 goals | Result: DONE
 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pr4.c
+pnr5.c: 85.910 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pnr5.c
 TRUE
-pr5.c: 84.731 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/22 goals | Result: DONE
 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pr5.c
+poly1.c: 84.733 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/poly1.c
 TRUE
-revcpyswp2.c: 53.302 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/revcpyswp2.c
-TRUE
-rew.c: 83.450 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/rew.c
-TRUE
-rewnif.c: 85.694 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/rewnif.c
-TRUE
-rewnifrev.c: 85.116 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/rewnifrev.c
-TRUE
-rewnifrev2.c: 82.333 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/rewnifrev2.c
+poly2.c: 84.245 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/poly2.c
 TRUE
-rewrev.c: 85.042 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
 
+pr2.c: 84.333 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pr2.c
+TRUE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+
+pr3.c: 84.562 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pr3.c
+TRUE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/18 goals | Result: DONE
+
+pr4.c: 84.369 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pr4.c
+TRUE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/20 goals | Result: DONE
+
+pr5.c: 84.731 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/pr5.c
+TRUE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/22 goals | Result: DONE
+
+revcpyswp2.c: 53.302 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/revcpyswp2.c
+TRUE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+
+rew.c: 83.450 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/rew.c
+TRUE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+
+rewnif.c: 85.694 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/rewnif.c
+TRUE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+
+rewnifrev.c: 85.116 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/rewnifrev.c
+TRUE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+
+rewnifrev2.c: 82.333 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/rewnifrev2.c
+TRUE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
+
+rewrev.c: 85.042 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/rewrev.c
 TRUE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+
 skipped.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/skipped.c
 UNKNOWN
+
 skippedu.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/skippedu.c
 UNKNOWN
-tcpy.c: 81.191 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
 
+tcpy.c: 81.191 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-tiling/tcpy.c
 TRUE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+

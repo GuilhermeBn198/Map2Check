@@ -1,78 +1,88 @@
 aiob_1.c: 82.216 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/16.67% coverage/6 goals | Result: DONE
-
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-industry-pattern/aiob_1.c
 TRUE
-aiob_2.c: 81.927 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/16.67% coverage/6 goals | Result: DONE
 
+aiob_2.c: 81.927 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-industry-pattern/aiob_2.c
 TRUE
-aiob_3.c: 82.201 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/16.67% coverage/6 goals | Result: DONE
 
+aiob_3.c: 82.201 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-industry-pattern/aiob_3.c
 TRUE
-aiob_4.c.v+cfa-reducer.c: 81.929 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/16.67% coverage/6 goals | Result: DONE
 
+aiob_4.c.v+cfa-reducer.c: 81.929 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/11.11% coverage/9 goals | Result: DONE
 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-industry-pattern/aiob_4.c.v+cfa-reducer.c
 TRUE
-aiob_4.c.v+lh-reducer.c: 81.968 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/16.67% coverage/6 goals | Result: DONE
 
+aiob_4.c.v+lh-reducer.c: 81.968 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/9.09% coverage/11 goals | Result: DONE
 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-industry-pattern/aiob_4.c.v+lh-reducer.c
 TRUE
-aiob_4.c.v+lhb-reducer.c: 82.467 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/16.67% coverage/6 goals | Result: DONE
 
+aiob_4.c.v+lhb-reducer.c: 82.467 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/1.35% coverage/74 goals | Result: DONE
 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-industry-pattern/aiob_4.c.v+lhb-reducer.c
 TRUE
-aiob_4.c.v+nlh-reducer.c: 83.618 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/16.67% coverage/6 goals | Result: DONE
 
+aiob_4.c.v+nlh-reducer.c: 83.618 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/0.33% coverage/301 goals | Result: DONE
 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-industry-pattern/aiob_4.c.v+nlh-reducer.c
 TRUE
-aiob_4.c: 81.940 segundos, Resultado: Verifying with MAP2CHECK 
 TESTCOV: TESTCOV: 1 runs/1 suite/16.67% coverage/6 goals | Result: DONE
 
+aiob_4.c: 81.940 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-industry-pattern/aiob_4.c
 TRUE
+TESTCOV: TESTCOV: 1 runs/1 suite/16.67% coverage/6 goals | Result: DONE
+
 mod3.c.v+cfa-reducer.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-industry-pattern/mod3.c.v+cfa-reducer.c
 UNKNOWN
+
 mod3.c.v+lhb-reducer.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-industry-pattern/mod3.c.v+lhb-reducer.c
 UNKNOWN
+
 mod3.c.v+sep-reducer.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-industry-pattern/mod3.c.v+sep-reducer.c
 UNKNOWN
+
 mod3.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-industry-pattern/mod3.c
 UNKNOWN
+
 nested-3.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
 Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-industry-pattern/nested-3.c
 UNKNOWN
+
 ofuf_1.c: 28.643 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-industry-pattern/ofuf_1.c
 UNKNOWN
+
 ofuf_2.c: 28.140 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-industry-pattern/ofuf_2.c
 UNKNOWN
+
 ofuf_3.c: 28.328 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-industry-pattern/ofuf_3.c
 UNKNOWN
+
 ofuf_4.c: 25.768 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-industry-pattern/ofuf_4.c
 UNKNOWN
+
 ofuf_5.c: 28.302 segundos, Resultado: Verifying with MAP2CHECK 
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-industry-pattern/ofuf_5.c
 UNKNOWN
+
