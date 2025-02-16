@@ -4,7 +4,10 @@ import re
 
 def parse_tempos_file(file_path, category, subcategory):
     entries = []
-    current_entry = None  # Using None to indicate no entry in progress
+    current_entry = None
+
+    # Updated regex: match both .c and .i, 1-3 decimals in time
+    pattern = re.compile(r'^\s*(?P<filename>[^:]+\.(?:c|i)):\s+(?P<time>\d+\.\d{1,3})\s+segundos')
     
     with open(file_path, 'r', encoding='utf-8') as f:
         lines = f.readlines()
@@ -12,18 +15,16 @@ def parse_tempos_file(file_path, category, subcategory):
     for line in lines:
         line = line.strip()
         
-        # Detect a new entry based on the file/time line
-        if re.match(r'^[^:]+\.c: \d+\.\d{3} segundos', line):
+        # Detect a new entry using the updated pattern
+        match = pattern.match(line)
+        if match:
             # Save the previous entry, if any
             if current_entry is not None:
                 entries.append(current_entry)
             
-            # Parse the file name and time
-            parts = line.split(': ')
-            filename = parts[0]
-            time_value = parts[1].split(' ')[0]  # get the numeric time value
+            filename = match.group('filename')
+            time_value = match.group('time')
             
-            # Build the entry dictionary using subcategory for the program file name
             current_entry = {
                 'program_file': f"{subcategory}/{filename}",
                 'time': time_value,
@@ -32,17 +33,13 @@ def parse_tempos_file(file_path, category, subcategory):
                 'testcov_result': 'N/A'
             }
         
-        # Detect status line (TRUE, FALSE, or UNKNOWN)
         elif line in ['FALSE', 'TRUE', 'UNKNOWN']:
             if current_entry is not None:
                 current_entry['status'] = line
         
-        # Detect the TESTCOV line and extract coverage and result information
         elif line.startswith('TESTCOV:'):
             if current_entry is not None:
-                # Remove potential duplicate "TESTCOV:" from the beginning
                 testcov_data = line.split('TESTCOV: ')[-1]
-                # Look for the coverage percentage after "suite/"
                 coverage_match = re.search(r'suite/([\d.]+)%', testcov_data)
                 result_match = re.search(r'Result: (\w+)', testcov_data)
                 
@@ -64,12 +61,12 @@ def generate_csv_reports(root_dir):
     for root, dirs, files in os.walk(root_dir):
         if 'tempos.txt' in files:
             path_parts = root.split(os.sep)
-            # Determine the category and subcategory.
-            # Assumes structure: .../category/subcategory/tempos.txt
+            # Determine the category and subcategory
             category = path_parts[-2] if len(path_parts) >= 2 else path_parts[-1]
             subcategory = path_parts[-1]
             
-            entries = parse_tempos_file(os.path.join(root, 'tempos.txt'), category, subcategory)
+            file_path = os.path.join(root, 'tempos.txt')
+            entries = parse_tempos_file(file_path, category, subcategory)
             
             if category not in csv_data:
                 csv_data[category] = []
@@ -82,14 +79,7 @@ def generate_csv_reports(root_dir):
         csv_path = os.path.join(csv_dir, f'{category}_results.csv')
         
         with open(csv_path, 'w', newline='', encoding='utf-8') as csvfile:
-            fieldnames = [
-                'program_file',
-                'status',
-                'time',
-                'coverage',
-                'testcov_result'
-            ]
-            
+            fieldnames = ['program_file', 'status', 'time', 'coverage', 'testcov_result']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
             
