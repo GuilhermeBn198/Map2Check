@@ -18,7 +18,6 @@ def parse_tempos_file(file_path, category, subcategory):
     current_entry = None
 
     # Updated pattern: match lines like "sep05-1.i: 84.532 segundos" or "file.c: 21.301 segundos"
-    # Allows 1-3 decimals, either .c or .i extension (you can generalize if you want).
     pattern = re.compile(r'^\s*(?P<filename>[^:]+\.(?:c|i)):\s+(?P<time>\d+\.\d{1,3})\s+segundos')
 
     with open(file_path, 'r', encoding='utf-8') as f:
@@ -102,22 +101,41 @@ def safe_float(value):
 
 def compute_summary(entries):
     """
-    Computes a summary dictionary that contains counts of entries (global, per category,
-    and per subcategory) with different conditions.
+    Computes a summary dictionary that contains counts and timing metrics per scope (global, category, subcategory).
+    Além do sumário atual, são adicionadas as colunas:
+      - media_time_excl_360000: média dos tempos, excluindo entradas com time == 360.000
+      - media_time_incl_360000: média dos tempos, incluindo entradas com time == 360.000
+      - total_time_ge_360000: total de programas com time >= 360.000
     Returns a list of dicts to be written as rows in the summary CSV.
     """
     summary = []
+    threshold = 360.0  # Corrigido para 360.0 (segundos)
     
+    # Helper function para calcular os tempos
+    def calc_time_metrics(group_entries):
+        # Converte os valores de "time" para float (filtrando os que não convertem)
+        times_incl = [safe_float(e['time']) for e in group_entries if safe_float(e['time']) is not None]
+        times_excl = [t for t in times_incl if t != threshold]
+        media_excl = sum(times_excl) / len(times_excl) if times_excl else 0
+        media_incl = sum(times_incl) / len(times_incl) if times_incl else 0
+        count_ge = sum(1 for t in times_incl if t >= threshold)
+        return media_excl, media_incl, count_ge
+
     # Global summary
+    global_entries = entries
+    media_excl, media_incl, count_ge = calc_time_metrics(global_entries)
     global_counts = {
         'scope_type': 'Global',
         'scope_name': 'All',
-        'total_program_files': len(entries),
-        'total_FALSE': sum(1 for e in entries if e['status'] == 'FALSE'),
-        'total_TRUE': sum(1 for e in entries if e['status'] == 'TRUE'),
-        'total_UNKNOWN': sum(1 for e in entries if e['status'] == 'UNKNOWN'),
-        'total_coverage_0.0': sum(1 for e in entries if safe_float(e['coverage']) == 0.0),
-        'total_coverage_pos': sum(1 for e in entries if (safe_float(e['coverage']) is not None and safe_float(e['coverage']) > 0.0))
+        'total_program_files': len(global_entries),
+        'total_FALSE': sum(1 for e in global_entries if e['status'] == 'FALSE'),
+        'total_TRUE': sum(1 for e in global_entries if e['status'] == 'TRUE'),
+        'total_UNKNOWN': sum(1 for e in global_entries if e['status'] == 'UNKNOWN'),
+        'total_coverage_0.0': sum(1 for e in global_entries if safe_float(e['coverage']) == 0.0),
+        'total_coverage_pos': sum(1 for e in global_entries if (safe_float(e['coverage']) is not None and safe_float(e['coverage']) > 0.0)),
+        'media_time_excl_360000': media_excl,
+        'media_time_incl_360000': media_incl,
+        'total_time_ge_360000': count_ge
     }
     summary.append(global_counts)
     
@@ -125,6 +143,7 @@ def compute_summary(entries):
     categories = set(e['category'] for e in entries)
     for cat in categories:
         cat_entries = [e for e in entries if e['category'] == cat]
+        media_excl, media_incl, count_ge = calc_time_metrics(cat_entries)
         cat_counts = {
             'scope_type': 'Category',
             'scope_name': cat,
@@ -133,7 +152,10 @@ def compute_summary(entries):
             'total_TRUE': sum(1 for e in cat_entries if e['status'] == 'TRUE'),
             'total_UNKNOWN': sum(1 for e in cat_entries if e['status'] == 'UNKNOWN'),
             'total_coverage_0.0': sum(1 for e in cat_entries if safe_float(e['coverage']) == 0.0),
-            'total_coverage_pos': sum(1 for e in cat_entries if (safe_float(e['coverage']) is not None and safe_float(e['coverage']) > 0.0))
+            'total_coverage_pos': sum(1 for e in cat_entries if (safe_float(e['coverage']) is not None and safe_float(e['coverage']) > 0.0)),
+            'media_time_excl_360000': media_excl,
+            'media_time_incl_360000': media_incl,
+            'total_time_ge_360000': count_ge
         }
         summary.append(cat_counts)
     
@@ -141,6 +163,7 @@ def compute_summary(entries):
     subcategories = set((e['category'], e['subcategory']) for e in entries)
     for cat, subcat in subcategories:
         subcat_entries = [e for e in entries if e['category'] == cat and e['subcategory'] == subcat]
+        media_excl, media_incl, count_ge = calc_time_metrics(subcat_entries)
         subcat_counts = {
             'scope_type': 'Subcategory',
             'scope_name': f"{cat}/{subcat}",
@@ -149,7 +172,10 @@ def compute_summary(entries):
             'total_TRUE': sum(1 for e in subcat_entries if e['status'] == 'TRUE'),
             'total_UNKNOWN': sum(1 for e in subcat_entries if e['status'] == 'UNKNOWN'),
             'total_coverage_0.0': sum(1 for e in subcat_entries if safe_float(e['coverage']) == 0.0),
-            'total_coverage_pos': sum(1 for e in subcat_entries if (safe_float(e['coverage']) is not None and safe_float(e['coverage']) > 0.0))
+            'total_coverage_pos': sum(1 for e in subcat_entries if (safe_float(e['coverage']) is not None and safe_float(e['coverage']) > 0.0)),
+            'media_time_excl_360000': media_excl,
+            'media_time_incl_360000': media_incl,
+            'total_time_ge_360000': count_ge
         }
         summary.append(subcat_counts)
     
@@ -163,7 +189,8 @@ def write_summary_csv(summary, output_csv):
         'scope_type', 'scope_name',
         'total_program_files',
         'total_FALSE', 'total_TRUE', 'total_UNKNOWN',
-        'total_coverage_0.0', 'total_coverage_pos'
+        'total_coverage_0.0', 'total_coverage_pos',
+        'media_time_excl_360000', 'media_time_incl_360000', 'total_time_ge_360000'
     ]
     with open(output_csv, 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
