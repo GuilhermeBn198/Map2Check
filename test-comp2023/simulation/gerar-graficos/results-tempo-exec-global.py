@@ -38,7 +38,7 @@ ax.axvline(x=1.5, color='black', linestyle='--')
 
 # Define limites dos eixos y
 left_limit = sum(left_values)
-right_limit = max(right_values) + 20
+right_limit = 360.000
 
 ax.set_ylim(0, left_limit)
 ax2.set_ylim(0, right_limit)
@@ -46,20 +46,20 @@ ax2.set_ylim(0, right_limit)
 # Anota os valores sobre as barras do grupo esquerdo
 for bar, metric in zip(bars_left, left_metrics):
     height = bar.get_height()
-    ax.text(bar.get_x() + bar.get_width()/2, height, f'{int(height)}', ha='center', va='bottom')
+    ax.text(bar.get_x() + bar.get_width()/2, height, f'{int(height)}', ha='center', va='bottom', fontsize=14)
 
 # Anota os valores sobre as barras do grupo direito
 for bar, metric in zip(bars_right, right_metrics):
     height = bar.get_height()
-    ax2.text(bar.get_x() + bar.get_width()/2, height, f'{height:.3f}', ha='center', va='bottom')
+    ax2.text(bar.get_x() + bar.get_width()/2, height, f'{height:.3f}', ha='center', va='bottom', fontsize=14)
 
 # Adiciona os contadores para os limites dos eixos
-ax.text(0.02, 0.95, f'Total de programas: {left_limit:.0f}', transform=ax.transAxes, verticalalignment='top', color='red')
-ax2.text(0.98, 0.95, f'Tempo de exec: {right_limit:.3f}', transform=ax2.transAxes, verticalalignment='top', horizontalalignment='right', color='red')
+ax.text(0.02, 0.95, f'Total de programas: {left_limit:.0f}', transform=ax.transAxes, verticalalignment='top', color='red', fontsize=14)
+ax2.text(0.98, 0.95, f'Tempo de exec: {right_limit:.3f}', transform=ax2.transAxes, verticalalignment='top', horizontalalignment='right', color='red', fontsize=14)
 
-ax.set_title("Resultados Globais da Ferramenta")
-ax.set_ylabel("Programas executados")
-ax2.set_ylabel("Tempos de execução")
+ax.set_title("Resultados Globais da Ferramenta", fontsize=16)
+ax.set_ylabel("Programas executados", fontsize=16)
+ax2.set_ylabel("Tempos de execução", fontsize=16)
 
 plt.tight_layout()
 plt.show()
