@@ -4,6 +4,6 @@
 ---Results---
 Tests run: 1
 Tests in suite: 1
-Coverage: 81.25%
+Coverage: 0.0%
 Number of goals: 16
 Result: DONE

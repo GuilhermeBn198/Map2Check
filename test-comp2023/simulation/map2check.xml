@@ -11,16 +11,16 @@
   </rundefinition>
 
   <tasks name="ReachSafety-Arrays">
-    <includesfile>./sv-benchmarks/c/Arrays.set</includesfile>
+    <includesfile>./sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
   </tasks>
   <tasks name="ReachSafety-BitVectors">
-    <includesfile>./sv-benchmarks/c/BitVectors.set</includesfile>
+    <includesfile>./sv-benchmarks/c/ReachSafety-BitVectors.set</includesfile>
   </tasks>
     <tasks name="ReachSafety-Loops">
-    <includesfile>./sv-benchmarks/c/Loops.set</includesfile>
+    <includesfile>./sv-benchmarks/c/ReachSafety-Loops.set</includesfile>
   </tasks>
     <tasks name="ReachSafety-ControlFlow">
-    <includesfile>./sv-benchmarks/c/ControlFlow.set</includesfile>
+    <includesfile>./sv-benchmarks/c/ReachSafety-ControlFlow.set</includesfile>
   </tasks>
  <!-- resto das coisas aqui:-->
 </benchmark>

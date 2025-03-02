@@ -28,12 +28,20 @@ def extrair_input_files(yml_path, subcategoria):
     print("[INFO] Processando arquivo .yml: {}".format(yml_path))
     try:
         with open(yml_path, "r") as file:
+            # Verificar se o arquivo contem a linha necessaria
+            conteudo = file.read()
+            if "- property_file: ../properties/coverage-error-call.prp" not in conteudo:
+                print("[INFO] Arquivo YML nao contem a linha necessaria. Pulando.")
+                return input_files
+            
+            # Voltar ao inicio do arquivo para ler o YAML
+            file.seek(0)
             data = yaml.safe_load(file)
             if "input_files" in data:
                 raw_input = data["input_files"].strip("'")
                 input_file_path = "../sv-benchmarks/c/{}/{}".format(subcategoria, raw_input)
                 input_files.append(input_file_path)
-                print("[INFO] Input file encontrado: {}".format(input_file_path))
+                print("[INFO] Input file encontrado com properties/coverage-error-call.prp encontrado: {}".format(input_file_path))
     except Exception as e:
         print("[ERRO] Erro ao processar {}: {}".format(yml_path, e))
     return input_files
