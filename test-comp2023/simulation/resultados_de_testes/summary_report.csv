@@ -1,0 +1,23 @@
+scope type,	scope name,	total programs,	MAP2CHECK FALSE,	MAP2CHECK TRUE,	MAP2CHECK UNKNOWN,	MAP2CHECK cov 0.0,	MAP2CHECK cov pos,	 media_excl>360,	media_incl_360, MAP2CHECK programs >= 360,
+Global,All,239,149,12,78,110,51,46.93160846560847,112.42708786610879,50
+Category,ReachSafety-BitVectors,9,5,0,4,3,2,98.48942857142858,156.60288888888888,2
+Category,ReachSafety-Loops,125,62,10,53,37,35,54.254619047619045,154.53910399999998,41
+Category,ReachSafety-Arrays,100,82,2,16,70,14,36.38462365591398,59.0377,7
+Category,ReachSafety-ControlFlow,5,0,0,5,0,0,47.898,47.898,0
+Subcategory,ReachSafety-Arrays/array-programs,2,2,0,0,0,2,63.285,63.285,0
+Subcategory,ReachSafety-Loops/verifythis,2,0,0,2,0,0,30.583,30.583,0
+Subcategory,ReachSafety-Loops/loops,19,10,2,7,4,8,55.626466666666666,119.70510526315789,4
+Subcategory,ReachSafety-Arrays/array-fpi,69,68,1,0,69,0,29.989826086956526,29.989826086956526,0
+Subcategory,ReachSafety-Arrays/array-examples,18,10,0,8,0,10,71.35276923076923,151.53255555555555,5
+Subcategory,ReachSafety-Loops/loop-acceleration,6,6,0,0,0,6,11.805333333333332,11.805333333333332,0
+Subcategory,ReachSafety-Arrays/array-tiling,2,0,1,1,1,0,19.325,189.6625,1
+Subcategory,ReachSafety-Loops/loop-invgen,1,0,0,1,0,0,306.043,306.043,0
+Subcategory,ReachSafety-Loops/loops-crafted-1,1,0,0,1,0,0,280.131,280.131,0
+Subcategory,ReachSafety-Arrays/reducercommutativity,6,0,0,6,0,0,31.247666666666664,31.247666666666664,0
+Subcategory,ReachSafety-BitVectors/bitvector-regression,1,0,0,1,0,0,281.654,281.654,0
+Subcategory,ReachSafety-BitVectors/bitvector-loops,2,2,0,0,0,2,14.697,14.697,0
+Subcategory,ReachSafety-Loops/loop-invariants,1,1,0,0,0,1,10.098,10.098,0
+Subcategory,ReachSafety-BitVectors/bitvector,6,3,0,3,3,0,94.5945,183.063,2
+Subcategory,ReachSafety-ControlFlow/ntdrivers,5,0,0,5,0,0,47.898,47.898,0
+Subcategory,ReachSafety-Loops/nla-digbench-scaling,95,45,8,42,33,20,51.63312068965517,171.73390526315788,37
+Subcategory,ReachSafety-Arrays/array-industry-pattern,3,2,0,1,0,2,26.752499999999998,137.835,1

@@ -1,0 +1,10 @@
+program_file,status,time,coverage,testcov_result
+bitvector/byte_add-1.i,FALSE,21.936,0.0,DONE
+bitvector/s3_clnt_2.BV.c.cil-2a.c,UNKNOWN,360.000,N/A,N/A
+bitvector/s3_clnt_3.BV.c.cil-2a.c,FALSE,23.340,0.0,DONE
+bitvector/soft_float_1-3a.c.cil.c,FALSE,13.583,0.0,DONE
+bitvector/soft_float_4-3a.c.cil.c,UNKNOWN,319.519,N/A,N/A
+bitvector/sum02-1.c,UNKNOWN,360.000,N/A,N/A
+bitvector-loops/diamond_2-1.c,FALSE,12.679,54.17,DONE
+bitvector-loops/verisec_sendmail_tTflag_arr_one_loop.c,FALSE,16.715,16.67,DONE
+bitvector-regression/recHanoi03-1.c,UNKNOWN,281.654,N/A,N/A
