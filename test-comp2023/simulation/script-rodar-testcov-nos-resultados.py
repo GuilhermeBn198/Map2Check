@@ -196,19 +196,40 @@ def processar_subcategoria(subcategoria_path, destino, categoria, subcategoria_n
             # Run testcov and get results
             testcov_summary, _ = run_testcov(input_file, program_dir)
             
-            # Append testcov results after the existing entry
-            with open(tempos_file, "r+") as f:
-                lines = f.readlines()
-                f.seek(0)
-                
-                for line in lines:
-                    f.write(line)
-                    if line.startswith(input_filename):
-                        # Append testcov results after the original entry
-                        f.write(f"TESTCOV: {testcov_summary}\n\n")
-            
+            # Atualiza o arquivo tempos.txt: insere a linha TESTCOV após a linha que contém o status (UNKNOWN, TRUE, FALSE)
+            if os.path.exists(tempos_file):
+                with open(tempos_file, "r+") as f:
+                    lines = f.readlines()
+                    new_lines = []
+                    skip_next = False
+                    in_target_block = False
+                    for i, line in enumerate(lines):
+                        if skip_next:
+                            skip_next = False
+                            continue
+                        new_lines.append(line)
+                        if line.startswith(input_filename + ":"):
+                            in_target_block = True
+                        if in_target_block and line.strip() in ["UNKNOWN", "TRUE", "FALSE"]:
+                            # Se a linha seguinte já for o resultado do testcov, substitui-a
+                            if i + 1 < len(lines) and lines[i+1].startswith("TESTCOV:"):
+                                new_lines.append(f"TESTCOV: {testcov_summary}\n")
+                                skip_next = True
+                            else:
+                                new_lines.append(f"TESTCOV: {testcov_summary}\n")
+                            in_target_block = False
+                    f.seek(0)
+                    f.truncate()
+                    f.writelines(new_lines)
+            else:
+                # Se o arquivo não existir, pode ser criado com o novo bloco
+                with open(tempos_file, "w") as f:
+                    f.write(f"{input_filename}: \n")
+                    f.write("Command: \n")
+                    f.write("UNKNOWN\n")
+                    f.write(f"TESTCOV: {testcov_summary}\n")
+                    
             print(f"[SUCCESS] Updated {input_filename}")
-
 
 def processar_tarefas(map2check_file, resultados_dir):
     print(f"[INFO] Processing tasks from {map2check_file}")
