@@ -9,7 +9,7 @@
   <rundefinition name="Test-Comp23_coverage-error-call">
     <propertyfile>./sv-benchmarks/c/properties/coverage-error-call.prp</propertyfile>
   </rundefinition>
-<!-- 
+
   <tasks name="ReachSafety-Arrays">
     <includesfile>./sv-benchmarks/c/ReachSafety-Arrays.set</includesfile>
   </tasks>
@@ -51,7 +51,7 @@
   </tasks>
     <tasks name="SoftwareSystems-DeviceDriversLinux64-ReachSafety">
     <includesfile>./sv-benchmarks/c/SoftwareSystems-DeviceDriversLinux64-ReachSafety.set</includesfile>
-  </tasks> -->
+  </tasks>
     <tasks name="ReachSafety-Fuzzle">
     <includesfile>./sv-benchmarks/c/ReachSafety-Fuzzle.set</includesfile>
   </tasks>
