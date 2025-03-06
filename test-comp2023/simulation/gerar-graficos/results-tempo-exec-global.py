@@ -37,7 +37,7 @@ ax.set_xticklabels(left_metrics + right_metrics, rotation=20)
 ax.axvline(x=1.5, color='black', linestyle='--')
 
 # Define limites dos eixos y
-left_limit = sum(left_values)
+left_limit = 1217
 right_limit = 360.000
 
 ax.set_ylim(0, left_limit)
