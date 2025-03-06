@@ -1,0 +1,12 @@
+01_fuzzle_30x30.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/01_fuzzle_30x30.c
+UNKNOWN
+02_fuzzle_40x40.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/02_fuzzle_40x40.c
+UNKNOWN
+03_fuzzle_50x50.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/03_fuzzle_50x50.c
+UNKNOWN
+04_fuzzle_60x60.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/04_fuzzle_60x60.c
+UNKNOWN

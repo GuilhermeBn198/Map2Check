@@ -1,0 +1,205 @@
+aim-100-1-6-sat-1.c: 135.851 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-100-1-6-sat-1.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/2 goals | Result: DONE
+aim-100-1-6-sat-2.c: 132.862 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-100-1-6-sat-2.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/2 goals | Result: DONE
+aim-100-1-6-sat-3.c: 135.846 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-100-1-6-sat-3.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/2 goals | Result: DONE
+aim-100-1-6-sat-4.c: 134.280 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-100-1-6-sat-4.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/2 goals | Result: DONE
+aim-100-2-0-sat-1.c: 164.740 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-100-2-0-sat-1.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/2 goals | Result: DONE
+aim-100-2-0-sat-2.c: 165.240 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-100-2-0-sat-2.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/2 goals | Result: DONE
+aim-100-2-0-sat-3.c: 161.815 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-100-2-0-sat-3.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/2 goals | Result: DONE
+aim-100-2-0-sat-4.c: 165.270 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-100-2-0-sat-4.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/2 goals | Result: DONE
+aim-100-3-4-sat-1.c: 275.778 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-100-3-4-sat-1.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/2 goals | Result: DONE
+aim-100-3-4-sat-2.c: 273.979 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-100-3-4-sat-2.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/2 goals | Result: DONE
+aim-100-3-4-sat-3.c: 268.139 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-100-3-4-sat-3.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/2 goals | Result: DONE
+aim-100-3-4-sat-4.c: 268.044 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-100-3-4-sat-4.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/2 goals | Result: DONE
+aim-100-6-0-sat-1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-100-6-0-sat-1.c
+UNKNOWN
+aim-100-6-0-sat-2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-100-6-0-sat-2.c
+UNKNOWN
+aim-100-6-0-sat-3.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-100-6-0-sat-3.c
+UNKNOWN
+aim-100-6-0-sat-4.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-100-6-0-sat-4.c
+UNKNOWN
+aim-200-1-6-sat-1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-200-1-6-sat-1.c
+UNKNOWN
+aim-200-1-6-sat-2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-200-1-6-sat-2.c
+UNKNOWN
+aim-200-1-6-sat-3.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-200-1-6-sat-3.c
+UNKNOWN
+aim-200-1-6-sat-4.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-200-1-6-sat-4.c
+UNKNOWN
+aim-200-2-0-sat-1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-200-2-0-sat-1.c
+UNKNOWN
+aim-200-2-0-sat-2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-200-2-0-sat-2.c
+UNKNOWN
+aim-200-2-0-sat-3.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-200-2-0-sat-3.c
+UNKNOWN
+aim-200-2-0-sat-4.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-200-2-0-sat-4.c
+UNKNOWN
+aim-200-3-4-sat-1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-200-3-4-sat-1.c
+UNKNOWN
+aim-200-3-4-sat-2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-200-3-4-sat-2.c
+UNKNOWN
+aim-200-3-4-sat-3.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-200-3-4-sat-3.c
+UNKNOWN
+aim-200-3-4-sat-4.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-200-3-4-sat-4.c
+UNKNOWN
+aim-200-6-0-sat-1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-200-6-0-sat-1.c
+UNKNOWN
+aim-200-6-0-sat-2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-200-6-0-sat-2.c
+UNKNOWN
+aim-200-6-0-sat-3.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-200-6-0-sat-3.c
+UNKNOWN
+aim-200-6-0-sat-4.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/aim-200-6-0-sat-4.c
+UNKNOWN
+AllInterval-005.c: 16.664 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-005.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
+AllInterval-006.c: 20.129 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-006.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+AllInterval-007.c: 18.752 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-007.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+AllInterval-008.c: 19.729 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-008.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+AllInterval-009.c: 21.757 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-009.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/18 goals | Result: DONE
+AllInterval-010.c: 23.046 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-010.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/20 goals | Result: DONE
+AllInterval-011.c: 26.321 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-011.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/22 goals | Result: DONE
+AllInterval-012.c: 29.612 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-012.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/24 goals | Result: DONE
+AllInterval-013.c: 33.389 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-013.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/26 goals | Result: DONE
+AllInterval-014.c: 41.561 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-014.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/28 goals | Result: DONE
+AllInterval-015.c: 72.419 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-015.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/30 goals | Result: DONE
+AllInterval-016.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-016.c
+UNKNOWN
+AllInterval-017.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-017.c
+UNKNOWN
+AllInterval-018.c: 38.196 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-018.c
+TRUE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/36 goals | Result: DONE
+AllInterval-019.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-019.c
+UNKNOWN
+AllInterval-020.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-020.c
+UNKNOWN
+AllInterval-025.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-025.c
+UNKNOWN
+AllInterval-030.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-030.c
+UNKNOWN
+AllInterval-035.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/AllInterval-035.c
+UNKNOWN
+CostasArray-10.c: 59.151 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/CostasArray-10.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/2 goals | Result: DONE
+CostasArray-11.c: 85.302 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/CostasArray-11.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/2 goals | Result: DONE
+CostasArray-12.c: 139.825 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/CostasArray-12.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/2 goals | Result: DONE
+CostasArray-13.c: 106.577 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/CostasArray-13.c
+TRUE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/2 goals | Result: DONE
+CostasArray-14.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/CostasArray-14.c
+UNKNOWN
+CostasArray-15.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/CostasArray-15.c
+UNKNOWN
+CostasArray-16.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/CostasArray-16.c
+UNKNOWN
+CostasArray-17.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
+Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/xcsp/CostasArray-17.c
+UNKNOWN

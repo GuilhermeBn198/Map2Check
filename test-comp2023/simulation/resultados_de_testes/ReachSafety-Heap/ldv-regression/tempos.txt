@@ -1,0 +1,36 @@
+fo_test.i: 81.810 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ldv-regression/fo_test.i
+UNKNOWN
+rule57_ebda_blast_2.i: 10.833 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ldv-regression/rule57_ebda_blast_2.i
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/38.89% coverage/18 goals | Result: DONE
+rule60_list2.c_1.i: 26.859 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ldv-regression/rule60_list2.c_1.i
+UNKNOWN
+test21-2.c: 10.679 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ldv-regression/test21-2.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/6 goals | Result: DONE
+test22-3.c: 25.604 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ldv-regression/test22-3.c
+UNKNOWN
+test23-1.c: 8.318 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ldv-regression/test23-1.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
+test24-2.c: 25.703 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ldv-regression/test24-2.c
+UNKNOWN
+test25-1.c: 11.091 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ldv-regression/test25-1.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/10.0% coverage/10 goals | Result: DONE
+test28-1.c: 11.447 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ldv-regression/test28-1.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/50.0% coverage/6 goals | Result: DONE
+test29-1.c: 14.779 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ldv-regression/test29-1.c
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/6 goals | Result: DONE

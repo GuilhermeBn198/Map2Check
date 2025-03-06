@@ -4,7 +4,7 @@ loop-acceleration/array_3-2.i,FALSE,12.736,14.29,DONE
 loop-acceleration/diamond_1-2.c,FALSE,10.322,66.67,DONE
 loop-acceleration/multivar_1-2.c,FALSE,12.654,50.0,DONE
 loop-acceleration/simple_2-2.c,FALSE,12.316,75.0,DONE
-loop-acceleration/simple_3-1.c,FALSE,12.391,75.0,DONE
+loop-acceleration/simple_3-1.c,,12.391,75.0,DONE
 loop-invariants/linear-inequality-inv-b.c,FALSE,10.098,28.57,DONE
 loop-invgen/id_trans.i,UNKNOWN,306.043,N/A,N/A
 loops/array-2.c,FALSE,10.362,16.67,DONE

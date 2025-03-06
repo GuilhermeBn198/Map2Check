@@ -1,0 +1,13 @@
+dll_nullified-1.i: 28.575 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/list-ext3-properties/dll_nullified-1.i
+FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/11.76% coverage/17 goals | Result: DONE
+sll_length_check-1.i: 33.674 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/list-ext3-properties/sll_length_check-1.i
+UNKNOWN
+sll_nondet_insert-1.i: 36.590 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/list-ext3-properties/sll_nondet_insert-1.i
+UNKNOWN
+sll_of_sll_nondet_append-2.i: 36.708 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/list-ext3-properties/sll_of_sll_nondet_append-2.i
+UNKNOWN

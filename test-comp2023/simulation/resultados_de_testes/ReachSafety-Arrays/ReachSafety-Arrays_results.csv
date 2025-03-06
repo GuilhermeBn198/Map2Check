@@ -90,7 +90,7 @@ array-industry-pattern/array_ptr_single_elem_init-2.i,FALSE,20.227,20.0,DONE
 array-industry-pattern/array_single_elem_init.i,UNKNOWN,360.000,N/A,N/A
 array-industry-pattern/check_removal_from_set_after_insertion.c,FALSE,33.278,4.17,DONE
 array-programs/copysome1-2.i,FALSE,49.184,7.69,DONE
-array-programs/copysome2-2.i,FALSE,77.386,6.67,DONE
+array-programs/copysome2-2.i,,77.386,6.67,DONE
 array-tiling/mlceu.c,TRUE,19.325,0.0,DONE
 array-tiling/skippedu.c,UNKNOWN,360.000,N/A,N/A
 reducercommutativity/rangesum.i,UNKNOWN,31.579,N/A,N/A

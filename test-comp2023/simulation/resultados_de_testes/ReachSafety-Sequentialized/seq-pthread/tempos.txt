@@ -1,0 +1,18 @@
+cs_fib-2.i: 34.703 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/seq-pthread/cs_fib-2.i
+UNKNOWN
+cs_fib_longer-2.i: 31.962 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/seq-pthread/cs_fib_longer-2.i
+UNKNOWN
+cs_queue-2.i: 37.108 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/seq-pthread/cs_queue-2.i
+UNKNOWN
+cs_read_write_lock-2.i: 35.372 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/seq-pthread/cs_read_write_lock-2.i
+UNKNOWN
+cs_stack-2.i: 37.031 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/seq-pthread/cs_stack-2.i
+UNKNOWN
+cs_stateful-1.i: 33.003 segundos, Resultado: Verifying with MAP2CHECK 
+Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/seq-pthread/cs_stateful-1.i
+UNKNOWN

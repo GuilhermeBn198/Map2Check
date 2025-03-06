@@ -11,3 +11,4 @@ check_removal_from_set_after_insertion.c: 33.278 segundos, Resultado: Verifying 
 TESTCOV: TESTCOV: 1 runs/1 suite/4.17% coverage/24 goals | Result: DONE
 Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-industry-pattern/check_removal_from_set_after_insertion.c
 FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/4.17% coverage/24 goals | Result: DONE
