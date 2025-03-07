@@ -30,13 +30,13 @@ dados = [
         "COV>0.0": 35
     },
     {
-        "scope_name": "ReachSafety-XCSP",
-        "total_program_files": 59,
-        "FALSE": 26,
-        "TRUE": 2,
-        "UNKNOWN": 31,
-        "COV=0.0": 28,
-        "COV>0.0": 0
+        "scope_name": "ReachSafety-Heap",
+        "total_program_files": 53,
+        "FALSE": 12,
+        "TRUE": 0,
+        "UNKNOWN": 41,
+        "COV=0.0": 3,
+        "COV>0.0": 9
     },
 ]
 
