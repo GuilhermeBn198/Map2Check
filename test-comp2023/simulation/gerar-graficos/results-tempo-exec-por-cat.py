@@ -51,7 +51,7 @@ for i, cat in enumerate(categories):
     
     # Configura os rótulos do eixo x (compartilhado)
     ax.set_xticks(left_x + right_x)
-    ax.set_xticklabels(left_metrics + right_metrics, rotation=15)
+    ax.set_xticklabels(left_metrics + right_metrics, rotation=15, fontsize=12)
     
     # Adiciona linha vertical separadora entre os grupos
     ax.axvline(x=1.5, color='black', linestyle='--')
@@ -66,20 +66,20 @@ for i, cat in enumerate(categories):
     # Anota os valores sobre as barras (eixo esquerdo: contagens)
     for bar, metric in zip(bars_left, left_metrics):
         height = bar.get_height()
-        ax.text(bar.get_x() + bar.get_width()/2, height, f'{int(height)}', ha='center', va='bottom')
+        ax.text(bar.get_x() + bar.get_width()/2, height, f'{int(height)}', ha='center', va='bottom', fontsize=15)
     
     # Anota os valores sobre as barras (eixo direito: tempos, com três casas decimais)
     for bar, metric in zip(bars_right, right_metrics):
         height = bar.get_height()
-        ax2.text(bar.get_x() + bar.get_width()/2, height, f'{height:.3f}', ha='center', va='bottom')
+        ax2.text(bar.get_x() + bar.get_width()/2, height, f'{height:.3f}', ha='center', va='bottom', fontsize=15)
     
     # Adiciona "contadores" para os limites dos eixos
-    ax.text(0.02, 0.95, f'Total de programas: {left_limit:.0f}', transform=ax.transAxes, verticalalignment='top', color='red')
-    ax2.text(0.98, 0.95, f'Tempo de exec: {right_limit:.3f}', transform=ax2.transAxes, verticalalignment='top', horizontalalignment='right', color='red')
+    ax.text(0.02, 0.95, f'Total de programas: {left_limit:.0f}', transform=ax.transAxes, verticalalignment='top', color='red', fontsize=13)
+    ax2.text(0.98, 0.95, f'Tempo de exec: {right_limit:.3f}', transform=ax2.transAxes, verticalalignment='top', horizontalalignment='right', color='red', fontsize=13)
     
     ax.set_title(f"{cat}")
-    ax.set_ylabel("Programas executados")
-    ax2.set_ylabel("Tempos de execução")
+    ax.set_ylabel("Programas executados", fontsize=14)
+    ax2.set_ylabel("Tempos de execução", fontsize=14)
 
 # Remove subplots vazios, se houver
 for j in range(i+1, len(axes)):
