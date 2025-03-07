@@ -5,15 +5,18 @@ import math
 # Carrega os dados do arquivo CSV
 df = pd.read_csv('results.csv')
 
-# Filtra os dados para as linhas cujo scope_type seja "Category"
-df_category = df[df['scope_type'] == 'Category']
+# Lista com os scope_name desejados
+selected_categories = ["ReachSafety-Arrays", "ReachSafety-BitVectors", "ReachSafety-Loops", "ReachSafety-XCSP"]
+
+# Filtra os dados para as linhas cujo scope_type seja "Category" e scope_name seja um dos desejados
+df_category = df[(df['scope_type'] == 'Category') & (df['scope_name'].isin(selected_categories))]
 
 # Obtém as categorias únicas a partir da coluna 'scope_name'
 categories = df_category['scope_name'].unique()
 num_categories = len(categories)
 
 # Define as métricas:
-# Grupo esquerdo (eixo y esquerdo): contagens (UNKNOWN, total_programs>=360)
+# Grupo esquerdo (eixo y esquerdo): contagens (UNKNOWN, programas>=360)
 # Grupo direito (eixo y direito): tempos (media_excl_360, media_incl_360)
 left_metrics = ['UNKNOWN', 'programas>=360']
 right_metrics = ['media_excl_360', 'media_incl_360']
@@ -54,8 +57,8 @@ for i, cat in enumerate(categories):
     ax.axvline(x=1.5, color='black', linestyle='--')
     
     # Define limites dos eixos y
-    left_limit = sum(left_values)  # soma entre UNKNOWN e total_programs>=360
-    right_limit = max(right_values) + 40  # maior média + 40
+    left_limit = sum(left_values)  # soma entre UNKNOWN e programas>=360
+    right_limit = 360
     
     ax.set_ylim(0, left_limit)
     ax2.set_ylim(0, right_limit)

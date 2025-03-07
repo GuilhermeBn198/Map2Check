@@ -4,40 +4,40 @@ import matplotlib.pyplot as plt
 dados = [
     {
         "scope_name": "ReachSafety-Arrays",
-        "total_program_files": 531,
-        "FALSE": 95,
-        "TRUE": 232,
-        "UNKNOWN": 204,
-        "COV=0.0": 241,
-        "COV>0.0": 86
+        "total_program_files": 100,
+        "FALSE": 81,
+        "TRUE": 2,
+        "UNKNOWN": 16,
+        "COV=0.0": 70,
+        "COV>0.0": 14
     },
     {
         "scope_name": "ReachSafety-BitVectors",
-        "total_program_files": 83,
-        "FALSE": 16,
-        "TRUE": 20,
-        "UNKNOWN": 47,
-        "COV=0.0": 23,
-        "COV>0.0": 13
-    },
-    {
-        "scope_name": "ReachSafety-ControlFlow",
-        "total_program_files": 156,
-        "FALSE": 28,
-        "TRUE": 29,
-        "UNKNOWN": 99,
-        "COV=0.0": 21,
-        "COV>0.0": 36
+        "total_program_files": 9,
+        "FALSE": 5,
+        "TRUE": 0,
+        "UNKNOWN": 4,
+        "COV=0.0": 3,
+        "COV>0.0": 2
     },
     {
         "scope_name": "ReachSafety-Loops",
-        "total_program_files": 881,
-        "FALSE": 149,
-        "TRUE": 421,
-        "UNKNOWN": 311,
-        "COV=0.0": 439,
-        "COV>0.0": 130
-    }
+        "total_program_files": 125,
+        "FALSE": 61,
+        "TRUE": 10,
+        "UNKNOWN": 53,
+        "COV=0.0": 37,
+        "COV>0.0": 35
+    },
+    {
+        "scope_name": "ReachSafety-XCSP",
+        "total_program_files": 59,
+        "FALSE": 26,
+        "TRUE": 2,
+        "UNKNOWN": 31,
+        "COV=0.0": 28,
+        "COV>0.0": 0
+    },
 ]
 
 # Torres e definição de cores

@@ -2,13 +2,13 @@ import matplotlib.pyplot as plt
 
 # Dados das torres
 categorias = ['FALSE', 'TRUE', 'UNKNOWN', 'COV=0.0', 'COV>0.0']
-valores = [288,	 702,	661,	724,	265]
+valores = [210,	 18,	986,	165,	65]
 
 # Definir cores para as torres
 cores = ['blue', 'blue', 'orange', 'grey', 'grey']
 
 # Altura máxima do gráfico (valor de total_program_files)
-altura_max = 1651
+altura_max = 1216
 
 # Criar o gráfico de barras
 plt.figure(figsize=(10, 6))
@@ -16,7 +16,6 @@ barras = plt.bar(categorias, valores, color=cores)
 
 # Definir título e rótulos dos eixos com fontes ajustadas
 plt.title('Programas executados', fontsize=18)
-plt.xlabel('Resultados', fontsize=16)
 plt.ylabel('Total de programas', fontsize=16)
 
 # Ajustar tamanho dos rótulos do eixo x (com rotação de 10 graus) e eixo y
