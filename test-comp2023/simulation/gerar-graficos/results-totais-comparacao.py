@@ -8,7 +8,7 @@ valores = [ 210, 195, 713, 926]
 cores = ['blue', 'green', 'yellow', 'orange']
 
 # Altura máxima do gráfico (valor de total_program_files)
-altura_max = 1216
+altura_max = 1217
 
 # Criar o gráfico de barras para as torres principais
 plt.figure(figsize=(10, 6))
