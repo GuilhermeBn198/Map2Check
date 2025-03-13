@@ -57,7 +57,7 @@ def host_to_container_path(host_path):
 
 def run_testcov(input_file_host, program_dir_host):
     try:
-        # Convert host paths to container paths
+        # Converte os caminhos do host para os caminhos do container
         test_suite_container = host_to_container_path(
             os.path.join(program_dir_host, "test-suite.zip")
         )
@@ -163,13 +163,23 @@ def processar_subcategoria(subcategoria_path, destino, categoria, subcategoria_n
     tempos_file = os.path.join(destino, "tempos.txt")
     processed_files = set()
     
-    # Read existing entries to track processed files
+    # Lê os arquivos já processados (aqueles que já possuem linha TESTCOV:)
     if os.path.exists(tempos_file):
         with open(tempos_file, "r") as f:
-            for line in f:
-                if "TESTCOV:" in line:
+            lines = f.readlines()
+            # Considera que cada programa ocupa uma ou duas linhas:
+            # A primeira é o resultado do Map2check e, se testcov já foi executado, a segunda começa com "TESTCOV:"
+            i = 0
+            while i < len(lines):
+                line = lines[i]
+                if line.strip() and ":" in line:
                     filename = line.split(":")[0].strip()
                     processed_files.add(filename)
+                    # Se a próxima linha já for de testcov, pula ela também.
+                    if i + 1 < len(lines) and lines[i+1].startswith("TESTCOV:"):
+                        i += 1
+                i += 1
+        print(f"[INFO] Found {len(processed_files)} processed files in tempos.txt")
 
     for yml_file in glob.glob(subcategoria_full_path):
         input_files = extrair_input_files(yml_file, subcategoria_nome)
@@ -179,57 +189,52 @@ def processar_subcategoria(subcategoria_path, destino, categoria, subcategoria_n
             program_dir = os.path.join(destino, program_name)
             test_suite_path = os.path.join(program_dir, "test-suite.zip")
             
-            # Skip if no test-suite.zip exists
+            # Pula se não existir test-suite.zip
             if not os.path.exists(test_suite_path):
                 print(f"[SKIP] No test-suite.zip for {input_filename}")
                 continue
                 
-            # Skip if already processed
-            if input_filename in processed_files:
-                print(f"[SKIP] Already processed: {input_filename}")
+            # Pula se já foi processado (já existe resultado do Map2check)
+            if input_filename not in processed_files:
+                print(f"[SKIP] Skipping {input_filename} because Map2check result not found in tempos.txt")
                 continue
 
             print(f"\n[PROCESSING] {input_filename}")
             print(f"  Test suite path: {test_suite_path}")
             print(f"  Program dir: {program_dir}")
             
-            # Run testcov and get results
+            # Executa o testcov e obtém o resumo dos resultados
             testcov_summary, _ = run_testcov(input_file, program_dir)
             
-            # Atualiza o arquivo tempos.txt: insere a linha TESTCOV após a linha que contém o status (UNKNOWN, TRUE, FALSE)
+            # Atualiza o arquivo tempos.txt:
+            # Procura a linha que começa com o nome do arquivo (resultado do Map2check) e insere
+            # ou substitui a linha TESTCOV logo em seguida.
             if os.path.exists(tempos_file):
                 with open(tempos_file, "r+") as f:
                     lines = f.readlines()
                     new_lines = []
-                    skip_next = False
-                    in_target_block = False
-                    for i, line in enumerate(lines):
-                        if skip_next:
-                            skip_next = False
-                            continue
+                    i = 0
+                    while i < len(lines):
+                        line = lines[i]
                         new_lines.append(line)
                         if line.startswith(input_filename + ":"):
-                            in_target_block = True
-                        if in_target_block and line.strip() in ["UNKNOWN", "TRUE", "FALSE"]:
-                            # Se a linha seguinte já for o resultado do testcov, substitui-a
+                            # Verifica se a próxima linha já é do testcov
                             if i + 1 < len(lines) and lines[i+1].startswith("TESTCOV:"):
                                 new_lines.append(f"TESTCOV: {testcov_summary}\n")
-                                skip_next = True
+                                i += 1  # pula a linha antiga
                             else:
                                 new_lines.append(f"TESTCOV: {testcov_summary}\n")
-                            in_target_block = False
+                        i += 1
                     f.seek(0)
                     f.truncate()
                     f.writelines(new_lines)
             else:
-                # Se o arquivo não existir, pode ser criado com o novo bloco
+                # Se tempos.txt não existir, cria-o (embora o Map2check já deva tê-lo criado)
                 with open(tempos_file, "w") as f:
                     f.write(f"{input_filename}: \n")
-                    f.write("Command: \n")
-                    f.write("UNKNOWN\n")
                     f.write(f"TESTCOV: {testcov_summary}\n")
                     
-            print(f"[SUCCESS] Updated {input_filename}")
+            print(f"[SUCCESS] Updated {input_filename} with TESTCOV results")
 
 def processar_tarefas(map2check_file, resultados_dir):
     print(f"[INFO] Processing tasks from {map2check_file}")

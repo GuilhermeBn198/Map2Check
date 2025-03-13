@@ -1,15 +1,5 @@
-alternating_list-2.i: 282.614 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/list-properties/alternating_list-2.i
-UNKNOWN
-list-2.i: 283.315 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/list-properties/list-2.i
-UNKNOWN
-list_flag-1.i: 284.026 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/list-properties/list_flag-1.i
-UNKNOWN
-simple-1.i: 284.482 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/list-properties/simple-1.i
-UNKNOWN
-splice-1.i: 283.563 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/list-properties/splice-1.i
-UNKNOWN
+alternating_list-2.i: 360.000 segundos, Resultado: UNKNOWN
+list-2.i: 360.000 segundos, Resultado: UNKNOWN
+list_flag-1.i: 360.000 segundos, Resultado: UNKNOWN
+simple-1.i: 360.000 segundos, Resultado: UNKNOWN
+splice-1.i: 360.000 segundos, Resultado: UNKNOWN

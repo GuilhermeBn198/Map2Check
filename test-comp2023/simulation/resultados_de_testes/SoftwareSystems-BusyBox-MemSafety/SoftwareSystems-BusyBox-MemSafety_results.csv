@@ -1,5 +1,5 @@
 program_file,status,time,coverage,testcov_result
-busybox-1.22.0/ls-incomplete-2.i,UNKNOWN,55.905,N/A,N/A
-busybox-1.22.0/od-4.i,UNKNOWN,67.244,N/A,N/A
-busybox-1.22.0/printf-3.i,UNKNOWN,49.583,N/A,N/A
-busybox-1.22.0/test-1.i,UNKNOWN,41.248,N/A,N/A
+busybox-1.22.0/ls-incomplete-2.i,UNKNOWN,49.010,N/A,N/A
+busybox-1.22.0/od-4.i,UNKNOWN,59.067,N/A,N/A
+busybox-1.22.0/printf-3.i,UNKNOWN,42.485,N/A,N/A
+busybox-1.22.0/test-1.i,UNKNOWN,40.644,N/A,N/A

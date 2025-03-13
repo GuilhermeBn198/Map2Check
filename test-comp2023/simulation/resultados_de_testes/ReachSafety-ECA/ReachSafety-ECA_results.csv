@@ -2,7 +2,7 @@ program_file,status,time,coverage,testcov_result
 eca-programs/Problem101_label00.c,UNKNOWN,360.000,N/A,N/A
 eca-programs/Problem103_label32.c,UNKNOWN,360.000,N/A,N/A
 eca-rers2012/Problem05_label00.c,UNKNOWN,360.000,N/A,N/A
-eca-rers2012/Problem06_label00.c,UNKNOWN,298.172,N/A,N/A
+eca-rers2012/Problem06_label00.c,UNKNOWN,360.000,N/A,N/A
 eca-rers2012/Problem11_label00.c,UNKNOWN,360.000,N/A,N/A
 eca-rers2012/Problem12_label00.c,UNKNOWN,360.000,N/A,N/A
 eca-rers2012/Problem15_label00.c,UNKNOWN,360.000,N/A,N/A
@@ -10,7 +10,7 @@ eca-rers2012/Problem16_label00.c,UNKNOWN,360.000,N/A,N/A
 eca-rers2012/Problem18_label00.c,UNKNOWN,360.000,N/A,N/A
 eca-rers2018/Problem10.c,UNKNOWN,360.000,N/A,N/A
 eca-rers2018/Problem11.c,UNKNOWN,360.000,N/A,N/A
-eca-rers2018/Problem12.c,UNKNOWN,169.439,N/A,N/A
+eca-rers2018/Problem12.c,UNKNOWN,360.000,N/A,N/A
 eca-rers2018/Problem13.c,UNKNOWN,360.000,N/A,N/A
 eca-rers2018/Problem14.c,UNKNOWN,360.000,N/A,N/A
 eca-rers2018/Problem15.c,UNKNOWN,360.000,N/A,N/A

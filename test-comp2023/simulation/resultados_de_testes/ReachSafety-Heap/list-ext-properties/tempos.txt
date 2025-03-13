@@ -1,8 +1,4 @@
-list-ext.i: 10.429 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/list-ext-properties/list-ext.i
-FALSE
+list-ext.i: 14.043 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/15.79% coverage/19 goals | Result: DONE
-simple-ext.i: 13.014 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/list-ext-properties/simple-ext.i
-FALSE
+simple-ext.i: 13.362 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/23.08% coverage/13 goals | Result: DONE

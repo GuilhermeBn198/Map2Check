@@ -1,6 +1,2 @@
-double_req_bl_0870a.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/float-newlib/double_req_bl_0870a.c
-UNKNOWN
-float_req_bl_0870a.c: 29.759 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/float-newlib/float_req_bl_0870a.c
-UNKNOWN
+double_req_bl_0870a.c: 50.278 segundos, Resultado: UNKNOWN
+float_req_bl_0870a.c: 62.009 segundos, Resultado: UNKNOWN

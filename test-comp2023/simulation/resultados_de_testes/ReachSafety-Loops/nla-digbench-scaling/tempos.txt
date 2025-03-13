@@ -1,433 +1,149 @@
-bresenham-ll_unwindbound1.c: 18.603 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound1.c
-FALSE
+bresenham-ll_unwindbound1.c: 18.671 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
-
-bresenham-ll_unwindbound10.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound10.c
-UNKNOWN
-
-bresenham-ll_unwindbound100.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound100.c
-UNKNOWN
-
-bresenham-ll_unwindbound2.c: 19.208 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound2.c
-FALSE
+bresenham-ll_unwindbound10.c: 360.000 segundos, Resultado: UNKNOWN
+bresenham-ll_unwindbound100.c: 360.000 segundos, Resultado: UNKNOWN
+bresenham-ll_unwindbound2.c: 19.355 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
-
-bresenham-ll_unwindbound20.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound20.c
-UNKNOWN
-
-bresenham-ll_unwindbound5.c: 196.635 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound5.c
-FALSE
+bresenham-ll_unwindbound20.c: 360.000 segundos, Resultado: UNKNOWN
+bresenham-ll_unwindbound5.c: 179.747 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
-
-bresenham-ll_unwindbound50.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/bresenham-ll_unwindbound50.c
-UNKNOWN
-
-egcd-ll_unwindbound1.c: 16.971 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd-ll_unwindbound1.c
-FALSE
+bresenham-ll_unwindbound50.c: 360.000 segundos, Resultado: UNKNOWN
+egcd-ll_unwindbound1.c: 16.717 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
-
-egcd-ll_unwindbound10.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd-ll_unwindbound10.c
-UNKNOWN
-
-egcd-ll_unwindbound100.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd-ll_unwindbound100.c
-UNKNOWN
-
-egcd-ll_unwindbound2.c: 17.871 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd-ll_unwindbound2.c
-FALSE
+egcd-ll_unwindbound10.c: 306.000 segundos, Resultado: UNKNOWN
+egcd-ll_unwindbound100.c: 360.000 segundos, Resultado: UNKNOWN
+egcd-ll_unwindbound2.c: 12.318 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
-
-egcd-ll_unwindbound20.c: 323.862 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd-ll_unwindbound20.c
-UNKNOWN
-
-egcd-ll_unwindbound5.c: 125.859 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd-ll_unwindbound5.c
-FALSE
+egcd-ll_unwindbound20.c: 360.000 segundos, Resultado: UNKNOWN
+egcd-ll_unwindbound5.c: 10.388 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
-
-egcd-ll_unwindbound50.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd-ll_unwindbound50.c
-UNKNOWN
-
-egcd2-ll_unwindbound1.c: 18.139 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd2-ll_unwindbound1.c
-FALSE
+egcd-ll_unwindbound50.c: 360.000 segundos, Resultado: UNKNOWN
+egcd2-ll_unwindbound1.c: 20.182 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-egcd2-ll_unwindbound10.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd2-ll_unwindbound10.c
-UNKNOWN
-
-egcd2-ll_unwindbound100.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd2-ll_unwindbound100.c
-UNKNOWN
-
-egcd2-ll_unwindbound2.c: 20.934 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd2-ll_unwindbound2.c
-FALSE
+egcd2-ll_unwindbound10.c: 360.000 segundos, Resultado: UNKNOWN
+egcd2-ll_unwindbound100.c: 360.000 segundos, Resultado: UNKNOWN
+egcd2-ll_unwindbound2.c: 18.452 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-egcd2-ll_unwindbound20.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd2-ll_unwindbound20.c
-UNKNOWN
-
-egcd2-ll_unwindbound5.c: 19.261 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd2-ll_unwindbound5.c
-FALSE
+egcd2-ll_unwindbound20.c: 360.000 segundos, Resultado: UNKNOWN
+egcd2-ll_unwindbound5.c: 19.177 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-egcd2-ll_unwindbound50.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd2-ll_unwindbound50.c
-UNKNOWN
-
-egcd3-ll_unwindbound1.c: 20.272 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd3-ll_unwindbound1.c
-FALSE
+egcd2-ll_unwindbound50.c: 360.000 segundos, Resultado: UNKNOWN
+egcd3-ll_unwindbound1.c: 19.553 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-egcd3-ll_unwindbound10.c: 29.833 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd3-ll_unwindbound10.c
-FALSE
+egcd3-ll_unwindbound10.c: 15.075 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-egcd3-ll_unwindbound100.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd3-ll_unwindbound100.c
-UNKNOWN
-
-egcd3-ll_unwindbound2.c: 21.221 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd3-ll_unwindbound2.c
-FALSE
+egcd3-ll_unwindbound100.c: 12.150 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-egcd3-ll_unwindbound20.c: 322.967 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd3-ll_unwindbound20.c
-UNKNOWN
-
-egcd3-ll_unwindbound5.c: 20.311 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd3-ll_unwindbound5.c
-FALSE
+egcd3-ll_unwindbound2.c: 23.045 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-egcd3-ll_unwindbound50.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/egcd3-ll_unwindbound50.c
-UNKNOWN
-
-fermat1-ll_unwindbound1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/fermat1-ll_unwindbound1.c
-UNKNOWN
-
-fermat1-ll_unwindbound10.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/fermat1-ll_unwindbound10.c
-UNKNOWN
-
-fermat1-ll_unwindbound100.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/fermat1-ll_unwindbound100.c
-UNKNOWN
-
-fermat1-ll_unwindbound2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/fermat1-ll_unwindbound2.c
-UNKNOWN
-
-fermat1-ll_unwindbound20.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/fermat1-ll_unwindbound20.c
-UNKNOWN
-
-fermat1-ll_unwindbound5.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/fermat1-ll_unwindbound5.c
-UNKNOWN
-
-fermat1-ll_unwindbound50.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/fermat1-ll_unwindbound50.c
-UNKNOWN
-
-fermat2-ll_unwindbound1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/fermat2-ll_unwindbound1.c
-UNKNOWN
-
-fermat2-ll_unwindbound10.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/fermat2-ll_unwindbound10.c
-UNKNOWN
-
-fermat2-ll_unwindbound100.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/fermat2-ll_unwindbound100.c
-UNKNOWN
-
-fermat2-ll_unwindbound2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/fermat2-ll_unwindbound2.c
-UNKNOWN
-
-fermat2-ll_unwindbound20.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/fermat2-ll_unwindbound20.c
-UNKNOWN
-
-fermat2-ll_unwindbound5.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/fermat2-ll_unwindbound5.c
-UNKNOWN
-
-fermat2-ll_unwindbound50.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/fermat2-ll_unwindbound50.c
-UNKNOWN
-
-freire2_valuebound1.c: 25.189 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound1.c
-TRUE
+egcd3-ll_unwindbound20.c: 291.260 segundos, Resultado: UNKNOWN
+egcd3-ll_unwindbound5.c: 19.790 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+egcd3-ll_unwindbound50.c: 283.731 segundos, Resultado: UNKNOWN
+fermat1-ll_unwindbound1.c: 360.000 segundos, Resultado: UNKNOWN
+fermat1-ll_unwindbound10.c: 360.000 segundos, Resultado: UNKNOWN
+fermat1-ll_unwindbound100.c: 360.000 segundos, Resultado: UNKNOWN
+fermat1-ll_unwindbound2.c: 360.000 segundos, Resultado: UNKNOWN
+fermat1-ll_unwindbound20.c: 360.000 segundos, Resultado: UNKNOWN
+fermat1-ll_unwindbound5.c: 360.000 segundos, Resultado: UNKNOWN
+fermat1-ll_unwindbound50.c: 360.000 segundos, Resultado: UNKNOWN
+fermat2-ll_unwindbound1.c: 360.000 segundos, Resultado: UNKNOWN
+fermat2-ll_unwindbound10.c: 360.000 segundos, Resultado: UNKNOWN
+fermat2-ll_unwindbound100.c: 360.000 segundos, Resultado: UNKNOWN
+fermat2-ll_unwindbound2.c: 360.000 segundos, Resultado: UNKNOWN
+fermat2-ll_unwindbound20.c: 360.000 segundos, Resultado: UNKNOWN
+fermat2-ll_unwindbound5.c: 360.000 segundos, Resultado: UNKNOWN
+fermat2-ll_unwindbound50.c: 360.000 segundos, Resultado: UNKNOWN
+freire2_valuebound1.c: 24.481 segundos, Resultado: TRUE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
-
-freire2_valuebound10.c: 25.220 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound10.c
-TRUE
+freire2_valuebound10.c: 24.411 segundos, Resultado: TRUE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
-
-freire2_valuebound100.c: 31.511 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound100.c
-TRUE
+freire2_valuebound100.c: 26.934 segundos, Resultado: TRUE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
-
-freire2_valuebound2.c: 26.134 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound2.c
-TRUE
+freire2_valuebound2.c: 23.143 segundos, Resultado: TRUE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
-
-freire2_valuebound20.c: 26.965 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound20.c
-TRUE
+freire2_valuebound20.c: 23.331 segundos, Resultado: TRUE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
-
-freire2_valuebound5.c: 25.688 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound5.c
-TRUE
+freire2_valuebound5.c: 24.031 segundos, Resultado: TRUE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
-
-freire2_valuebound50.c: 25.100 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/freire2_valuebound50.c
-TRUE
+freire2_valuebound50.c: 26.611 segundos, Resultado: TRUE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
-
-hard2_unwindbound1.c: 24.787 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/hard2_unwindbound1.c
-FALSE
+hard2_unwindbound1.c: 27.130 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-hard2_unwindbound10.c: 27.224 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/hard2_unwindbound10.c
-FALSE
+hard2_unwindbound10.c: 25.223 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-hard2_unwindbound100.c: 283.197 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/hard2_unwindbound100.c
-UNKNOWN
-
-hard2_unwindbound2.c: 25.505 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/hard2_unwindbound2.c
-FALSE
+hard2_unwindbound100.c: 285.450 segundos, Resultado: UNKNOWN
+hard2_unwindbound2.c: 24.068 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-hard2_unwindbound5.c: 25.219 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/hard2_unwindbound5.c
-FALSE
+hard2_unwindbound5.c: 24.402 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-hard2_unwindbound50.c: 279.984 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/hard2_unwindbound50.c
-UNKNOWN
-
-mannadiv_unwindbound1.c: 25.383 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound1.c
-FALSE
+hard2_unwindbound50.c: 283.811 segundos, Resultado: UNKNOWN
+mannadiv_unwindbound1.c: 23.970 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
-
-mannadiv_unwindbound10.c: 28.688 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound10.c
-FALSE
+mannadiv_unwindbound10.c: 26.072 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
-
-mannadiv_unwindbound100.c: 285.177 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound100.c
-UNKNOWN
-
-mannadiv_unwindbound2.c: 24.709 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound2.c
-FALSE
+mannadiv_unwindbound100.c: 284.286 segundos, Resultado: UNKNOWN
+mannadiv_unwindbound2.c: 24.441 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
-
-mannadiv_unwindbound20.c: 30.762 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound20.c
-FALSE
+mannadiv_unwindbound20.c: 29.284 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
-
-mannadiv_unwindbound5.c: 27.057 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound5.c
-FALSE
+mannadiv_unwindbound5.c: 24.150 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
-
-mannadiv_unwindbound50.c: 60.995 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/mannadiv_unwindbound50.c
-TRUE
+mannadiv_unwindbound50.c: 55.098 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
-
-prod4br-ll_unwindbound1.c: 30.059 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound1.c
-FALSE
+prod4br-ll_unwindbound1.c: 25.791 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-prod4br-ll_unwindbound10.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound10.c
-UNKNOWN
-
-prod4br-ll_unwindbound100.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound100.c
-UNKNOWN
-
-prod4br-ll_unwindbound2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound2.c
-UNKNOWN
-
-prod4br-ll_unwindbound20.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound20.c
-UNKNOWN
-
-prod4br-ll_unwindbound5.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound5.c
-UNKNOWN
-
-prod4br-ll_unwindbound50.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/prod4br-ll_unwindbound50.c
-UNKNOWN
-
-prodbin-ll_unwindbound1.c: 34.922 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/prodbin-ll_unwindbound1.c
-FALSE
+prod4br-ll_unwindbound10.c: 360.000 segundos, Resultado: UNKNOWN
+prod4br-ll_unwindbound100.c: 360.000 segundos, Resultado: UNKNOWN
+prod4br-ll_unwindbound2.c: 360.000 segundos, Resultado: UNKNOWN
+prod4br-ll_unwindbound20.c: 360.000 segundos, Resultado: UNKNOWN
+prod4br-ll_unwindbound5.c: 360.000 segundos, Resultado: UNKNOWN
+prod4br-ll_unwindbound50.c: 360.000 segundos, Resultado: UNKNOWN
+prodbin-ll_unwindbound1.c: 27.890 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
-
-prodbin-ll_unwindbound10.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/prodbin-ll_unwindbound10.c
-UNKNOWN
-
-prodbin-ll_unwindbound2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/prodbin-ll_unwindbound2.c
-UNKNOWN
-
-prodbin-ll_unwindbound20.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/prodbin-ll_unwindbound20.c
-UNKNOWN
-
-prodbin-ll_unwindbound5.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/prodbin-ll_unwindbound5.c
-UNKNOWN
-
-ps4-ll_unwindbound1.c: 15.739 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound1.c
-FALSE
+prodbin-ll_unwindbound10.c: 360.000 segundos, Resultado: UNKNOWN
+prodbin-ll_unwindbound2.c: 360.000 segundos, Resultado: UNKNOWN
+prodbin-ll_unwindbound20.c: 360.000 segundos, Resultado: UNKNOWN
+prodbin-ll_unwindbound5.c: 360.000 segundos, Resultado: UNKNOWN
+ps4-ll_unwindbound1.c: 16.227 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/62.5% coverage/8 goals | Result: DONE
-
-ps4-ll_unwindbound10.c: 14.090 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound10.c
-FALSE
+ps4-ll_unwindbound10.c: 15.651 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/62.5% coverage/8 goals | Result: DONE
-
-ps4-ll_unwindbound100.c: 16.207 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound100.c
-FALSE
+ps4-ll_unwindbound100.c: 112.244 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/50.0% coverage/8 goals | Result: DONE
+ps4-ll_unwindbound2.c: 19.220 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/62.5% coverage/8 goals | Result: DONE
-
-ps4-ll_unwindbound2.c: 13.835 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound2.c
-FALSE
+ps4-ll_unwindbound20.c: 16.147 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/62.5% coverage/8 goals | Result: DONE
-
-ps4-ll_unwindbound20.c: 15.674 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound20.c
-FALSE
+ps4-ll_unwindbound5.c: 16.124 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/62.5% coverage/8 goals | Result: DONE
-
-ps4-ll_unwindbound5.c: 12.267 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound5.c
-FALSE
+ps4-ll_unwindbound50.c: 19.023 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/62.5% coverage/8 goals | Result: DONE
-
-ps4-ll_unwindbound50.c: 16.302 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps4-ll_unwindbound50.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/62.5% coverage/8 goals | Result: DONE
-
-ps5-ll_unwindbound1.c: 12.482 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps5-ll_unwindbound1.c
-FALSE
+ps5-ll_unwindbound1.c: 16.040 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE
-
-ps5-ll_unwindbound10.c: 13.780 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps5-ll_unwindbound10.c
-FALSE
+ps5-ll_unwindbound10.c: 17.415 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE
-
-ps5-ll_unwindbound100.c: 16.729 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps5-ll_unwindbound100.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE
-
-ps5-ll_unwindbound2.c: 13.568 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps5-ll_unwindbound2.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE
-
-ps5-ll_unwindbound20.c: 17.201 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps5-ll_unwindbound20.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE
-
-ps5-ll_unwindbound5.c: 13.239 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps5-ll_unwindbound5.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE
-
-ps5-ll_unwindbound50.c: 15.932 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps5-ll_unwindbound50.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE
-
-ps6-ll_unwindbound1.c: 13.121 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound1.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE
-
-ps6-ll_unwindbound10.c: 16.609 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound10.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE
-
-ps6-ll_unwindbound100.c: 109.076 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound100.c
-FALSE
+ps5-ll_unwindbound100.c: 109.237 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
-
-ps6-ll_unwindbound2.c: 13.521 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound2.c
-FALSE
+ps5-ll_unwindbound2.c: 17.011 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE
-
-ps6-ll_unwindbound20.c: 16.810 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound20.c
-FALSE
+ps5-ll_unwindbound20.c: 15.674 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE
-
-ps6-ll_unwindbound5.c: 13.399 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound5.c
-FALSE
+ps5-ll_unwindbound5.c: 17.188 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE
-
-ps6-ll_unwindbound50.c: 13.718 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/nla-digbench-scaling/ps6-ll_unwindbound50.c
-FALSE
+ps5-ll_unwindbound50.c: 14.764 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE
-
+ps6-ll_unwindbound1.c: 18.400 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE
+ps6-ll_unwindbound10.c: 18.218 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE
+ps6-ll_unwindbound100.c: 114.103 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/8 goals | Result: DONE
+ps6-ll_unwindbound2.c: 15.532 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE
+ps6-ll_unwindbound20.c: 15.609 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE
+ps6-ll_unwindbound5.c: 18.260 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE
+ps6-ll_unwindbound50.c: 14.756 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/12.5% coverage/8 goals | Result: DONE

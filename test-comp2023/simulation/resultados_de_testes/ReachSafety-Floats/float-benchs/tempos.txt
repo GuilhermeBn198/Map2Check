@@ -1,39 +1,18 @@
-cast_float_ptr.c: 82.204 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/float-benchs/cast_float_ptr.c
-TRUE
+cast_float_ptr.c: 94.326 segundos, Resultado: TRUE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/7 goals | Result: DONE
-cast_union_loose.c: 17.306 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/float-benchs/cast_union_loose.c
-TRUE
+cast_union_loose.c: 25.346 segundos, Resultado: TRUE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/4 goals | Result: DONE
-cast_union_tight.c: 9.035 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/float-benchs/cast_union_tight.c
-FALSE
+cast_union_tight.c: 17.566 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/50.0% coverage/2 goals | Result: DONE
-float_int_inv_square.c: 18.018 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/float-benchs/float_int_inv_square.c
-TRUE
+float_int_inv_square.c: 26.006 segundos, Resultado: TRUE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/4 goals | Result: DONE
-inv_Newton-2.c: 27.400 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/float-benchs/inv_Newton-2.c
-UNKNOWN
-inv_Newton.c.p+cfa-reducer.c: 13.565 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/float-benchs/inv_Newton.c.p+cfa-reducer.c
-FALSE
+inv_Newton-2.c: 38.693 segundos, Resultado: UNKNOWN
+inv_Newton.c.p+cfa-reducer.c: 35.263 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/20 goals | Result: DONE
-inv_square-1.c: 15.304 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/float-benchs/inv_square-1.c
-UNKNOWN
-nan_double.c: 82.618 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/float-benchs/nan_double.c
-TRUE
+inv_square-1.c: 23.981 segundos, Resultado: UNKNOWN
+nan_double.c: 84.213 segundos, Resultado: TRUE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/2 goals | Result: DONE
-nan_float.c: 17.509 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/float-benchs/nan_float.c
-UNKNOWN
-sin_interpolated_index-1.c: 286.616 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/float-benchs/sin_interpolated_index-1.c
-UNKNOWN
-sqrt_poly2.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/float-benchs/sqrt_poly2.c
-UNKNOWN
+nan_float.c: 24.485 segundos, Resultado: UNKNOWN
+sin_interpolated_index-1.c: 45.362 segundos, Resultado: UNKNOWN
+sqrt_poly2.c: 16.286 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/6 goals | Result: DONE

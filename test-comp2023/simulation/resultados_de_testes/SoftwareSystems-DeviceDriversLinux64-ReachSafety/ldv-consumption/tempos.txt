@@ -1,3 +1,1 @@
-32_7a_cilled_linux-3.8-rc1-32_7a-drivers--media--dvb-frontends--stv090x.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.i: 31.809 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ldv-consumption/32_7a_cilled_linux-3.8-rc1-32_7a-drivers--media--dvb-frontends--stv090x.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.i
-UNKNOWN
+32_7a_cilled_linux-3.8-rc1-32_7a-drivers--media--dvb-frontends--stv090x.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.i: 32.615 segundos, Resultado: UNKNOWN

@@ -1,9 +1,4 @@
-diamond_2-1.c: 12.679 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector-loops/diamond_2-1.c
-FALSE
+diamond_2-1.c: 9.929 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/54.17% coverage/24 goals | Result: DONE
-
-verisec_sendmail_tTflag_arr_one_loop.c: 16.715 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector-loops/verisec_sendmail_tTflag_arr_one_loop.c
-FALSE
+verisec_sendmail_tTflag_arr_one_loop.c: 18.799 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/16.67% coverage/6 goals | Result: DONE

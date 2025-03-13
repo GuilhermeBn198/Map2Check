@@ -1,5 +1,2 @@
-linear-inequality-inv-b.c: 10.098 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-invariants/linear-inequality-inv-b.c
-FALSE
+linear-inequality-inv-b.c: 10.065 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/28.57% coverage/7 goals | Result: DONE
-

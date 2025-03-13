@@ -1,16 +1,6 @@
-test_add-1.i: 11.912 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ldv-sets/test_add-1.i
-FALSE
+test_add-1.i: 14.109 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/41.18% coverage/17 goals | Result: DONE
-test_mutex_double_lock.i: 36.656 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ldv-sets/test_mutex_double_lock.i
-UNKNOWN
-test_mutex_double_unlock.i: 33.804 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ldv-sets/test_mutex_double_unlock.i
-UNKNOWN
-test_mutex_unbounded-2.i: 36.907 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ldv-sets/test_mutex_unbounded-2.i
-UNKNOWN
-test_mutex_unlock_at_exit.i: 36.584 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ldv-sets/test_mutex_unlock_at_exit.i
-UNKNOWN
+test_mutex_double_lock.i: 35.918 segundos, Resultado: UNKNOWN
+test_mutex_double_unlock.i: 35.853 segundos, Resultado: UNKNOWN
+test_mutex_unbounded-2.i: 36.899 segundos, Resultado: UNKNOWN
+test_mutex_unlock_at_exit.i: 35.176 segundos, Resultado: UNKNOWN

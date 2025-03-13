@@ -1,51 +1,17 @@
-newton_1_4.i: 15.959 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/floats-cdfpl/newton_1_4.i
-UNKNOWN
-newton_1_5.i: 17.567 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/floats-cdfpl/newton_1_5.i
-UNKNOWN
-newton_1_6.i: 15.225 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/floats-cdfpl/newton_1_6.i
-UNKNOWN
-newton_1_7.i: 17.278 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/floats-cdfpl/newton_1_7.i
-UNKNOWN
-newton_1_8.i: 14.877 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/floats-cdfpl/newton_1_8.i
-UNKNOWN
-newton_2_6.i: 15.163 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/floats-cdfpl/newton_2_6.i
-UNKNOWN
-newton_2_7.i: 17.183 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/floats-cdfpl/newton_2_7.i
-UNKNOWN
-newton_2_8.i: 15.105 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/floats-cdfpl/newton_2_8.i
-UNKNOWN
-newton_3_6.i: 17.594 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/floats-cdfpl/newton_3_6.i
-UNKNOWN
-newton_3_7.i: 15.167 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/floats-cdfpl/newton_3_7.i
-UNKNOWN
-newton_3_8.i: 15.207 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/floats-cdfpl/newton_3_8.i
-UNKNOWN
-sine_1.i: 17.092 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/floats-cdfpl/sine_1.i
-UNKNOWN
-sine_2.i: 16.719 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/floats-cdfpl/sine_2.i
-UNKNOWN
-sine_3.i: 17.001 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/floats-cdfpl/sine_3.i
-UNKNOWN
-square_1.i: 14.013 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/floats-cdfpl/square_1.i
-UNKNOWN
-square_2.i: 16.598 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/floats-cdfpl/square_2.i
-UNKNOWN
-square_3.i: 14.686 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/floats-cdfpl/square_3.i
-UNKNOWN
+newton_1_4.i: 24.112 segundos, Resultado: UNKNOWN
+newton_1_5.i: 23.804 segundos, Resultado: UNKNOWN
+newton_1_6.i: 33.133 segundos, Resultado: UNKNOWN
+newton_1_7.i: 26.386 segundos, Resultado: UNKNOWN
+newton_1_8.i: 26.875 segundos, Resultado: UNKNOWN
+newton_2_6.i: 27.020 segundos, Resultado: UNKNOWN
+newton_2_7.i: 23.854 segundos, Resultado: UNKNOWN
+newton_2_8.i: 24.540 segundos, Resultado: UNKNOWN
+newton_3_6.i: 25.887 segundos, Resultado: UNKNOWN
+newton_3_7.i: 22.704 segundos, Resultado: UNKNOWN
+newton_3_8.i: 21.192 segundos, Resultado: UNKNOWN
+sine_1.i: 23.730 segundos, Resultado: UNKNOWN
+sine_2.i: 26.363 segundos, Resultado: UNKNOWN
+sine_3.i: 27.902 segundos, Resultado: UNKNOWN
+square_1.i: 24.404 segundos, Resultado: UNKNOWN
+square_2.i: 23.527 segundos, Resultado: UNKNOWN
+square_3.i: 26.577 segundos, Resultado: UNKNOWN

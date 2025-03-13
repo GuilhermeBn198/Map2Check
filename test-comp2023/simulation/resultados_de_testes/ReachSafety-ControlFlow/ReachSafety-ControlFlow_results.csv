@@ -1,6 +1,6 @@
 program_file,status,time,coverage,testcov_result
-ntdrivers/cdaudio.i.cil-1.c,UNKNOWN,28.176,N/A,N/A
-ntdrivers/diskperf.i.cil-2.c,UNKNOWN,50.668,N/A,N/A
-ntdrivers/floppy.i.cil-1.c,UNKNOWN,26.940,N/A,N/A
-ntdrivers/kbfiltr.i.cil-2.c,UNKNOWN,46.666,N/A,N/A
-ntdrivers/parport.i.cil-1.c,UNKNOWN,87.040,N/A,N/A
+ntdrivers/cdaudio.i.cil-1.c,UNKNOWN,31.979,N/A,N/A
+ntdrivers/diskperf.i.cil-2.c,UNKNOWN,56.090,N/A,N/A
+ntdrivers/floppy.i.cil-1.c,UNKNOWN,31.206,N/A,N/A
+ntdrivers/kbfiltr.i.cil-2.c,UNKNOWN,52.056,N/A,N/A
+ntdrivers/parport.i.cil-1.c,UNKNOWN,97.226,N/A,N/A

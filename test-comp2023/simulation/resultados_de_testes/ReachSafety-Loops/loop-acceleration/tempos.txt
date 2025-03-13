@@ -1,34 +1,12 @@
-array_2-1.i: 10.413 segundos, Resultado: Verifying with MAP2CHECK 
+array_2-1.i: 13.498 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/14.29% coverage/7 goals | Result: DONE
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-acceleration/array_2-1.i
-FALSE
+array_3-2.i: 12.504 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/14.29% coverage/7 goals | Result: DONE
-
-array_3-2.i: 12.736 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/14.29% coverage/7 goals | Result: DONE
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-acceleration/array_3-2.i
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/14.29% coverage/7 goals | Result: DONE
-
-diamond_1-2.c: 10.322 segundos, Resultado: Verifying with MAP2CHECK 
+diamond_1-2.c: 11.424 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/66.67% coverage/6 goals | Result: DONE
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-acceleration/diamond_1-2.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/66.67% coverage/6 goals | Result: DONE
-
-multivar_1-2.c: 12.654 segundos, Resultado: Verifying with MAP2CHECK 
+multivar_1-2.c: 14.238 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/50.0% coverage/4 goals | Result: DONE
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-acceleration/multivar_1-2.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/50.0% coverage/4 goals | Result: DONE
-
-simple_2-2.c: 12.316 segundos, Resultado: Verifying with MAP2CHECK 
+simple_2-2.c: 14.144 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/75.0% coverage/4 goals | Result: DONE
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-acceleration/simple_2-2.c
-FALSE
+simple_3-1.c: 12.563 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/75.0% coverage/4 goals | Result: DONE
-
-simple_3-1.c: 12.391 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/75.0% coverage/4 goals | Result: DONE
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loop-acceleration/simple_3-1.c
-FALSETESTCOV: TESTCOV: 1 runs/1 suite/75.0% coverage/4 goals | Result: DONE

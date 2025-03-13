@@ -1,3 +1,3 @@
 program_file,status,time,coverage,testcov_result
-ldv-consumption/32_7a_cilled_linux-3.8-rc1-32_7a-drivers--media--dvb-frontends--stv090x.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.i,UNKNOWN,31.809,N/A,N/A
-ldv-linux-3.7.3/main0_drivers--media--dvb-frontends--stv090x-ko---32_7a--linux-3.7.3.i,UNKNOWN,31.389,N/A,N/A
+ldv-consumption/32_7a_cilled_linux-3.8-rc1-32_7a-drivers--media--dvb-frontends--stv090x.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.i,UNKNOWN,32.615,N/A,N/A
+ldv-linux-3.7.3/main0_drivers--media--dvb-frontends--stv090x-ko---32_7a--linux-3.7.3.i,UNKNOWN,33.085,N/A,N/A

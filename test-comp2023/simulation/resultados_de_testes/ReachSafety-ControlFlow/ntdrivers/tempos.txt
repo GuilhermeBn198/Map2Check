@@ -1,19 +1,5 @@
-cdaudio.i.cil-1.c: 28.176 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ntdrivers/cdaudio.i.cil-1.c
-UNKNOWN
-
-diskperf.i.cil-2.c: 50.668 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ntdrivers/diskperf.i.cil-2.c
-UNKNOWN
-
-floppy.i.cil-1.c: 26.940 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ntdrivers/floppy.i.cil-1.c
-UNKNOWN
-
-kbfiltr.i.cil-2.c: 46.666 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ntdrivers/kbfiltr.i.cil-2.c
-UNKNOWN
-
-parport.i.cil-1.c: 87.040 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ntdrivers/parport.i.cil-1.c
-UNKNOWN
+cdaudio.i.cil-1.c: 31.979 segundos, Resultado: UNKNOWN
+diskperf.i.cil-2.c: 56.090 segundos, Resultado: UNKNOWN
+floppy.i.cil-1.c: 31.206 segundos, Resultado: UNKNOWN
+kbfiltr.i.cil-2.c: 52.056 segundos, Resultado: UNKNOWN
+parport.i.cil-1.c: 97.226 segundos, Resultado: UNKNOWN

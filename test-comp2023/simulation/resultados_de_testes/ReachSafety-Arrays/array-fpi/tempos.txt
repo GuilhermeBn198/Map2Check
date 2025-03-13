@@ -1,345 +1,138 @@
-brs1f.c: 19.528 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/brs1f.c
-FALSE
+brs1f.c: 21.235 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/13 goals | Result: DONE
-
-brs2f.c: 21.826 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/brs2f.c
-FALSE
+brs2f.c: 18.314 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-brs3f.c: 19.002 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/brs3f.c
-FALSE
+brs3f.c: 18.577 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-brs4f.c: 18.765 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/brs4f.c
-FALSE
+brs4f.c: 19.741 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-brs5f.c: 20.996 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/brs5f.c
-FALSE
+brs5f.c: 19.197 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-condaf.c: 19.601 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/condaf.c
-FALSE
+condaf.c: 18.380 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-condgf.c: 19.103 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/condgf.c
-FALSE
+condgf.c: 18.801 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-condmf.c: 18.982 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/condmf.c
-FALSE
+condmf.c: 20.893 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-condnf.c: 22.606 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/condnf.c
-FALSE
+condnf.c: 19.880 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-eqn1f.c: 29.106 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/eqn1f.c
-FALSE
+eqn1f.c: 27.508 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-eqn2f.c: 29.346 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/eqn2f.c
-FALSE
+eqn2f.c: 28.226 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-eqn3f.c: 28.821 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/eqn3f.c
-FALSE
+eqn3f.c: 28.483 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-eqn4f.c: 28.842 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/eqn4f.c
-FALSE
+eqn4f.c: 27.850 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-eqn5f.c: 29.088 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/eqn5f.c
-FALSE
+eqn5f.c: 28.034 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-ifcompf.c: 45.661 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/ifcompf.c
-FALSE
+ifcompf.c: 43.560 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/10.0% coverage/20 goals | Result: DONE
+ifeqn1f.c: 28.060 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+ifeqn2f.c: 27.840 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+ifeqn3f.c: 28.109 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+ifeqn4f.c: 28.371 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+ifeqn5f.c: 28.283 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+ifncompf.c: 46.314 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/20 goals | Result: DONE
-
-ifeqn1f.c: 30.654 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/ifeqn1f.c
-FALSE
+indp1f.c: 18.796 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+indp2f.c: 18.422 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+indp3f.c: 18.515 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-ifeqn2f.c: 28.793 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/ifeqn2f.c
-FALSE
+indp4f.c: 20.840 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/7.14% coverage/14 goals | Result: DONE
+indp5f.c: 18.470 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-ifeqn3f.c: 28.928 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/ifeqn3f.c
-FALSE
+modnf.c: 18.290 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+modpf.c: 20.799 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+modsf.c: 18.451 segundos, Resultado: TRUE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-ifeqn4f.c: 29.694 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/ifeqn4f.c
-FALSE
+ms1f.c: 18.494 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+ms2f.c: 20.778 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+ms3f.c: 18.315 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+ms4f.c: 18.579 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+ms5f.c: 18.522 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+ncompf.c: 44.291 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+nsqm-iff.c: 213.183 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-ifeqn5f.c: 29.654 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/ifeqn5f.c
-FALSE
+nsqmf.c: 27.743 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+pcompf.c: 46.813 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+res1f.c: 18.824 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+res1of.c: 18.211 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+res2f.c: 18.761 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/18 goals | Result: DONE
+res2of.c: 21.221 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/18 goals | Result: DONE
+s12iff.c: 18.370 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-ifncompf.c: 46.721 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/ifncompf.c
-FALSE
+s1iff.c: 18.252 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+s1liff.c: 21.046 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+s22iff.c: 18.541 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+s2iff.c: 18.311 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+s2liff.c: 20.938 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+s32iff.c: 18.360 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+s3iff.c: 18.482 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+s3liff.c: 18.801 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+s42iff.c: 21.110 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+s4iff.c: 18.185 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+s4liff.c: 18.483 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+s52iff.c: 21.245 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+s5iff.c: 18.448 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+s5liff.c: 18.565 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+sina1f.c: 20.987 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+sina2f.c: 18.385 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+sina3f.c: 23.476 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+sina4f.c: 28.373 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+sina5f.c: 28.178 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/18 goals | Result: DONE
+sqm-iff.c: 232.607 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
+sqmf.c: 25.665 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
+ss1f.c: 21.137 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
+ss2f.c: 18.449 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/20 goals | Result: DONE
-
-indp1f.c: 18.565 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/indp1f.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-indp2f.c: 18.613 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/indp2f.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-indp3f.c: 20.445 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/indp3f.c
-FALSE
+ss3f.c: 18.683 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-indp4f.c: 17.719 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/indp4f.c
-FALSE
+ss4f.c: 20.860 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-indp5f.c: 18.060 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/indp5f.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-modnf.c: 20.180 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/modnf.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-modpf.c: 17.967 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/modpf.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-modsf.c: 18.075 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/modsf.c
-TRUE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-ms1f.c: 20.042 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/ms1f.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-ms2f.c: 17.984 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/ms2f.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-ms3f.c: 18.411 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/ms3f.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-ms4f.c: 20.569 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/ms4f.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-ms5f.c: 18.716 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/ms5f.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-ncompf.c: 45.440 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/ncompf.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-nsqm-iff.c: 246.256 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/nsqm-iff.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-nsqmf.c: 28.553 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/nsqmf.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-pcompf.c: 45.223 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/pcompf.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-res1f.c: 18.773 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/res1f.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-res1of.c: 21.050 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/res1of.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-res2f.c: 19.033 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/res2f.c
-FALSE
+ssinaf.c: 18.583 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/18 goals | Result: DONE
-
-res2of.c: 19.043 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/res2of.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/18 goals | Result: DONE
-
-s12iff.c: 18.767 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/s12iff.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-s1iff.c: 20.642 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/s1iff.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-s1liff.c: 18.383 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/s1liff.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-s22iff.c: 18.399 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/s22iff.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-s2iff.c: 20.951 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/s2iff.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-s2liff.c: 18.566 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/s2liff.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-s32iff.c: 18.472 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/s32iff.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-s3iff.c: 20.736 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/s3iff.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-s3liff.c: 18.689 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/s3liff.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-s42iff.c: 18.805 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/s42iff.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-s4iff.c: 18.562 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/s4iff.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-s4liff.c: 20.992 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/s4liff.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-s52iff.c: 18.628 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/s52iff.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-s5iff.c: 18.601 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/s5iff.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-s5liff.c: 20.808 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/s5liff.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-sina1f.c: 18.597 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/sina1f.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-sina2f.c: 18.385 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/sina2f.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-sina3f.c: 23.475 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/sina3f.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-sina4f.c: 28.365 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/sina4f.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-sina5f.c: 29.129 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/sina5f.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/18 goals | Result: DONE
-
-sqm-iff.c: 274.720 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/sqm-iff.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-sqmf.c: 29.969 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/sqmf.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/12 goals | Result: DONE
-
-ss1f.c: 21.827 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/ss1f.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-ss2f.c: 19.370 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/ss2f.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/20 goals | Result: DONE
-
-ss3f.c: 19.183 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/ss3f.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/16 goals | Result: DONE
-
-ss4f.c: 20.369 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/ss4f.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-ssinaf.c: 21.474 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-fpi/ssinaf.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/18 goals | Result: DONE
-

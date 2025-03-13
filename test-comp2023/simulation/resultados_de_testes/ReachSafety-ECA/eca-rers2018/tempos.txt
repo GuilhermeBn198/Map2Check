@@ -1,27 +1,9 @@
-Problem10.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/eca-rers2018/Problem10.c
-UNKNOWN
-Problem11.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/eca-rers2018/Problem11.c
-UNKNOWN
-Problem12.c: 169.439 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/eca-rers2018/Problem12.c
-UNKNOWN
-Problem13.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/eca-rers2018/Problem13.c
-UNKNOWN
-Problem14.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/eca-rers2018/Problem14.c
-UNKNOWN
-Problem15.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/eca-rers2018/Problem15.c
-UNKNOWN
-Problem16.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/eca-rers2018/Problem16.c
-UNKNOWN
-Problem17.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/eca-rers2018/Problem17.c
-UNKNOWN
-Problem18.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/eca-rers2018/Problem18.c
-UNKNOWN
+Problem10.c: 360.000 segundos, Resultado: UNKNOWN
+Problem11.c: 360.000 segundos, Resultado: UNKNOWN
+Problem12.c: 360.000 segundos, Resultado: UNKNOWN
+Problem13.c: 360.000 segundos, Resultado: UNKNOWN
+Problem14.c: 360.000 segundos, Resultado: UNKNOWN
+Problem15.c: 360.000 segundos, Resultado: UNKNOWN
+Problem16.c: 360.000 segundos, Resultado: UNKNOWN
+Problem17.c: 360.000 segundos, Resultado: UNKNOWN
+Problem18.c: 360.000 segundos, Resultado: UNKNOWN

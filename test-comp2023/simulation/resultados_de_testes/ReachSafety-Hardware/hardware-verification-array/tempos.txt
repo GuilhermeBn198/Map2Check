@@ -1,9 +1,3 @@
-btor2c-lazyMod.unsafe_arbitrated_fifos_n2d8w8.c: 298.797 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/hardware-verification-array/btor2c-lazyMod.unsafe_arbitrated_fifos_n2d8w8.c
-UNKNOWN
-btor2c-lazyMod.unsafe_linked_list_fifo_n2d4.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/hardware-verification-array/btor2c-lazyMod.unsafe_linked_list_fifo_n2d4.c
-UNKNOWN
-btor2c-lazyMod.unsafe_ridecore_array.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/hardware-verification-array/btor2c-lazyMod.unsafe_ridecore_array.c
-UNKNOWN
+btor2c-lazyMod.unsafe_arbitrated_fifos_n2d8w8.c: 360.000 segundos, Resultado: UNKNOWN
+btor2c-lazyMod.unsafe_linked_list_fifo_n2d4.c: 360.000 segundos, Resultado: UNKNOWN
+btor2c-lazyMod.unsafe_ridecore_array.c: 360.000 segundos, Resultado: UNKNOWN

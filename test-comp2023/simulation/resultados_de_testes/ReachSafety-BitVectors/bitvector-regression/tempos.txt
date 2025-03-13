@@ -1,3 +1,1 @@
-recHanoi03-1.c: 281.654 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/bitvector-regression/recHanoi03-1.c
-UNKNOWN
+recHanoi03-1.c: 295.734 segundos, Resultado: UNKNOWN

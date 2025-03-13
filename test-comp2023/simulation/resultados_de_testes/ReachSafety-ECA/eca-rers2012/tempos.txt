@@ -1,21 +1,7 @@
-Problem05_label00.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/eca-rers2012/Problem05_label00.c
-UNKNOWN
-Problem06_label00.c: 298.172 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/eca-rers2012/Problem06_label00.c
-UNKNOWN
-Problem11_label00.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/eca-rers2012/Problem11_label00.c
-UNKNOWN
-Problem12_label00.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/eca-rers2012/Problem12_label00.c
-UNKNOWN
-Problem15_label00.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/eca-rers2012/Problem15_label00.c
-UNKNOWN
-Problem16_label00.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/eca-rers2012/Problem16_label00.c
-UNKNOWN
-Problem18_label00.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/eca-rers2012/Problem18_label00.c
-UNKNOWN
+Problem05_label00.c: 360.000 segundos, Resultado: UNKNOWN
+Problem06_label00.c: 360.000 segundos, Resultado: UNKNOWN
+Problem11_label00.c: 360.000 segundos, Resultado: UNKNOWN
+Problem12_label00.c: 360.000 segundos, Resultado: UNKNOWN
+Problem15_label00.c: 360.000 segundos, Resultado: UNKNOWN
+Problem16_label00.c: 360.000 segundos, Resultado: UNKNOWN
+Problem18_label00.c: 360.000 segundos, Resultado: UNKNOWN

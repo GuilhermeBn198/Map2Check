@@ -1,45 +1,15 @@
-01_fuzzle_30x30.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/01_fuzzle_30x30.c
-UNKNOWN
-02_fuzzle_40x40.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/02_fuzzle_40x40.c
-UNKNOWN
-03_fuzzle_50x50.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/03_fuzzle_50x50.c
-UNKNOWN
-04_fuzzle_60x60.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/04_fuzzle_60x60.c
-UNKNOWN
-05_fuzzle_70x70.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/05_fuzzle_70x70.c
-UNKNOWN
-06_fuzzle_50x50_0-cycle.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/06_fuzzle_50x50_0-cycle.c
-UNKNOWN
-07_fuzzle_50x50_25-cycle.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/07_fuzzle_50x50_25-cycle.c
-UNKNOWN
-08_fuzzle_50x50_50-cycle.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/08_fuzzle_50x50_50-cycle.c
-UNKNOWN
-09_fuzzle_50x50_75-cycle.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/09_fuzzle_50x50_75-cycle.c
-UNKNOWN
-10_fuzzle_50x50_CVE-2016-4487.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/10_fuzzle_50x50_CVE-2016-4487.c
-UNKNOWN
-11_fuzzle_50x50_CVE-2016-4489.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/11_fuzzle_50x50_CVE-2016-4489.c
-UNKNOWN
-12_fuzzle_50x50_CVE-2016-4492.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/12_fuzzle_50x50_CVE-2016-4492.c
-UNKNOWN
-13_fuzzle_50x50_CVE-2016-4493.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/13_fuzzle_50x50_CVE-2016-4493.c
-UNKNOWN
-14_fuzzle_50x50_CVE-2016-6131.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/14_fuzzle_50x50_CVE-2016-6131.c
-UNKNOWN
-15_fuzzle_50x50_equality-checks.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/fuzzle-programs/15_fuzzle_50x50_equality-checks.c
-UNKNOWN
+01_fuzzle_30x30.c: 360.000 segundos, Resultado: UNKNOWN
+02_fuzzle_40x40.c: 360.000 segundos, Resultado: UNKNOWN
+03_fuzzle_50x50.c: 360.000 segundos, Resultado: UNKNOWN
+04_fuzzle_60x60.c: 360.000 segundos, Resultado: UNKNOWN
+05_fuzzle_70x70.c: 360.000 segundos, Resultado: UNKNOWN
+06_fuzzle_50x50_0-cycle.c: 360.000 segundos, Resultado: UNKNOWN
+07_fuzzle_50x50_25-cycle.c: 360.000 segundos, Resultado: UNKNOWN
+08_fuzzle_50x50_50-cycle.c: 360.000 segundos, Resultado: UNKNOWN
+09_fuzzle_50x50_75-cycle.c: 360.000 segundos, Resultado: UNKNOWN
+10_fuzzle_50x50_CVE-2016-4487.c: 360.000 segundos, Resultado: UNKNOWN
+11_fuzzle_50x50_CVE-2016-4489.c: 360.000 segundos, Resultado: UNKNOWN
+12_fuzzle_50x50_CVE-2016-4492.c: 360.000 segundos, Resultado: UNKNOWN
+13_fuzzle_50x50_CVE-2016-4493.c: 360.000 segundos, Resultado: UNKNOWN
+14_fuzzle_50x50_CVE-2016-6131.c: 360.000 segundos, Resultado: UNKNOWN
+15_fuzzle_50x50_equality-checks.c: 360.000 segundos, Resultado: UNKNOWN

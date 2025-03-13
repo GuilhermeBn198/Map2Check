@@ -1,10 +1,10 @@
-copysome1-2.i: 49.184 segundos, Resultado: Verifying with MAP2CHECK 
+copysome1-2.i: 48.843 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/7.69% coverage/13 goals | Result: DONE
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/copysome1-2.i
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/7.69% coverage/13 goals | Result: DONE
+copysome2-2.i: 68.093 segundos, Resultado: FALSE
+TESTCOV: Error: Traceback (most recent call last):
+  File "/simulation/testcov/bin/testcov", line 34, in <module>
+    import suite_validation
+  File "/simulation/testcov/suite_validation/__init__.py", line 21, in <module>
+    from benchexec.util import read_file, write_file
+ModuleNotFoundError: No module named 'benchexec'
 
-copysome2-2.i: 77.386 segundos, Resultado: Verifying with MAP2CHECK 
-TESTCOV: TESTCOV: 1 runs/1 suite/6.67% coverage/15 goals | Result: DONE
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/array-programs/copysome2-2.i
-FALSETESTCOV: TESTCOV: 1 runs/1 suite/6.67% coverage/15 goals | Result: DONE

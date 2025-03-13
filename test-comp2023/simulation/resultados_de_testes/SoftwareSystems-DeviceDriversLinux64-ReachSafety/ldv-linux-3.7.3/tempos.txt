@@ -1,3 +1,1 @@
-main0_drivers--media--dvb-frontends--stv090x-ko---32_7a--linux-3.7.3.i: 31.389 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/ldv-linux-3.7.3/main0_drivers--media--dvb-frontends--stv090x-ko---32_7a--linux-3.7.3.i
-UNKNOWN
+main0_drivers--media--dvb-frontends--stv090x-ko---32_7a--linux-3.7.3.i: 33.085 segundos, Resultado: UNKNOWN

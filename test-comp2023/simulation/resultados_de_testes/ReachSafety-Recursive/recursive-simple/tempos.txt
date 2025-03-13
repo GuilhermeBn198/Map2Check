@@ -1,34 +1,16 @@
-id2_b3_o2.c: 281.423 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/recursive-simple/id2_b3_o2.c
-UNKNOWN
-id_b3_o2-2.c: 280.428 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/recursive-simple/id_b3_o2-2.c
-UNKNOWN
-id_o10.c: 72.627 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/recursive-simple/id_o10.c
-FALSE
+id2_b3_o2.c: 306.422 segundos, Resultado: UNKNOWN
+id_b3_o2-2.c: 298.957 segundos, Resultado: UNKNOWN
+id_o10.c: 91.086 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/4 goals | Result: DONE
-id_o100.c: 85.770 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/recursive-simple/id_o100.c
-FALSE
+id_o100.c: 90.853 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/4 goals | Result: DONE
-id_o1000.c: 84.102 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/recursive-simple/id_o1000.c
-FALSE
+id_o1000.c: 89.766 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/75.0% coverage/4 goals | Result: DONE
+id_o20.c: 91.569 segundos, Resultado: FALSE
+TESTCOV: TESTCOV: 1 runs/1 suite/75.0% coverage/4 goals | Result: DONE
+id_o200.c: 91.134 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/4 goals | Result: DONE
-id_o20.c: 65.371 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/recursive-simple/id_o20.c
-FALSE
+id_o3.c: 89.907 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/4 goals | Result: DONE
-id_o200.c: 84.815 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/recursive-simple/id_o200.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/4 goals | Result: DONE
-id_o3.c: 84.466 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/recursive-simple/id_o3.c
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/4 goals | Result: DONE
-sum_non_eq-3.c: 18.626 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/recursive-simple/sum_non_eq-3.c
-FALSE
+sum_non_eq-3.c: 22.106 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/4 goals | Result: DONE

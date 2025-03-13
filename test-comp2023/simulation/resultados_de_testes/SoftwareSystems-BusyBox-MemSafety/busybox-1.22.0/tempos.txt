@@ -1,12 +1,4 @@
-ls-incomplete-2.i: 55.905 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/busybox-1.22.0/ls-incomplete-2.i
-UNKNOWN
-od-4.i: 67.244 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/busybox-1.22.0/od-4.i
-UNKNOWN
-printf-3.i: 49.583 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/busybox-1.22.0/printf-3.i
-UNKNOWN
-test-1.i: 41.248 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/busybox-1.22.0/test-1.i
-UNKNOWN
+ls-incomplete-2.i: 49.010 segundos, Resultado: UNKNOWN
+od-4.i: 59.067 segundos, Resultado: UNKNOWN
+printf-3.i: 42.485 segundos, Resultado: UNKNOWN
+test-1.i: 40.644 segundos, Resultado: UNKNOWN

@@ -1,13 +1,5 @@
-tree_del_rec.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/verifythis/tree_del_rec.c
-UNKNOWN
-tree_del_rec_incorrect.c: 277.290 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/verifythis/tree_del_rec_incorrect.c
-UNKNOWN
-tree_max.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/verifythis/tree_max.c
-UNKNOWN
-tree_max_incorrect.c: 20.677 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/verifythis/tree_max_incorrect.c
-FALSE
+tree_del_rec.c: 360.000 segundos, Resultado: UNKNOWN
+tree_del_rec_incorrect.c: 360.000 segundos, Resultado: UNKNOWN
+tree_max.c: 360.000 segundos, Resultado: UNKNOWN
+tree_max_incorrect.c: 31.684 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/25.0% coverage/12 goals | Result: DONE

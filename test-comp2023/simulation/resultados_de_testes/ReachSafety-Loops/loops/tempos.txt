@@ -1,88 +1,30 @@
-array-2.c: 10.362 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/array-2.c
-FALSE
+array-2.c: 10.105 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/16.67% coverage/6 goals | Result: DONE
-
-bubble_sort-2.i: 32.543 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/bubble_sort-2.i
-UNKNOWN
-
-compact.c: 29.800 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/compact.c
-UNKNOWN
-
-count_up_down-2.c: 71.054 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/count_up_down-2.c
-FALSE
+bubble_sort-2.i: 31.930 segundos, Resultado: UNKNOWN
+compact.c: 50.171 segundos, Resultado: UNKNOWN
+count_up_down-2.c: 68.026 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/75.0% coverage/4 goals | Result: DONE
-
-for_bounded_loop1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/for_bounded_loop1.c
-UNKNOWN
-
-insertion_sort-1-2.c: 20.942 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/insertion_sort-1-2.c
-TRUE
+for_bounded_loop1.c: 326.348 segundos, Resultado: UNKNOWN
+insertion_sort-1-2.c: 20.688 segundos, Resultado: TRUE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-invert_string-1.c: 146.855 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/invert_string-1.c
-FALSE
+invert_string-1.c: 142.700 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/10 goals | Result: DONE
-
-linear_search.c: 12.232 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/linear_search.c
-FALSE
+linear_search.c: 10.212 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/70.0% coverage/10 goals | Result: DONE
-
-matrix-2-2.c: 21.386 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/matrix-2-2.c
-TRUE
+matrix-2-2.c: 20.996 segundos, Resultado: TRUE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/14 goals | Result: DONE
-
-n.c24.i: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/n.c24.i
-UNKNOWN
-
-nec20.c: 12.320 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/nec20.c
-FALSE
+n.c24.i: 360.000 segundos, Resultado: UNKNOWN
+nec20.c: 12.160 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/10.0% coverage/10 goals | Result: DONE
-
-string-2.i: 22.481 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/string-2.i
-FALSE
+string-2.i: 34.020 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/4.35% coverage/23 goals | Result: DONE
-
-sum01_bug02.i: 84.533 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/sum01_bug02.i
-FALSE
-TESTCOV: TESTCOV: 1 runs/1 suite/77.78% coverage/9 goals | Result: DONE
-
-sum03-1.i: 12.672 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/sum03-1.i
-FALSE
+sum01_bug02.i: 170.042 segundos, Resultado: UNKNOWN
+sum03-1.i: 12.421 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/0.0% coverage/6 goals | Result: DONE
-
-terminator_01.c: 10.050 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/terminator_01.c
-FALSE
+terminator_01.c: 12.328 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/50.0% coverage/4 goals | Result: DONE
-
-trex01-1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/trex01-1.c
-UNKNOWN
-
-trex02-2.c: 325.866 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/trex02-2.c
-UNKNOWN
-
-trex03-1.c: 360.000 segundos, Resultado: Verifying with MAP2CHECK
-Command: timeout 360s ./map2check --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/trex03-1.c
-UNKNOWN
-
-vogal-2.i: 21.301 segundos, Resultado: Verifying with MAP2CHECK 
-Command: timeout 360s ./map2check  --timeout 356 --smt-solver yices2 --add-invariants --target-function --generate-witness ../sv-benchmarks/c/loops/vogal-2.i
-FALSE
+trex01-1.c: 334.790 segundos, Resultado: UNKNOWN
+trex02-2.c: 339.982 segundos, Resultado: UNKNOWN
+trex03-1.c: 360.000 segundos, Resultado: UNKNOWN
+vogal-2.i: 19.814 segundos, Resultado: FALSE
 TESTCOV: TESTCOV: 1 runs/1 suite/5.26% coverage/19 goals | Result: DONE
-
