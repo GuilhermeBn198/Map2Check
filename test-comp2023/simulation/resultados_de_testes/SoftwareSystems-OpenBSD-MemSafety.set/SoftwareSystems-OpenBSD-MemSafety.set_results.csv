@@ -1,0 +1,2 @@
+program_file,status,time,coverage,testcov_result
+openbsd-6.2/if_etherip-unreach-call.i,UNKNOWN,50.145,N/A,N/A

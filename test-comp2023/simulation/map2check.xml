@@ -55,6 +55,8 @@
     <tasks name="ReachSafety-Fuzzle">
     <includesfile>./sv-benchmarks/c/ReachSafety-Fuzzle.set</includesfile>
   </tasks>
- <!-- resto das coisas aqui:-->
+    <tasks name="SoftwareSystems-OpenBSD-MemSafety.set">
+    <includesfile>./sv-benchmarks/c/SoftwareSystems-OpenBSD-MemSafety.set</includesfile>
+  </tasks>
 </benchmark>
 
