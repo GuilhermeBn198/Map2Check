@@ -53,6 +53,8 @@ def compute_summary(entries):
       - média dos tempos (excluindo entradas com time == 360.000)
       - média dos tempos (incluindo entradas com time == 360.000)
       - total de programas com time >= 360.000
+      
+    As médias são formatadas para não ultrapassar o formato "xxx,zzz" (três casas decimais, com vírgula como separador decimal).
     """
     summary = []
     threshold = 360.0
@@ -64,6 +66,10 @@ def compute_summary(entries):
         media_incl = sum(times_incl) / len(times_incl) if times_incl else 0
         count_ge = sum(1 for t in times_incl if t >= threshold)
         return media_excl, media_incl, count_ge
+
+    def format_media(media_value):
+        # Formata o valor float com três casas decimais e substitui o ponto por vírgula.
+        return f"{media_value:.3f}".replace('.', ',')
 
     # Global summary
     global_entries = entries
@@ -77,8 +83,8 @@ def compute_summary(entries):
         'total_UNKNOWN': sum(1 for e in global_entries if e.get('status','') == 'UNKNOWN'),
         'total_coverage_0.0': sum(1 for e in global_entries if safe_float(e.get('coverage','N/A')) == 0.0),
         'total_coverage_pos': sum(1 for e in global_entries if (safe_float(e.get('coverage','N/A')) is not None and safe_float(e.get('coverage','N/A')) > 0.0)),
-        'media_time_excl_360000': media_excl,
-        'media_time_incl_360000': media_incl,
+        'media_time_excl_360000': format_media(media_excl),
+        'media_time_incl_360000': format_media(media_incl),
         'total_time_ge_360000': count_ge
     }
     summary.append(global_counts)
@@ -97,8 +103,8 @@ def compute_summary(entries):
             'total_UNKNOWN': sum(1 for e in cat_entries if e.get('status','') == 'UNKNOWN'),
             'total_coverage_0.0': sum(1 for e in cat_entries if safe_float(e.get('coverage','N/A')) == 0.0),
             'total_coverage_pos': sum(1 for e in cat_entries if (safe_float(e.get('coverage','N/A')) is not None and safe_float(e.get('coverage','N/A')) > 0.0)),
-            'media_time_excl_360000': media_excl,
-            'media_time_incl_360000': media_incl,
+            'media_time_excl_360000': format_media(media_excl),
+            'media_time_incl_360000': format_media(media_incl),
             'total_time_ge_360000': count_ge
         }
         summary.append(cat_counts)
@@ -117,8 +123,8 @@ def compute_summary(entries):
             'total_UNKNOWN': sum(1 for e in subcat_entries if e.get('status','') == 'UNKNOWN'),
             'total_coverage_0.0': sum(1 for e in subcat_entries if safe_float(e.get('coverage','N/A')) == 0.0),
             'total_coverage_pos': sum(1 for e in subcat_entries if (safe_float(e.get('coverage','N/A')) is not None and safe_float(e.get('coverage','N/A')) > 0.0)),
-            'media_time_excl_360000': media_excl,
-            'media_time_incl_360000': media_incl,
+            'media_time_excl_360000': format_media(media_excl),
+            'media_time_incl_360000': format_media(media_incl),
             'total_time_ge_360000': count_ge
         }
         summary.append(subcat_counts)
