@@ -2,13 +2,13 @@ import matplotlib.pyplot as plt
 
 # Dados das torres
 categorias = ['FALSE', 'TRUE', 'UNKNOWN', 'COV=0.0', 'COV>0.0']
-valores = [210,	 18,	986,	165,	65]
+valores = [204, 19, 993, 158, 64]
 
 # Definir cores para as torres
 cores = ['blue', 'blue', 'orange', 'grey', 'grey']
 
 # Altura máxima do gráfico (valor de total_program_files)
-altura_max = 1216
+altura_max = 1217
 
 # Criar o gráfico de barras
 plt.figure(figsize=(10, 6))
