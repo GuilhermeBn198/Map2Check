@@ -2,7 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Carrega os dados do arquivo CSV
-df = pd.read_csv('results.csv')
+df = pd.read_csv('results.csv', decimal=',')
+
 
 # Filtra os dados para as linhas cujo scope_type seja "Global"
 df_global = df[df['scope_type'] == 'Global']
