@@ -6,7 +6,6 @@ def parse_tempos_file(file_path, category, subcategory):
     entries = []
     current_entry = None
 
-    # Novo padrão: captura filename, tempo e status na mesma linha
     pattern = re.compile(
         r'^\s*(?P<filename>[^:]+\.(?:c|i)):\s+(?P<time>\d+\.\d{1,3})\s+segundos,\s+Resultado:\s+(?P<status>\S+)'
     )
