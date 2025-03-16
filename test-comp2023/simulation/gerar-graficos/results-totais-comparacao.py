@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 # Dados das torres
 categorias = ['Map2Check FALSE', 'ESBMC FALSE', 'KLEE FALSE', 'FuseBMC FALSE']
-valores = [ 210, 195, 713, 926]
+valores = [ 204, 195, 713, 926]
 
 # Definir cores para as torres (apenas 4 cores, pois são 4 categorias)
 cores = ['blue', 'green', 'yellow', 'orange']
@@ -25,7 +25,7 @@ margem = 0.2 * largura           # margem para centralizar a barra interna
 largura_interna = 0.6 * largura    # largura menor para evidenciar que é interna
 
 # Desenhar a segunda torre com valor 65
-plt.bar(x + margem, 65, width=largura_interna, color='red')
+plt.bar(x + margem, 64, width=largura_interna, color='red')
 
 # Exibir os valores acima de cada torre externa
 for barra in barras:
@@ -34,7 +34,7 @@ for barra in barras:
              str(y_valor), ha='center', va='bottom', fontsize=14)
 
 # Exibir o valor da segunda torre centralizado na sua barra interna
-plt.text(x + margem + largura_interna/2, 65/2, '65', ha='center', va='center', 
+plt.text(x + margem + largura_interna/2, 64/2, '64', ha='center', va='center', 
          color='white', fontsize=16, fontweight='bold')
 
 # Configura título e rótulos dos eixos com fontes ajustadas
