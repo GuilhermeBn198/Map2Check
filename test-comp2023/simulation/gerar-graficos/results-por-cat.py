@@ -5,38 +5,38 @@ dados = [
     {
         "scope_name": "ReachSafety-Arrays",
         "total_program_files": 100,
-        "FALSE": 81,
+        "FALSE": 82,
         "TRUE": 2,
         "UNKNOWN": 16,
-        "COV=0.0": 70,
-        "COV>0.0": 14
+        "COV=0.0": 68,
+        "COV>0.0": 15
     },
     {
         "scope_name": "ReachSafety-BitVectors",
         "total_program_files": 9,
-        "FALSE": 5,
+        "FALSE": 6,
         "TRUE": 0,
-        "UNKNOWN": 4,
-        "COV=0.0": 3,
+        "UNKNOWN": 3,
+        "COV=0.0": 4,
         "COV>0.0": 2
     },
     {
         "scope_name": "ReachSafety-Loops",
         "total_program_files": 125,
-        "FALSE": 61,
-        "TRUE": 10,
+        "FALSE": 63,
+        "TRUE": 9,
         "UNKNOWN": 53,
-        "COV=0.0": 37,
-        "COV>0.0": 35
+        "COV=0.0": 39,
+        "COV>0.0": 33
     },
     {
         "scope_name": "ReachSafety-Heap",
         "total_program_files": 53,
-        "FALSE": 12,
+        "FALSE": 11,
         "TRUE": 0,
-        "UNKNOWN": 41,
-        "COV=0.0": 3,
-        "COV>0.0": 9
+        "UNKNOWN": 42,
+        "COV=0.0": 4,
+        "COV>0.0": 7
     },
 ]
 
