@@ -2,31 +2,31 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import math
 
-# Carrega os dados do arquivo CSV
-df = pd.read_csv('results.csv')
+# Carrega os dados do arquivo CSV especificando o separador decimal
+df = pd.read_csv('results.csv', decimal=',')
+# Remove espaços em branco dos nomes das colunas (se houver)
+df.columns = df.columns.str.strip()
 
 # Lista com os scope_name desejados
-selected_categories = ["ReachSafety-Arrays", "ReachSafety-BitVectors", "ReachSafety-Loops", "ReachSafety-XCSP"]
+selected_categories = ["ReachSafety-Arrays", "ReachSafety-BitVectors", "ReachSafety-Loops", "ReachSafety-Heap"]
 
-# Filtra os dados para as linhas cujo scope_type seja "Category" e scope_name seja um dos desejados
+# Filtra os dados para as linhas cujo scope_type seja "Category" e scope_name esteja na lista
 df_category = df[(df['scope_type'] == 'Category') & (df['scope_name'].isin(selected_categories))]
 
 # Obtém as categorias únicas a partir da coluna 'scope_name'
 categories = df_category['scope_name'].unique()
 num_categories = len(categories)
 
-# Define as métricas:
-# Grupo esquerdo (eixo y esquerdo): contagens (UNKNOWN, programas>=360)
-# Grupo direito (eixo y direito): tempos (media_excl_360, media_incl_360)
+# Define as métricas para cada grupo:
 left_metrics = ['UNKNOWN', 'programas>=360']
 right_metrics = ['media_excl_360', 'media_incl_360']
 
-# Define grid 2x2: 2 colunas e número de linhas necessário
+# Configura o grid para os subplots
 n_cols = 2
 n_rows = math.ceil(num_categories / n_cols)
 
 fig, axes = plt.subplots(n_rows, n_cols, figsize=(12, 6 * n_rows))
-axes = axes.flatten()  # Facilita a iteração
+axes = axes.flatten()
 
 for i, cat in enumerate(categories):
     ax = axes[i]
@@ -34,18 +34,18 @@ for i, cat in enumerate(categories):
     data = df_category[df_category['scope_name'] == cat]
     means = data.mean(numeric_only=True)
     
-    # Valores para os dois grupos
+    # Extrai os valores dos grupos (agora sem erro, pois as colunas foram padronizadas)
     left_values = [means[m] for m in left_metrics]
     right_values = [means[m] for m in right_metrics]
     
-    # Define posições para as barras: 0 e 1 para o grupo esquerdo; 2 e 3 para o grupo direito
+    # Define as posições das barras: 0 e 1 para o grupo esquerdo; 2 e 3 para o grupo direito
     left_x = [0, 1]
     right_x = [2, 3]
     
-    # Plota as barras do grupo esquerdo no eixo principal (ax)
+    # Plota as barras do grupo esquerdo no eixo principal
     bars_left = ax.bar(left_x, left_values, color='navy')
     
-    # Cria o segundo eixo y para o grupo direito (tempos)
+    # Cria o segundo eixo y para o grupo direito
     ax2 = ax.twinx()
     bars_right = ax2.bar(right_x, right_values, color='cornflowerblue')
     
@@ -53,27 +53,26 @@ for i, cat in enumerate(categories):
     ax.set_xticks(left_x + right_x)
     ax.set_xticklabels(left_metrics + right_metrics, rotation=15, fontsize=12)
     
-    # Adiciona linha vertical separadora entre os grupos
+    # Desenha linha vertical separadora entre os grupos
     ax.axvline(x=1.5, color='black', linestyle='--')
     
     # Define limites dos eixos y
     left_limit = sum(left_values)  # soma entre UNKNOWN e programas>=360
     right_limit = 360
-    
     ax.set_ylim(0, left_limit)
     ax2.set_ylim(0, right_limit)
     
-    # Anota os valores sobre as barras (eixo esquerdo: contagens)
+    # Anota os valores sobre as barras (eixo esquerdo)
     for bar, metric in zip(bars_left, left_metrics):
         height = bar.get_height()
         ax.text(bar.get_x() + bar.get_width()/2, height, f'{int(height)}', ha='center', va='bottom', fontsize=15)
     
-    # Anota os valores sobre as barras (eixo direito: tempos, com três casas decimais)
+    # Anota os valores sobre as barras (eixo direito)
     for bar, metric in zip(bars_right, right_metrics):
         height = bar.get_height()
         ax2.text(bar.get_x() + bar.get_width()/2, height, f'{height:.3f}', ha='center', va='bottom', fontsize=15)
     
-    # Adiciona "contadores" para os limites dos eixos
+    # Adiciona anotações para os limites dos eixos
     ax.text(0.02, 0.95, f'Total de programas: {left_limit:.0f}', transform=ax.transAxes, verticalalignment='top', color='red', fontsize=13)
     ax2.text(0.98, 0.95, f'Tempo de exec: {right_limit:.3f}', transform=ax2.transAxes, verticalalignment='top', horizontalalignment='right', color='red', fontsize=13)
     
