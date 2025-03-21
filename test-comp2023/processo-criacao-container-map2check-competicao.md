@@ -1,5 +1,13 @@
 # Processo de criação de container para rodar map2check em ambiente de competição simulada
 
+0. Ter as seguintes pastas e arquivos instaladas no diretório do map2check
+
+- testcov/   (pasta raíz contendo todo o código do testcov)
+- sv-benchmarks/ (pasta extraída do gitlab com todos os códigos da competição)
+- script_execucao.py na pasta raiz
+- data_extractor.py dentro de release
+- script-rodar-testcov-nos-resultados.py na pasta raíz
+
 1. Criar Imagem de instalação do Map2check e Testcov
 
 ```bash
